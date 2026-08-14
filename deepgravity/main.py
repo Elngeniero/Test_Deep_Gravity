@@ -176,7 +176,7 @@ def evaluate():
         return cpc_df
 
     cpc_df = cpc_from_num(edf, oa2tile, o2d2flow)
-    print('Average CPC of test tiles: {cpc_df.cpc.mean():.4f}  stdev: {cpc_df.cpc.std():.4f}')
+    print(f'Average CPC of test tiles: {cpc_df.cpc.mean():.4f}  stdev: {cpc_df.cpc.std():.4f}')
 
     fname = './results/tile2cpc_{}_{}.csv'.format(model_type, args.dataset)
 
