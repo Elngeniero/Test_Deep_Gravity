@@ -11,6 +11,18 @@
     - [Additional data](#additional_data)
 
 
+<a id='docs'></a>
+## Documentacion del proyecto
+
+Indice de documentacion disponible en `docs/`:
+
+- [docs/architecture.md](docs/architecture.md) — Analisis arquitectonico del repositorio DeepGravity (stack, arquitectura, configuracion y observaciones).
+- [docs/contexto/ALCANCE_Y_LINEAMIENTOS_TESIS.md](docs/contexto/ALCANCE_Y_LINEAMIENTOS_TESIS.md) — Definicion del problema y objetivos de la memoria.
+- [docs/experimentos/REPORTE_REPRODUCCION_NEWYORK.md](docs/experimentos/REPORTE_REPRODUCCION_NEWYORK.md) — Reporte de reproduccion del modelo sobre el dataset New York.
+- [docs/adr/](docs/adr/) — Decisiones de arquitectura (ADRs).
+- [docs/conocimiento/](docs/conocimiento/) — Base de conocimiento del proyecto.
+
+
 <a id='citing'></a>
 ## Citing
 
