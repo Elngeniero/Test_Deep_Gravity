@@ -11,7 +11,7 @@
 - **Momento**: Periodo post-pandemia (datos de noviembre 2024), en el cual los patrones de movilidad han cambiado respecto a los modelos pre-2020 (teletrabajo, redistribucion de viajes, caida de viajes al centro).
 - **Marco academico**: La memoria se inscribe en la linea de Inteligencia Artificial aplicada a la ciudad, y se apoya en el modelo *Deep Gravity* propuesto por Simini et al. (Nature Communications, 2021), que ha demostrado superar al *gravity model* clasico y al *radiation model* en Inglaterra, Italia y el estado de Nueva York, pero que **no ha sido validado en una metropolis latinoamericana** ni sobre datos pospandemicos.
 
-## 2. Que y como se realiza actualmente la situucion
+## 2. Qué y cómo se realiza actualmente la situación
 
 - **Actualmente la planificacion del transporte en Santiago se apoya en**:
     - La **Encuesta Origen-Destino (EOD)** de SECTRA, cuya ultima version publicada es la EOD 2012 (con actualizaciones 2017), realizada por muestreo domiciliario, con una periodicidad de 7 a 10 anos y un costo elevado.
@@ -53,7 +53,7 @@
 - **Decisiones de inversion con datos caducados**: nuevas lineas de Metro, extensiones de BRT, redes de ciclovias y planes de densificacion se disenarian sobre la EOD 2012/2017, sin reflejar la redistribucion post-pandemica de la demanda (por ejemplo, debilitamiento del viaje al centro historico y fortalecimiento de subcentros como Providencia, Sanhattan, ENEA / Ciudad Empresarial).
 - **Perdida de oportunidades de planificacion proactiva**: los modelos de gravedad clasicos no permiten anticipar el impacto de intervenciones urbanas (apertura de un mall, cierre de un eje, nueva estacion) sobre los flujos.
 - **Opacidad en la decision publica**: sin un modelo explicativo, las autoridades y la ciudadania no pueden auditar la razon de una prediccion; esto baja la confianza en la planificacion.
-- **Brecha metodologica**: la investigacion chilena en movilidad quedaria rezagada frente al state-of-the-art internacional (DeepGravity, modelos de flujos con GNNs, etc.), perdiendo la oportunidad de producir hallazgos sobre la especificidad latinoamericana (segeregacion socioespacial, informalidad, polarizacion centro-periferia) que los modelos entrenados en el Norte Global no capturan.
+- **Brecha metodologica**: la investigacion chilena en movilidad quedaria rezagada frente al state-of-the-art internacional (DeepGravity, modelos de flujos con GNNs, etc.), perdiendo la oportunidad de producir hallazgos sobre la especificidad latinoamericana (segregacion socioespacial, informalidad, polarizacion centro-periferia) que los modelos entrenados en el Norte Global no capturan.
 - **Aprovechamiento deficiente de datos administrativos existentes**: el dataset del DTPM (noviembre 2024) permanece subutilizado para modelado de generacion, lo que representa una perdida de retorno a la inversion public en su levantamiento.
 
 ## 6. Competencia y soluciones existentes
@@ -120,8 +120,23 @@
 - **XAI**: prioridad SHAP por madurez y documentacion; Integrated Gradients como complemento para atribuciones por par; sensibilidad como prueba de robustez.
 - **Reproducibilidad**: el repositorio DeepGravity base sera refactorizado (imports, preprocesado, tests) para garantizar trazabilidad del pipeline de Santiago.
 
-## 10. Siguiente paso
+## 10. Estado Actual y Siguientes Pasos
 
-- Definir formalmente los **tipos de amenity a usar** en el set adaptado a Santiago (revisando la literatura sobre OSM en Chile y verificando la cobertura empirica).
-- Confirmar el **tamano de grilla** tras una prueba piloto sobre una zona de Santiago (ej. comuna de Santiago Centro + Providencia).
-- Obtener y **firmar acuerdos de uso** del dataset del DTPM con el Departamento de Transporte.
+> Ultima actualizacion: Agosto 2026
+
+### Estado actual
+
+- **Fase 1 (Reproduccion NY):** Completada — CPC = 0.5119, coherente con el paper.
+- **Redaccion de la tesis:** Capitulos completados: Introduccion, Definicion del Problema, Marco Conceptual (Cap. 2) y Trabajo Relacionado (Cap. 3). Pendientes: Propuesta de Solucion (Cap. 4), Validacion (Cap. 5) y Conclusiones.
+- **Dataset DTPM:** Los CSV completos (viajes.csv y etapas.csv de noviembre 2024) estan disponibles en el equipo del investigador. Los resumenes y diccionario de datos estan en `Fuentes/dptm/`.
+- **Unidad espacial:** Definida como **tessellation cuadrada** (500m, 1km, 2km, 5km), coherente con el paper original y con los Objetivos Especificos 2 y 6 de la tesis. La grilla se generara con `skmob.tessellation.tilers`.
+
+### Proximos pasos
+
+1. **Redactar Capitulo 4 (Propuesta de Solucion):** Describir el pipeline tecnico completo (datos DTPM → grilla cuadrada → features OSM → Deep Gravity → SHAP). Basarse en `arquitectura_santiago.md`.
+2. **Corregir bugs del codigo base:** `utils.py:106` (serializacion incorrecta), `_compute_support_files` comentada, `break` en el test loop. Ver detalles en `docs/conocimiento/hallazgos_tecnicos.md`.
+3. **Construir la matriz OD:** Usar coordenadas UTM del dataset DTPM para asignar viajes a celdas de la grilla y generar `flows_oa.csv`.
+4. **Extraer features OSM:** Usar `osmnx`/Overpass con `osm_query.yaml` para el Gran Santiago, generando `features.csv` con las 18 variables del paper.
+5. **Ejecutar pipeline completo:** Preprocesamiento, entrenamiento (20 epocas, RMSprop), evaluacion CPC por tile.
+6. **Analisis XAI:** Calcular SHAP values y comparar importancias entre resoluciones de grilla y con los resultados de Nueva York.
+

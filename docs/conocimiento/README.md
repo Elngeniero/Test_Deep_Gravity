@@ -2,17 +2,15 @@
 
 Notas, hallazgos y referencias técnicas acumuladas durante el desarrollo del proyecto.
 
-## Contenido esperado
+## Contenido
 
-- Hallazgos sobre el pipeline de Deep Gravity.
-- Notas sobre OSM / Overpass / POIs.
-- Referencias bibliográficas y papers relevantes.
-- Lecciones aprendidas y detalles no triviales de reproducción.
+| Archivo | Descripción |
+|---|---|
+| [hallazgos_tecnicos.md](./hallazgos_tecnicos.md) | Bugs del código base, notas del dataset DTPM, estado de la bibliografía y resultado de la reproducción de Nueva York |
 
-## Estructura sugerida
+## Estructura para crecer
 
-- `osm/` — consultas, filtros y detalles de extracción de datos de OpenStreetMap.
-- `modelo/` — notas sobre la arquitectura y entrenamiento del modelo.
-- `referencias/` — bibliografía y enlaces.
-
-(Contenido por agregar)
+A medida que avance el proyecto, se agregarán:
+- `osm/` — consultas Overpass, filtros y notas sobre extracción de POIs para Santiago.
+- `modelo/` — notas sobre hiperparámetros, sensibilidad de la grilla y decisiones de entrenamiento.
+- `resultados/` — análisis intermedios de CPC y valores SHAP por resolución de tessellation.

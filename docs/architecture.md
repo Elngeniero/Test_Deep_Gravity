@@ -1,4 +1,10 @@
-# Reporte de Analisis Arquitectonico - DeepGravity
+# Reporte de Analisis Arquitectonico - Repositorio Original
+
+> [!WARNING]
+> **DOCUMENTO DE AUDITORÍA TÉCNICA BASE**
+> Este documento contiene exclusivamente un análisis técnico del código fuente original de los autores de *Deep Gravity* y su dataset de prueba (Nueva York). 
+> **NO describe el proyecto, los datos, ni el pipeline de la tesis.** 
+> Para revisar la arquitectura específica aplicada al Gran Santiago (datos DTPM, OSM y validaciones), por favor consulte el archivo: **[`arquitectura_santiago.md`](./arquitectura_santiago.md)**
 
 > Auditoria tecnica del repositorio `DeepGravity` (implementacion oficial del paper *Simini et al., "A Deep Gravity model for mobility flows generation", Nature Communications 12, 6576, 2021*). El reporte cubre arquitectura, stack, flujo principal, configuracion y observaciones del revisor.
 
