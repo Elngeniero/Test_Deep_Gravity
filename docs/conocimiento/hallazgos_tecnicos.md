@@ -85,3 +85,67 @@ Los viajes caminados, en taxi/colectivo de pago en efectivo y en modos no motori
 - **CPC obtenido:** **0.5119**
 - **CPC reportado en el paper:** 0.51
 - **Estado:** ✅ Reproducción exitosa. Ver reporte completo en [`experimentos/REPORTE_REPRODUCCION_NEWYORK.md`](../experimentos/REPORTE_REPRODUCCION_NEWYORK.md).
+
+---
+
+## 5. Estado del Análisis XAI (Agosto 2026)
+
+### Hallazgo: XAI no está implementado en el código base
+
+Verificado el 23 de agosto de 2026. **No existe ningún código de análisis XAI** (SHAP, Integrated Gradients, ni ninguna otra técnica de atribución) en el repositorio. La búsqueda en todos los archivos `.py` no encontró referencias a `shap`, `captum`, `integrated_gradients`, `xai`, ni `explainab`.
+
+> **Nota:** `shapely` aparece importado en `deepgravity.py` — es la biblioteca geoespacial de Python, sin ninguna relación con la biblioteca SHAP de explicabilidad.
+
+### Compatibilidad: la arquitectura YA es apta para XAI sin modificaciones
+
+| Aspecto | Situación |
+|---|---|
+| `NN_MultinomialRegression` es `nn.Module` puro | ✅ SHAP (`GradientExplainer`) y Captum (`IntegratedGradients`) operan directamente sobre él |
+| `forward(vX)` → escalar | ✅ Interfaz exacta que esperan ambas bibliotecas |
+| Checkpoint `.pt` guardado post-entrenamiento | ✅ El análisis XAI puede correr sin reentrenar el modelo |
+| `model.eval()` ya existe en `evaluate()` | ✅ Desactiva el dropout antes de correr atribuciones |
+
+### ⚠️ Precaución: Dropout activo en `forward()`
+
+El modelo tiene **Dropout(p=0.35) en las 15 capas**. Si se corre SHAP o Integrated Gradients con `model.train()` activo, el dropout aleatoriza las atribuciones en cada llamada, produciendo resultados inestables. **Siempre llamar `model.eval()` antes de cualquier análisis XAI.**
+
+### Lo que hay que construir para Fase 5
+
+Se requiere un script nuevo (sugerido: `deepgravity/xai_analysis.py`) con la siguiente lógica:
+
+```
+1. Cargar modelo entrenado:
+       model.load_state_dict(checkpoint['model_state_dict'])
+       model.eval()
+
+2. SHAP Global (importancia por categoría OSM):
+       explainer = shap.GradientExplainer(model, background_tensor)
+       shap_values = explainer.shap_values(input_tensor)
+       → agregar por las 39 features → importancia por categoría
+
+3. Integrated Gradients Local (atribución por par OD específico):
+       ig = captum.attr.IntegratedGradients(model.forward)
+       attributions = ig.attribute(input_od, baseline_od, n_steps=200)
+       → análisis de pares de interés (ej. periferia → centro)
+
+4. Visualización:
+       → heatmap de importancia por categoría OSM (global)
+       → mapa coroplético de Santiago por importancia SHAP por zona
+```
+
+### Dependencias de Fase 5
+
+El análisis XAI requiere que primero se complete:
+- **Fase 3:** Pipeline de datos Santiago (DTPM → grilla → OD) 
+- **Fase 4:** Entrenamiento del modelo Deep Gravity sobre Santiago → checkpoint `.pt`
+
+Solo entonces es posible correr el análisis XAI con datos reales de Santiago.
+
+### Librerías a instalar para XAI
+
+```bash
+pip install shap          # SHAP (GradientExplainer para PyTorch)
+pip install captum        # Integrated Gradients (Facebook/Meta, nativo PyTorch)
+pip install matplotlib seaborn geopandas  # visualización
+```
+
