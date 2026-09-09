@@ -1,212 +1,84 @@
-# Arquitectura del Pipeline: Modelo Deep Gravity para Santiago
+# Arquitectura propuesta para Santiago
 
-Este documento describe la arquitectura técnica, el flujo de datos y el diseño del pipeline de procesamiento para la tesis de grado. Su objetivo es implementar, adaptar y evaluar el modelo *Deep Gravity* en el Gran Santiago mediante una estrategia metodológica de **doble modelo comparativo** (unidades zonales irregulares vs. grilla regular hexagonal H3).
+**Estado:** especificación científica revisada en F1-B.
+**Alcance:** decisiones vigentes y procedimientos pendientes; no reporta resultados del piloto.
 
-> [!NOTE]
-> Para consultar la auditoría técnica del repositorio base original (código de autores con dataset de Nueva York), revisar [`architecture.md`](./architecture.md).
-> Las decisiones arquitectónicas formales que sustentan este diseño se encuentran registradas en [`docs/adr/`](./adr/) (ADR-001 a ADR-005).
+## 1. Propósito
 
----
+La memoria evaluará la sensibilidad de Deep Gravity a dos representaciones espaciales construidas desde una misma cohorte de viajes DTPM:
 
-## 1. Visión General del Sistema
+1. zonas DTPM o 777 irregulares;
+2. celdas H3.
 
-El pipeline aborda la estimación de matrices Origen-Destino (OD) intra-urbanas y el análisis de interacción espacial mediante un diseño comparativo multiescalar:
+La comparación busca establecer cómo cambian el desempeño, la cobertura, la esparsidad, el costo computacional y, solo cuando el modelo sea estable, las explicaciones predictivas. No presupone que H3 mejore el CPC ni que las variables del destino aumenten su importancia.
 
-```
-+-----------------------------------------------------------------------------------+
-|                           FUENTES DE ENTRADA METROPOLITANA                        |
-|   1. Transacciones DTPM Nov 2024 (Viajes/Etapas bip! con UTM x_subida, y_subida)  |
-|   2. OpenStreetMap (Geometrías VGI -> 12 Macro-categorías funcionales)           |
-|   3. Datos Demográficos (Censo)                                                   |
-+-----------------------------------------------------------------------------------+
-                                         |
-                                         v
-+-----------------------------------------------------------------------------------+
-|                 DELIMITACIÓN TERRITORIAL (ADR-005: Gran Santiago Urbano)          |
-|                 Filtrado a ~33 comunas con cobertura densa de Red/Metro          |
-+-----------------------------------------------------------------------------------+
-                                         |
-            +----------------------------+----------------------------+
-            |                                                         |
-            v                                                         v
-+---------------------------------------+ +-----------------------------------------+
-|     MODELO 1: ZONAL CONTROL (ADR-004) | |    MODELO 2: GRILLA HEXAGONAL H3 (PROP) |
-| - Unidad: Teselación 777 DTPM (~743z) | | - Unidad: Grilla Uber H3 (res. 3 a 8)   |
-| - Polígonos irregulares (control)     | | - Geometría regular e isotrópica        |
-| - Asignación: zona_subida/bajada      | | - Asignación directa: UTM -> H3 cell    |
-| - Réplica de Vicente Mackenzie (2026) | | - Fallback: proporción de superficie    |
-+---------------------------------------+ +-----------------------------------------+
-            |                                                         |
-            v                                                         v
-+---------------------------------------+ +-----------------------------------------+
-|     EXTRACCIÓN FEATURES OSM (M1)      | |      EXTRACCIÓN FEATURES OSM (M2)       |
-| 12 densidades funcionales por zona    | | 12 densidades funcionales por hexágono  |
-+---------------------------------------+ +-----------------------------------------+
-            |                                                         |
-            +----------------------------+----------------------------+
-                                         |
-                                         v
-+-----------------------------------------------------------------------------------+
-|               ARQUITECTURA NEURONAL: DEEP GRAVITY (15 capas Feed-Forward)         |
-|   - Vector entrada (27 dims): 12 POIs Orig + 12 POIs Dest + Pop_O + Pop_D + Dist  |
-|   - Capas ocultas: 6 x 256 + 9 x 128 (LeakyReLU + BatchNorm + Dropout)           |
-|   - Softmax Generalizado (Single Tile continuo sobre Gran Santiago)               |
-|   - Negative Sampling (512 muestras negativas por flujo positivo)                 |
-+-----------------------------------------------------------------------------------+
-                                         |
-                                         v
-+-----------------------------------------------------------------------------------+
-|                        EVALUACIÓN COMPARATIVA Y EXPLICABILIDAD                    |
-|   1. Métrica CPC: Comparativa multitemporal (Punta Mañana, Valle, Tarde)          |
-|   2. XAI con SHAP: Comparativa de atribución (¿H3 mitiga el sesgo de origen?)     |
-+-----------------------------------------------------------------------------------+
-```
+## 2. Datos y reconstrucción de viajes
 
----
+La entrega utilizable contiene 29 fechas, del 1 al 29 de noviembre de 2024. Los archivos del día 30 se recibieron con errores y quedan excluidos sin imputación.
 
-## 2. Fuentes de Datos (*Ground Truth*)
-
-A diferencia de los modelos analíticos basados en la histórica Encuesta Origen-Destino 2012, este trabajo explota registros de validación pasiva post-pandemia de alta resolución.
-
-- **Proveedor Institucional:** Directorio de Transporte Público Metropolitano (DTPM).
-- **Período de Ingesta:** Noviembre de 2024 (muestra consolidada de días laborales tipo y fines de semana).
-- **Archivos Base:**
-  - `viajes.csv` (~3.6M de registros): Viajes completos consolidados tras algoritmos de encadenamiento (*trip chaining*) y factores de expansión institucional.
-  - `etapas.csv` (~1.5M de registros): Transacciones unitarias por etapa de viaje en buses Red, Metro y Tren Nos.
-- **Campos Espaciales Clave:**
-  - Coordenadas proyectadas UTM (`x_subida`, `y_subida`, `x_bajada`, `y_bajada` en EPSG:32719 / WGS84 UTM 19S).
-  - Unidades zonales DTPM (`zona_subida`, `zona_bajada`, `comuna_subida`, `comuna_bajada`).
-- **Antecedente Directo:** Vicente Mackenzie (2026) procesó jornadas de validación DTPM 2025 sobre 743 zonas 777, reportando un CPC máximo de 0.2566 en periodo valle y evidenciando una dependencia casi exclusiva del vector de origen en SHAP. Su resultado se toma formalmente como la línea base de control (Modelo 1).
-
----
-
-## 3. Delimitación del Área de Estudio (ADR-005)
-
-Para evitar distorsiones matemáticas por **esparsidad extrema** en zonas rurales o periféricas sin cobertura formal de transporte público, el área de análisis se restringe al **Gran Santiago urbano**:
-
-- **Criterio de Inclusión:** Comunas que forman parte del continuo urbano metropolitano con servicios activos de Red Movilidad / Metro y densidad transaccional estadísticamente significativa.
-- **Comunas Nucleares (~33 comunas):** Santiago, Providencia, Las Condes, Ñuñoa, Vitacura, Lo Barnechea, La Reina, Peñalolén, Macul, San Joaquín, La Granja, La Florida, Puente Alto, San Bernardo, El Bosque, Pedro Aguirre Cerda, Lo Espejo, La Cisterna, San Miguel, Estación Central, Quinta Normal, Independencia, Recoleta, Conchalí, Huechuraba, Pudahuel, Lo Prado, Cerrillos, Maipú, Quilicura, Renca, Cerro Navia, La Pintana.
-- **Implementación:** Las coordenadas y centroides se filtran espacialmente mediante un polígono de recorte (*bounding clip*) construido a partir de la cartografía oficial.
-
----
-
-## 4. Unidades Espaciales y Estrategia Experimental
-
-El núcleo de la contribución metodológica reside en contrastar el impacto de la partición espacial sobre el aprendizaje de la red:
-
-### Modelo 1 (Control): Teselación 777 Zonal DTPM
-- **Naturaleza:** Polígonos irregulares heterogéneos diseñados con criterios de zonificación operativa de transporte.
-- **Cardinalidad:** ~743 zonas operativas urbanas.
-- **Propósito:** Replicar de forma controlada el enfoque clásico y el trabajo previo de Vicente (2026) para medir el impacto intrínseco de la geometría irregular.
-
-### Modelo 2 (Propuesto): Grilla Hexagonal Regular Uber H3
-- **Naturaleza:** Sistema de teselación discreta global basado en hexágonos regulares jerárquicos (Uber H3).
-- **Resoluciones en evaluación:** Niveles H3 **3 a 8** (con foco exploratorio en las resoluciones que equilibran granularidad urbana y esparsidad computacional, ej. H3 res. 7 ~1.2 km de radio, res. 8 ~460 m).
-- **Ventajas teóricas:**
-  1. *Isotropía de vecindad:* Cada celda posee exactamente 6 vecinos equidistantes con idéntica distancia inter-centroide, eliminando la asimetría diagonal de las grillas cuadradas.
-  2. *Invarianza de escala y área:* Todas las celdas comparten idéntica superficie nominal en una resolución dada, anulando el sesgo de agregación espacial (MAUP).
-  3. *Indexación eficiente:* Indexación geoespacial directa de 64 bits mediante la librería `h3-py`.
-
-### Modelo 0 (Baseline opcional): Nivel Comunal
-- Agregación macroscópica a nivel de comunas administrativas del Gran Santiago para visualización gerencial e interpretación institucional.
-
----
-
-## 5. Características Espaciales (*Urban Features*)
-
-Deep Gravity modula la interacción origen-destino incorporando la oferta de infraestructura y descriptores del entorno construido extraídos desde OpenStreetMap (OSM).
-
-### Ontología Consolidada (12 Macro-Categorías Funcionales)
-Para prevenir el problema de la matriz rala (*feature sparsity*) derivado de un exceso de etiquetas vacías en celdas periféricas, se adopta una consolidación en 12 dimensiones funcionales:
-
-| ID | Macro-Categoría | Entidades OSM Representativas |
+| Tabla | Campos relevantes verificados | Estado de uso |
 |---|---|---|
-| 1 | `residential_bldg` | `building=residential, apartments, house` |
-| 2 | `commercial_bldg` | `building=commercial, office` |
-| 3 | `industrial_bldg` | `building=industrial, warehouse` |
-| 4 | `leisure` | `leisure=park, sports_centre, pitch, garden` |
-| 5 | `edu` | `amenity=school, university, college, kindergarten` |
-| 6 | `food` | `amenity=restaurant, cafe, fast_food, bar` |
-| 7 | `health` | `amenity=hospital, clinic, pharmacy, doctors` |
-| 8 | `retail` | `shop=supermarket, mall, department_store, convenience; amenity=bank` |
-| 9 | `transport` | `public_transport=platform, stop_position, station; highway=bus_stop` |
-| 10 | `main_roads` | `highway=motorway, trunk, primary` (longitud en km) |
-| 11 | `secondary_roads` | `highway=secondary, tertiary` (longitud en km) |
-| 12 | `other` | Equipamientos institucionales y servicios menores |
+| viajes | identificadores de viaje, zonas y comunas consolidadas, secuencia de etapas y factor_expansion | fuente candidata para la unidad viaje y la rama zonal |
+| etapas | identificadores de etapa y viaje, coordenadas x_subida, y_subida, x_bajada, y_bajada, zonas, comunas y dos factores de expansión | fuente candidata para reconstruir extremos y asignar H3 |
 
-### Normalización y Construcción de Tensores
-- **Densificación Superficial:** Para cada celda $z$ (sea zona 777 o celda H3), los conteos brutos se transforman en densidades por kilómetro cuadrado:
-  $$X_{k,z} = \frac{\sum_{i \in z} \mathbb{I}_k(\text{POI}_i)}{A_z}$$
-  donde $A_z$ es el área métrica exacta calculada tras proyectar las geometrías a EPSG:32719.
-- **Vector de Entrada al MLP (27 dimensiones):**
-  $$\mathbf{x}_{ij} = \big[ \text{Pop}_i,\, \text{Pop}_j,\, d_{ij},\, \mathbf{X}_i^{(1..12)},\, \mathbf{X}_j^{(1..12)} \big]$$
-  donde $\text{Pop}_i, \text{Pop}_j$ corresponden a la masa censal (Censo INE), $d_{ij}$ es la distancia euclidiana/geodésica inter-centroides, y $\mathbf{X}_i, \mathbf{X}_j$ son las 12 densidades funcionales de origen y destino respectivamente.
+Las coordenadas no están en viajes. F2-B validó diariamente la unión viajes.(id_tarjeta,id_viaje) con etapas.(id_etapa,correlativo_viajes), y F2-C aprobó la reconstrucción desde la primera etapa para origen y la bajada válida de la etapa final para destino. La cohorte primaria exige secuencia coherente, zonas de origen y destino disponibles y factor_expansion no negativo; la secundaria se conserva separada y no participa en la comparación principal.
 
----
+factor_expansion de viajes es la masa expandida principal aprobada; unexpanded_weight=1.0 se conserva para sensibilidad. Población censal, generación observada, flujo expandido y atributos OSM son magnitudes distintas y no se intercambiarán en el vector de entrada.
 
-## 6. Pipeline de Preprocesamiento de Datos
+## 3. Núcleo común y adaptadores espaciales
 
-El flujo de ingeniería de datos se implementa en dos ramas concurrentes para garantizar coherencia en la evaluación comparativa:
+La arquitectura prevista tiene un núcleo canónico de viajes y dos adaptadores, no dos pipelines independientes.
 
-```
-[CSV viajes.csv / etapas.csv]
-          |
-          +---> FILTRO DE CALIDAD (Coordenadas no nulas, factor_expansion > 0)
-          |
-          +---> RECORTE GEOGRÁFICO: Clip Gran Santiago (ADR-005)
-          |
-          +---+---------------------------------------------------------+
-              |                                                         |
-    [Rama Modelo 2: H3]                                       [Rama Modelo 1: 777]
-              |                                                         |
-  Estrategia A (Principal):                                  Agregación por campos:
-  Reproyección UTM -> WGS84                                  - zona_subida (origen i)
-  Asignación: h3.latlng_to_cell(lat, lon, res)               - zona_bajada (destino j)
-  Calculo directo de flujos T_ij (sin redistribución)                   |
-  [Fallback B: Redistribución por proporción de superficie]             |
-              |                                                         |
-              +----------------------------+----------------------------+
-                                           |
-                                           v
-                         GENERACIÓN DE ARTIFACTOS CORE
-    1. flows_oa.csv.zip (i, j, T_ij expandido)
-    2. features.csv (ID celda, Pop, 12 features OSM)
-    3. Caché de soporte: oa2features.pkl, od2flow.pkl, oa2centroid.pkl
-```
+~~~text
+viajes + etapas
+       |
+viajes canónicos, cohorte y área comunes
+       |
+  +----+----+
+  |         |
+Zona 777    H3
+  |         |
+  +----+----+
+       |
+contrato Deep Gravity común
+       |
+baselines, entrenamiento y evaluación
+~~~
 
----
+La rama zonal usará los campos auditados de los viajes canónicos y geometría oficial con CRS e identificadores verificados. No heredará automáticamente 743 zonas de un trabajo externo.
 
-## 7. Refactorización Técnica y Corrección del Código Base
+La rama H3 transformará coordenadas válidas desde EPSG:32719 a WGS84 y asignará ambos extremos después de cerrar la unión. Se evaluarán H3-r3 a H3-r8 en factibilidad; r6 a r8 son candidatas iniciales, no resoluciones seleccionadas.
 
-Antes de ejecutar el entrenamiento sobre los datasets de Santiago, se aplican las siguientes correcciones sobre el repositorio base:
+## 4. Precisiones sobre H3
 
-1. **Fix bug serialización (`utils.py:106`):**
-   - *Problema:* El código original almacena `oa2centroid` dentro del archivo `od2flow.pkl`.
-   - *Solución:* Serializar la estructura correcta `od2flow` en su archivo respectivo.
-2. **Reactivación del generador de soporte:**
-   - Descomentar la llamada a `_compute_support_files` en `load_data()` para permitir la creación automática de los archivos `.pkl` indexados para Santiago.
-3. **Corrección del loop de evaluación (`main.py:144`):**
-   - Eliminar el `break` residual en la iteración sobre `test_loader` para permitir el cálculo del CPC acumulado completo sobre todas las particiones de prueba.
-4. **Integración de dependencias geoespaciales:**
-   - Incorporación de la librería `h3-py` (`h3`) y `geopandas` en el entorno de ejecución para el soporte nativo de la teselación hexagonal.
+H3 es un sistema jerárquico de índices geoespaciales. Sus celdas no son planos idénticos: el área y las distancias varían geográficamente, existen pentágonos y la vecindad no puede describirse como seis vecinos para toda celda. Las áreas y longitudes de referencia se reportarán como promedios globales junto con estadísticas de las celdas presentes en el área elegida.
 
----
+H3 no elimina el MAUP. La comparación Zona 777-H3 trata la unidad espacial como una fuente de sensibilidad que debe medirse.
 
-## 8. Módulo de Explicabilidad y Validación Experimental
+## 5. Área, unidades y tiles
 
-La fase de validación científica contrasta ambos modelos en múltiples escenarios temporales:
+El área de estudio no está congelada. F2-D comparará alternativas territoriales con densidad, viajes retenidos, cobertura y esparsidad; después se versionarán el polígono, CRS, comunas y regla de frontera.
 
-### Protocolo de Evaluación Cuantitativa
-- **Escenarios Horarios:**
-  1. *Punta Mañana (07:00 - 09:00):* Flujos masivos y rígidos de trabajo/estudio hacia el cono oriente y centro.
-  2. *Periodo Valle (10:00 - 16:00):* Movilidad dispersa y discrecional orientada a comercio, salud y trámites.
-  3. *Punta Tarde (18:00 - 20:00):* Flujos de retorno con alta sensibilidad a la fricción de distancia.
-- **Métrica Primaria:** Common Part of Commuters (CPC) contra matrices de viajes expandidos reales de la tarjeta bip!:
-  $$\text{CPC}(\mathbf{y}^r, \hat{\mathbf{y}}) = \frac{2 \sum_{i,j} \min(y_{ij}^r, \hat{y}_{ij})}{\sum_{i,j} y_{ij}^r + \sum_{i,j} \hat{y}_{ij}}$$
-- **Líneas Base de Comparación:** Modelo Gravitacional Clásico Exponencial (Singly-Constrained con calibración de $\beta$ por Grid Search) y Modelo de Radiación.
+Una celda o zona es una unidad origen-destino. Un tile es un bloque espacial mayor usado para particionar y evaluar. El diseño de tiles, los destinos cruzados y el universo de candidatos se resolverán en F2-F/F2-G; no se asume un único tile metropolitano.
 
-### Análisis XAI con SHAP (Testeo de Hipótesis)
-- Se calculan los valores SHAP (*SHapley Additive exPlanations*) sobre el ensamble de predicciones para cada periodo horario.
-- **Hipótesis Experimental Central:**
-  - En el **Modelo 1 (Zona 777)** se espera replicar el sesgo de Vicente (2026), donde las variables de infraestructura del origen dominan el ranking de impacto y las del destino resultan marginales.
-  - En el **Modelo 2 (Grilla Hexagonal H3)** se evaluará si la regularidad geométrica e isotrópica permite que los atractores de destino (comercio, salud, educación, retail) eleven su contribución relativa en SHAP, demostrando que la morfología urbana fina sí aporta señal predictiva real cuando se utiliza una discretización espacial homogénea.
+## 6. Atributos y modelo
+
+La fuente de población, la instantánea OSM, la ontología de categorías, la unidad de agregación y la normalización siguen pendientes de F2-I. La propuesta de 12 macro-categorías es un insumo de evaluación y no un conjunto ya adoptado. La dimensión del vector de entrada se definirá después de ese contrato.
+
+El código base requiere refactorización y pruebas antes de Santiago. Persisten, entre otros, el CPC con denominador incorrecto, la regeneración defectuosa de caché, la evaluación que se corta tras un lote y una semántica de destinos limitada al tile de origen. Las correcciones corresponden a F2-G.
+
+## 7. Hipótesis y evidencia externa
+
+Vicente Mackenzie se mantiene como antecedente interno que orienta preguntas y diagnósticos. Sus resultados no son un control experimental equivalente ni fijan el número de zonas, el CPC esperado o el patrón SHAP de este estudio.
+
+La hipótesis empírica es bilateral: se medirá si la representación H3 modifica el desempeño y las atribuciones de origen y destino frente a Zona 777. Una ausencia de cambio o un resultado opuesto es informativo. SHAP u otra técnica XAI se ejecutará después de estabilizar datos, entrenamiento y evaluación; sus atribuciones no se interpretarán como causalidad.
+
+## 8. Decisiones pendientes y puertas
+
+| Decisión | Puerta prevista |
+|---|---|
+| Clave de unión, extremos, descartes, peso y cohorte | G2 |
+| Área de estudio, resoluciones H3 y tiles | G3 |
+| Correcciones del código, soporte de destinos y CPC | G4 |
+| Población, OSM y dimensión final de atributos | F2-I antes del piloto |
+| XAI y redacción de resultados | después de G4 |

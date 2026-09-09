@@ -2,6 +2,8 @@
 
 Registro de hallazgos, bugs y notas técnicas acumuladas durante el desarrollo del proyecto.
 
+> **Vigencia para Santiago — 2026-09-08.** Este documento conserva notas históricas, incluida la reproducción de Nueva York. Para decisiones sobre Santiago prevalecen [el alcance](../contexto/ALCANCE_Y_LINEAMIENTOS_TESIS.md), [la arquitectura](../arquitectura_santiago.md), los ADR y el preflight F2-A. F2-G debe verificar los bugs del código base antes de corregirlos, y F1-E revisará la evidencia de Nueva York.
+
 ---
 
 ## 1. Bugs Conocidos en el Código Base (DeepGravity)
@@ -148,4 +150,3 @@ pip install shap          # SHAP (GradientExplainer para PyTorch)
 pip install captum        # Integrated Gradients (Facebook/Meta, nativo PyTorch)
 pip install matplotlib seaborn geopandas  # visualización
 ```
-

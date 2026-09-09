@@ -1,2 +1,24 @@
 *.agents
 *.json
+
+# Local machine settings and credentials
+.env
+.env.*
+!*.example
+config/*.local.env
+config/*.local.toml
+config/*.local.yaml
+
+# DTPM raw data and derived artefacts (kept outside version control)
+deepgravity/data/santiago/raw/
+deepgravity/data/santiago/interim/
+deepgravity/data/santiago/processed/
+deepgravity/data/santiago/cache/
+deepgravity/data/santiago/checkpoints/
+deepgravity/results/santiago/
+runs/
+
+# Common runtime by-products
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/

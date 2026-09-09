@@ -1,0 +1,2403 @@
+service_date,day_class,table,field,category,count
+2024-11-01,laboral,viajes,tipodia,2,1343047
+2024-11-01,laboral,viajes,n_etapas,1,985930
+2024-11-01,laboral,viajes,n_etapas,2,311191
+2024-11-01,laboral,viajes,n_etapas,3,44216
+2024-11-01,laboral,viajes,n_etapas,4,1612
+2024-11-01,laboral,viajes,n_etapas,5,88
+2024-11-01,laboral,viajes,n_etapas,6,3
+2024-11-01,laboral,viajes,n_etapas,7,4
+2024-11-01,laboral,viajes,n_etapas,8,2
+2024-11-01,laboral,viajes,n_etapas,9,1
+2024-11-01,laboral,viajes,netapassinbajada,0,764416
+2024-11-01,laboral,viajes,netapassinbajada,1,565535
+2024-11-01,laboral,viajes,netapassinbajada,2,12861
+2024-11-01,laboral,viajes,netapassinbajada,3,223
+2024-11-01,laboral,viajes,netapassinbajada,4,12
+2024-11-01,laboral,viajes,ultimaetapaconbajada,0,561952
+2024-11-01,laboral,viajes,ultimaetapaconbajada,1,781095
+2024-11-01,laboral,viajes,periodo_inicio_viaje,80,3716
+2024-11-01,laboral,viajes,periodo_inicio_viaje,81,4236
+2024-11-01,laboral,viajes,periodo_inicio_viaje,82,40530
+2024-11-01,laboral,viajes,periodo_inicio_viaje,83,429842
+2024-11-01,laboral,viajes,periodo_inicio_viaje,84,481685
+2024-11-01,laboral,viajes,periodo_inicio_viaje,85,280241
+2024-11-01,laboral,viajes,periodo_inicio_viaje,86,97003
+2024-11-01,laboral,viajes,periodo_inicio_viaje,87,5794
+2024-11-01,laboral,viajes,periodo_fin_viaje,-1,561993
+2024-11-01,laboral,viajes,periodo_fin_viaje,80,1149
+2024-11-01,laboral,viajes,periodo_fin_viaje,81,1584
+2024-11-01,laboral,viajes,periodo_fin_viaje,82,13484
+2024-11-01,laboral,viajes,periodo_fin_viaje,83,243597
+2024-11-01,laboral,viajes,periodo_fin_viaje,84,282173
+2024-11-01,laboral,viajes,periodo_fin_viaje,85,158491
+2024-11-01,laboral,viajes,periodo_fin_viaje,86,70779
+2024-11-01,laboral,viajes,periodo_fin_viaje,87,9797
+2024-11-01,laboral,viajes,tipo_corte_etapa_viaje,M15M,21182
+2024-11-01,laboral,viajes,tipo_corte_etapa_viaje,M3B,84806
+2024-11-01,laboral,viajes,tipo_corte_etapa_viaje,M40M,6177
+2024-11-01,laboral,viajes,tipo_corte_etapa_viaje,MS_B_B,11443
+2024-11-01,laboral,viajes,tipo_corte_etapa_viaje,MS_B_B_NB,6645
+2024-11-01,laboral,viajes,tipo_corte_etapa_viaje,MS_MT_MT,3849
+2024-11-01,laboral,viajes,tipo_corte_etapa_viaje,MS_M_B,12758
+2024-11-01,laboral,viajes,tipo_corte_etapa_viaje,MS_M_M,146749
+2024-11-01,laboral,viajes,tipo_corte_etapa_viaje,RD,28720
+2024-11-01,laboral,viajes,tipo_corte_etapa_viaje,SM2H,247088
+2024-11-01,laboral,viajes,tipo_corte_etapa_viaje,UE,773630
+2024-11-01,laboral,etapas,tipo_dia,DOMINGO,1751628
+2024-11-01,laboral,etapas,tiene_bajada,0,593257
+2024-11-01,laboral,etapas,tiene_bajada,1,1158371
+2024-11-01,laboral,etapas,tipo_transporte,BUS,897574
+2024-11-01,laboral,etapas,tipo_transporte,METRO,811849
+2024-11-01,laboral,etapas,tipo_transporte,METROTREN,29360
+2024-11-01,laboral,etapas,tipo_transporte,ZP,12845
+2024-11-01,laboral,etapas,periodoSubida,01 - PRE NOCTURNO DOMINGO,4105
+2024-11-01,laboral,etapas,periodoSubida,02 - NOCTURNO DOMINGO,4773
+2024-11-01,laboral,etapas,periodoSubida,03 - TRANSICION DOMINGO MANANA,54401
+2024-11-01,laboral,etapas,periodoSubida,04 - MANANA DOMINGO,574138
+2024-11-01,laboral,etapas,periodoSubida,05 - MEDIODIA DOMINGO,611905
+2024-11-01,laboral,etapas,periodoSubida,06 - TARDE DOMINGO,361854
+2024-11-01,laboral,etapas,periodoSubida,07 - TRANSICION DOMINGO NOCTURNO,131262
+2024-11-01,laboral,etapas,periodoSubida,08 - PRE NOCTURNO DOMINGO,9190
+2024-11-01,laboral,etapas,periodoBajada,01 - PRE NOCTURNO DOMINGO,1555
+2024-11-01,laboral,etapas,periodoBajada,02 - NOCTURNO DOMINGO,2129
+2024-11-01,laboral,etapas,periodoBajada,03 - TRANSICION DOMINGO MANANA,27911
+2024-11-01,laboral,etapas,periodoBajada,04 - MANANA DOMINGO,378885
+2024-11-01,laboral,etapas,periodoBajada,05 - MEDIODIA DOMINGO,401231
+2024-11-01,laboral,etapas,periodoBajada,06 - TARDE DOMINGO,234025
+2024-11-01,laboral,etapas,periodoBajada,07 - TRANSICION DOMINGO NOCTURNO,100579
+2024-11-01,laboral,etapas,periodoBajada,08 - PRE NOCTURNO DOMINGO,12056
+2024-11-02,sabado,viajes,tipodia,1,1742429
+2024-11-02,sabado,viajes,n_etapas,1,1292313
+2024-11-02,sabado,viajes,n_etapas,10,1
+2024-11-02,sabado,viajes,n_etapas,112,1
+2024-11-02,sabado,viajes,n_etapas,12,1
+2024-11-02,sabado,viajes,n_etapas,17,1
+2024-11-02,sabado,viajes,n_etapas,2,394929
+2024-11-02,sabado,viajes,n_etapas,22,1
+2024-11-02,sabado,viajes,n_etapas,3,53112
+2024-11-02,sabado,viajes,n_etapas,4,1939
+2024-11-02,sabado,viajes,n_etapas,5,123
+2024-11-02,sabado,viajes,n_etapas,6,6
+2024-11-02,sabado,viajes,n_etapas,8,2
+2024-11-02,sabado,viajes,netapassinbajada,0,1070942
+2024-11-02,sabado,viajes,netapassinbajada,1,655121
+2024-11-02,sabado,viajes,netapassinbajada,2,16014
+2024-11-02,sabado,viajes,netapassinbajada,3,336
+2024-11-02,sabado,viajes,netapassinbajada,4,16
+2024-11-02,sabado,viajes,ultimaetapaconbajada,0,647837
+2024-11-02,sabado,viajes,ultimaetapaconbajada,1,1094592
+2024-11-02,sabado,viajes,periodo_inicio_viaje,71,2272
+2024-11-02,sabado,viajes,periodo_inicio_viaje,72,3188
+2024-11-02,sabado,viajes,periodo_inicio_viaje,73,17865
+2024-11-02,sabado,viajes,periodo_inicio_viaje,74,185181
+2024-11-02,sabado,viajes,periodo_inicio_viaje,75,342716
+2024-11-02,sabado,viajes,periodo_inicio_viaje,76,408631
+2024-11-02,sabado,viajes,periodo_inicio_viaje,77,505419
+2024-11-02,sabado,viajes,periodo_inicio_viaje,78,268018
+2024-11-02,sabado,viajes,periodo_inicio_viaje,79,9139
+2024-11-02,sabado,viajes,periodo_fin_viaje,-1,647872
+2024-11-02,sabado,viajes,periodo_fin_viaje,71,913
+2024-11-02,sabado,viajes,periodo_fin_viaje,72,1080
+2024-11-02,sabado,viajes,periodo_fin_viaje,73,3393
+2024-11-02,sabado,viajes,periodo_fin_viaje,74,101373
+2024-11-02,sabado,viajes,periodo_fin_viaje,75,219110
+2024-11-02,sabado,viajes,periodo_fin_viaje,76,265166
+2024-11-02,sabado,viajes,periodo_fin_viaje,77,316927
+2024-11-02,sabado,viajes,periodo_fin_viaje,78,173919
+2024-11-02,sabado,viajes,periodo_fin_viaje,79,12676
+2024-11-02,sabado,viajes,tipo_corte_etapa_viaje,M15M,28070
+2024-11-02,sabado,viajes,tipo_corte_etapa_viaje,M3B,107916
+2024-11-02,sabado,viajes,tipo_corte_etapa_viaje,M40M,12621
+2024-11-02,sabado,viajes,tipo_corte_etapa_viaje,MS_B_B,13820
+2024-11-02,sabado,viajes,tipo_corte_etapa_viaje,MS_B_B_NB,7505
+2024-11-02,sabado,viajes,tipo_corte_etapa_viaje,MS_MT_MT,5905
+2024-11-02,sabado,viajes,tipo_corte_etapa_viaje,MS_M_B,19960
+2024-11-02,sabado,viajes,tipo_corte_etapa_viaje,MS_M_M,219589
+2024-11-02,sabado,viajes,tipo_corte_etapa_viaje,RD,38773
+2024-11-02,sabado,viajes,tipo_corte_etapa_viaje,SM2H,339694
+2024-11-02,sabado,viajes,tipo_corte_etapa_viaje,UE,948576
+2024-11-02,sabado,etapas,tipo_dia,SABADO,2255130
+2024-11-02,sabado,etapas,tiene_bajada,0,689923
+2024-11-02,sabado,etapas,tiene_bajada,1,1565207
+2024-11-02,sabado,etapas,tipo_transporte,BUS,1059008
+2024-11-02,sabado,etapas,tipo_transporte,METRO,1090178
+2024-11-02,sabado,etapas,tipo_transporte,METROTREN,39466
+2024-11-02,sabado,etapas,tipo_transporte,ZP,66478
+2024-11-02,sabado,etapas,periodoSubida,01 - PRE NOCTURNO SABADO,2539
+2024-11-02,sabado,etapas,periodoSubida,02 - NOCTURNO SABADO,3636
+2024-11-02,sabado,etapas,periodoSubida,03 - TRANSICION SABADO MANANA,23215
+2024-11-02,sabado,etapas,periodoSubida,04 - PUNTA MANANA SABADO,261528
+2024-11-02,sabado,etapas,periodoSubida,05 - MANANA SABADO,444247
+2024-11-02,sabado,etapas,periodoSubida,06 - PUNTA MEDIODIA SABADO,513818
+2024-11-02,sabado,etapas,periodoSubida,07 - TARDE SABADO,641680
+2024-11-02,sabado,etapas,periodoSubida,08 - TRANSICION SABADO NOCTURNO,350733
+2024-11-02,sabado,etapas,periodoSubida,09 - PRE NOCTURNO SABADO,13734
+2024-11-02,sabado,etapas,periodoBajada,01 - PRE NOCTURNO SABADO,1209
+2024-11-02,sabado,etapas,periodoBajada,02 - NOCTURNO SABADO,1633
+2024-11-02,sabado,etapas,periodoBajada,03 - TRANSICION SABADO MANANA,9723
+2024-11-02,sabado,etapas,periodoBajada,04 - PUNTA MANANA SABADO,173645
+2024-11-02,sabado,etapas,periodoBajada,05 - MANANA SABADO,312982
+2024-11-02,sabado,etapas,periodoBajada,06 - PUNTA MEDIODIA SABADO,361459
+2024-11-02,sabado,etapas,periodoBajada,07 - TARDE SABADO,440521
+2024-11-02,sabado,etapas,periodoBajada,08 - TRANSICION SABADO NOCTURNO,248211
+2024-11-02,sabado,etapas,periodoBajada,09 - PRE NOCTURNO SABADO,15824
+2024-11-03,domingo,viajes,tipodia,2,1106110
+2024-11-03,domingo,viajes,n_etapas,1,825790
+2024-11-03,domingo,viajes,n_etapas,2,245254
+2024-11-03,domingo,viajes,n_etapas,3,33859
+2024-11-03,domingo,viajes,n_etapas,4,1160
+2024-11-03,domingo,viajes,n_etapas,5,45
+2024-11-03,domingo,viajes,n_etapas,6,1
+2024-11-03,domingo,viajes,n_etapas,8,1
+2024-11-03,domingo,viajes,netapassinbajada,0,618399
+2024-11-03,domingo,viajes,netapassinbajada,1,477516
+2024-11-03,domingo,viajes,netapassinbajada,2,10025
+2024-11-03,domingo,viajes,netapassinbajada,3,161
+2024-11-03,domingo,viajes,netapassinbajada,4,9
+2024-11-03,domingo,viajes,ultimaetapaconbajada,0,475022
+2024-11-03,domingo,viajes,ultimaetapaconbajada,1,631088
+2024-11-03,domingo,viajes,periodo_inicio_viaje,80,4088
+2024-11-03,domingo,viajes,periodo_inicio_viaje,81,2485
+2024-11-03,domingo,viajes,periodo_inicio_viaje,82,25536
+2024-11-03,domingo,viajes,periodo_inicio_viaje,83,354254
+2024-11-03,domingo,viajes,periodo_inicio_viaje,84,409252
+2024-11-03,domingo,viajes,periodo_inicio_viaje,85,240834
+2024-11-03,domingo,viajes,periodo_inicio_viaje,86,66875
+2024-11-03,domingo,viajes,periodo_inicio_viaje,87,2786
+2024-11-03,domingo,viajes,periodo_fin_viaje,-1,475035
+2024-11-03,domingo,viajes,periodo_fin_viaje,80,1037
+2024-11-03,domingo,viajes,periodo_fin_viaje,81,966
+2024-11-03,domingo,viajes,periodo_fin_viaje,82,8222
+2024-11-03,domingo,viajes,periodo_fin_viaje,83,200344
+2024-11-03,domingo,viajes,periodo_fin_viaje,84,235285
+2024-11-03,domingo,viajes,periodo_fin_viaje,85,127891
+2024-11-03,domingo,viajes,periodo_fin_viaje,86,52729
+2024-11-03,domingo,viajes,periodo_fin_viaje,87,4601
+2024-11-03,domingo,viajes,tipo_corte_etapa_viaje,M15M,15909
+2024-11-03,domingo,viajes,tipo_corte_etapa_viaje,M3B,57404
+2024-11-03,domingo,viajes,tipo_corte_etapa_viaje,M40M,6325
+2024-11-03,domingo,viajes,tipo_corte_etapa_viaje,MS_B_B,9436
+2024-11-03,domingo,viajes,tipo_corte_etapa_viaje,MS_B_B_NB,5288
+2024-11-03,domingo,viajes,tipo_corte_etapa_viaje,MS_MT_MT,2984
+2024-11-03,domingo,viajes,tipo_corte_etapa_viaje,MS_M_B,11835
+2024-11-03,domingo,viajes,tipo_corte_etapa_viaje,MS_M_M,124314
+2024-11-03,domingo,viajes,tipo_corte_etapa_viaje,RD,27093
+2024-11-03,domingo,viajes,tipo_corte_etapa_viaje,SM2H,191380
+2024-11-03,domingo,viajes,tipo_corte_etapa_viaje,UE,654142
+2024-11-03,domingo,etapas,tipo_dia,DOMINGO,1426271
+2024-11-03,domingo,etapas,tiene_bajada,0,499082
+2024-11-03,domingo,etapas,tiene_bajada,1,927189
+2024-11-03,domingo,etapas,tipo_transporte,BUS,707089
+2024-11-03,domingo,etapas,tipo_transporte,METRO,685195
+2024-11-03,domingo,etapas,tipo_transporte,METROTREN,23400
+2024-11-03,domingo,etapas,tipo_transporte,ZP,10587
+2024-11-03,domingo,etapas,periodoSubida,01 - PRE NOCTURNO DOMINGO,4613
+2024-11-03,domingo,etapas,periodoSubida,02 - NOCTURNO DOMINGO,2934
+2024-11-03,domingo,etapas,periodoSubida,03 - TRANSICION DOMINGO MANANA,34742
+2024-11-03,domingo,etapas,periodoSubida,04 - MANANA DOMINGO,466330
+2024-11-03,domingo,etapas,periodoSubida,05 - MEDIODIA DOMINGO,509679
+2024-11-03,domingo,etapas,periodoSubida,06 - TARDE DOMINGO,310317
+2024-11-03,domingo,etapas,periodoSubida,07 - TRANSICION DOMINGO NOCTURNO,92877
+2024-11-03,domingo,etapas,periodoSubida,08 - PRE NOCTURNO DOMINGO,4779
+2024-11-03,domingo,etapas,periodoBajada,01 - PRE NOCTURNO DOMINGO,1534
+2024-11-03,domingo,etapas,periodoBajada,02 - NOCTURNO DOMINGO,1370
+2024-11-03,domingo,etapas,periodoBajada,03 - TRANSICION DOMINGO MANANA,17931
+2024-11-03,domingo,etapas,periodoBajada,04 - MANANA DOMINGO,305763
+2024-11-03,domingo,etapas,periodoBajada,05 - MEDIODIA DOMINGO,327166
+2024-11-03,domingo,etapas,periodoBajada,06 - TARDE DOMINGO,192636
+2024-11-03,domingo,etapas,periodoBajada,07 - TRANSICION DOMINGO NOCTURNO,74884
+2024-11-03,domingo,etapas,periodoBajada,08 - PRE NOCTURNO DOMINGO,5905
+2024-11-04,laboral,viajes,tipodia,0,3626787
+2024-11-04,laboral,viajes,n_etapas,1,2559688
+2024-11-04,laboral,viajes,n_etapas,10,1
+2024-11-04,laboral,viajes,n_etapas,11,3
+2024-11-04,laboral,viajes,n_etapas,13,3
+2024-11-04,laboral,viajes,n_etapas,2,924862
+2024-11-04,laboral,viajes,n_etapas,27,1
+2024-11-04,laboral,viajes,n_etapas,3,138090
+2024-11-04,laboral,viajes,n_etapas,4,3867
+2024-11-04,laboral,viajes,n_etapas,5,235
+2024-11-04,laboral,viajes,n_etapas,6,24
+2024-11-04,laboral,viajes,n_etapas,7,3
+2024-11-04,laboral,viajes,n_etapas,8,4
+2024-11-04,laboral,viajes,n_etapas,9,6
+2024-11-04,laboral,viajes,netapassinbajada,0,2590593
+2024-11-04,laboral,viajes,netapassinbajada,1,1007969
+2024-11-04,laboral,viajes,netapassinbajada,2,27577
+2024-11-04,laboral,viajes,netapassinbajada,3,600
+2024-11-04,laboral,viajes,netapassinbajada,4,48
+2024-11-04,laboral,viajes,ultimaetapaconbajada,0,977375
+2024-11-04,laboral,viajes,ultimaetapaconbajada,1,2649412
+2024-11-04,laboral,viajes,periodo_inicio_viaje,59,809
+2024-11-04,laboral,viajes,periodo_inicio_viaje,60,7024
+2024-11-04,laboral,viajes,periodo_inicio_viaje,61,110003
+2024-11-04,laboral,viajes,periodo_inicio_viaje,62,503866
+2024-11-04,laboral,viajes,periodo_inicio_viaje,63,427877
+2024-11-04,laboral,viajes,periodo_inicio_viaje,64,523517
+2024-11-04,laboral,viajes,periodo_inicio_viaje,65,289419
+2024-11-04,laboral,viajes,periodo_inicio_viaje,66,476602
+2024-11-04,laboral,viajes,periodo_inicio_viaje,67,633446
+2024-11-04,laboral,viajes,periodo_inicio_viaje,68,462453
+2024-11-04,laboral,viajes,periodo_inicio_viaje,69,187022
+2024-11-04,laboral,viajes,periodo_inicio_viaje,70,4749
+2024-11-04,laboral,viajes,periodo_fin_viaje,-1,977430
+2024-11-04,laboral,viajes,periodo_fin_viaje,59,329
+2024-11-04,laboral,viajes,periodo_fin_viaje,60,804
+2024-11-04,laboral,viajes,periodo_fin_viaje,61,19134
+2024-11-04,laboral,viajes,periodo_fin_viaje,62,277588
+2024-11-04,laboral,viajes,periodo_fin_viaje,63,401184
+2024-11-04,laboral,viajes,periodo_fin_viaje,64,424709
+2024-11-04,laboral,viajes,periodo_fin_viaje,65,210035
+2024-11-04,laboral,viajes,periodo_fin_viaje,66,335044
+2024-11-04,laboral,viajes,periodo_fin_viaje,67,381089
+2024-11-04,laboral,viajes,periodo_fin_viaje,68,416207
+2024-11-04,laboral,viajes,periodo_fin_viaje,69,172449
+2024-11-04,laboral,viajes,periodo_fin_viaje,70,10785
+2024-11-04,laboral,viajes,tipo_corte_etapa_viaje,M15M,55359
+2024-11-04,laboral,viajes,tipo_corte_etapa_viaje,M3B,298898
+2024-11-04,laboral,viajes,tipo_corte_etapa_viaje,M40M,13388
+2024-11-04,laboral,viajes,tipo_corte_etapa_viaje,MS_B_B,16829
+2024-11-04,laboral,viajes,tipo_corte_etapa_viaje,MS_B_B_NB,6656
+2024-11-04,laboral,viajes,tipo_corte_etapa_viaje,MS_MT_MT,5563
+2024-11-04,laboral,viajes,tipo_corte_etapa_viaje,MS_M_B,54599
+2024-11-04,laboral,viajes,tipo_corte_etapa_viaje,MS_M_M,334555
+2024-11-04,laboral,viajes,tipo_corte_etapa_viaje,RD,55930
+2024-11-04,laboral,viajes,tipo_corte_etapa_viaje,SM2H,965914
+2024-11-04,laboral,viajes,tipo_corte_etapa_viaje,UE,1819096
+2024-11-04,laboral,etapas,tipo_dia,LABORAL,4848086
+2024-11-04,laboral,etapas,tiene_bajada,0,1067970
+2024-11-04,laboral,etapas,tiene_bajada,1,3780116
+2024-11-04,laboral,etapas,tipo_transporte,BUS,1960917
+2024-11-04,laboral,etapas,tipo_transporte,METRO,2312875
+2024-11-04,laboral,etapas,tipo_transporte,METROTREN,77256
+2024-11-04,laboral,etapas,tipo_transporte,ZP,497038
+2024-11-04,laboral,etapas,periodoSubida,01 - PRE NOCTURNO,886
+2024-11-04,laboral,etapas,periodoSubida,02 - NOCTURNO,7970
+2024-11-04,laboral,etapas,periodoSubida,03 - TRANSICION NOCTURNO,147652
+2024-11-04,laboral,etapas,periodoSubida,04 - PUNTA MANANA,700993
+2024-11-04,laboral,etapas,periodoSubida,05 - TRANSICION PUNTA MANANA,603913
+2024-11-04,laboral,etapas,periodoSubida,06 - FUERA DE PUNTA MANANA,682576
+2024-11-04,laboral,etapas,periodoSubida,07 - PUNTA MEDIODIA,366974
+2024-11-04,laboral,etapas,periodoSubida,08 - FUERA DE PUNTA TARDE,608048
+2024-11-04,laboral,etapas,periodoSubida,09 - PUNTA TARDE1,811908
+2024-11-04,laboral,etapas,periodoSubida,10 - PUNTA TARDE2,644999
+2024-11-04,laboral,etapas,periodoSubida,11 - FUERA DE PUNTA NOCTURNO,263825
+2024-11-04,laboral,etapas,periodoSubida,12 - PRE NOCTURNO,8342
+2024-11-04,laboral,etapas,periodoBajada,01 - PRE NOCTURNO,409
+2024-11-04,laboral,etapas,periodoBajada,02 - NOCTURNO,2156
+2024-11-04,laboral,etapas,periodoBajada,03 - TRANSICION NOCTURNO,59730
+2024-11-04,laboral,etapas,periodoBajada,04 - PUNTA MANANA,468488
+2024-11-04,laboral,etapas,periodoBajada,05 - TRANSICION PUNTA MANANA,559167
+2024-11-04,laboral,etapas,periodoBajada,06 - FUERA DE PUNTA MANANA,568569
+2024-11-04,laboral,etapas,periodoBajada,07 - PUNTA MEDIODIA,281481
+2024-11-04,laboral,etapas,periodoBajada,08 - FUERA DE PUNTA TARDE,456690
+2024-11-04,laboral,etapas,periodoBajada,09 - PUNTA TARDE1,553039
+2024-11-04,laboral,etapas,periodoBajada,10 - PUNTA TARDE2,577308
+2024-11-04,laboral,etapas,periodoBajada,11 - FUERA DE PUNTA NOCTURNO,239802
+2024-11-04,laboral,etapas,periodoBajada,12 - PRE NOCTURNO,13277
+2024-11-05,laboral,viajes,tipodia,0,3670556
+2024-11-05,laboral,viajes,n_etapas,1,2579930
+2024-11-05,laboral,viajes,n_etapas,10,4
+2024-11-05,laboral,viajes,n_etapas,11,2
+2024-11-05,laboral,viajes,n_etapas,12,2
+2024-11-05,laboral,viajes,n_etapas,13,1
+2024-11-05,laboral,viajes,n_etapas,18,1
+2024-11-05,laboral,viajes,n_etapas,2,944775
+2024-11-05,laboral,viajes,n_etapas,26,1
+2024-11-05,laboral,viajes,n_etapas,3,141383
+2024-11-05,laboral,viajes,n_etapas,33,1
+2024-11-05,laboral,viajes,n_etapas,4,4176
+2024-11-05,laboral,viajes,n_etapas,5,253
+2024-11-05,laboral,viajes,n_etapas,6,14
+2024-11-05,laboral,viajes,n_etapas,69,1
+2024-11-05,laboral,viajes,n_etapas,7,5
+2024-11-05,laboral,viajes,n_etapas,8,5
+2024-11-05,laboral,viajes,n_etapas,9,2
+2024-11-05,laboral,viajes,netapassinbajada,0,2650519
+2024-11-05,laboral,viajes,netapassinbajada,1,990510
+2024-11-05,laboral,viajes,netapassinbajada,2,28734
+2024-11-05,laboral,viajes,netapassinbajada,3,740
+2024-11-05,laboral,viajes,netapassinbajada,4,53
+2024-11-05,laboral,viajes,ultimaetapaconbajada,0,958663
+2024-11-05,laboral,viajes,ultimaetapaconbajada,1,2711893
+2024-11-05,laboral,viajes,periodo_inicio_viaje,59,1330
+2024-11-05,laboral,viajes,periodo_inicio_viaje,60,7430
+2024-11-05,laboral,viajes,periodo_inicio_viaje,61,110502
+2024-11-05,laboral,viajes,periodo_inicio_viaje,62,513515
+2024-11-05,laboral,viajes,periodo_inicio_viaje,63,438147
+2024-11-05,laboral,viajes,periodo_inicio_viaje,64,521153
+2024-11-05,laboral,viajes,periodo_inicio_viaje,65,284926
+2024-11-05,laboral,viajes,periodo_inicio_viaje,66,470728
+2024-11-05,laboral,viajes,periodo_inicio_viaje,67,637478
+2024-11-05,laboral,viajes,periodo_inicio_viaje,68,478547
+2024-11-05,laboral,viajes,periodo_inicio_viaje,69,201082
+2024-11-05,laboral,viajes,periodo_inicio_viaje,70,5718
+2024-11-05,laboral,viajes,periodo_fin_viaje,-1,958733
+2024-11-05,laboral,viajes,periodo_fin_viaje,59,567
+2024-11-05,laboral,viajes,periodo_fin_viaje,60,1119
+2024-11-05,laboral,viajes,periodo_fin_viaje,61,19817
+2024-11-05,laboral,viajes,periodo_fin_viaje,62,285895
+2024-11-05,laboral,viajes,periodo_fin_viaje,63,416236
+2024-11-05,laboral,viajes,periodo_fin_viaje,64,428956
+2024-11-05,laboral,viajes,periodo_fin_viaje,65,208480
+2024-11-05,laboral,viajes,periodo_fin_viaje,66,330812
+2024-11-05,laboral,viajes,periodo_fin_viaje,67,384757
+2024-11-05,laboral,viajes,periodo_fin_viaje,68,430725
+2024-11-05,laboral,viajes,periodo_fin_viaje,69,191668
+2024-11-05,laboral,viajes,periodo_fin_viaje,70,12791
+2024-11-05,laboral,viajes,tipo_corte_etapa_viaje,M15M,53717
+2024-11-05,laboral,viajes,tipo_corte_etapa_viaje,M3B,269025
+2024-11-05,laboral,viajes,tipo_corte_etapa_viaje,M40M,18028
+2024-11-05,laboral,viajes,tipo_corte_etapa_viaje,MS_B_B,17034
+2024-11-05,laboral,viajes,tipo_corte_etapa_viaje,MS_B_B_NB,6675
+2024-11-05,laboral,viajes,tipo_corte_etapa_viaje,MS_MT_MT,4679
+2024-11-05,laboral,viajes,tipo_corte_etapa_viaje,MS_M_B,57456
+2024-11-05,laboral,viajes,tipo_corte_etapa_viaje,MS_M_M,336506
+2024-11-05,laboral,viajes,tipo_corte_etapa_viaje,RD,62483
+2024-11-05,laboral,viajes,tipo_corte_etapa_viaje,SM2H,1015723
+2024-11-05,laboral,viajes,tipo_corte_etapa_viaje,UE,1829230
+2024-11-05,laboral,etapas,tipo_dia,LABORAL,4920173
+2024-11-05,laboral,etapas,tiene_bajada,0,1053369
+2024-11-05,laboral,etapas,tiene_bajada,1,3866804
+2024-11-05,laboral,etapas,tipo_transporte,BUS,1985804
+2024-11-05,laboral,etapas,tipo_transporte,METRO,2365266
+2024-11-05,laboral,etapas,tipo_transporte,METROTREN,76383
+2024-11-05,laboral,etapas,tipo_transporte,ZP,492720
+2024-11-05,laboral,etapas,periodoSubida,01 - PRE NOCTURNO,1496
+2024-11-05,laboral,etapas,periodoSubida,02 - NOCTURNO,8443
+2024-11-05,laboral,etapas,periodoSubida,03 - TRANSICION NOCTURNO,149587
+2024-11-05,laboral,etapas,periodoSubida,04 - PUNTA MANANA,717976
+2024-11-05,laboral,etapas,periodoSubida,05 - TRANSICION PUNTA MANANA,620431
+2024-11-05,laboral,etapas,periodoSubida,06 - FUERA DE PUNTA MANANA,683267
+2024-11-05,laboral,etapas,periodoSubida,07 - PUNTA MEDIODIA,363785
+2024-11-05,laboral,etapas,periodoSubida,08 - FUERA DE PUNTA TARDE,602756
+2024-11-05,laboral,etapas,periodoSubida,09 - PUNTA TARDE1,818392
+2024-11-05,laboral,etapas,periodoSubida,10 - PUNTA TARDE2,663297
+2024-11-05,laboral,etapas,periodoSubida,11 - FUERA DE PUNTA NOCTURNO,280890
+2024-11-05,laboral,etapas,periodoSubida,12 - PRE NOCTURNO,9853
+2024-11-05,laboral,etapas,periodoBajada,01 - PRE NOCTURNO,751
+2024-11-05,laboral,etapas,periodoBajada,02 - NOCTURNO,2493
+2024-11-05,laboral,etapas,periodoBajada,03 - TRANSICION NOCTURNO,61339
+2024-11-05,laboral,etapas,periodoBajada,04 - PUNTA MANANA,483299
+2024-11-05,laboral,etapas,periodoBajada,05 - TRANSICION PUNTA MANANA,579288
+2024-11-05,laboral,etapas,periodoBajada,06 - FUERA DE PUNTA MANANA,574992
+2024-11-05,laboral,etapas,periodoBajada,07 - PUNTA MEDIODIA,280700
+2024-11-05,laboral,etapas,periodoBajada,08 - FUERA DE PUNTA TARDE,453268
+2024-11-05,laboral,etapas,periodoBajada,09 - PUNTA TARDE1,558734
+2024-11-05,laboral,etapas,periodoBajada,10 - PUNTA TARDE2,594739
+2024-11-05,laboral,etapas,periodoBajada,11 - FUERA DE PUNTA NOCTURNO,261531
+2024-11-05,laboral,etapas,periodoBajada,12 - PRE NOCTURNO,15670
+2024-11-06,laboral,viajes,tipodia,0,3699952
+2024-11-06,laboral,viajes,n_etapas,1,2598691
+2024-11-06,laboral,viajes,n_etapas,10,5
+2024-11-06,laboral,viajes,n_etapas,18,1
+2024-11-06,laboral,viajes,n_etapas,2,953536
+2024-11-06,laboral,viajes,n_etapas,20,1
+2024-11-06,laboral,viajes,n_etapas,21,1
+2024-11-06,laboral,viajes,n_etapas,3,143191
+2024-11-06,laboral,viajes,n_etapas,4,4220
+2024-11-06,laboral,viajes,n_etapas,5,259
+2024-11-06,laboral,viajes,n_etapas,6,36
+2024-11-06,laboral,viajes,n_etapas,7,4
+2024-11-06,laboral,viajes,n_etapas,8,4
+2024-11-06,laboral,viajes,n_etapas,9,3
+2024-11-06,laboral,viajes,netapassinbajada,0,2663930
+2024-11-06,laboral,viajes,netapassinbajada,1,1006652
+2024-11-06,laboral,viajes,netapassinbajada,2,28650
+2024-11-06,laboral,viajes,netapassinbajada,3,674
+2024-11-06,laboral,viajes,netapassinbajada,4,46
+2024-11-06,laboral,viajes,ultimaetapaconbajada,0,974430
+2024-11-06,laboral,viajes,ultimaetapaconbajada,1,2725522
+2024-11-06,laboral,viajes,periodo_inicio_viaje,59,1774
+2024-11-06,laboral,viajes,periodo_inicio_viaje,60,7573
+2024-11-06,laboral,viajes,periodo_inicio_viaje,61,109452
+2024-11-06,laboral,viajes,periodo_inicio_viaje,62,513966
+2024-11-06,laboral,viajes,periodo_inicio_viaje,63,440376
+2024-11-06,laboral,viajes,periodo_inicio_viaje,64,530103
+2024-11-06,laboral,viajes,periodo_inicio_viaje,65,291069
+2024-11-06,laboral,viajes,periodo_inicio_viaje,66,475766
+2024-11-06,laboral,viajes,periodo_inicio_viaje,67,636176
+2024-11-06,laboral,viajes,periodo_inicio_viaje,68,481525
+2024-11-06,laboral,viajes,periodo_inicio_viaje,69,206083
+2024-11-06,laboral,viajes,periodo_inicio_viaje,70,6089
+2024-11-06,laboral,viajes,periodo_fin_viaje,-1,974488
+2024-11-06,laboral,viajes,periodo_fin_viaje,59,780
+2024-11-06,laboral,viajes,periodo_fin_viaje,60,1265
+2024-11-06,laboral,viajes,periodo_fin_viaje,61,19861
+2024-11-06,laboral,viajes,periodo_fin_viaje,62,284447
+2024-11-06,laboral,viajes,periodo_fin_viaje,63,417469
+2024-11-06,laboral,viajes,periodo_fin_viaje,64,433483
+2024-11-06,laboral,viajes,periodo_fin_viaje,65,213072
+2024-11-06,laboral,viajes,periodo_fin_viaje,66,335138
+2024-11-06,laboral,viajes,periodo_fin_viaje,67,382486
+2024-11-06,laboral,viajes,periodo_fin_viaje,68,429887
+2024-11-06,laboral,viajes,periodo_fin_viaje,69,193958
+2024-11-06,laboral,viajes,periodo_fin_viaje,70,13618
+2024-11-06,laboral,viajes,tipo_corte_etapa_viaje,M15M,54712
+2024-11-06,laboral,viajes,tipo_corte_etapa_viaje,M3B,274683
+2024-11-06,laboral,viajes,tipo_corte_etapa_viaje,M40M,17161
+2024-11-06,laboral,viajes,tipo_corte_etapa_viaje,MS_B_B,16824
+2024-11-06,laboral,viajes,tipo_corte_etapa_viaje,MS_B_B_NB,6649
+2024-11-06,laboral,viajes,tipo_corte_etapa_viaje,MS_MT_MT,5001
+2024-11-06,laboral,viajes,tipo_corte_etapa_viaje,MS_M_B,57411
+2024-11-06,laboral,viajes,tipo_corte_etapa_viaje,MS_M_M,343111
+2024-11-06,laboral,viajes,tipo_corte_etapa_viaje,RD,60742
+2024-11-06,laboral,viajes,tipo_corte_etapa_viaje,SM2H,1020586
+2024-11-06,laboral,viajes,tipo_corte_etapa_viaje,UE,1843072
+2024-11-06,laboral,etapas,tipo_dia,LABORAL,4961991
+2024-11-06,laboral,etapas,tiene_bajada,0,1069077
+2024-11-06,laboral,etapas,tiene_bajada,1,3892914
+2024-11-06,laboral,etapas,tipo_transporte,BUS,2005603
+2024-11-06,laboral,etapas,tipo_transporte,METRO,2387220
+2024-11-06,laboral,etapas,tipo_transporte,METROTREN,76916
+2024-11-06,laboral,etapas,tipo_transporte,ZP,492252
+2024-11-06,laboral,etapas,periodoSubida,01 - PRE NOCTURNO,1982
+2024-11-06,laboral,etapas,periodoSubida,02 - NOCTURNO,8684
+2024-11-06,laboral,etapas,periodoSubida,03 - TRANSICION NOCTURNO,148512
+2024-11-06,laboral,etapas,periodoSubida,04 - PUNTA MANANA,718318
+2024-11-06,laboral,etapas,periodoSubida,05 - TRANSICION PUNTA MANANA,624790
+2024-11-06,laboral,etapas,periodoSubida,06 - FUERA DE PUNTA MANANA,695609
+2024-11-06,laboral,etapas,periodoSubida,07 - PUNTA MEDIODIA,371163
+2024-11-06,laboral,etapas,periodoSubida,08 - FUERA DE PUNTA TARDE,611025
+2024-11-06,laboral,etapas,periodoSubida,09 - PUNTA TARDE1,817461
+2024-11-06,laboral,etapas,periodoSubida,10 - PUNTA TARDE2,668670
+2024-11-06,laboral,etapas,periodoSubida,11 - FUERA DE PUNTA NOCTURNO,285443
+2024-11-06,laboral,etapas,periodoSubida,12 - PRE NOCTURNO,10334
+2024-11-06,laboral,etapas,periodoBajada,01 - PRE NOCTURNO,1011
+2024-11-06,laboral,etapas,periodoBajada,02 - NOCTURNO,2751
+2024-11-06,laboral,etapas,periodoBajada,03 - TRANSICION NOCTURNO,61228
+2024-11-06,laboral,etapas,periodoBajada,04 - PUNTA MANANA,481668
+2024-11-06,laboral,etapas,periodoBajada,05 - TRANSICION PUNTA MANANA,582157
+2024-11-06,laboral,etapas,periodoBajada,06 - FUERA DE PUNTA MANANA,582539
+2024-11-06,laboral,etapas,periodoBajada,07 - PUNTA MEDIODIA,286573
+2024-11-06,laboral,etapas,periodoBajada,08 - FUERA DE PUNTA TARDE,460595
+2024-11-06,laboral,etapas,periodoBajada,09 - PUNTA TARDE1,557552
+2024-11-06,laboral,etapas,periodoBajada,10 - PUNTA TARDE2,596992
+2024-11-06,laboral,etapas,periodoBajada,11 - FUERA DE PUNTA NOCTURNO,263281
+2024-11-06,laboral,etapas,periodoBajada,12 - PRE NOCTURNO,16567
+2024-11-07,laboral,viajes,tipodia,0,3672340
+2024-11-07,laboral,viajes,n_etapas,1,2591784
+2024-11-07,laboral,viajes,n_etapas,10,2
+2024-11-07,laboral,viajes,n_etapas,11,3
+2024-11-07,laboral,viajes,n_etapas,12,1
+2024-11-07,laboral,viajes,n_etapas,15,1
+2024-11-07,laboral,viajes,n_etapas,17,1
+2024-11-07,laboral,viajes,n_etapas,2,938420
+2024-11-07,laboral,viajes,n_etapas,21,1
+2024-11-07,laboral,viajes,n_etapas,3,137823
+2024-11-07,laboral,viajes,n_etapas,4,4008
+2024-11-07,laboral,viajes,n_etapas,5,256
+2024-11-07,laboral,viajes,n_etapas,6,23
+2024-11-07,laboral,viajes,n_etapas,7,10
+2024-11-07,laboral,viajes,n_etapas,8,7
+2024-11-07,laboral,viajes,netapassinbajada,0,2632688
+2024-11-07,laboral,viajes,netapassinbajada,1,1013526
+2024-11-07,laboral,viajes,netapassinbajada,2,25507
+2024-11-07,laboral,viajes,netapassinbajada,3,580
+2024-11-07,laboral,viajes,netapassinbajada,4,39
+2024-11-07,laboral,viajes,ultimaetapaconbajada,0,980509
+2024-11-07,laboral,viajes,ultimaetapaconbajada,1,2691831
+2024-11-07,laboral,viajes,periodo_inicio_viaje,59,2047
+2024-11-07,laboral,viajes,periodo_inicio_viaje,60,7869
+2024-11-07,laboral,viajes,periodo_inicio_viaje,61,107708
+2024-11-07,laboral,viajes,periodo_inicio_viaje,62,501997
+2024-11-07,laboral,viajes,periodo_inicio_viaje,63,439024
+2024-11-07,laboral,viajes,periodo_inicio_viaje,64,526033
+2024-11-07,laboral,viajes,periodo_inicio_viaje,65,285992
+2024-11-07,laboral,viajes,periodo_inicio_viaje,66,478781
+2024-11-07,laboral,viajes,periodo_inicio_viaje,67,626945
+2024-11-07,laboral,viajes,periodo_inicio_viaje,68,475061
+2024-11-07,laboral,viajes,periodo_inicio_viaje,69,214205
+2024-11-07,laboral,viajes,periodo_inicio_viaje,70,6678
+2024-11-07,laboral,viajes,periodo_fin_viaje,-1,980574
+2024-11-07,laboral,viajes,periodo_fin_viaje,59,922
+2024-11-07,laboral,viajes,periodo_fin_viaje,60,1512
+2024-11-07,laboral,viajes,periodo_fin_viaje,61,19541
+2024-11-07,laboral,viajes,periodo_fin_viaje,62,277529
+2024-11-07,laboral,viajes,periodo_fin_viaje,63,409723
+2024-11-07,laboral,viajes,periodo_fin_viaje,64,430288
+2024-11-07,laboral,viajes,periodo_fin_viaje,65,208365
+2024-11-07,laboral,viajes,periodo_fin_viaje,66,334200
+2024-11-07,laboral,viajes,periodo_fin_viaje,67,380468
+2024-11-07,laboral,viajes,periodo_fin_viaje,68,416317
+2024-11-07,laboral,viajes,periodo_fin_viaje,69,198270
+2024-11-07,laboral,viajes,periodo_fin_viaje,70,14631
+2024-11-07,laboral,viajes,tipo_corte_etapa_viaje,M15M,53169
+2024-11-07,laboral,viajes,tipo_corte_etapa_viaje,M3B,269022
+2024-11-07,laboral,viajes,tipo_corte_etapa_viaje,M40M,16255
+2024-11-07,laboral,viajes,tipo_corte_etapa_viaje,MS_B_B,16619
+2024-11-07,laboral,viajes,tipo_corte_etapa_viaje,MS_B_B_NB,6315
+2024-11-07,laboral,viajes,tipo_corte_etapa_viaje,MS_MT_MT,5353
+2024-11-07,laboral,viajes,tipo_corte_etapa_viaje,MS_M_B,57112
+2024-11-07,laboral,viajes,tipo_corte_etapa_viaje,MS_M_M,339180
+2024-11-07,laboral,viajes,tipo_corte_etapa_viaje,RD,59153
+2024-11-07,laboral,viajes,tipo_corte_etapa_viaje,SM2H,1013667
+2024-11-07,laboral,viajes,tipo_corte_etapa_viaje,UE,1836495
+2024-11-07,laboral,etapas,tipo_dia,LABORAL,4907388
+2024-11-07,laboral,etapas,tiene_bajada,0,1069185
+2024-11-07,laboral,etapas,tiene_bajada,1,3838203
+2024-11-07,laboral,etapas,tipo_transporte,BUS,1970367
+2024-11-07,laboral,etapas,tipo_transporte,METRO,2373661
+2024-11-07,laboral,etapas,tipo_transporte,METROTREN,77764
+2024-11-07,laboral,etapas,tipo_transporte,ZP,485596
+2024-11-07,laboral,etapas,periodoSubida,01 - PRE NOCTURNO,2283
+2024-11-07,laboral,etapas,periodoSubida,02 - NOCTURNO,8971
+2024-11-07,laboral,etapas,periodoSubida,03 - TRANSICION NOCTURNO,145122
+2024-11-07,laboral,etapas,periodoSubida,04 - PUNTA MANANA,696078
+2024-11-07,laboral,etapas,periodoSubida,05 - TRANSICION PUNTA MANANA,617191
+2024-11-07,laboral,etapas,periodoSubida,06 - FUERA DE PUNTA MANANA,687087
+2024-11-07,laboral,etapas,periodoSubida,07 - PUNTA MEDIODIA,363195
+2024-11-07,laboral,etapas,periodoSubida,08 - FUERA DE PUNTA TARDE,613312
+2024-11-07,laboral,etapas,periodoSubida,09 - PUNTA TARDE1,807263
+2024-11-07,laboral,etapas,periodoSubida,10 - PUNTA TARDE2,659210
+2024-11-07,laboral,etapas,periodoSubida,11 - FUERA DE PUNTA NOCTURNO,296266
+2024-11-07,laboral,etapas,periodoSubida,12 - PRE NOCTURNO,11410
+2024-11-07,laboral,etapas,periodoBajada,01 - PRE NOCTURNO,1196
+2024-11-07,laboral,etapas,periodoBajada,02 - NOCTURNO,2946
+2024-11-07,laboral,etapas,periodoBajada,03 - TRANSICION NOCTURNO,59107
+2024-11-07,laboral,etapas,periodoBajada,04 - PUNTA MANANA,466186
+2024-11-07,laboral,etapas,periodoBajada,05 - TRANSICION PUNTA MANANA,570734
+2024-11-07,laboral,etapas,periodoBajada,06 - FUERA DE PUNTA MANANA,575854
+2024-11-07,laboral,etapas,periodoBajada,07 - PUNTA MEDIODIA,279545
+2024-11-07,laboral,etapas,periodoBajada,08 - FUERA DE PUNTA TARDE,459157
+2024-11-07,laboral,etapas,periodoBajada,09 - PUNTA TARDE1,554740
+2024-11-07,laboral,etapas,periodoBajada,10 - PUNTA TARDE2,580543
+2024-11-07,laboral,etapas,periodoBajada,11 - FUERA DE PUNTA NOCTURNO,270282
+2024-11-07,laboral,etapas,periodoBajada,12 - PRE NOCTURNO,17913
+2024-11-08,laboral,viajes,tipodia,0,3636114
+2024-11-08,laboral,viajes,n_etapas,1,2584688
+2024-11-08,laboral,viajes,n_etapas,10,5
+2024-11-08,laboral,viajes,n_etapas,11,1
+2024-11-08,laboral,viajes,n_etapas,14,1
+2024-11-08,laboral,viajes,n_etapas,15,1
+2024-11-08,laboral,viajes,n_etapas,16,1
+2024-11-08,laboral,viajes,n_etapas,2,911683
+2024-11-08,laboral,viajes,n_etapas,20,1
+2024-11-08,laboral,viajes,n_etapas,29,1
+2024-11-08,laboral,viajes,n_etapas,3,135218
+2024-11-08,laboral,viajes,n_etapas,4,4219
+2024-11-08,laboral,viajes,n_etapas,5,247
+2024-11-08,laboral,viajes,n_etapas,6,33
+2024-11-08,laboral,viajes,n_etapas,7,7
+2024-11-08,laboral,viajes,n_etapas,8,5
+2024-11-08,laboral,viajes,n_etapas,9,3
+2024-11-08,laboral,viajes,netapassinbajada,0,2509607
+2024-11-08,laboral,viajes,netapassinbajada,1,1097069
+2024-11-08,laboral,viajes,netapassinbajada,2,28810
+2024-11-08,laboral,viajes,netapassinbajada,3,568
+2024-11-08,laboral,viajes,netapassinbajada,4,60
+2024-11-08,laboral,viajes,ultimaetapaconbajada,0,1069939
+2024-11-08,laboral,viajes,ultimaetapaconbajada,1,2566175
+2024-11-08,laboral,viajes,periodo_inicio_viaje,59,2832
+2024-11-08,laboral,viajes,periodo_inicio_viaje,60,8093
+2024-11-08,laboral,viajes,periodo_inicio_viaje,61,105183
+2024-11-08,laboral,viajes,periodo_inicio_viaje,62,474122
+2024-11-08,laboral,viajes,periodo_inicio_viaje,63,406502
+2024-11-08,laboral,viajes,periodo_inicio_viaje,64,530865
+2024-11-08,laboral,viajes,periodo_inicio_viaje,65,320878
+2024-11-08,laboral,viajes,periodo_inicio_viaje,66,555036
+2024-11-08,laboral,viajes,periodo_inicio_viaje,67,589834
+2024-11-08,laboral,viajes,periodo_inicio_viaje,68,404343
+2024-11-08,laboral,viajes,periodo_inicio_viaje,69,228694
+2024-11-08,laboral,viajes,periodo_inicio_viaje,70,9732
+2024-11-08,laboral,viajes,periodo_fin_viaje,-1,1070008
+2024-11-08,laboral,viajes,periodo_fin_viaje,59,1233
+2024-11-08,laboral,viajes,periodo_fin_viaje,60,1693
+2024-11-08,laboral,viajes,periodo_fin_viaje,61,19073
+2024-11-08,laboral,viajes,periodo_fin_viaje,62,261179
+2024-11-08,laboral,viajes,periodo_fin_viaje,63,369749
+2024-11-08,laboral,viajes,periodo_fin_viaje,64,416785
+2024-11-08,laboral,viajes,periodo_fin_viaje,65,220145
+2024-11-08,laboral,viajes,periodo_fin_viaje,66,370897
+2024-11-08,laboral,viajes,periodo_fin_viaje,67,394101
+2024-11-08,laboral,viajes,periodo_fin_viaje,68,308578
+2024-11-08,laboral,viajes,periodo_fin_viaje,69,184958
+2024-11-08,laboral,viajes,periodo_fin_viaje,70,17715
+2024-11-08,laboral,viajes,tipo_corte_etapa_viaje,M15M,57488
+2024-11-08,laboral,viajes,tipo_corte_etapa_viaje,M3B,260761
+2024-11-08,laboral,viajes,tipo_corte_etapa_viaje,M40M,18682
+2024-11-08,laboral,viajes,tipo_corte_etapa_viaje,MS_B_B,17250
+2024-11-08,laboral,viajes,tipo_corte_etapa_viaje,MS_B_B_NB,7724
+2024-11-08,laboral,viajes,tipo_corte_etapa_viaje,MS_MT_MT,5978
+2024-11-08,laboral,viajes,tipo_corte_etapa_viaje,MS_M_B,55762
+2024-11-08,laboral,viajes,tipo_corte_etapa_viaje,MS_M_M,370873
+2024-11-08,laboral,viajes,tipo_corte_etapa_viaje,RD,60441
+2024-11-08,laboral,viajes,tipo_corte_etapa_viaje,SM2H,952634
+2024-11-08,laboral,viajes,tipo_corte_etapa_viaje,UE,1828521
+2024-11-08,laboral,etapas,tipo_dia,LABORAL,4840021
+2024-11-08,laboral,etapas,tiene_bajada,0,1159400
+2024-11-08,laboral,etapas,tiene_bajada,1,3680621
+2024-11-08,laboral,etapas,tipo_transporte,BUS,1933743
+2024-11-08,laboral,etapas,tipo_transporte,METRO,2363369
+2024-11-08,laboral,etapas,tipo_transporte,METROTREN,76882
+2024-11-08,laboral,etapas,tipo_transporte,ZP,466027
+2024-11-08,laboral,etapas,periodoSubida,01 - PRE NOCTURNO,3203
+2024-11-08,laboral,etapas,periodoSubida,02 - NOCTURNO,9293
+2024-11-08,laboral,etapas,periodoSubida,03 - TRANSICION NOCTURNO,142517
+2024-11-08,laboral,etapas,periodoSubida,04 - PUNTA MANANA,665778
+2024-11-08,laboral,etapas,periodoSubida,05 - TRANSICION PUNTA MANANA,578171
+2024-11-08,laboral,etapas,periodoSubida,06 - FUERA DE PUNTA MANANA,691591
+2024-11-08,laboral,etapas,periodoSubida,07 - PUNTA MEDIODIA,404862
+2024-11-08,laboral,etapas,periodoSubida,08 - FUERA DE PUNTA TARDE,706038
+2024-11-08,laboral,etapas,periodoSubida,09 - PUNTA TARDE1,770019
+2024-11-08,laboral,etapas,periodoSubida,10 - PUNTA TARDE2,543549
+2024-11-08,laboral,etapas,periodoSubida,11 - FUERA DE PUNTA NOCTURNO,309561
+2024-11-08,laboral,etapas,periodoSubida,12 - PRE NOCTURNO,15439
+2024-11-08,laboral,etapas,periodoBajada,01 - PRE NOCTURNO,1603
+2024-11-08,laboral,etapas,periodoBajada,02 - NOCTURNO,3253
+2024-11-08,laboral,etapas,periodoBajada,03 - TRANSICION NOCTURNO,58714
+2024-11-08,laboral,etapas,periodoBajada,04 - PUNTA MANANA,445758
+2024-11-08,laboral,etapas,periodoBajada,05 - TRANSICION PUNTA MANANA,524444
+2024-11-08,laboral,etapas,periodoBajada,06 - FUERA DE PUNTA MANANA,563403
+2024-11-08,laboral,etapas,periodoBajada,07 - PUNTA MEDIODIA,298143
+2024-11-08,laboral,etapas,periodoBajada,08 - FUERA DE PUNTA TARDE,511744
+2024-11-08,laboral,etapas,periodoBajada,09 - PUNTA TARDE1,563443
+2024-11-08,laboral,etapas,periodoBajada,10 - PUNTA TARDE2,432136
+2024-11-08,laboral,etapas,periodoBajada,11 - FUERA DE PUNTA NOCTURNO,256253
+2024-11-08,laboral,etapas,periodoBajada,12 - PRE NOCTURNO,21727
+2024-11-09,sabado,viajes,tipodia,1,2064870
+2024-11-09,sabado,viajes,n_etapas,1,1533245
+2024-11-09,sabado,viajes,n_etapas,10,1
+2024-11-09,sabado,viajes,n_etapas,19,1
+2024-11-09,sabado,viajes,n_etapas,2,468194
+2024-11-09,sabado,viajes,n_etapas,3,61067
+2024-11-09,sabado,viajes,n_etapas,4,2218
+2024-11-09,sabado,viajes,n_etapas,5,125
+2024-11-09,sabado,viajes,n_etapas,6,16
+2024-11-09,sabado,viajes,n_etapas,7,2
+2024-11-09,sabado,viajes,n_etapas,8,1
+2024-11-09,sabado,viajes,netapassinbajada,0,1277502
+2024-11-09,sabado,viajes,netapassinbajada,1,768120
+2024-11-09,sabado,viajes,netapassinbajada,2,18818
+2024-11-09,sabado,viajes,netapassinbajada,3,412
+2024-11-09,sabado,viajes,netapassinbajada,4,18
+2024-11-09,sabado,viajes,ultimaetapaconbajada,0,759592
+2024-11-09,sabado,viajes,ultimaetapaconbajada,1,1305278
+2024-11-09,sabado,viajes,periodo_inicio_viaje,71,5136
+2024-11-09,sabado,viajes,periodo_inicio_viaje,72,5126
+2024-11-09,sabado,viajes,periodo_inicio_viaje,73,25326
+2024-11-09,sabado,viajes,periodo_inicio_viaje,74,274588
+2024-11-09,sabado,viajes,periodo_inicio_viaje,75,420444
+2024-11-09,sabado,viajes,periodo_inicio_viaje,76,472104
+2024-11-09,sabado,viajes,periodo_inicio_viaje,77,561800
+2024-11-09,sabado,viajes,periodo_inicio_viaje,78,292788
+2024-11-09,sabado,viajes,periodo_inicio_viaje,79,7558
+2024-11-09,sabado,viajes,periodo_fin_viaje,-1,759634
+2024-11-09,sabado,viajes,periodo_fin_viaje,71,1574
+2024-11-09,sabado,viajes,periodo_fin_viaje,72,2155
+2024-11-09,sabado,viajes,periodo_fin_viaje,73,4393
+2024-11-09,sabado,viajes,periodo_fin_viaje,74,151264
+2024-11-09,sabado,viajes,periodo_fin_viaje,75,278878
+2024-11-09,sabado,viajes,periodo_fin_viaje,76,308883
+2024-11-09,sabado,viajes,periodo_fin_viaje,77,354659
+2024-11-09,sabado,viajes,periodo_fin_viaje,78,191248
+2024-11-09,sabado,viajes,periodo_fin_viaje,79,12182
+2024-11-09,sabado,viajes,tipo_corte_etapa_viaje,M15M,32914
+2024-11-09,sabado,viajes,tipo_corte_etapa_viaje,M3B,117733
+2024-11-09,sabado,viajes,tipo_corte_etapa_viaje,M40M,13204
+2024-11-09,sabado,viajes,tipo_corte_etapa_viaje,MS_B_B,13775
+2024-11-09,sabado,viajes,tipo_corte_etapa_viaje,MS_B_B_NB,7874
+2024-11-09,sabado,viajes,tipo_corte_etapa_viaje,MS_MT_MT,6256
+2024-11-09,sabado,viajes,tipo_corte_etapa_viaje,MS_M_B,23864
+2024-11-09,sabado,viajes,tipo_corte_etapa_viaje,MS_M_M,260197
+2024-11-09,sabado,viajes,tipo_corte_etapa_viaje,RD,39747
+2024-11-09,sabado,viajes,tipo_corte_etapa_viaje,SM2H,431866
+2024-11-09,sabado,viajes,tipo_corte_etapa_viaje,UE,1117440
+2024-11-09,sabado,etapas,tipo_dia,SABADO,2667384
+2024-11-09,sabado,etapas,tiene_bajada,0,808681
+2024-11-09,sabado,etapas,tiene_bajada,1,1858703
+2024-11-09,sabado,etapas,tipo_transporte,BUS,1204302
+2024-11-09,sabado,etapas,tipo_transporte,METRO,1341746
+2024-11-09,sabado,etapas,tipo_transporte,METROTREN,46610
+2024-11-09,sabado,etapas,tipo_transporte,ZP,74726
+2024-11-09,sabado,etapas,periodoSubida,01 - PRE NOCTURNO SABADO,5698
+2024-11-09,sabado,etapas,periodoSubida,02 - NOCTURNO SABADO,5890
+2024-11-09,sabado,etapas,periodoSubida,03 - TRANSICION SABADO MANANA,32042
+2024-11-09,sabado,etapas,periodoSubida,04 - PUNTA MANANA SABADO,383857
+2024-11-09,sabado,etapas,periodoSubida,05 - MANANA SABADO,542022
+2024-11-09,sabado,etapas,periodoSubida,06 - PUNTA MEDIODIA SABADO,591587
+2024-11-09,sabado,etapas,periodoSubida,07 - TARDE SABADO,711319
+2024-11-09,sabado,etapas,periodoSubida,08 - TRANSICION SABADO NOCTURNO,383016
+2024-11-09,sabado,etapas,periodoSubida,09 - PRE NOCTURNO SABADO,11953
+2024-11-09,sabado,etapas,periodoBajada,01 - PRE NOCTURNO SABADO,2131
+2024-11-09,sabado,etapas,periodoBajada,02 - NOCTURNO SABADO,2966
+2024-11-09,sabado,etapas,periodoBajada,03 - TRANSICION SABADO MANANA,12733
+2024-11-09,sabado,etapas,periodoBajada,04 - PUNTA MANANA SABADO,254752
+2024-11-09,sabado,etapas,periodoBajada,05 - MANANA SABADO,390622
+2024-11-09,sabado,etapas,periodoBajada,06 - PUNTA MEDIODIA SABADO,417977
+2024-11-09,sabado,etapas,periodoBajada,07 - TARDE SABADO,490145
+2024-11-09,sabado,etapas,periodoBajada,08 - TRANSICION SABADO NOCTURNO,272281
+2024-11-09,sabado,etapas,periodoBajada,09 - PRE NOCTURNO SABADO,15096
+2024-11-10,domingo,viajes,tipodia,2,1182013
+2024-11-10,domingo,viajes,n_etapas,1,901665
+2024-11-10,domingo,viajes,n_etapas,11,1
+2024-11-10,domingo,viajes,n_etapas,12,2
+2024-11-10,domingo,viajes,n_etapas,15,2
+2024-11-10,domingo,viajes,n_etapas,2,246809
+2024-11-10,domingo,viajes,n_etapas,3,32254
+2024-11-10,domingo,viajes,n_etapas,4,1193
+2024-11-10,domingo,viajes,n_etapas,5,78
+2024-11-10,domingo,viajes,n_etapas,6,7
+2024-11-10,domingo,viajes,n_etapas,8,2
+2024-11-10,domingo,viajes,netapassinbajada,0,661703
+2024-11-10,domingo,viajes,netapassinbajada,1,509861
+2024-11-10,domingo,viajes,netapassinbajada,2,10265
+2024-11-10,domingo,viajes,netapassinbajada,3,170
+2024-11-10,domingo,viajes,netapassinbajada,4,14
+2024-11-10,domingo,viajes,ultimaetapaconbajada,0,507313
+2024-11-10,domingo,viajes,ultimaetapaconbajada,1,674700
+2024-11-10,domingo,viajes,periodo_inicio_viaje,80,3613
+2024-11-10,domingo,viajes,periodo_inicio_viaje,81,3162
+2024-11-10,domingo,viajes,periodo_inicio_viaje,82,28187
+2024-11-10,domingo,viajes,periodo_inicio_viaje,83,391946
+2024-11-10,domingo,viajes,periodo_inicio_viaje,84,419722
+2024-11-10,domingo,viajes,periodo_inicio_viaje,85,261338
+2024-11-10,domingo,viajes,periodo_inicio_viaje,86,72397
+2024-11-10,domingo,viajes,periodo_inicio_viaje,87,1648
+2024-11-10,domingo,viajes,periodo_fin_viaje,-1,507348
+2024-11-10,domingo,viajes,periodo_fin_viaje,80,988
+2024-11-10,domingo,viajes,periodo_fin_viaje,81,1129
+2024-11-10,domingo,viajes,periodo_fin_viaje,82,8540
+2024-11-10,domingo,viajes,periodo_fin_viaje,83,221089
+2024-11-10,domingo,viajes,periodo_fin_viaje,84,246033
+2024-11-10,domingo,viajes,periodo_fin_viaje,85,138774
+2024-11-10,domingo,viajes,periodo_fin_viaje,86,53690
+2024-11-10,domingo,viajes,periodo_fin_viaje,87,4422
+2024-11-10,domingo,viajes,tipo_corte_etapa_viaje,M15M,18991
+2024-11-10,domingo,viajes,tipo_corte_etapa_viaje,M3B,54037
+2024-11-10,domingo,viajes,tipo_corte_etapa_viaje,M40M,7623
+2024-11-10,domingo,viajes,tipo_corte_etapa_viaje,MS_B_B,9295
+2024-11-10,domingo,viajes,tipo_corte_etapa_viaje,MS_B_B_NB,5570
+2024-11-10,domingo,viajes,tipo_corte_etapa_viaje,MS_MT_MT,3733
+2024-11-10,domingo,viajes,tipo_corte_etapa_viaje,MS_M_B,11815
+2024-11-10,domingo,viajes,tipo_corte_etapa_viaje,MS_M_M,138527
+2024-11-10,domingo,viajes,tipo_corte_etapa_viaje,RD,25713
+2024-11-10,domingo,viajes,tipo_corte_etapa_viaje,SM2H,213386
+2024-11-10,domingo,viajes,tipo_corte_etapa_viaje,UE,693323
+2024-11-10,domingo,etapas,tipo_dia,DOMINGO,1500391
+2024-11-10,domingo,etapas,tiene_bajada,0,531947
+2024-11-10,domingo,etapas,tiene_bajada,1,968444
+2024-11-10,domingo,etapas,tipo_transporte,BUS,702771
+2024-11-10,domingo,etapas,tipo_transporte,METRO,760354
+2024-11-10,domingo,etapas,tipo_transporte,METROTREN,27194
+2024-11-10,domingo,etapas,tipo_transporte,ZP,10072
+2024-11-10,domingo,etapas,periodoSubida,01 - PRE NOCTURNO DOMINGO,3976
+2024-11-10,domingo,etapas,periodoSubida,02 - NOCTURNO DOMINGO,3672
+2024-11-10,domingo,etapas,periodoSubida,03 - TRANSICION DOMINGO MANANA,38038
+2024-11-10,domingo,etapas,periodoSubida,04 - MANANA DOMINGO,514216
+2024-11-10,domingo,etapas,periodoSubida,05 - MEDIODIA DOMINGO,522354
+2024-11-10,domingo,etapas,periodoSubida,06 - TARDE DOMINGO,324752
+2024-11-10,domingo,etapas,periodoSubida,07 - TRANSICION DOMINGO NOCTURNO,91104
+2024-11-10,domingo,etapas,periodoSubida,08 - PRE NOCTURNO DOMINGO,2279
+2024-11-10,domingo,etapas,periodoBajada,01 - PRE NOCTURNO DOMINGO,1346
+2024-11-10,domingo,etapas,periodoBajada,02 - NOCTURNO DOMINGO,1596
+2024-11-10,domingo,etapas,periodoBajada,03 - TRANSICION DOMINGO MANANA,19075
+2024-11-10,domingo,etapas,periodoBajada,04 - MANANA DOMINGO,335615
+2024-11-10,domingo,etapas,periodoBajada,05 - MEDIODIA DOMINGO,340118
+2024-11-10,domingo,etapas,periodoBajada,06 - TARDE DOMINGO,197825
+2024-11-10,domingo,etapas,periodoBajada,07 - TRANSICION DOMINGO NOCTURNO,68098
+2024-11-10,domingo,etapas,periodoBajada,08 - PRE NOCTURNO DOMINGO,4771
+2024-11-11,laboral,viajes,tipodia,0,3541818
+2024-11-11,laboral,viajes,n_etapas,1,2522275
+2024-11-11,laboral,viajes,n_etapas,10,1
+2024-11-11,laboral,viajes,n_etapas,11,2
+2024-11-11,laboral,viajes,n_etapas,2,887344
+2024-11-11,laboral,viajes,n_etapas,27,1
+2024-11-11,laboral,viajes,n_etapas,29,1
+2024-11-11,laboral,viajes,n_etapas,3,128185
+2024-11-11,laboral,viajes,n_etapas,31,1
+2024-11-11,laboral,viajes,n_etapas,4,3768
+2024-11-11,laboral,viajes,n_etapas,5,201
+2024-11-11,laboral,viajes,n_etapas,6,26
+2024-11-11,laboral,viajes,n_etapas,7,6
+2024-11-11,laboral,viajes,n_etapas,9,7
+2024-11-11,laboral,viajes,netapassinbajada,0,2484177
+2024-11-11,laboral,viajes,netapassinbajada,1,1027863
+2024-11-11,laboral,viajes,netapassinbajada,2,29074
+2024-11-11,laboral,viajes,netapassinbajada,3,645
+2024-11-11,laboral,viajes,netapassinbajada,4,59
+2024-11-11,laboral,viajes,ultimaetapaconbajada,0,999819
+2024-11-11,laboral,viajes,ultimaetapaconbajada,1,2541999
+2024-11-11,laboral,viajes,periodo_inicio_viaje,59,835
+2024-11-11,laboral,viajes,periodo_inicio_viaje,60,7221
+2024-11-11,laboral,viajes,periodo_inicio_viaje,61,109577
+2024-11-11,laboral,viajes,periodo_inicio_viaje,62,502368
+2024-11-11,laboral,viajes,periodo_inicio_viaje,63,430739
+2024-11-11,laboral,viajes,periodo_inicio_viaje,64,512773
+2024-11-11,laboral,viajes,periodo_inicio_viaje,65,277624
+2024-11-11,laboral,viajes,periodo_inicio_viaje,66,452392
+2024-11-11,laboral,viajes,periodo_inicio_viaje,67,605834
+2024-11-11,laboral,viajes,periodo_inicio_viaje,68,451259
+2024-11-11,laboral,viajes,periodo_inicio_viaje,69,185886
+2024-11-11,laboral,viajes,periodo_inicio_viaje,70,5310
+2024-11-11,laboral,viajes,periodo_fin_viaje,-1,999871
+2024-11-11,laboral,viajes,periodo_fin_viaje,59,219
+2024-11-11,laboral,viajes,periodo_fin_viaje,60,1013
+2024-11-11,laboral,viajes,periodo_fin_viaje,61,18904
+2024-11-11,laboral,viajes,periodo_fin_viaje,62,270373
+2024-11-11,laboral,viajes,periodo_fin_viaje,63,395999
+2024-11-11,laboral,viajes,periodo_fin_viaje,64,410209
+2024-11-11,laboral,viajes,periodo_fin_viaje,65,199287
+2024-11-11,laboral,viajes,periodo_fin_viaje,66,313159
+2024-11-11,laboral,viajes,periodo_fin_viaje,67,357514
+2024-11-11,laboral,viajes,periodo_fin_viaje,68,398198
+2024-11-11,laboral,viajes,periodo_fin_viaje,69,164666
+2024-11-11,laboral,viajes,periodo_fin_viaje,70,12406
+2024-11-11,laboral,viajes,tipo_corte_etapa_viaje,M15M,50047
+2024-11-11,laboral,viajes,tipo_corte_etapa_viaje,M3B,259421
+2024-11-11,laboral,viajes,tipo_corte_etapa_viaje,M40M,12320
+2024-11-11,laboral,viajes,tipo_corte_etapa_viaje,MS_B_B,14763
+2024-11-11,laboral,viajes,tipo_corte_etapa_viaje,MS_B_B_NB,6438
+2024-11-11,laboral,viajes,tipo_corte_etapa_viaje,MS_MT_MT,5234
+2024-11-11,laboral,viajes,tipo_corte_etapa_viaje,MS_M_B,54423
+2024-11-11,laboral,viajes,tipo_corte_etapa_viaje,MS_M_M,329649
+2024-11-11,laboral,viajes,tipo_corte_etapa_viaje,RD,50367
+2024-11-11,laboral,viajes,tipo_corte_etapa_viaje,SM2H,956604
+2024-11-11,laboral,viajes,tipo_corte_etapa_viaje,UE,1802552
+2024-11-11,laboral,etapas,tipo_dia,LABORAL,4704552
+2024-11-11,laboral,etapas,tiene_bajada,0,1090946
+2024-11-11,laboral,etapas,tiene_bajada,1,3613606
+2024-11-11,laboral,etapas,tipo_transporte,BUS,1841003
+2024-11-11,laboral,etapas,tipo_transporte,METRO,2312288
+2024-11-11,laboral,etapas,tipo_transporte,METROTREN,76936
+2024-11-11,laboral,etapas,tipo_transporte,ZP,474325
+2024-11-11,laboral,etapas,periodoSubida,01 - PRE NOCTURNO,872
+2024-11-11,laboral,etapas,periodoSubida,02 - NOCTURNO,8179
+2024-11-11,laboral,etapas,periodoSubida,03 - TRANSICION NOCTURNO,147046
+2024-11-11,laboral,etapas,periodoSubida,04 - PUNTA MANANA,699382
+2024-11-11,laboral,etapas,periodoSubida,05 - TRANSICION PUNTA MANANA,606542
+2024-11-11,laboral,etapas,periodoSubida,06 - FUERA DE PUNTA MANANA,667109
+2024-11-11,laboral,etapas,periodoSubida,07 - PUNTA MEDIODIA,351264
+2024-11-11,laboral,etapas,periodoSubida,08 - FUERA DE PUNTA TARDE,572998
+2024-11-11,laboral,etapas,periodoSubida,09 - PUNTA TARDE1,766566
+2024-11-11,laboral,etapas,periodoSubida,10 - PUNTA TARDE2,616512
+2024-11-11,laboral,etapas,periodoSubida,11 - FUERA DE PUNTA NOCTURNO,258959
+2024-11-11,laboral,etapas,periodoSubida,12 - PRE NOCTURNO,9123
+2024-11-11,laboral,etapas,periodoBajada,01 - PRE NOCTURNO,281
+2024-11-11,laboral,etapas,periodoBajada,02 - NOCTURNO,2410
+2024-11-11,laboral,etapas,periodoBajada,03 - TRANSICION NOCTURNO,58927
+2024-11-11,laboral,etapas,periodoBajada,04 - PUNTA MANANA,461724
+2024-11-11,laboral,etapas,periodoBajada,05 - TRANSICION PUNTA MANANA,553471
+2024-11-11,laboral,etapas,periodoBajada,06 - FUERA DE PUNTA MANANA,549371
+2024-11-11,laboral,etapas,periodoBajada,07 - PUNTA MEDIODIA,266574
+2024-11-11,laboral,etapas,periodoBajada,08 - FUERA DE PUNTA TARDE,424188
+2024-11-11,laboral,etapas,periodoBajada,09 - PUNTA TARDE1,512439
+2024-11-11,laboral,etapas,periodoBajada,10 - PUNTA TARDE2,544723
+2024-11-11,laboral,etapas,periodoBajada,11 - FUERA DE PUNTA NOCTURNO,224663
+2024-11-11,laboral,etapas,periodoBajada,12 - PRE NOCTURNO,14835
+2024-11-12,laboral,viajes,tipodia,0,3550376
+2024-11-12,laboral,viajes,n_etapas,1,2530217
+2024-11-12,laboral,viajes,n_etapas,10,4
+2024-11-12,laboral,viajes,n_etapas,2,889458
+2024-11-12,laboral,viajes,n_etapas,3,126880
+2024-11-12,laboral,viajes,n_etapas,4,3552
+2024-11-12,laboral,viajes,n_etapas,5,219
+2024-11-12,laboral,viajes,n_etapas,6,32
+2024-11-12,laboral,viajes,n_etapas,7,9
+2024-11-12,laboral,viajes,n_etapas,8,2
+2024-11-12,laboral,viajes,n_etapas,9,3
+2024-11-12,laboral,viajes,netapassinbajada,0,2498994
+2024-11-12,laboral,viajes,netapassinbajada,1,1017629
+2024-11-12,laboral,viajes,netapassinbajada,2,32849
+2024-11-12,laboral,viajes,netapassinbajada,3,842
+2024-11-12,laboral,viajes,netapassinbajada,4,62
+2024-11-12,laboral,viajes,ultimaetapaconbajada,0,986547
+2024-11-12,laboral,viajes,ultimaetapaconbajada,1,2563829
+2024-11-12,laboral,viajes,periodo_inicio_viaje,59,1524
+2024-11-12,laboral,viajes,periodo_inicio_viaje,60,7296
+2024-11-12,laboral,viajes,periodo_inicio_viaje,61,108842
+2024-11-12,laboral,viajes,periodo_inicio_viaje,62,498236
+2024-11-12,laboral,viajes,periodo_inicio_viaje,63,433595
+2024-11-12,laboral,viajes,periodo_inicio_viaje,64,506199
+2024-11-12,laboral,viajes,periodo_inicio_viaje,65,273257
+2024-11-12,laboral,viajes,periodo_inicio_viaje,66,445453
+2024-11-12,laboral,viajes,periodo_inicio_viaje,67,609680
+2024-11-12,laboral,viajes,periodo_inicio_viaje,68,461345
+2024-11-12,laboral,viajes,periodo_inicio_viaje,69,199027
+2024-11-12,laboral,viajes,periodo_inicio_viaje,70,5922
+2024-11-12,laboral,viajes,periodo_fin_viaje,-1,986567
+2024-11-12,laboral,viajes,periodo_fin_viaje,59,639
+2024-11-12,laboral,viajes,periodo_fin_viaje,60,1086
+2024-11-12,laboral,viajes,periodo_fin_viaje,61,19405
+2024-11-12,laboral,viajes,periodo_fin_viaje,62,274134
+2024-11-12,laboral,viajes,periodo_fin_viaje,63,399165
+2024-11-12,laboral,viajes,periodo_fin_viaje,64,410599
+2024-11-12,laboral,viajes,periodo_fin_viaje,65,194587
+2024-11-12,laboral,viajes,periodo_fin_viaje,66,308155
+2024-11-12,laboral,viajes,periodo_fin_viaje,67,358683
+2024-11-12,laboral,viajes,periodo_fin_viaje,68,407359
+2024-11-12,laboral,viajes,periodo_fin_viaje,69,174038
+2024-11-12,laboral,viajes,periodo_fin_viaje,70,15959
+2024-11-12,laboral,viajes,tipo_corte_etapa_viaje,M15M,48048
+2024-11-12,laboral,viajes,tipo_corte_etapa_viaje,M3B,229632
+2024-11-12,laboral,viajes,tipo_corte_etapa_viaje,M40M,16511
+2024-11-12,laboral,viajes,tipo_corte_etapa_viaje,MS_B_B,14892
+2024-11-12,laboral,viajes,tipo_corte_etapa_viaje,MS_B_B_NB,6195
+2024-11-12,laboral,viajes,tipo_corte_etapa_viaje,MS_MT_MT,4865
+2024-11-12,laboral,viajes,tipo_corte_etapa_viaje,MS_M_B,58015
+2024-11-12,laboral,viajes,tipo_corte_etapa_viaje,MS_M_M,328145
+2024-11-12,laboral,viajes,tipo_corte_etapa_viaje,RD,55045
+2024-11-12,laboral,viajes,tipo_corte_etapa_viaje,SM2H,990233
+2024-11-12,laboral,viajes,tipo_corte_etapa_viaje,UE,1798795
+2024-11-12,laboral,etapas,tipo_dia,LABORAL,4712293
+2024-11-12,laboral,etapas,tiene_bajada,0,1088648
+2024-11-12,laboral,etapas,tiene_bajada,1,3623645
+2024-11-12,laboral,etapas,tipo_transporte,BUS,1821318
+2024-11-12,laboral,etapas,tipo_transporte,METRO,2346329
+2024-11-12,laboral,etapas,tipo_transporte,METROTREN,76561
+2024-11-12,laboral,etapas,tipo_transporte,ZP,468085
+2024-11-12,laboral,etapas,periodoSubida,01 - PRE NOCTURNO,1713
+2024-11-12,laboral,etapas,periodoSubida,02 - NOCTURNO,8318
+2024-11-12,laboral,etapas,periodoSubida,03 - TRANSICION NOCTURNO,146718
+2024-11-12,laboral,etapas,periodoSubida,04 - PUNTA MANANA,684564
+2024-11-12,laboral,etapas,periodoSubida,05 - TRANSICION PUNTA MANANA,599579
+2024-11-12,laboral,etapas,periodoSubida,06 - FUERA DE PUNTA MANANA,659301
+2024-11-12,laboral,etapas,periodoSubida,07 - PUNTA MEDIODIA,346607
+2024-11-12,laboral,etapas,periodoSubida,08 - FUERA DE PUNTA TARDE,568205
+2024-11-12,laboral,etapas,periodoSubida,09 - PUNTA TARDE1,774829
+2024-11-12,laboral,etapas,periodoSubida,10 - PUNTA TARDE2,634234
+2024-11-12,laboral,etapas,periodoSubida,11 - FUERA DE PUNTA NOCTURNO,277754
+2024-11-12,laboral,etapas,periodoSubida,12 - PRE NOCTURNO,10471
+2024-11-12,laboral,etapas,periodoBajada,01 - PRE NOCTURNO,851
+2024-11-12,laboral,etapas,periodoBajada,02 - NOCTURNO,2519
+2024-11-12,laboral,etapas,periodoBajada,03 - TRANSICION NOCTURNO,58306
+2024-11-12,laboral,etapas,periodoBajada,04 - PUNTA MANANA,450667
+2024-11-12,laboral,etapas,periodoBajada,05 - TRANSICION PUNTA MANANA,547616
+2024-11-12,laboral,etapas,periodoBajada,06 - FUERA DE PUNTA MANANA,547514
+2024-11-12,laboral,etapas,periodoBajada,07 - PUNTA MEDIODIA,261804
+2024-11-12,laboral,etapas,periodoBajada,08 - FUERA DE PUNTA TARDE,422036
+2024-11-12,laboral,etapas,periodoBajada,09 - PUNTA TARDE1,517320
+2024-11-12,laboral,etapas,periodoBajada,10 - PUNTA TARDE2,561474
+2024-11-12,laboral,etapas,periodoBajada,11 - FUERA DE PUNTA NOCTURNO,234576
+2024-11-12,laboral,etapas,periodoBajada,12 - PRE NOCTURNO,18962
+2024-11-13,laboral,viajes,tipodia,0,3600108
+2024-11-13,laboral,viajes,n_etapas,1,2538579
+2024-11-13,laboral,viajes,n_etapas,11,2
+2024-11-13,laboral,viajes,n_etapas,12,2
+2024-11-13,laboral,viajes,n_etapas,2,920826
+2024-11-13,laboral,viajes,n_etapas,23,1
+2024-11-13,laboral,viajes,n_etapas,3,136589
+2024-11-13,laboral,viajes,n_etapas,36,1
+2024-11-13,laboral,viajes,n_etapas,4,3874
+2024-11-13,laboral,viajes,n_etapas,5,191
+2024-11-13,laboral,viajes,n_etapas,6,25
+2024-11-13,laboral,viajes,n_etapas,7,14
+2024-11-13,laboral,viajes,n_etapas,8,4
+2024-11-13,laboral,viajes,netapassinbajada,0,2577263
+2024-11-13,laboral,viajes,netapassinbajada,1,996062
+2024-11-13,laboral,viajes,netapassinbajada,2,26163
+2024-11-13,laboral,viajes,netapassinbajada,3,577
+2024-11-13,laboral,viajes,netapassinbajada,4,43
+2024-11-13,laboral,viajes,ultimaetapaconbajada,0,964223
+2024-11-13,laboral,viajes,ultimaetapaconbajada,1,2635885
+2024-11-13,laboral,viajes,periodo_inicio_viaje,59,797
+2024-11-13,laboral,viajes,periodo_inicio_viaje,60,7797
+2024-11-13,laboral,viajes,periodo_inicio_viaje,61,109515
+2024-11-13,laboral,viajes,periodo_inicio_viaje,62,499595
+2024-11-13,laboral,viajes,periodo_inicio_viaje,63,431061
+2024-11-13,laboral,viajes,periodo_inicio_viaje,64,514756
+2024-11-13,laboral,viajes,periodo_inicio_viaje,65,285239
+2024-11-13,laboral,viajes,periodo_inicio_viaje,66,455874
+2024-11-13,laboral,viajes,periodo_inicio_viaje,67,615634
+2024-11-13,laboral,viajes,periodo_inicio_viaje,68,470958
+2024-11-13,laboral,viajes,periodo_inicio_viaje,69,202649
+2024-11-13,laboral,viajes,periodo_inicio_viaje,70,6233
+2024-11-13,laboral,viajes,periodo_fin_viaje,-1,964282
+2024-11-13,laboral,viajes,periodo_fin_viaje,59,307
+2024-11-13,laboral,viajes,periodo_fin_viaje,60,1244
+2024-11-13,laboral,viajes,periodo_fin_viaje,61,19849
+2024-11-13,laboral,viajes,periodo_fin_viaje,62,279401
+2024-11-13,laboral,viajes,periodo_fin_viaje,63,404394
+2024-11-13,laboral,viajes,periodo_fin_viaje,64,415438
+2024-11-13,laboral,viajes,periodo_fin_viaje,65,207510
+2024-11-13,laboral,viajes,periodo_fin_viaje,66,320673
+2024-11-13,laboral,viajes,periodo_fin_viaje,67,367598
+2024-11-13,laboral,viajes,periodo_fin_viaje,68,416486
+2024-11-13,laboral,viajes,periodo_fin_viaje,69,189925
+2024-11-13,laboral,viajes,periodo_fin_viaje,70,13001
+2024-11-13,laboral,viajes,tipo_corte_etapa_viaje,M15M,50530
+2024-11-13,laboral,viajes,tipo_corte_etapa_viaje,M3B,255782
+2024-11-13,laboral,viajes,tipo_corte_etapa_viaje,M40M,16147
+2024-11-13,laboral,viajes,tipo_corte_etapa_viaje,MS_B_B,15724
+2024-11-13,laboral,viajes,tipo_corte_etapa_viaje,MS_B_B_NB,6413
+2024-11-13,laboral,viajes,tipo_corte_etapa_viaje,MS_MT_MT,4774
+2024-11-13,laboral,viajes,tipo_corte_etapa_viaje,MS_M_B,57346
+2024-11-13,laboral,viajes,tipo_corte_etapa_viaje,MS_M_M,332715
+2024-11-13,laboral,viajes,tipo_corte_etapa_viaje,RD,56324
+2024-11-13,laboral,viajes,tipo_corte_etapa_viaje,SM2H,998462
+2024-11-13,laboral,viajes,tipo_corte_etapa_viaje,UE,1805891
+2024-11-13,laboral,etapas,tipo_dia,LABORAL,4814084
+2024-11-13,laboral,etapas,tiene_bajada,0,1052944
+2024-11-13,laboral,etapas,tiene_bajada,1,3761140
+2024-11-13,laboral,etapas,tipo_transporte,BUS,1905060
+2024-11-13,laboral,etapas,tipo_transporte,METRO,2346261
+2024-11-13,laboral,etapas,tipo_transporte,METROTREN,75571
+2024-11-13,laboral,etapas,tipo_transporte,ZP,487192
+2024-11-13,laboral,etapas,periodoSubida,01 - PRE NOCTURNO,860
+2024-11-13,laboral,etapas,periodoSubida,02 - NOCTURNO,8811
+2024-11-13,laboral,etapas,periodoSubida,03 - TRANSICION NOCTURNO,148254
+2024-11-13,laboral,etapas,periodoSubida,04 - PUNTA MANANA,690307
+2024-11-13,laboral,etapas,periodoSubida,05 - TRANSICION PUNTA MANANA,600999
+2024-11-13,laboral,etapas,periodoSubida,06 - FUERA DE PUNTA MANANA,667258
+2024-11-13,laboral,etapas,periodoSubida,07 - PUNTA MEDIODIA,366642
+2024-11-13,laboral,etapas,periodoSubida,08 - FUERA DE PUNTA TARDE,589296
+2024-11-13,laboral,etapas,periodoSubida,09 - PUNTA TARDE1,793550
+2024-11-13,laboral,etapas,periodoSubida,10 - PUNTA TARDE2,655190
+2024-11-13,laboral,etapas,periodoSubida,11 - FUERA DE PUNTA NOCTURNO,282567
+2024-11-13,laboral,etapas,periodoSubida,12 - PRE NOCTURNO,10350
+2024-11-13,laboral,etapas,periodoBajada,01 - PRE NOCTURNO,386
+2024-11-13,laboral,etapas,periodoBajada,02 - NOCTURNO,2656
+2024-11-13,laboral,etapas,periodoBajada,03 - TRANSICION NOCTURNO,60701
+2024-11-13,laboral,etapas,periodoBajada,04 - PUNTA MANANA,462522
+2024-11-13,laboral,etapas,periodoBajada,05 - TRANSICION PUNTA MANANA,558242
+2024-11-13,laboral,etapas,periodoBajada,06 - FUERA DE PUNTA MANANA,553961
+2024-11-13,laboral,etapas,periodoBajada,07 - PUNTA MEDIODIA,281897
+2024-11-13,laboral,etapas,periodoBajada,08 - FUERA DE PUNTA TARDE,444764
+2024-11-13,laboral,etapas,periodoBajada,09 - PUNTA TARDE1,539465
+2024-11-13,laboral,etapas,periodoBajada,10 - PUNTA TARDE2,580768
+2024-11-13,laboral,etapas,periodoBajada,11 - FUERA DE PUNTA NOCTURNO,259876
+2024-11-13,laboral,etapas,periodoBajada,12 - PRE NOCTURNO,15902
+2024-11-14,laboral,viajes,tipodia,0,3633098
+2024-11-14,laboral,viajes,n_etapas,1,2539638
+2024-11-14,laboral,viajes,n_etapas,10,6
+2024-11-14,laboral,viajes,n_etapas,11,3
+2024-11-14,laboral,viajes,n_etapas,15,2
+2024-11-14,laboral,viajes,n_etapas,2,945034
+2024-11-14,laboral,viajes,n_etapas,22,1
+2024-11-14,laboral,viajes,n_etapas,3,143958
+2024-11-14,laboral,viajes,n_etapas,4,4185
+2024-11-14,laboral,viajes,n_etapas,5,228
+2024-11-14,laboral,viajes,n_etapas,6,25
+2024-11-14,laboral,viajes,n_etapas,7,8
+2024-11-14,laboral,viajes,n_etapas,8,2
+2024-11-14,laboral,viajes,n_etapas,9,8
+2024-11-14,laboral,viajes,netapassinbajada,0,2601364
+2024-11-14,laboral,viajes,netapassinbajada,1,1004731
+2024-11-14,laboral,viajes,netapassinbajada,2,26396
+2024-11-14,laboral,viajes,netapassinbajada,3,563
+2024-11-14,laboral,viajes,netapassinbajada,4,44
+2024-11-14,laboral,viajes,ultimaetapaconbajada,0,973216
+2024-11-14,laboral,viajes,ultimaetapaconbajada,1,2659882
+2024-11-14,laboral,viajes,periodo_inicio_viaje,59,860
+2024-11-14,laboral,viajes,periodo_inicio_viaje,60,8032
+2024-11-14,laboral,viajes,periodo_inicio_viaje,61,109091
+2024-11-14,laboral,viajes,periodo_inicio_viaje,62,500990
+2024-11-14,laboral,viajes,periodo_inicio_viaje,63,433749
+2024-11-14,laboral,viajes,periodo_inicio_viaje,64,525823
+2024-11-14,laboral,viajes,periodo_inicio_viaje,65,285641
+2024-11-14,laboral,viajes,periodo_inicio_viaje,66,465639
+2024-11-14,laboral,viajes,periodo_inicio_viaje,67,619315
+2024-11-14,laboral,viajes,periodo_inicio_viaje,68,468578
+2024-11-14,laboral,viajes,periodo_inicio_viaje,69,208478
+2024-11-14,laboral,viajes,periodo_inicio_viaje,70,6902
+2024-11-14,laboral,viajes,periodo_fin_viaje,-1,973262
+2024-11-14,laboral,viajes,periodo_fin_viaje,59,291
+2024-11-14,laboral,viajes,periodo_fin_viaje,60,1328
+2024-11-14,laboral,viajes,periodo_fin_viaje,61,19861
+2024-11-14,laboral,viajes,periodo_fin_viaje,62,277365
+2024-11-14,laboral,viajes,periodo_fin_viaje,63,406794
+2024-11-14,laboral,viajes,periodo_fin_viaje,64,428203
+2024-11-14,laboral,viajes,periodo_fin_viaje,65,207785
+2024-11-14,laboral,viajes,periodo_fin_viaje,66,325958
+2024-11-14,laboral,viajes,periodo_fin_viaje,67,371277
+2024-11-14,laboral,viajes,periodo_fin_viaje,68,413047
+2024-11-14,laboral,viajes,periodo_fin_viaje,69,193370
+2024-11-14,laboral,viajes,periodo_fin_viaje,70,14557
+2024-11-14,laboral,viajes,tipo_corte_etapa_viaje,M15M,51433
+2024-11-14,laboral,viajes,tipo_corte_etapa_viaje,M3B,265667
+2024-11-14,laboral,viajes,tipo_corte_etapa_viaje,M40M,16260
+2024-11-14,laboral,viajes,tipo_corte_etapa_viaje,MS_B_B,16460
+2024-11-14,laboral,viajes,tipo_corte_etapa_viaje,MS_B_B_NB,6551
+2024-11-14,laboral,viajes,tipo_corte_etapa_viaje,MS_MT_MT,5332
+2024-11-14,laboral,viajes,tipo_corte_etapa_viaje,MS_M_B,56118
+2024-11-14,laboral,viajes,tipo_corte_etapa_viaje,MS_M_M,335956
+2024-11-14,laboral,viajes,tipo_corte_etapa_viaje,RD,59039
+2024-11-14,laboral,viajes,tipo_corte_etapa_viaje,SM2H,1000213
+2024-11-14,laboral,viajes,tipo_corte_etapa_viaje,UE,1820069
+2024-11-14,laboral,etapas,tipo_dia,LABORAL,4887839
+2024-11-14,laboral,etapas,tiene_bajada,0,1062332
+2024-11-14,laboral,etapas,tiene_bajada,1,3825507
+2024-11-14,laboral,etapas,tipo_transporte,BUS,1966337
+2024-11-14,laboral,etapas,tipo_transporte,METRO,2348594
+2024-11-14,laboral,etapas,tipo_transporte,METROTREN,76319
+2024-11-14,laboral,etapas,tipo_transporte,ZP,496589
+2024-11-14,laboral,etapas,periodoSubida,01 - PRE NOCTURNO,923
+2024-11-14,laboral,etapas,periodoSubida,02 - NOCTURNO,9146
+2024-11-14,laboral,etapas,periodoSubida,03 - TRANSICION NOCTURNO,148562
+2024-11-14,laboral,etapas,periodoSubida,04 - PUNTA MANANA,700590
+2024-11-14,laboral,etapas,periodoSubida,05 - TRANSICION PUNTA MANANA,616389
+2024-11-14,laboral,etapas,periodoSubida,06 - FUERA DE PUNTA MANANA,691921
+2024-11-14,laboral,etapas,periodoSubida,07 - PUNTA MEDIODIA,365538
+2024-11-14,laboral,etapas,periodoSubida,08 - FUERA DE PUNTA TARDE,600140
+2024-11-14,laboral,etapas,periodoSubida,09 - PUNTA TARDE1,798966
+2024-11-14,laboral,etapas,periodoSubida,10 - PUNTA TARDE2,653587
+2024-11-14,laboral,etapas,periodoSubida,11 - FUERA DE PUNTA NOCTURNO,290413
+2024-11-14,laboral,etapas,periodoSubida,12 - PRE NOCTURNO,11664
+2024-11-14,laboral,etapas,periodoBajada,01 - PRE NOCTURNO,361
+2024-11-14,laboral,etapas,periodoBajada,02 - NOCTURNO,2831
+2024-11-14,laboral,etapas,periodoBajada,03 - TRANSICION NOCTURNO,61295
+2024-11-14,laboral,etapas,periodoBajada,04 - PUNTA MANANA,471193
+2024-11-14,laboral,etapas,periodoBajada,05 - TRANSICION PUNTA MANANA,572441
+2024-11-14,laboral,etapas,periodoBajada,06 - FUERA DE PUNTA MANANA,578409
+2024-11-14,laboral,etapas,periodoBajada,07 - PUNTA MEDIODIA,281170
+2024-11-14,laboral,etapas,periodoBajada,08 - FUERA DE PUNTA TARDE,451217
+2024-11-14,laboral,etapas,periodoBajada,09 - PUNTA TARDE1,545319
+2024-11-14,laboral,etapas,periodoBajada,10 - PUNTA TARDE2,577847
+2024-11-14,laboral,etapas,periodoBajada,11 - FUERA DE PUNTA NOCTURNO,265644
+2024-11-14,laboral,etapas,periodoBajada,12 - PRE NOCTURNO,17780
+2024-11-15,laboral,viajes,tipodia,0,3615172
+2024-11-15,laboral,viajes,n_etapas,1,2555921
+2024-11-15,laboral,viajes,n_etapas,10,2
+2024-11-15,laboral,viajes,n_etapas,11,4
+2024-11-15,laboral,viajes,n_etapas,13,1
+2024-11-15,laboral,viajes,n_etapas,19,1
+2024-11-15,laboral,viajes,n_etapas,2,914760
+2024-11-15,laboral,viajes,n_etapas,20,1
+2024-11-15,laboral,viajes,n_etapas,3,139657
+2024-11-15,laboral,viajes,n_etapas,4,4519
+2024-11-15,laboral,viajes,n_etapas,5,254
+2024-11-15,laboral,viajes,n_etapas,6,29
+2024-11-15,laboral,viajes,n_etapas,64,1
+2024-11-15,laboral,viajes,n_etapas,7,9
+2024-11-15,laboral,viajes,n_etapas,79,1
+2024-11-15,laboral,viajes,n_etapas,8,3
+2024-11-15,laboral,viajes,n_etapas,9,9
+2024-11-15,laboral,viajes,netapassinbajada,0,2493741
+2024-11-15,laboral,viajes,netapassinbajada,1,1091474
+2024-11-15,laboral,viajes,netapassinbajada,2,29289
+2024-11-15,laboral,viajes,netapassinbajada,3,617
+2024-11-15,laboral,viajes,netapassinbajada,4,51
+2024-11-15,laboral,viajes,ultimaetapaconbajada,0,1064571
+2024-11-15,laboral,viajes,ultimaetapaconbajada,1,2550601
+2024-11-15,laboral,viajes,periodo_inicio_viaje,59,1554
+2024-11-15,laboral,viajes,periodo_inicio_viaje,60,8211
+2024-11-15,laboral,viajes,periodo_inicio_viaje,61,104877
+2024-11-15,laboral,viajes,periodo_inicio_viaje,62,466115
+2024-11-15,laboral,viajes,periodo_inicio_viaje,63,401487
+2024-11-15,laboral,viajes,periodo_inicio_viaje,64,530694
+2024-11-15,laboral,viajes,periodo_inicio_viaje,65,319542
+2024-11-15,laboral,viajes,periodo_inicio_viaje,66,556762
+2024-11-15,laboral,viajes,periodo_inicio_viaje,67,589201
+2024-11-15,laboral,viajes,periodo_inicio_viaje,68,398449
+2024-11-15,laboral,viajes,periodo_inicio_viaje,69,227582
+2024-11-15,laboral,viajes,periodo_inicio_viaje,70,10698
+2024-11-15,laboral,viajes,periodo_fin_viaje,-1,1064649
+2024-11-15,laboral,viajes,periodo_fin_viaje,59,1653
+2024-11-15,laboral,viajes,periodo_fin_viaje,60,1679
+2024-11-15,laboral,viajes,periodo_fin_viaje,61,19271
+2024-11-15,laboral,viajes,periodo_fin_viaje,62,257856
+2024-11-15,laboral,viajes,periodo_fin_viaje,63,365749
+2024-11-15,laboral,viajes,periodo_fin_viaje,64,414549
+2024-11-15,laboral,viajes,periodo_fin_viaje,65,218333
+2024-11-15,laboral,viajes,periodo_fin_viaje,66,370893
+2024-11-15,laboral,viajes,periodo_fin_viaje,67,394882
+2024-11-15,laboral,viajes,periodo_fin_viaje,68,306365
+2024-11-15,laboral,viajes,periodo_fin_viaje,69,183235
+2024-11-15,laboral,viajes,periodo_fin_viaje,70,16058
+2024-11-15,laboral,viajes,tipo_corte_etapa_viaje,M15M,56335
+2024-11-15,laboral,viajes,tipo_corte_etapa_viaje,M3B,264998
+2024-11-15,laboral,viajes,tipo_corte_etapa_viaje,M40M,19030
+2024-11-15,laboral,viajes,tipo_corte_etapa_viaje,MS_B_B,17885
+2024-11-15,laboral,viajes,tipo_corte_etapa_viaje,MS_B_B_NB,7857
+2024-11-15,laboral,viajes,tipo_corte_etapa_viaje,MS_MT_MT,6001
+2024-11-15,laboral,viajes,tipo_corte_etapa_viaje,MS_M_B,54655
+2024-11-15,laboral,viajes,tipo_corte_etapa_viaje,MS_M_M,368808
+2024-11-15,laboral,viajes,tipo_corte_etapa_viaje,RD,62259
+2024-11-15,laboral,viajes,tipo_corte_etapa_viaje,SM2H,938152
+2024-11-15,laboral,viajes,tipo_corte_etapa_viaje,UE,1819192
+2024-11-15,laboral,etapas,tipo_dia,LABORAL,4832617
+2024-11-15,laboral,etapas,tiene_bajada,0,1155063
+2024-11-15,laboral,etapas,tiene_bajada,1,3677554
+2024-11-15,laboral,etapas,tipo_transporte,BUS,1947464
+2024-11-15,laboral,etapas,tipo_transporte,METRO,2334260
+2024-11-15,laboral,etapas,tipo_transporte,METROTREN,76815
+2024-11-15,laboral,etapas,tipo_transporte,ZP,474078
+2024-11-15,laboral,etapas,periodoSubida,01 - PRE NOCTURNO,1673
+2024-11-15,laboral,etapas,periodoSubida,02 - NOCTURNO,9348
+2024-11-15,laboral,etapas,periodoSubida,03 - TRANSICION NOCTURNO,142673
+2024-11-15,laboral,etapas,periodoSubida,04 - PUNTA MANANA,658310
+2024-11-15,laboral,etapas,periodoSubida,05 - TRANSICION PUNTA MANANA,572735
+2024-11-15,laboral,etapas,periodoSubida,06 - FUERA DE PUNTA MANANA,694949
+2024-11-15,laboral,etapas,periodoSubida,07 - PUNTA MEDIODIA,403174
+2024-11-15,laboral,etapas,periodoSubida,08 - FUERA DE PUNTA TARDE,712809
+2024-11-15,laboral,etapas,periodoSubida,09 - PUNTA TARDE1,773969
+2024-11-15,laboral,etapas,periodoSubida,10 - PUNTA TARDE2,538097
+2024-11-15,laboral,etapas,periodoSubida,11 - FUERA DE PUNTA NOCTURNO,308673
+2024-11-15,laboral,etapas,periodoSubida,12 - PRE NOCTURNO,16207
+2024-11-15,laboral,etapas,periodoBajada,01 - PRE NOCTURNO,1795
+2024-11-15,laboral,etapas,periodoBajada,02 - NOCTURNO,3236
+2024-11-15,laboral,etapas,periodoBajada,03 - TRANSICION NOCTURNO,59470
+2024-11-15,laboral,etapas,periodoBajada,04 - PUNTA MANANA,441999
+2024-11-15,laboral,etapas,periodoBajada,05 - TRANSICION PUNTA MANANA,521602
+2024-11-15,laboral,etapas,periodoBajada,06 - FUERA DE PUNTA MANANA,563997
+2024-11-15,laboral,etapas,periodoBajada,07 - PUNTA MEDIODIA,296075
+2024-11-15,laboral,etapas,periodoBajada,08 - FUERA DE PUNTA TARDE,516970
+2024-11-15,laboral,etapas,periodoBajada,09 - PUNTA TARDE1,568243
+2024-11-15,laboral,etapas,periodoBajada,10 - PUNTA TARDE2,429824
+2024-11-15,laboral,etapas,periodoBajada,11 - FUERA DE PUNTA NOCTURNO,254555
+2024-11-15,laboral,etapas,periodoBajada,12 - PRE NOCTURNO,19788
+2024-11-16,sabado,viajes,tipodia,1,2051573
+2024-11-16,sabado,viajes,n_etapas,1,1515755
+2024-11-16,sabado,viajes,n_etapas,10,1
+2024-11-16,sabado,viajes,n_etapas,138,1
+2024-11-16,sabado,viajes,n_etapas,2,470217
+2024-11-16,sabado,viajes,n_etapas,3,63234
+2024-11-16,sabado,viajes,n_etapas,4,2203
+2024-11-16,sabado,viajes,n_etapas,5,150
+2024-11-16,sabado,viajes,n_etapas,56,1
+2024-11-16,sabado,viajes,n_etapas,6,9
+2024-11-16,sabado,viajes,n_etapas,7,1
+2024-11-16,sabado,viajes,n_etapas,86,1
+2024-11-16,sabado,viajes,netapassinbajada,0,1269056
+2024-11-16,sabado,viajes,netapassinbajada,1,763311
+2024-11-16,sabado,viajes,netapassinbajada,2,18828
+2024-11-16,sabado,viajes,netapassinbajada,3,369
+2024-11-16,sabado,viajes,netapassinbajada,4,9
+2024-11-16,sabado,viajes,ultimaetapaconbajada,0,754176
+2024-11-16,sabado,viajes,ultimaetapaconbajada,1,1297397
+2024-11-16,sabado,viajes,periodo_inicio_viaje,71,9084
+2024-11-16,sabado,viajes,periodo_inicio_viaje,72,5059
+2024-11-16,sabado,viajes,periodo_inicio_viaje,73,24900
+2024-11-16,sabado,viajes,periodo_inicio_viaje,74,261971
+2024-11-16,sabado,viajes,periodo_inicio_viaje,75,409695
+2024-11-16,sabado,viajes,periodo_inicio_viaje,76,485210
+2024-11-16,sabado,viajes,periodo_inicio_viaje,77,578079
+2024-11-16,sabado,viajes,periodo_inicio_viaje,78,267386
+2024-11-16,sabado,viajes,periodo_inicio_viaje,79,10189
+2024-11-16,sabado,viajes,periodo_fin_viaje,-1,754223
+2024-11-16,sabado,viajes,periodo_fin_viaje,71,3030
+2024-11-16,sabado,viajes,periodo_fin_viaje,72,2432
+2024-11-16,sabado,viajes,periodo_fin_viaje,73,4375
+2024-11-16,sabado,viajes,periodo_fin_viaje,74,144776
+2024-11-16,sabado,viajes,periodo_fin_viaje,75,270882
+2024-11-16,sabado,viajes,periodo_fin_viaje,76,314244
+2024-11-16,sabado,viajes,periodo_fin_viaje,77,366533
+2024-11-16,sabado,viajes,periodo_fin_viaje,78,178378
+2024-11-16,sabado,viajes,periodo_fin_viaje,79,12700
+2024-11-16,sabado,viajes,tipo_corte_etapa_viaje,M15M,35316
+2024-11-16,sabado,viajes,tipo_corte_etapa_viaje,M3B,117250
+2024-11-16,sabado,viajes,tipo_corte_etapa_viaje,M40M,14237
+2024-11-16,sabado,viajes,tipo_corte_etapa_viaje,MS_B_B,14168
+2024-11-16,sabado,viajes,tipo_corte_etapa_viaje,MS_B_B_NB,7955
+2024-11-16,sabado,viajes,tipo_corte_etapa_viaje,MS_MT_MT,5200
+2024-11-16,sabado,viajes,tipo_corte_etapa_viaje,MS_M_B,23750
+2024-11-16,sabado,viajes,tipo_corte_etapa_viaje,MS_M_M,259352
+2024-11-16,sabado,viajes,tipo_corte_etapa_viaje,RD,41924
+2024-11-16,sabado,viajes,tipo_corte_etapa_viaje,SM2H,424699
+2024-11-16,sabado,viajes,tipo_corte_etapa_viaje,UE,1107722
+2024-11-16,sabado,etapas,tipo_dia,SABADO,2661105
+2024-11-16,sabado,etapas,tiene_bajada,0,804033
+2024-11-16,sabado,etapas,tiene_bajada,1,1857072
+2024-11-16,sabado,etapas,tipo_transporte,BUS,1210285
+2024-11-16,sabado,etapas,tipo_transporte,METRO,1329179
+2024-11-16,sabado,etapas,tipo_transporte,METROTREN,41086
+2024-11-16,sabado,etapas,tipo_transporte,ZP,80555
+2024-11-16,sabado,etapas,periodoSubida,01 - PRE NOCTURNO SABADO,9960
+2024-11-16,sabado,etapas,periodoSubida,02 - NOCTURNO SABADO,6040
+2024-11-16,sabado,etapas,periodoSubida,03 - TRANSICION SABADO MANANA,31853
+2024-11-16,sabado,etapas,periodoSubida,04 - PUNTA MANANA SABADO,369351
+2024-11-16,sabado,etapas,periodoSubida,05 - MANANA SABADO,531188
+2024-11-16,sabado,etapas,periodoSubida,06 - PUNTA MEDIODIA SABADO,607778
+2024-11-16,sabado,etapas,periodoSubida,07 - TARDE SABADO,737613
+2024-11-16,sabado,etapas,periodoSubida,08 - TRANSICION SABADO NOCTURNO,352652
+2024-11-16,sabado,etapas,periodoSubida,09 - PRE NOCTURNO SABADO,14670
+2024-11-16,sabado,etapas,periodoBajada,01 - PRE NOCTURNO SABADO,3909
+2024-11-16,sabado,etapas,periodoBajada,02 - NOCTURNO SABADO,3410
+2024-11-16,sabado,etapas,periodoBajada,03 - TRANSICION SABADO MANANA,12919
+2024-11-16,sabado,etapas,periodoBajada,04 - PUNTA MANANA SABADO,246317
+2024-11-16,sabado,etapas,periodoBajada,05 - MANANA SABADO,381984
+2024-11-16,sabado,etapas,periodoBajada,06 - PUNTA MEDIODIA SABADO,427076
+2024-11-16,sabado,etapas,periodoBajada,07 - TARDE SABADO,510921
+2024-11-16,sabado,etapas,periodoBajada,08 - TRANSICION SABADO NOCTURNO,254744
+2024-11-16,sabado,etapas,periodoBajada,09 - PRE NOCTURNO SABADO,15792
+2024-11-17,domingo,viajes,tipodia,2,1191391
+2024-11-17,domingo,viajes,n_etapas,1,890204
+2024-11-17,domingo,viajes,n_etapas,2,263688
+2024-11-17,domingo,viajes,n_etapas,3,36181
+2024-11-17,domingo,viajes,n_etapas,4,1254
+2024-11-17,domingo,viajes,n_etapas,5,61
+2024-11-17,domingo,viajes,n_etapas,6,3
+2024-11-17,domingo,viajes,netapassinbajada,0,674410
+2024-11-17,domingo,viajes,netapassinbajada,1,505934
+2024-11-17,domingo,viajes,netapassinbajada,2,10867
+2024-11-17,domingo,viajes,netapassinbajada,3,174
+2024-11-17,domingo,viajes,netapassinbajada,4,6
+2024-11-17,domingo,viajes,ultimaetapaconbajada,0,503137
+2024-11-17,domingo,viajes,ultimaetapaconbajada,1,688254
+2024-11-17,domingo,viajes,periodo_inicio_viaje,80,4500
+2024-11-17,domingo,viajes,periodo_inicio_viaje,81,2707
+2024-11-17,domingo,viajes,periodo_inicio_viaje,82,26970
+2024-11-17,domingo,viajes,periodo_inicio_viaje,83,383445
+2024-11-17,domingo,viajes,periodo_inicio_viaje,84,419415
+2024-11-17,domingo,viajes,periodo_inicio_viaje,85,263774
+2024-11-17,domingo,viajes,periodo_inicio_viaje,86,84734
+2024-11-17,domingo,viajes,periodo_inicio_viaje,87,5846
+2024-11-17,domingo,viajes,periodo_fin_viaje,-1,503161
+2024-11-17,domingo,viajes,periodo_fin_viaje,80,1463
+2024-11-17,domingo,viajes,periodo_fin_viaje,81,1141
+2024-11-17,domingo,viajes,periodo_fin_viaje,82,8369
+2024-11-17,domingo,viajes,periodo_fin_viaje,83,218453
+2024-11-17,domingo,viajes,periodo_fin_viaje,84,244241
+2024-11-17,domingo,viajes,periodo_fin_viaje,85,142689
+2024-11-17,domingo,viajes,periodo_fin_viaje,86,63911
+2024-11-17,domingo,viajes,periodo_fin_viaje,87,7963
+2024-11-17,domingo,viajes,tipo_corte_etapa_viaje,M15M,17585
+2024-11-17,domingo,viajes,tipo_corte_etapa_viaje,M3B,60761
+2024-11-17,domingo,viajes,tipo_corte_etapa_viaje,M40M,6789
+2024-11-17,domingo,viajes,tipo_corte_etapa_viaje,MS_B_B,10183
+2024-11-17,domingo,viajes,tipo_corte_etapa_viaje,MS_B_B_NB,5936
+2024-11-17,domingo,viajes,tipo_corte_etapa_viaje,MS_MT_MT,4061
+2024-11-17,domingo,viajes,tipo_corte_etapa_viaje,MS_M_B,12537
+2024-11-17,domingo,viajes,tipo_corte_etapa_viaje,MS_M_M,135588
+2024-11-17,domingo,viajes,tipo_corte_etapa_viaje,RD,27109
+2024-11-17,domingo,viajes,tipo_corte_etapa_viaje,SM2H,216839
+2024-11-17,domingo,viajes,tipo_corte_etapa_viaje,UE,694003
+2024-11-17,domingo,etapas,tipo_dia,DOMINGO,1534904
+2024-11-17,domingo,etapas,tiene_bajada,0,529212
+2024-11-17,domingo,etapas,tiene_bajada,1,1005692
+2024-11-17,domingo,etapas,tipo_transporte,BUS,759638
+2024-11-17,domingo,etapas,tipo_transporte,METRO,737950
+2024-11-17,domingo,etapas,tipo_transporte,METROTREN,27175
+2024-11-17,domingo,etapas,tipo_transporte,ZP,10141
+2024-11-17,domingo,etapas,periodoSubida,01 - PRE NOCTURNO DOMINGO,4976
+2024-11-17,domingo,etapas,periodoSubida,02 - NOCTURNO DOMINGO,3189
+2024-11-17,domingo,etapas,periodoSubida,03 - TRANSICION DOMINGO MANANA,35966
+2024-11-17,domingo,etapas,periodoSubida,04 - MANANA DOMINGO,504251
+2024-11-17,domingo,etapas,periodoSubida,05 - MEDIODIA DOMINGO,522696
+2024-11-17,domingo,etapas,periodoSubida,06 - TARDE DOMINGO,338909
+2024-11-17,domingo,etapas,periodoSubida,07 - TRANSICION DOMINGO NOCTURNO,116066
+2024-11-17,domingo,etapas,periodoSubida,08 - PRE NOCTURNO DOMINGO,8851
+2024-11-17,domingo,etapas,periodoBajada,01 - PRE NOCTURNO DOMINGO,1897
+2024-11-17,domingo,etapas,periodoBajada,02 - NOCTURNO DOMINGO,1561
+2024-11-17,domingo,etapas,periodoBajada,03 - TRANSICION DOMINGO MANANA,17941
+2024-11-17,domingo,etapas,periodoBajada,04 - MANANA DOMINGO,331732
+2024-11-17,domingo,etapas,periodoBajada,05 - MEDIODIA DOMINGO,338891
+2024-11-17,domingo,etapas,periodoBajada,06 - TARDE DOMINGO,212996
+2024-11-17,domingo,etapas,periodoBajada,07 - TRANSICION DOMINGO NOCTURNO,90716
+2024-11-17,domingo,etapas,periodoBajada,08 - PRE NOCTURNO DOMINGO,9958
+2024-11-18,laboral,viajes,tipodia,0,3558808
+2024-11-18,laboral,viajes,n_etapas,1,2488631
+2024-11-18,laboral,viajes,n_etapas,10,3
+2024-11-18,laboral,viajes,n_etapas,12,2
+2024-11-18,laboral,viajes,n_etapas,16,1
+2024-11-18,laboral,viajes,n_etapas,18,1
+2024-11-18,laboral,viajes,n_etapas,2,923619
+2024-11-18,laboral,viajes,n_etapas,29,1
+2024-11-18,laboral,viajes,n_etapas,3,142048
+2024-11-18,laboral,viajes,n_etapas,4,4212
+2024-11-18,laboral,viajes,n_etapas,40,1
+2024-11-18,laboral,viajes,n_etapas,43,1
+2024-11-18,laboral,viajes,n_etapas,5,248
+2024-11-18,laboral,viajes,n_etapas,6,28
+2024-11-18,laboral,viajes,n_etapas,7,5
+2024-11-18,laboral,viajes,n_etapas,8,4
+2024-11-18,laboral,viajes,n_etapas,9,3
+2024-11-18,laboral,viajes,netapassinbajada,0,2521547
+2024-11-18,laboral,viajes,netapassinbajada,1,1009881
+2024-11-18,laboral,viajes,netapassinbajada,2,26735
+2024-11-18,laboral,viajes,netapassinbajada,3,592
+2024-11-18,laboral,viajes,netapassinbajada,4,53
+2024-11-18,laboral,viajes,ultimaetapaconbajada,0,978253
+2024-11-18,laboral,viajes,ultimaetapaconbajada,1,2580555
+2024-11-18,laboral,viajes,periodo_inicio_viaje,59,510
+2024-11-18,laboral,viajes,periodo_inicio_viaje,60,7202
+2024-11-18,laboral,viajes,periodo_inicio_viaje,61,110364
+2024-11-18,laboral,viajes,periodo_inicio_viaje,62,495560
+2024-11-18,laboral,viajes,periodo_inicio_viaje,63,427693
+2024-11-18,laboral,viajes,periodo_inicio_viaje,64,519847
+2024-11-18,laboral,viajes,periodo_inicio_viaje,65,274655
+2024-11-18,laboral,viajes,periodo_inicio_viaje,66,461563
+2024-11-18,laboral,viajes,periodo_inicio_viaje,67,624602
+2024-11-18,laboral,viajes,periodo_inicio_viaje,68,450122
+2024-11-18,laboral,viajes,periodo_inicio_viaje,69,181916
+2024-11-18,laboral,viajes,periodo_inicio_viaje,70,4774
+2024-11-18,laboral,viajes,periodo_fin_viaje,-1,978300
+2024-11-18,laboral,viajes,periodo_fin_viaje,59,180
+2024-11-18,laboral,viajes,periodo_fin_viaje,60,838
+2024-11-18,laboral,viajes,periodo_fin_viaje,61,19397
+2024-11-18,laboral,viajes,periodo_fin_viaje,62,271873
+2024-11-18,laboral,viajes,periodo_fin_viaje,63,396094
+2024-11-18,laboral,viajes,periodo_fin_viaje,64,418399
+2024-11-18,laboral,viajes,periodo_fin_viaje,65,198396
+2024-11-18,laboral,viajes,periodo_fin_viaje,66,318904
+2024-11-18,laboral,viajes,periodo_fin_viaje,67,369771
+2024-11-18,laboral,viajes,periodo_fin_viaje,68,410214
+2024-11-18,laboral,viajes,periodo_fin_viaje,69,165988
+2024-11-18,laboral,viajes,periodo_fin_viaje,70,10454
+2024-11-18,laboral,viajes,tipo_corte_etapa_viaje,M15M,51909
+2024-11-18,laboral,viajes,tipo_corte_etapa_viaje,M3B,286739
+2024-11-18,laboral,viajes,tipo_corte_etapa_viaje,M40M,12750
+2024-11-18,laboral,viajes,tipo_corte_etapa_viaje,MS_B_B,17058
+2024-11-18,laboral,viajes,tipo_corte_etapa_viaje,MS_B_B_NB,6762
+2024-11-18,laboral,viajes,tipo_corte_etapa_viaje,MS_MT_MT,5724
+2024-11-18,laboral,viajes,tipo_corte_etapa_viaje,MS_M_B,56304
+2024-11-18,laboral,viajes,tipo_corte_etapa_viaje,MS_M_M,314712
+2024-11-18,laboral,viajes,tipo_corte_etapa_viaje,RD,54512
+2024-11-18,laboral,viajes,tipo_corte_etapa_viaje,SM2H,951389
+2024-11-18,laboral,viajes,tipo_corte_etapa_viaje,UE,1800949
+2024-11-18,laboral,etapas,tipo_dia,LABORAL,4787836
+2024-11-18,laboral,etapas,tiene_bajada,0,1068306
+2024-11-18,laboral,etapas,tiene_bajada,1,3719530
+2024-11-18,laboral,etapas,tipo_transporte,BUS,1947442
+2024-11-18,laboral,etapas,tipo_transporte,METRO,2263585
+2024-11-18,laboral,etapas,tipo_transporte,METROTREN,77046
+2024-11-18,laboral,etapas,tipo_transporte,ZP,499763
+2024-11-18,laboral,etapas,periodoSubida,01 - PRE NOCTURNO,546
+2024-11-18,laboral,etapas,periodoSubida,02 - NOCTURNO,8067
+2024-11-18,laboral,etapas,periodoSubida,03 - TRANSICION NOCTURNO,148333
+2024-11-18,laboral,etapas,periodoSubida,04 - PUNTA MANANA,694482
+2024-11-18,laboral,etapas,periodoSubida,05 - TRANSICION PUNTA MANANA,607153
+2024-11-18,laboral,etapas,periodoSubida,06 - FUERA DE PUNTA MANANA,682707
+2024-11-18,laboral,etapas,periodoSubida,07 - PUNTA MEDIODIA,349487
+2024-11-18,laboral,etapas,periodoSubida,08 - FUERA DE PUNTA TARDE,593329
+2024-11-18,laboral,etapas,periodoSubida,09 - PUNTA TARDE1,804285
+2024-11-18,laboral,etapas,periodoSubida,10 - PUNTA TARDE2,634871
+2024-11-18,laboral,etapas,periodoSubida,11 - FUERA DE PUNTA NOCTURNO,256212
+2024-11-18,laboral,etapas,periodoSubida,12 - PRE NOCTURNO,8364
+2024-11-18,laboral,etapas,periodoBajada,01 - PRE NOCTURNO,213
+2024-11-18,laboral,etapas,periodoBajada,02 - NOCTURNO,2155
+2024-11-18,laboral,etapas,periodoBajada,03 - TRANSICION NOCTURNO,59667
+2024-11-18,laboral,etapas,periodoBajada,04 - PUNTA MANANA,464727
+2024-11-18,laboral,etapas,periodoBajada,05 - TRANSICION PUNTA MANANA,557764
+2024-11-18,laboral,etapas,periodoBajada,06 - FUERA DE PUNTA MANANA,566155
+2024-11-18,laboral,etapas,periodoBajada,07 - PUNTA MEDIODIA,266723
+2024-11-18,laboral,etapas,periodoBajada,08 - FUERA DE PUNTA TARDE,439535
+2024-11-18,laboral,etapas,periodoBajada,09 - PUNTA TARDE1,544391
+2024-11-18,laboral,etapas,periodoBajada,10 - PUNTA TARDE2,574082
+2024-11-18,laboral,etapas,periodoBajada,11 - FUERA DE PUNTA NOCTURNO,231137
+2024-11-18,laboral,etapas,periodoBajada,12 - PRE NOCTURNO,12981
+2024-11-19,laboral,viajes,tipodia,0,3625203
+2024-11-19,laboral,viajes,n_etapas,1,2546261
+2024-11-19,laboral,viajes,n_etapas,10,3
+2024-11-19,laboral,viajes,n_etapas,11,1
+2024-11-19,laboral,viajes,n_etapas,12,1
+2024-11-19,laboral,viajes,n_etapas,14,1
+2024-11-19,laboral,viajes,n_etapas,16,1
+2024-11-19,laboral,viajes,n_etapas,2,934091
+2024-11-19,laboral,viajes,n_etapas,3,140405
+2024-11-19,laboral,viajes,n_etapas,4,4146
+2024-11-19,laboral,viajes,n_etapas,5,251
+2024-11-19,laboral,viajes,n_etapas,51,1
+2024-11-19,laboral,viajes,n_etapas,6,25
+2024-11-19,laboral,viajes,n_etapas,7,6
+2024-11-19,laboral,viajes,n_etapas,8,2
+2024-11-19,laboral,viajes,n_etapas,9,8
+2024-11-19,laboral,viajes,netapassinbajada,0,2605097
+2024-11-19,laboral,viajes,netapassinbajada,1,993631
+2024-11-19,laboral,viajes,netapassinbajada,2,25855
+2024-11-19,laboral,viajes,netapassinbajada,3,572
+2024-11-19,laboral,viajes,netapassinbajada,4,48
+2024-11-19,laboral,viajes,ultimaetapaconbajada,0,959618
+2024-11-19,laboral,viajes,ultimaetapaconbajada,1,2665585
+2024-11-19,laboral,viajes,periodo_inicio_viaje,59,943
+2024-11-19,laboral,viajes,periodo_inicio_viaje,60,7717
+2024-11-19,laboral,viajes,periodo_inicio_viaje,61,111114
+2024-11-19,laboral,viajes,periodo_inicio_viaje,62,503720
+2024-11-19,laboral,viajes,periodo_inicio_viaje,63,442297
+2024-11-19,laboral,viajes,periodo_inicio_viaje,64,516208
+2024-11-19,laboral,viajes,periodo_inicio_viaje,65,278476
+2024-11-19,laboral,viajes,periodo_inicio_viaje,66,460157
+2024-11-19,laboral,viajes,periodo_inicio_viaje,67,625175
+2024-11-19,laboral,viajes,periodo_inicio_viaje,68,480595
+2024-11-19,laboral,viajes,periodo_inicio_viaje,69,189075
+2024-11-19,laboral,viajes,periodo_inicio_viaje,70,9726
+2024-11-19,laboral,viajes,periodo_fin_viaje,-1,959668
+2024-11-19,laboral,viajes,periodo_fin_viaje,59,371
+2024-11-19,laboral,viajes,periodo_fin_viaje,60,1116
+2024-11-19,laboral,viajes,periodo_fin_viaje,61,20063
+2024-11-19,laboral,viajes,periodo_fin_viaje,62,283639
+2024-11-19,laboral,viajes,periodo_fin_viaje,63,414761
+2024-11-19,laboral,viajes,periodo_fin_viaje,64,425482
+2024-11-19,laboral,viajes,periodo_fin_viaje,65,201928
+2024-11-19,laboral,viajes,periodo_fin_viaje,66,322278
+2024-11-19,laboral,viajes,periodo_fin_viaje,67,372322
+2024-11-19,laboral,viajes,periodo_fin_viaje,68,427147
+2024-11-19,laboral,viajes,periodo_fin_viaje,69,182275
+2024-11-19,laboral,viajes,periodo_fin_viaje,70,14153
+2024-11-19,laboral,viajes,tipo_corte_etapa_viaje,M15M,55638
+2024-11-19,laboral,viajes,tipo_corte_etapa_viaje,M3B,260414
+2024-11-19,laboral,viajes,tipo_corte_etapa_viaje,M40M,17378
+2024-11-19,laboral,viajes,tipo_corte_etapa_viaje,MS_B_B,17100
+2024-11-19,laboral,viajes,tipo_corte_etapa_viaje,MS_B_B_NB,6717
+2024-11-19,laboral,viajes,tipo_corte_etapa_viaje,MS_MT_MT,4994
+2024-11-19,laboral,viajes,tipo_corte_etapa_viaje,MS_M_B,56963
+2024-11-19,laboral,viajes,tipo_corte_etapa_viaje,MS_M_M,329964
+2024-11-19,laboral,viajes,tipo_corte_etapa_viaje,RD,59850
+2024-11-19,laboral,viajes,tipo_corte_etapa_viaje,SM2H,1001909
+2024-11-19,laboral,viajes,tipo_corte_etapa_viaje,UE,1814276
+2024-11-19,laboral,etapas,tipo_dia,LABORAL,4861726
+2024-11-19,laboral,etapas,tiene_bajada,0,1050157
+2024-11-19,laboral,etapas,tiene_bajada,1,3811569
+2024-11-19,laboral,etapas,tipo_transporte,BUS,1945316
+2024-11-19,laboral,etapas,tipo_transporte,METRO,2338836
+2024-11-19,laboral,etapas,tipo_transporte,METROTREN,74735
+2024-11-19,laboral,etapas,tipo_transporte,ZP,502839
+2024-11-19,laboral,etapas,periodoSubida,01 - PRE NOCTURNO,1031
+2024-11-19,laboral,etapas,periodoSubida,02 - NOCTURNO,8733
+2024-11-19,laboral,etapas,periodoSubida,03 - TRANSICION NOCTURNO,151388
+2024-11-19,laboral,etapas,periodoSubida,04 - PUNTA MANANA,701090
+2024-11-19,laboral,etapas,periodoSubida,05 - TRANSICION PUNTA MANANA,619516
+2024-11-19,laboral,etapas,periodoSubida,06 - FUERA DE PUNTA MANANA,677058
+2024-11-19,laboral,etapas,periodoSubida,07 - PUNTA MEDIODIA,356160
+2024-11-19,laboral,etapas,periodoSubida,08 - FUERA DE PUNTA TARDE,592164
+2024-11-19,laboral,etapas,periodoSubida,09 - PUNTA TARDE1,804841
+2024-11-19,laboral,etapas,periodoSubida,10 - PUNTA TARDE2,670416
+2024-11-19,laboral,etapas,periodoSubida,11 - FUERA DE PUNTA NOCTURNO,265009
+2024-11-19,laboral,etapas,periodoSubida,12 - PRE NOCTURNO,14320
+2024-11-19,laboral,etapas,periodoBajada,01 - PRE NOCTURNO,470
+2024-11-19,laboral,etapas,periodoBajada,02 - NOCTURNO,2548
+2024-11-19,laboral,etapas,periodoBajada,03 - TRANSICION NOCTURNO,62739
+2024-11-19,laboral,etapas,periodoBajada,04 - PUNTA MANANA,475160
+2024-11-19,laboral,etapas,periodoBajada,05 - TRANSICION PUNTA MANANA,572968
+2024-11-19,laboral,etapas,periodoBajada,06 - FUERA DE PUNTA MANANA,570984
+2024-11-19,laboral,etapas,periodoBajada,07 - PUNTA MEDIODIA,273637
+2024-11-19,laboral,etapas,periodoBajada,08 - FUERA DE PUNTA TARDE,444734
+2024-11-19,laboral,etapas,periodoBajada,09 - PUNTA TARDE1,546288
+2024-11-19,laboral,etapas,periodoBajada,10 - PUNTA TARDE2,595754
+2024-11-19,laboral,etapas,periodoBajada,11 - FUERA DE PUNTA NOCTURNO,248866
+2024-11-19,laboral,etapas,periodoBajada,12 - PRE NOCTURNO,17421
+2024-11-20,laboral,viajes,tipodia,0,3655110
+2024-11-20,laboral,viajes,n_etapas,1,2571240
+2024-11-20,laboral,viajes,n_etapas,10,2
+2024-11-20,laboral,viajes,n_etapas,11,3
+2024-11-20,laboral,viajes,n_etapas,12,1
+2024-11-20,laboral,viajes,n_etapas,13,1
+2024-11-20,laboral,viajes,n_etapas,2,938690
+2024-11-20,laboral,viajes,n_etapas,3,140695
+2024-11-20,laboral,viajes,n_etapas,4,4197
+2024-11-20,laboral,viajes,n_etapas,5,223
+2024-11-20,laboral,viajes,n_etapas,6,41
+2024-11-20,laboral,viajes,n_etapas,7,8
+2024-11-20,laboral,viajes,n_etapas,9,9
+2024-11-20,laboral,viajes,netapassinbajada,0,2624404
+2024-11-20,laboral,viajes,netapassinbajada,1,1003575
+2024-11-20,laboral,viajes,netapassinbajada,2,26471
+2024-11-20,laboral,viajes,netapassinbajada,3,621
+2024-11-20,laboral,viajes,netapassinbajada,4,39
+2024-11-20,laboral,viajes,ultimaetapaconbajada,0,969615
+2024-11-20,laboral,viajes,ultimaetapaconbajada,1,2685495
+2024-11-20,laboral,viajes,periodo_inicio_viaje,59,2438
+2024-11-20,laboral,viajes,periodo_inicio_viaje,60,7789
+2024-11-20,laboral,viajes,periodo_inicio_viaje,61,109414
+2024-11-20,laboral,viajes,periodo_inicio_viaje,62,498405
+2024-11-20,laboral,viajes,periodo_inicio_viaje,63,445677
+2024-11-20,laboral,viajes,periodo_inicio_viaje,64,523348
+2024-11-20,laboral,viajes,periodo_inicio_viaje,65,289672
+2024-11-20,laboral,viajes,periodo_inicio_viaje,66,467963
+2024-11-20,laboral,viajes,periodo_inicio_viaje,67,633613
+2024-11-20,laboral,viajes,periodo_inicio_viaje,68,458592
+2024-11-20,laboral,viajes,periodo_inicio_viaje,69,210733
+2024-11-20,laboral,viajes,periodo_inicio_viaje,70,7466
+2024-11-20,laboral,viajes,periodo_fin_viaje,-1,969670
+2024-11-20,laboral,viajes,periodo_fin_viaje,59,950
+2024-11-20,laboral,viajes,periodo_fin_viaje,60,1397
+2024-11-20,laboral,viajes,periodo_fin_viaje,61,19830
+2024-11-20,laboral,viajes,periodo_fin_viaje,62,280975
+2024-11-20,laboral,viajes,periodo_fin_viaje,63,413898
+2024-11-20,laboral,viajes,periodo_fin_viaje,64,426493
+2024-11-20,laboral,viajes,periodo_fin_viaje,65,210105
+2024-11-20,laboral,viajes,periodo_fin_viaje,66,329086
+2024-11-20,laboral,viajes,periodo_fin_viaje,67,377508
+2024-11-20,laboral,viajes,periodo_fin_viaje,68,416992
+2024-11-20,laboral,viajes,periodo_fin_viaje,69,193286
+2024-11-20,laboral,viajes,periodo_fin_viaje,70,14920
+2024-11-20,laboral,viajes,tipo_corte_etapa_viaje,M15M,52744
+2024-11-20,laboral,viajes,tipo_corte_etapa_viaje,M3B,280191
+2024-11-20,laboral,viajes,tipo_corte_etapa_viaje,M40M,17725
+2024-11-20,laboral,viajes,tipo_corte_etapa_viaje,MS_B_B,17143
+2024-11-20,laboral,viajes,tipo_corte_etapa_viaje,MS_B_B_NB,6862
+2024-11-20,laboral,viajes,tipo_corte_etapa_viaje,MS_MT_MT,5223
+2024-11-20,laboral,viajes,tipo_corte_etapa_viaje,MS_M_B,58081
+2024-11-20,laboral,viajes,tipo_corte_etapa_viaje,MS_M_M,323699
+2024-11-20,laboral,viajes,tipo_corte_etapa_viaje,RD,60487
+2024-11-20,laboral,viajes,tipo_corte_etapa_viaje,SM2H,1008323
+2024-11-20,laboral,viajes,tipo_corte_etapa_viaje,UE,1824632
+2024-11-20,laboral,etapas,tipo_dia,LABORAL,4897118
+2024-11-20,laboral,etapas,tiene_bajada,0,1061358
+2024-11-20,laboral,etapas,tiene_bajada,1,3835760
+2024-11-20,laboral,etapas,tipo_transporte,BUS,1986264
+2024-11-20,laboral,etapas,tipo_transporte,METRO,2339554
+2024-11-20,laboral,etapas,tipo_transporte,METROTREN,78173
+2024-11-20,laboral,etapas,tipo_transporte,ZP,493127
+2024-11-20,laboral,etapas,periodoSubida,01 - PRE NOCTURNO,2717
+2024-11-20,laboral,etapas,periodoSubida,02 - NOCTURNO,8920
+2024-11-20,laboral,etapas,periodoSubida,03 - TRANSICION NOCTURNO,149046
+2024-11-20,laboral,etapas,periodoSubida,04 - PUNTA MANANA,694723
+2024-11-20,laboral,etapas,periodoSubida,05 - TRANSICION PUNTA MANANA,621837
+2024-11-20,laboral,etapas,periodoSubida,06 - FUERA DE PUNTA MANANA,685954
+2024-11-20,laboral,etapas,periodoSubida,07 - PUNTA MEDIODIA,370365
+2024-11-20,laboral,etapas,periodoSubida,08 - FUERA DE PUNTA TARDE,603588
+2024-11-20,laboral,etapas,periodoSubida,09 - PUNTA TARDE1,813800
+2024-11-20,laboral,etapas,periodoSubida,10 - PUNTA TARDE2,643935
+2024-11-20,laboral,etapas,periodoSubida,11 - FUERA DE PUNTA NOCTURNO,290152
+2024-11-20,laboral,etapas,periodoSubida,12 - PRE NOCTURNO,12081
+2024-11-20,laboral,etapas,periodoBajada,01 - PRE NOCTURNO,1215
+2024-11-20,laboral,etapas,periodoBajada,02 - NOCTURNO,2933
+2024-11-20,laboral,etapas,periodoBajada,03 - TRANSICION NOCTURNO,61501
+2024-11-20,laboral,etapas,periodoBajada,04 - PUNTA MANANA,472035
+2024-11-20,laboral,etapas,periodoBajada,05 - TRANSICION PUNTA MANANA,571928
+2024-11-20,laboral,etapas,periodoBajada,06 - FUERA DE PUNTA MANANA,572604
+2024-11-20,laboral,etapas,periodoBajada,07 - PUNTA MEDIODIA,284636
+2024-11-20,laboral,etapas,periodoBajada,08 - FUERA DE PUNTA TARDE,454788
+2024-11-20,laboral,etapas,periodoBajada,09 - PUNTA TARDE1,551797
+2024-11-20,laboral,etapas,periodoBajada,10 - PUNTA TARDE2,580536
+2024-11-20,laboral,etapas,periodoBajada,11 - FUERA DE PUNTA NOCTURNO,263718
+2024-11-20,laboral,etapas,periodoBajada,12 - PRE NOCTURNO,18069
+2024-11-21,laboral,viajes,tipodia,0,3587955
+2024-11-21,laboral,viajes,n_etapas,1,2504829
+2024-11-21,laboral,viajes,n_etapas,10,1
+2024-11-21,laboral,viajes,n_etapas,11,3
+2024-11-21,laboral,viajes,n_etapas,2,935751
+2024-11-21,laboral,viajes,n_etapas,3,142929
+2024-11-21,laboral,viajes,n_etapas,4,4133
+2024-11-21,laboral,viajes,n_etapas,42,1
+2024-11-21,laboral,viajes,n_etapas,5,260
+2024-11-21,laboral,viajes,n_etapas,6,32
+2024-11-21,laboral,viajes,n_etapas,7,6
+2024-11-21,laboral,viajes,n_etapas,8,4
+2024-11-21,laboral,viajes,n_etapas,9,6
+2024-11-21,laboral,viajes,netapassinbajada,0,2567307
+2024-11-21,laboral,viajes,netapassinbajada,1,994431
+2024-11-21,laboral,viajes,netapassinbajada,2,25678
+2024-11-21,laboral,viajes,netapassinbajada,3,501
+2024-11-21,laboral,viajes,netapassinbajada,4,38
+2024-11-21,laboral,viajes,ultimaetapaconbajada,0,961610
+2024-11-21,laboral,viajes,ultimaetapaconbajada,1,2626345
+2024-11-21,laboral,viajes,periodo_inicio_viaje,59,2356
+2024-11-21,laboral,viajes,periodo_inicio_viaje,60,7974
+2024-11-21,laboral,viajes,periodo_inicio_viaje,61,109328
+2024-11-21,laboral,viajes,periodo_inicio_viaje,62,495023
+2024-11-21,laboral,viajes,periodo_inicio_viaje,63,428896
+2024-11-21,laboral,viajes,periodo_inicio_viaje,64,520413
+2024-11-21,laboral,viajes,periodo_inicio_viaje,65,282691
+2024-11-21,laboral,viajes,periodo_inicio_viaje,66,457693
+2024-11-21,laboral,viajes,periodo_inicio_viaje,67,607896
+2024-11-21,laboral,viajes,periodo_inicio_viaje,68,459185
+2024-11-21,laboral,viajes,periodo_inicio_viaje,69,209825
+2024-11-21,laboral,viajes,periodo_inicio_viaje,70,6675
+2024-11-21,laboral,viajes,periodo_fin_viaje,-1,961703
+2024-11-21,laboral,viajes,periodo_fin_viaje,59,976
+2024-11-21,laboral,viajes,periodo_fin_viaje,60,1646
+2024-11-21,laboral,viajes,periodo_fin_viaje,61,19387
+2024-11-21,laboral,viajes,periodo_fin_viaje,62,275739
+2024-11-21,laboral,viajes,periodo_fin_viaje,63,400376
+2024-11-21,laboral,viajes,periodo_fin_viaje,64,425195
+2024-11-21,laboral,viajes,periodo_fin_viaje,65,205859
+2024-11-21,laboral,viajes,periodo_fin_viaje,66,319685
+2024-11-21,laboral,viajes,periodo_fin_viaje,67,363394
+2024-11-21,laboral,viajes,periodo_fin_viaje,68,406718
+2024-11-21,laboral,viajes,periodo_fin_viaje,69,192506
+2024-11-21,laboral,viajes,periodo_fin_viaje,70,14771
+2024-11-21,laboral,viajes,tipo_corte_etapa_viaje,M15M,50905
+2024-11-21,laboral,viajes,tipo_corte_etapa_viaje,M3B,261059
+2024-11-21,laboral,viajes,tipo_corte_etapa_viaje,M40M,15618
+2024-11-21,laboral,viajes,tipo_corte_etapa_viaje,MS_B_B,16702
+2024-11-21,laboral,viajes,tipo_corte_etapa_viaje,MS_B_B_NB,6612
+2024-11-21,laboral,viajes,tipo_corte_etapa_viaje,MS_MT_MT,5549
+2024-11-21,laboral,viajes,tipo_corte_etapa_viaje,MS_M_B,55170
+2024-11-21,laboral,viajes,tipo_corte_etapa_viaje,MS_M_M,323353
+2024-11-21,laboral,viajes,tipo_corte_etapa_viaje,RD,58605
+2024-11-21,laboral,viajes,tipo_corte_etapa_viaje,SM2H,989705
+2024-11-21,laboral,viajes,tipo_corte_etapa_viaje,UE,1804677
+2024-11-21,laboral,etapas,tipo_dia,LABORAL,4830969
+2024-11-21,laboral,etapas,tiene_bajada,0,1050131
+2024-11-21,laboral,etapas,tiene_bajada,1,3780838
+2024-11-21,laboral,etapas,tipo_transporte,BUS,1952458
+2024-11-21,laboral,etapas,tipo_transporte,METRO,2307896
+2024-11-21,laboral,etapas,tipo_transporte,METROTREN,76560
+2024-11-21,laboral,etapas,tipo_transporte,ZP,494055
+2024-11-21,laboral,etapas,periodoSubida,01 - PRE NOCTURNO,2624
+2024-11-21,laboral,etapas,periodoSubida,02 - NOCTURNO,9164
+2024-11-21,laboral,etapas,periodoSubida,03 - TRANSICION NOCTURNO,148379
+2024-11-21,laboral,etapas,periodoSubida,04 - PUNTA MANANA,695058
+2024-11-21,laboral,etapas,periodoSubida,05 - TRANSICION PUNTA MANANA,608863
+2024-11-21,laboral,etapas,periodoSubida,06 - FUERA DE PUNTA MANANA,684629
+2024-11-21,laboral,etapas,periodoSubida,07 - PUNTA MEDIODIA,362202
+2024-11-21,laboral,etapas,periodoSubida,08 - FUERA DE PUNTA TARDE,591113
+2024-11-21,laboral,etapas,periodoSubida,09 - PUNTA TARDE1,784796
+2024-11-21,laboral,etapas,periodoSubida,10 - PUNTA TARDE2,641190
+2024-11-21,laboral,etapas,periodoSubida,11 - FUERA DE PUNTA NOCTURNO,291672
+2024-11-21,laboral,etapas,periodoSubida,12 - PRE NOCTURNO,11279
+2024-11-21,laboral,etapas,periodoBajada,01 - PRE NOCTURNO,1253
+2024-11-21,laboral,etapas,periodoBajada,02 - NOCTURNO,3145
+2024-11-21,laboral,etapas,periodoBajada,03 - TRANSICION NOCTURNO,60442
+2024-11-21,laboral,etapas,periodoBajada,04 - PUNTA MANANA,468570
+2024-11-21,laboral,etapas,periodoBajada,05 - TRANSICION PUNTA MANANA,563745
+2024-11-21,laboral,etapas,periodoBajada,06 - FUERA DE PUNTA MANANA,574462
+2024-11-21,laboral,etapas,periodoBajada,07 - PUNTA MEDIODIA,279074
+2024-11-21,laboral,etapas,periodoBajada,08 - FUERA DE PUNTA TARDE,443590
+2024-11-21,laboral,etapas,periodoBajada,09 - PUNTA TARDE1,535060
+2024-11-21,laboral,etapas,periodoBajada,10 - PUNTA TARDE2,568985
+2024-11-21,laboral,etapas,periodoBajada,11 - FUERA DE PUNTA NOCTURNO,264499
+2024-11-21,laboral,etapas,periodoBajada,12 - PRE NOCTURNO,18013
+2024-11-22,laboral,viajes,tipodia,0,3524474
+2024-11-22,laboral,viajes,n_etapas,1,2482165
+2024-11-22,laboral,viajes,n_etapas,11,5
+2024-11-22,laboral,viajes,n_etapas,2,899269
+2024-11-22,laboral,viajes,n_etapas,29,1
+2024-11-22,laboral,viajes,n_etapas,3,138651
+2024-11-22,laboral,viajes,n_etapas,4,4098
+2024-11-22,laboral,viajes,n_etapas,5,245
+2024-11-22,laboral,viajes,n_etapas,6,25
+2024-11-22,laboral,viajes,n_etapas,7,12
+2024-11-22,laboral,viajes,n_etapas,9,3
+2024-11-22,laboral,viajes,netapassinbajada,0,2443184
+2024-11-22,laboral,viajes,netapassinbajada,1,1053022
+2024-11-22,laboral,viajes,netapassinbajada,2,27681
+2024-11-22,laboral,viajes,netapassinbajada,3,539
+2024-11-22,laboral,viajes,netapassinbajada,4,48
+2024-11-22,laboral,viajes,ultimaetapaconbajada,0,1025411
+2024-11-22,laboral,viajes,ultimaetapaconbajada,1,2499063
+2024-11-22,laboral,viajes,periodo_inicio_viaje,59,2304
+2024-11-22,laboral,viajes,periodo_inicio_viaje,60,8336
+2024-11-22,laboral,viajes,periodo_inicio_viaje,61,105667
+2024-11-22,laboral,viajes,periodo_inicio_viaje,62,460655
+2024-11-22,laboral,viajes,periodo_inicio_viaje,63,393665
+2024-11-22,laboral,viajes,periodo_inicio_viaje,64,528139
+2024-11-22,laboral,viajes,periodo_inicio_viaje,65,316727
+2024-11-22,laboral,viajes,periodo_inicio_viaje,66,526783
+2024-11-22,laboral,viajes,periodo_inicio_viaje,67,568118
+2024-11-22,laboral,viajes,periodo_inicio_viaje,68,380897
+2024-11-22,laboral,viajes,periodo_inicio_viaje,69,224179
+2024-11-22,laboral,viajes,periodo_inicio_viaje,70,9004
+2024-11-22,laboral,viajes,periodo_fin_viaje,-1,1025489
+2024-11-22,laboral,viajes,periodo_fin_viaje,59,1021
+2024-11-22,laboral,viajes,periodo_fin_viaje,60,1681
+2024-11-22,laboral,viajes,periodo_fin_viaje,61,19052
+2024-11-22,laboral,viajes,periodo_fin_viaje,62,257132
+2024-11-22,laboral,viajes,periodo_fin_viaje,63,358802
+2024-11-22,laboral,viajes,periodo_fin_viaje,64,412975
+2024-11-22,laboral,viajes,periodo_fin_viaje,65,218118
+2024-11-22,laboral,viajes,periodo_fin_viaje,66,354574
+2024-11-22,laboral,viajes,periodo_fin_viaje,67,382138
+2024-11-22,laboral,viajes,periodo_fin_viaje,68,296182
+2024-11-22,laboral,viajes,periodo_fin_viaje,69,180257
+2024-11-22,laboral,viajes,periodo_fin_viaje,70,17053
+2024-11-22,laboral,viajes,tipo_corte_etapa_viaje,M15M,54192
+2024-11-22,laboral,viajes,tipo_corte_etapa_viaje,M3B,259946
+2024-11-22,laboral,viajes,tipo_corte_etapa_viaje,M40M,18580
+2024-11-22,laboral,viajes,tipo_corte_etapa_viaje,MS_B_B,17372
+2024-11-22,laboral,viajes,tipo_corte_etapa_viaje,MS_B_B_NB,7541
+2024-11-22,laboral,viajes,tipo_corte_etapa_viaje,MS_MT_MT,6118
+2024-11-22,laboral,viajes,tipo_corte_etapa_viaje,MS_M_B,53280
+2024-11-22,laboral,viajes,tipo_corte_etapa_viaje,MS_M_M,343836
+2024-11-22,laboral,viajes,tipo_corte_etapa_viaje,RD,60289
+2024-11-22,laboral,viajes,tipo_corte_etapa_viaje,SM2H,921813
+2024-11-22,laboral,viajes,tipo_corte_etapa_viaje,UE,1781507
+2024-11-22,laboral,etapas,tipo_dia,LABORAL,4722466
+2024-11-22,laboral,etapas,tiene_bajada,0,1112850
+2024-11-22,laboral,etapas,tiene_bajada,1,3609616
+2024-11-22,laboral,etapas,tipo_transporte,BUS,1917755
+2024-11-22,laboral,etapas,tipo_transporte,METRO,2257841
+2024-11-22,laboral,etapas,tipo_transporte,METROTREN,75940
+2024-11-22,laboral,etapas,tipo_transporte,ZP,470930
+2024-11-22,laboral,etapas,periodoSubida,01 - PRE NOCTURNO,2555
+2024-11-22,laboral,etapas,periodoSubida,02 - NOCTURNO,9550
+2024-11-22,laboral,etapas,periodoSubida,03 - TRANSICION NOCTURNO,143886
+2024-11-22,laboral,etapas,periodoSubida,04 - PUNTA MANANA,648836
+2024-11-22,laboral,etapas,periodoSubida,05 - TRANSICION PUNTA MANANA,563366
+2024-11-22,laboral,etapas,periodoSubida,06 - FUERA DE PUNTA MANANA,689555
+2024-11-22,laboral,etapas,periodoSubida,07 - PUNTA MEDIODIA,400681
+2024-11-22,laboral,etapas,periodoSubida,08 - FUERA DE PUNTA TARDE,676838
+2024-11-22,laboral,etapas,periodoSubida,09 - PUNTA TARDE1,750420
+2024-11-22,laboral,etapas,periodoSubida,10 - PUNTA TARDE2,517511
+2024-11-22,laboral,etapas,periodoSubida,11 - FUERA DE PUNTA NOCTURNO,304503
+2024-11-22,laboral,etapas,periodoSubida,12 - PRE NOCTURNO,14765
+2024-11-22,laboral,etapas,periodoBajada,01 - PRE NOCTURNO,1308
+2024-11-22,laboral,etapas,periodoBajada,02 - NOCTURNO,3226
+2024-11-22,laboral,etapas,periodoBajada,03 - TRANSICION NOCTURNO,59448
+2024-11-22,laboral,etapas,periodoBajada,04 - PUNTA MANANA,439573
+2024-11-22,laboral,etapas,periodoBajada,05 - TRANSICION PUNTA MANANA,511009
+2024-11-22,laboral,etapas,periodoBajada,06 - FUERA DE PUNTA MANANA,560552
+2024-11-22,laboral,etapas,periodoBajada,07 - PUNTA MEDIODIA,296734
+2024-11-22,laboral,etapas,periodoBajada,08 - FUERA DE PUNTA TARDE,495081
+2024-11-22,laboral,etapas,periodoBajada,09 - PUNTA TARDE1,553174
+2024-11-22,laboral,etapas,periodoBajada,10 - PUNTA TARDE2,417367
+2024-11-22,laboral,etapas,periodoBajada,11 - FUERA DE PUNTA NOCTURNO,251053
+2024-11-22,laboral,etapas,periodoBajada,12 - PRE NOCTURNO,21091
+2024-11-23,sabado,viajes,tipodia,1,1962841
+2024-11-23,sabado,viajes,n_etapas,1,1435232
+2024-11-23,sabado,viajes,n_etapas,10,3
+2024-11-23,sabado,viajes,n_etapas,12,1
+2024-11-23,sabado,viajes,n_etapas,13,1
+2024-11-23,sabado,viajes,n_etapas,2,461740
+2024-11-23,sabado,viajes,n_etapas,3,63609
+2024-11-23,sabado,viajes,n_etapas,4,2122
+2024-11-23,sabado,viajes,n_etapas,5,122
+2024-11-23,sabado,viajes,n_etapas,6,8
+2024-11-23,sabado,viajes,n_etapas,7,2
+2024-11-23,sabado,viajes,n_etapas,8,1
+2024-11-23,sabado,viajes,netapassinbajada,0,1216909
+2024-11-23,sabado,viajes,netapassinbajada,1,728327
+2024-11-23,sabado,viajes,netapassinbajada,2,17271
+2024-11-23,sabado,viajes,netapassinbajada,3,316
+2024-11-23,sabado,viajes,netapassinbajada,4,18
+2024-11-23,sabado,viajes,ultimaetapaconbajada,0,719087
+2024-11-23,sabado,viajes,ultimaetapaconbajada,1,1243754
+2024-11-23,sabado,viajes,periodo_inicio_viaje,71,3457
+2024-11-23,sabado,viajes,periodo_inicio_viaje,72,4861
+2024-11-23,sabado,viajes,periodo_inicio_viaje,73,26100
+2024-11-23,sabado,viajes,periodo_inicio_viaje,74,260465
+2024-11-23,sabado,viajes,periodo_inicio_viaje,75,400571
+2024-11-23,sabado,viajes,periodo_inicio_viaje,76,451590
+2024-11-23,sabado,viajes,periodo_inicio_viaje,77,530972
+2024-11-23,sabado,viajes,periodo_inicio_viaje,78,277306
+2024-11-23,sabado,viajes,periodo_inicio_viaje,79,7519
+2024-11-23,sabado,viajes,periodo_fin_viaje,-1,719128
+2024-11-23,sabado,viajes,periodo_fin_viaje,71,1206
+2024-11-23,sabado,viajes,periodo_fin_viaje,72,1815
+2024-11-23,sabado,viajes,periodo_fin_viaje,73,4374
+2024-11-23,sabado,viajes,periodo_fin_viaje,74,145787
+2024-11-23,sabado,viajes,periodo_fin_viaje,75,267256
+2024-11-23,sabado,viajes,periodo_fin_viaje,76,295196
+2024-11-23,sabado,viajes,periodo_fin_viaje,77,334947
+2024-11-23,sabado,viajes,periodo_fin_viaje,78,180542
+2024-11-23,sabado,viajes,periodo_fin_viaje,79,12590
+2024-11-23,sabado,viajes,tipo_corte_etapa_viaje,M15M,30860
+2024-11-23,sabado,viajes,tipo_corte_etapa_viaje,M3B,115456
+2024-11-23,sabado,viajes,tipo_corte_etapa_viaje,M40M,13309
+2024-11-23,sabado,viajes,tipo_corte_etapa_viaje,MS_B_B,13972
+2024-11-23,sabado,viajes,tipo_corte_etapa_viaje,MS_B_B_NB,7512
+2024-11-23,sabado,viajes,tipo_corte_etapa_viaje,MS_MT_MT,6418
+2024-11-23,sabado,viajes,tipo_corte_etapa_viaje,MS_M_B,22873
+2024-11-23,sabado,viajes,tipo_corte_etapa_viaje,MS_M_M,226923
+2024-11-23,sabado,viajes,tipo_corte_etapa_viaje,RD,40743
+2024-11-23,sabado,viajes,tipo_corte_etapa_viaje,SM2H,411832
+2024-11-23,sabado,viajes,tipo_corte_etapa_viaje,UE,1072943
+2024-11-23,sabado,etapas,tipo_dia,SABADO,2563888
+2024-11-23,sabado,etapas,tiene_bajada,0,765432
+2024-11-23,sabado,etapas,tiene_bajada,1,1798456
+2024-11-23,sabado,etapas,tipo_transporte,BUS,1203098
+2024-11-23,sabado,etapas,tipo_transporte,METRO,1236439
+2024-11-23,sabado,etapas,tipo_transporte,METROTREN,45577
+2024-11-23,sabado,etapas,tipo_transporte,ZP,78774
+2024-11-23,sabado,etapas,periodoSubida,01 - PRE NOCTURNO SABADO,3814
+2024-11-23,sabado,etapas,periodoSubida,02 - NOCTURNO SABADO,5675
+2024-11-23,sabado,etapas,periodoSubida,03 - TRANSICION SABADO MANANA,33372
+2024-11-23,sabado,etapas,periodoSubida,04 - PUNTA MANANA SABADO,369655
+2024-11-23,sabado,etapas,periodoSubida,05 - MANANA SABADO,521502
+2024-11-23,sabado,etapas,periodoSubida,06 - PUNTA MEDIODIA SABADO,572328
+2024-11-23,sabado,etapas,periodoSubida,07 - TARDE SABADO,680225
+2024-11-23,sabado,etapas,periodoSubida,08 - TRANSICION SABADO NOCTURNO,365341
+2024-11-23,sabado,etapas,periodoSubida,09 - PRE NOCTURNO SABADO,11976
+2024-11-23,sabado,etapas,periodoBajada,01 - PRE NOCTURNO SABADO,1611
+2024-11-23,sabado,etapas,periodoBajada,02 - NOCTURNO SABADO,2724
+2024-11-23,sabado,etapas,periodoBajada,03 - TRANSICION SABADO MANANA,13220
+2024-11-23,sabado,etapas,periodoBajada,04 - PUNTA MANANA SABADO,249580
+2024-11-23,sabado,etapas,periodoBajada,05 - MANANA SABADO,378501
+2024-11-23,sabado,etapas,periodoBajada,06 - PUNTA MEDIODIA SABADO,407102
+2024-11-23,sabado,etapas,periodoBajada,07 - TARDE SABADO,470751
+2024-11-23,sabado,etapas,periodoBajada,08 - TRANSICION SABADO NOCTURNO,259442
+2024-11-23,sabado,etapas,periodoBajada,09 - PRE NOCTURNO SABADO,15525
+2024-11-24,domingo,viajes,tipodia,2,1560864
+2024-11-24,domingo,viajes,n_etapas,1,1187643
+2024-11-24,domingo,viajes,n_etapas,2,312394
+2024-11-24,domingo,viajes,n_etapas,3,54885
+2024-11-24,domingo,viajes,n_etapas,4,5251
+2024-11-24,domingo,viajes,n_etapas,5,605
+2024-11-24,domingo,viajes,n_etapas,6,78
+2024-11-24,domingo,viajes,n_etapas,7,6
+2024-11-24,domingo,viajes,n_etapas,8,2
+2024-11-24,domingo,viajes,netapassinbajada,0,925638
+2024-11-24,domingo,viajes,netapassinbajada,1,616010
+2024-11-24,domingo,viajes,netapassinbajada,2,18714
+2024-11-24,domingo,viajes,netapassinbajada,3,493
+2024-11-24,domingo,viajes,netapassinbajada,4,9
+2024-11-24,domingo,viajes,ultimaetapaconbajada,0,610094
+2024-11-24,domingo,viajes,ultimaetapaconbajada,1,950770
+2024-11-24,domingo,viajes,periodo_inicio_viaje,80,2960
+2024-11-24,domingo,viajes,periodo_inicio_viaje,81,2522
+2024-11-24,domingo,viajes,periodo_inicio_viaje,82,27126
+2024-11-24,domingo,viajes,periodo_inicio_viaje,83,615953
+2024-11-24,domingo,viajes,periodo_inicio_viaje,84,614068
+2024-11-24,domingo,viajes,periodo_inicio_viaje,85,224188
+2024-11-24,domingo,viajes,periodo_inicio_viaje,86,71097
+2024-11-24,domingo,viajes,periodo_inicio_viaje,87,2950
+2024-11-24,domingo,viajes,periodo_fin_viaje,-1,610320
+2024-11-24,domingo,viajes,periodo_fin_viaje,80,899
+2024-11-24,domingo,viajes,periodo_fin_viaje,81,1035
+2024-11-24,domingo,viajes,periodo_fin_viaje,82,8491
+2024-11-24,domingo,viajes,periodo_fin_viaje,83,358044
+2024-11-24,domingo,viajes,periodo_fin_viaje,84,393348
+2024-11-24,domingo,viajes,periodo_fin_viaje,85,130507
+2024-11-24,domingo,viajes,periodo_fin_viaje,86,52524
+2024-11-24,domingo,viajes,periodo_fin_viaje,87,5696
+2024-11-24,domingo,viajes,tipo_corte_etapa_viaje,M15M,22222
+2024-11-24,domingo,viajes,tipo_corte_etapa_viaje,M3B,74673
+2024-11-24,domingo,viajes,tipo_corte_etapa_viaje,M40M,18951
+2024-11-24,domingo,viajes,tipo_corte_etapa_viaje,MS_B_B,12851
+2024-11-24,domingo,viajes,tipo_corte_etapa_viaje,MS_B_B_NB,9494
+2024-11-24,domingo,viajes,tipo_corte_etapa_viaje,MS_MT_MT,10327
+2024-11-24,domingo,viajes,tipo_corte_etapa_viaje,MS_M_B,23550
+2024-11-24,domingo,viajes,tipo_corte_etapa_viaje,MS_M_M,261556
+2024-11-24,domingo,viajes,tipo_corte_etapa_viaje,RD,62767
+2024-11-24,domingo,viajes,tipo_corte_etapa_viaje,SM2H,199218
+2024-11-24,domingo,viajes,tipo_corte_etapa_viaje,UE,865255
+2024-11-24,domingo,etapas,tipo_dia,DOMINGO,2015003
+2024-11-24,domingo,etapas,tiene_bajada,0,658249
+2024-11-24,domingo,etapas,tiene_bajada,1,1356754
+2024-11-24,domingo,etapas,tipo_transporte,BUS,1000941
+2024-11-24,domingo,etapas,tipo_transporte,METRO,962851
+2024-11-24,domingo,etapas,tipo_transporte,METROTREN,38503
+2024-11-24,domingo,etapas,tipo_transporte,ZP,12708
+2024-11-24,domingo,etapas,periodoSubida,01 - PRE NOCTURNO DOMINGO,3302
+2024-11-24,domingo,etapas,periodoSubida,02 - NOCTURNO DOMINGO,2935
+2024-11-24,domingo,etapas,periodoSubida,03 - TRANSICION DOMINGO MANANA,35671
+2024-11-24,domingo,etapas,periodoSubida,04 - MANANA DOMINGO,798910
+2024-11-24,domingo,etapas,periodoSubida,05 - MEDIODIA DOMINGO,787005
+2024-11-24,domingo,etapas,periodoSubida,06 - TARDE DOMINGO,287467
+2024-11-24,domingo,etapas,periodoSubida,07 - TRANSICION DOMINGO NOCTURNO,94775
+2024-11-24,domingo,etapas,periodoSubida,08 - PRE NOCTURNO DOMINGO,4938
+2024-11-24,domingo,etapas,periodoBajada,01 - PRE NOCTURNO DOMINGO,1249
+2024-11-24,domingo,etapas,periodoBajada,02 - NOCTURNO DOMINGO,1390
+2024-11-24,domingo,etapas,periodoBajada,03 - TRANSICION DOMINGO MANANA,17323
+2024-11-24,domingo,etapas,periodoBajada,04 - MANANA DOMINGO,526566
+2024-11-24,domingo,etapas,periodoBajada,05 - MEDIODIA DOMINGO,542446
+2024-11-24,domingo,etapas,periodoBajada,06 - TARDE DOMINGO,187753
+2024-11-24,domingo,etapas,periodoBajada,07 - TRANSICION DOMINGO NOCTURNO,73013
+2024-11-24,domingo,etapas,periodoBajada,08 - PRE NOCTURNO DOMINGO,7014
+2024-11-25,laboral,viajes,tipodia,0,3504683
+2024-11-25,laboral,viajes,n_etapas,1,2460790
+2024-11-25,laboral,viajes,n_etapas,10,1
+2024-11-25,laboral,viajes,n_etapas,12,2
+2024-11-25,laboral,viajes,n_etapas,19,1
+2024-11-25,laboral,viajes,n_etapas,2,903937
+2024-11-25,laboral,viajes,n_etapas,3,135756
+2024-11-25,laboral,viajes,n_etapas,4,3912
+2024-11-25,laboral,viajes,n_etapas,5,239
+2024-11-25,laboral,viajes,n_etapas,6,26
+2024-11-25,laboral,viajes,n_etapas,7,8
+2024-11-25,laboral,viajes,n_etapas,8,7
+2024-11-25,laboral,viajes,n_etapas,9,4
+2024-11-25,laboral,viajes,netapassinbajada,0,2483744
+2024-11-25,laboral,viajes,netapassinbajada,1,994273
+2024-11-25,laboral,viajes,netapassinbajada,2,26085
+2024-11-25,laboral,viajes,netapassinbajada,3,537
+2024-11-25,laboral,viajes,netapassinbajada,4,44
+2024-11-25,laboral,viajes,ultimaetapaconbajada,0,964067
+2024-11-25,laboral,viajes,ultimaetapaconbajada,1,2540616
+2024-11-25,laboral,viajes,periodo_inicio_viaje,59,628
+2024-11-25,laboral,viajes,periodo_inicio_viaje,60,7149
+2024-11-25,laboral,viajes,periodo_inicio_viaje,61,110521
+2024-11-25,laboral,viajes,periodo_inicio_viaje,62,470950
+2024-11-25,laboral,viajes,periodo_inicio_viaje,63,422127
+2024-11-25,laboral,viajes,periodo_inicio_viaje,64,527977
+2024-11-25,laboral,viajes,periodo_inicio_viaje,65,275699
+2024-11-25,laboral,viajes,periodo_inicio_viaje,66,447915
+2024-11-25,laboral,viajes,periodo_inicio_viaje,67,600501
+2024-11-25,laboral,viajes,periodo_inicio_viaje,68,448971
+2024-11-25,laboral,viajes,periodo_inicio_viaje,69,187310
+2024-11-25,laboral,viajes,periodo_inicio_viaje,70,4935
+2024-11-25,laboral,viajes,periodo_fin_viaje,-1,964112
+2024-11-25,laboral,viajes,periodo_fin_viaje,59,220
+2024-11-25,laboral,viajes,periodo_fin_viaje,60,863
+2024-11-25,laboral,viajes,periodo_fin_viaje,61,19237
+2024-11-25,laboral,viajes,periodo_fin_viaje,62,260693
+2024-11-25,laboral,viajes,periodo_fin_viaje,63,382434
+2024-11-25,laboral,viajes,periodo_fin_viaje,64,424575
+2024-11-25,laboral,viajes,periodo_fin_viaje,65,201164
+2024-11-25,laboral,viajes,periodo_fin_viaje,66,312600
+2024-11-25,laboral,viajes,periodo_fin_viaje,67,354832
+2024-11-25,laboral,viajes,periodo_fin_viaje,68,401324
+2024-11-25,laboral,viajes,periodo_fin_viaje,69,171658
+2024-11-25,laboral,viajes,periodo_fin_viaje,70,10971
+2024-11-25,laboral,viajes,tipo_corte_etapa_viaje,M15M,50942
+2024-11-25,laboral,viajes,tipo_corte_etapa_viaje,M3B,275522
+2024-11-25,laboral,viajes,tipo_corte_etapa_viaje,M40M,12261
+2024-11-25,laboral,viajes,tipo_corte_etapa_viaje,MS_B_B,16219
+2024-11-25,laboral,viajes,tipo_corte_etapa_viaje,MS_B_B_NB,6607
+2024-11-25,laboral,viajes,tipo_corte_etapa_viaje,MS_MT_MT,5721
+2024-11-25,laboral,viajes,tipo_corte_etapa_viaje,MS_M_B,52237
+2024-11-25,laboral,viajes,tipo_corte_etapa_viaje,MS_M_M,324739
+2024-11-25,laboral,viajes,tipo_corte_etapa_viaje,RD,52053
+2024-11-25,laboral,viajes,tipo_corte_etapa_viaje,SM2H,931127
+2024-11-25,laboral,viajes,tipo_corte_etapa_viaje,UE,1777255
+2024-11-25,laboral,etapas,tipo_dia,LABORAL,4700060
+2024-11-25,laboral,etapas,tiene_bajada,0,1051017
+2024-11-25,laboral,etapas,tiene_bajada,1,3649043
+2024-11-25,laboral,etapas,tipo_transporte,BUS,1884645
+2024-11-25,laboral,etapas,tipo_transporte,METRO,2256492
+2024-11-25,laboral,etapas,tipo_transporte,METROTREN,76378
+2024-11-25,laboral,etapas,tipo_transporte,ZP,482545
+2024-11-25,laboral,etapas,periodoSubida,01 - PRE NOCTURNO,683
+2024-11-25,laboral,etapas,periodoSubida,02 - NOCTURNO,8090
+2024-11-25,laboral,etapas,periodoSubida,03 - TRANSICION NOCTURNO,148631
+2024-11-25,laboral,etapas,periodoSubida,04 - PUNTA MANANA,663913
+2024-11-25,laboral,etapas,periodoSubida,05 - TRANSICION PUNTA MANANA,594263
+2024-11-25,laboral,etapas,periodoSubida,06 - FUERA DE PUNTA MANANA,689751
+2024-11-25,laboral,etapas,periodoSubida,07 - PUNTA MEDIODIA,351125
+2024-11-25,laboral,etapas,periodoSubida,08 - FUERA DE PUNTA TARDE,574519
+2024-11-25,laboral,etapas,periodoSubida,09 - PUNTA TARDE1,768846
+2024-11-25,laboral,etapas,periodoSubida,10 - PUNTA TARDE2,628306
+2024-11-25,laboral,etapas,periodoSubida,11 - FUERA DE PUNTA NOCTURNO,263275
+2024-11-25,laboral,etapas,periodoSubida,12 - PRE NOCTURNO,8658
+2024-11-25,laboral,etapas,periodoBajada,01 - PRE NOCTURNO,288
+2024-11-25,laboral,etapas,periodoBajada,02 - NOCTURNO,2229
+2024-11-25,laboral,etapas,periodoBajada,03 - TRANSICION NOCTURNO,59886
+2024-11-25,laboral,etapas,periodoBajada,04 - PUNTA MANANA,446642
+2024-11-25,laboral,etapas,periodoBajada,05 - TRANSICION PUNTA MANANA,539052
+2024-11-25,laboral,etapas,periodoBajada,06 - FUERA DE PUNTA MANANA,570458
+2024-11-25,laboral,etapas,periodoBajada,07 - PUNTA MEDIODIA,270710
+2024-11-25,laboral,etapas,periodoBajada,08 - FUERA DE PUNTA TARDE,429240
+2024-11-25,laboral,etapas,periodoBajada,09 - PUNTA TARDE1,518090
+2024-11-25,laboral,etapas,periodoBajada,10 - PUNTA TARDE2,560827
+2024-11-25,laboral,etapas,periodoBajada,11 - FUERA DE PUNTA NOCTURNO,238110
+2024-11-25,laboral,etapas,periodoBajada,12 - PRE NOCTURNO,13511
+2024-11-26,laboral,viajes,tipodia,0,3578484
+2024-11-26,laboral,viajes,n_etapas,1,2499823
+2024-11-26,laboral,viajes,n_etapas,11,2
+2024-11-26,laboral,viajes,n_etapas,12,1
+2024-11-26,laboral,viajes,n_etapas,14,1
+2024-11-26,laboral,viajes,n_etapas,17,1
+2024-11-26,laboral,viajes,n_etapas,2,931169
+2024-11-26,laboral,viajes,n_etapas,21,1
+2024-11-26,laboral,viajes,n_etapas,3,143122
+2024-11-26,laboral,viajes,n_etapas,35,1
+2024-11-26,laboral,viajes,n_etapas,4,4096
+2024-11-26,laboral,viajes,n_etapas,49,1
+2024-11-26,laboral,viajes,n_etapas,5,230
+2024-11-26,laboral,viajes,n_etapas,6,27
+2024-11-26,laboral,viajes,n_etapas,7,5
+2024-11-26,laboral,viajes,n_etapas,8,2
+2024-11-26,laboral,viajes,n_etapas,9,2
+2024-11-26,laboral,viajes,netapassinbajada,0,2576896
+2024-11-26,laboral,viajes,netapassinbajada,1,976193
+2024-11-26,laboral,viajes,netapassinbajada,2,24839
+2024-11-26,laboral,viajes,netapassinbajada,3,515
+2024-11-26,laboral,viajes,netapassinbajada,4,41
+2024-11-26,laboral,viajes,ultimaetapaconbajada,0,943219
+2024-11-26,laboral,viajes,ultimaetapaconbajada,1,2635265
+2024-11-26,laboral,viajes,periodo_inicio_viaje,59,1178
+2024-11-26,laboral,viajes,periodo_inicio_viaje,60,7609
+2024-11-26,laboral,viajes,periodo_inicio_viaje,61,111170
+2024-11-26,laboral,viajes,periodo_inicio_viaje,62,499542
+2024-11-26,laboral,viajes,periodo_inicio_viaje,63,431645
+2024-11-26,laboral,viajes,periodo_inicio_viaje,64,514951
+2024-11-26,laboral,viajes,periodo_inicio_viaje,65,273388
+2024-11-26,laboral,viajes,periodo_inicio_viaje,66,453605
+2024-11-26,laboral,viajes,periodo_inicio_viaje,67,614176
+2024-11-26,laboral,viajes,periodo_inicio_viaje,68,468414
+2024-11-26,laboral,viajes,periodo_inicio_viaje,69,196858
+2024-11-26,laboral,viajes,periodo_inicio_viaje,70,5948
+2024-11-26,laboral,viajes,periodo_fin_viaje,-1,943260
+2024-11-26,laboral,viajes,periodo_fin_viaje,59,556
+2024-11-26,laboral,viajes,periodo_fin_viaje,60,1108
+2024-11-26,laboral,viajes,periodo_fin_viaje,61,20011
+2024-11-26,laboral,viajes,periodo_fin_viaje,62,280064
+2024-11-26,laboral,viajes,periodo_fin_viaje,63,406304
+2024-11-26,laboral,viajes,periodo_fin_viaje,64,423101
+2024-11-26,laboral,viajes,periodo_fin_viaje,65,200005
+2024-11-26,laboral,viajes,periodo_fin_viaje,66,317468
+2024-11-26,laboral,viajes,periodo_fin_viaje,67,366750
+2024-11-26,laboral,viajes,periodo_fin_viaje,68,420065
+2024-11-26,laboral,viajes,periodo_fin_viaje,69,187307
+2024-11-26,laboral,viajes,periodo_fin_viaje,70,12485
+2024-11-26,laboral,viajes,tipo_corte_etapa_viaje,M15M,50518
+2024-11-26,laboral,viajes,tipo_corte_etapa_viaje,M3B,259200
+2024-11-26,laboral,viajes,tipo_corte_etapa_viaje,M40M,16300
+2024-11-26,laboral,viajes,tipo_corte_etapa_viaje,MS_B_B,16968
+2024-11-26,laboral,viajes,tipo_corte_etapa_viaje,MS_B_B_NB,6445
+2024-11-26,laboral,viajes,tipo_corte_etapa_viaje,MS_MT_MT,5148
+2024-11-26,laboral,viajes,tipo_corte_etapa_viaje,MS_M_B,55714
+2024-11-26,laboral,viajes,tipo_corte_etapa_viaje,MS_M_M,323620
+2024-11-26,laboral,viajes,tipo_corte_etapa_viaje,RD,60210
+2024-11-26,laboral,viajes,tipo_corte_etapa_viaje,SM2H,985989
+2024-11-26,laboral,viajes,tipo_corte_etapa_viaje,UE,1798372
+2024-11-26,laboral,etapas,tipo_dia,LABORAL,4817522
+2024-11-26,laboral,etapas,tiene_bajada,0,1030387
+2024-11-26,laboral,etapas,tiene_bajada,1,3787135
+2024-11-26,laboral,etapas,tipo_transporte,BUS,1943377
+2024-11-26,laboral,etapas,tipo_transporte,METRO,2302304
+2024-11-26,laboral,etapas,tipo_transporte,METROTREN,75883
+2024-11-26,laboral,etapas,tipo_transporte,ZP,495958
+2024-11-26,laboral,etapas,periodoSubida,01 - PRE NOCTURNO,1294
+2024-11-26,laboral,etapas,periodoSubida,02 - NOCTURNO,8677
+2024-11-26,laboral,etapas,periodoSubida,03 - TRANSICION NOCTURNO,151319
+2024-11-26,laboral,etapas,periodoSubida,04 - PUNTA MANANA,699336
+2024-11-26,laboral,etapas,periodoSubida,05 - TRANSICION PUNTA MANANA,612377
+2024-11-26,laboral,etapas,periodoSubida,06 - FUERA DE PUNTA MANANA,676685
+2024-11-26,laboral,etapas,periodoSubida,07 - PUNTA MEDIODIA,349613
+2024-11-26,laboral,etapas,periodoSubida,08 - FUERA DE PUNTA TARDE,585399
+2024-11-26,laboral,etapas,periodoSubida,09 - PUNTA TARDE1,792417
+2024-11-26,laboral,etapas,periodoSubida,10 - PUNTA TARDE2,654350
+2024-11-26,laboral,etapas,periodoSubida,11 - FUERA DE PUNTA NOCTURNO,276091
+2024-11-26,laboral,etapas,periodoSubida,12 - PRE NOCTURNO,9964
+2024-11-26,laboral,etapas,periodoBajada,01 - PRE NOCTURNO,679
+2024-11-26,laboral,etapas,periodoBajada,02 - NOCTURNO,2634
+2024-11-26,laboral,etapas,periodoBajada,03 - TRANSICION NOCTURNO,62406
+2024-11-26,laboral,etapas,periodoBajada,04 - PUNTA MANANA,474108
+2024-11-26,laboral,etapas,periodoBajada,05 - TRANSICION PUNTA MANANA,568783
+2024-11-26,laboral,etapas,periodoBajada,06 - FUERA DE PUNTA MANANA,570117
+2024-11-26,laboral,etapas,periodoBajada,07 - PUNTA MEDIODIA,270196
+2024-11-26,laboral,etapas,periodoBajada,08 - FUERA DE PUNTA TARDE,440335
+2024-11-26,laboral,etapas,periodoBajada,09 - PUNTA TARDE1,539495
+2024-11-26,laboral,etapas,periodoBajada,10 - PUNTA TARDE2,586117
+2024-11-26,laboral,etapas,periodoBajada,11 - FUERA DE PUNTA NOCTURNO,257013
+2024-11-26,laboral,etapas,periodoBajada,12 - PRE NOCTURNO,15252
+2024-11-27,laboral,viajes,tipodia,0,3618599
+2024-11-27,laboral,viajes,n_etapas,1,2536275
+2024-11-27,laboral,viajes,n_etapas,10,6
+2024-11-27,laboral,viajes,n_etapas,12,1
+2024-11-27,laboral,viajes,n_etapas,14,1
+2024-11-27,laboral,viajes,n_etapas,15,1
+2024-11-27,laboral,viajes,n_etapas,2,935057
+2024-11-27,laboral,viajes,n_etapas,3,142843
+2024-11-27,laboral,viajes,n_etapas,31,1
+2024-11-27,laboral,viajes,n_etapas,4,4117
+2024-11-27,laboral,viajes,n_etapas,5,248
+2024-11-27,laboral,viajes,n_etapas,6,31
+2024-11-27,laboral,viajes,n_etapas,7,7
+2024-11-27,laboral,viajes,n_etapas,8,4
+2024-11-27,laboral,viajes,n_etapas,9,7
+2024-11-27,laboral,viajes,netapassinbajada,0,2590459
+2024-11-27,laboral,viajes,netapassinbajada,1,1001581
+2024-11-27,laboral,viajes,netapassinbajada,2,25974
+2024-11-27,laboral,viajes,netapassinbajada,3,529
+2024-11-27,laboral,viajes,netapassinbajada,4,56
+2024-11-27,laboral,viajes,ultimaetapaconbajada,0,968480
+2024-11-27,laboral,viajes,ultimaetapaconbajada,1,2650119
+2024-11-27,laboral,viajes,periodo_inicio_viaje,59,3610
+2024-11-27,laboral,viajes,periodo_inicio_viaje,60,8530
+2024-11-27,laboral,viajes,periodo_inicio_viaje,61,110872
+2024-11-27,laboral,viajes,periodo_inicio_viaje,62,493670
+2024-11-27,laboral,viajes,periodo_inicio_viaje,63,426844
+2024-11-27,laboral,viajes,periodo_inicio_viaje,64,515417
+2024-11-27,laboral,viajes,periodo_inicio_viaje,65,285855
+2024-11-27,laboral,viajes,periodo_inicio_viaje,66,462987
+2024-11-27,laboral,viajes,periodo_inicio_viaje,67,614701
+2024-11-27,laboral,viajes,periodo_inicio_viaje,68,473800
+2024-11-27,laboral,viajes,periodo_inicio_viaje,69,201942
+2024-11-27,laboral,viajes,periodo_inicio_viaje,70,20371
+2024-11-27,laboral,viajes,periodo_fin_viaje,-1,968534
+2024-11-27,laboral,viajes,periodo_fin_viaje,59,5155
+2024-11-27,laboral,viajes,periodo_fin_viaje,60,1872
+2024-11-27,laboral,viajes,periodo_fin_viaje,61,20216
+2024-11-27,laboral,viajes,periodo_fin_viaje,62,276740
+2024-11-27,laboral,viajes,periodo_fin_viaje,63,401628
+2024-11-27,laboral,viajes,periodo_fin_viaje,64,417905
+2024-11-27,laboral,viajes,periodo_fin_viaje,65,206458
+2024-11-27,laboral,viajes,periodo_fin_viaje,66,325543
+2024-11-27,laboral,viajes,periodo_fin_viaje,67,366501
+2024-11-27,laboral,viajes,periodo_fin_viaje,68,419796
+2024-11-27,laboral,viajes,periodo_fin_viaje,69,190567
+2024-11-27,laboral,viajes,periodo_fin_viaje,70,17684
+2024-11-27,laboral,viajes,tipo_corte_etapa_viaje,M15M,51245
+2024-11-27,laboral,viajes,tipo_corte_etapa_viaje,M3B,259522
+2024-11-27,laboral,viajes,tipo_corte_etapa_viaje,M40M,16778
+2024-11-27,laboral,viajes,tipo_corte_etapa_viaje,MS_B_B,16716
+2024-11-27,laboral,viajes,tipo_corte_etapa_viaje,MS_B_B_NB,6929
+2024-11-27,laboral,viajes,tipo_corte_etapa_viaje,MS_MT_MT,5114
+2024-11-27,laboral,viajes,tipo_corte_etapa_viaje,MS_M_B,55996
+2024-11-27,laboral,viajes,tipo_corte_etapa_viaje,MS_M_M,341548
+2024-11-27,laboral,viajes,tipo_corte_etapa_viaje,RD,59126
+2024-11-27,laboral,viajes,tipo_corte_etapa_viaje,SM2H,993537
+2024-11-27,laboral,viajes,tipo_corte_etapa_viaje,UE,1812088
+2024-11-27,laboral,etapas,tipo_dia,LABORAL,4861139
+2024-11-27,laboral,etapas,tiene_bajada,0,1058140
+2024-11-27,laboral,etapas,tiene_bajada,1,3802999
+2024-11-27,laboral,etapas,tipo_transporte,BUS,1947492
+2024-11-27,laboral,etapas,tipo_transporte,METRO,2343043
+2024-11-27,laboral,etapas,tipo_transporte,METROTREN,75258
+2024-11-27,laboral,etapas,tipo_transporte,ZP,495346
+2024-11-27,laboral,etapas,periodoSubida,01 - PRE NOCTURNO,3992
+2024-11-27,laboral,etapas,periodoSubida,02 - NOCTURNO,9785
+2024-11-27,laboral,etapas,periodoSubida,03 - TRANSICION NOCTURNO,150414
+2024-11-27,laboral,etapas,periodoSubida,04 - PUNTA MANANA,694276
+2024-11-27,laboral,etapas,periodoSubida,05 - TRANSICION PUNTA MANANA,606973
+2024-11-27,laboral,etapas,periodoSubida,06 - FUERA DE PUNTA MANANA,676436
+2024-11-27,laboral,etapas,periodoSubida,07 - PUNTA MEDIODIA,364785
+2024-11-27,laboral,etapas,periodoSubida,08 - FUERA DE PUNTA TARDE,597559
+2024-11-27,laboral,etapas,periodoSubida,09 - PUNTA TARDE1,791028
+2024-11-27,laboral,etapas,periodoSubida,10 - PUNTA TARDE2,658784
+2024-11-27,laboral,etapas,periodoSubida,11 - FUERA DE PUNTA NOCTURNO,281611
+2024-11-27,laboral,etapas,periodoSubida,12 - PRE NOCTURNO,25496
+2024-11-27,laboral,etapas,periodoBajada,01 - PRE NOCTURNO,5504
+2024-11-27,laboral,etapas,periodoBajada,02 - NOCTURNO,3466
+2024-11-27,laboral,etapas,periodoBajada,03 - TRANSICION NOCTURNO,62393
+2024-11-27,laboral,etapas,periodoBajada,04 - PUNTA MANANA,470191
+2024-11-27,laboral,etapas,periodoBajada,05 - TRANSICION PUNTA MANANA,564253
+2024-11-27,laboral,etapas,periodoBajada,06 - FUERA DE PUNTA MANANA,564159
+2024-11-27,laboral,etapas,periodoBajada,07 - PUNTA MEDIODIA,279103
+2024-11-27,laboral,etapas,periodoBajada,08 - FUERA DE PUNTA TARDE,450555
+2024-11-27,laboral,etapas,periodoBajada,09 - PUNTA TARDE1,536584
+2024-11-27,laboral,etapas,periodoBajada,10 - PUNTA TARDE2,584845
+2024-11-27,laboral,etapas,periodoBajada,11 - FUERA DE PUNTA NOCTURNO,260464
+2024-11-27,laboral,etapas,periodoBajada,12 - PRE NOCTURNO,21482
+2024-11-28,laboral,viajes,tipodia,0,3602520
+2024-11-28,laboral,viajes,n_etapas,1,2534103
+2024-11-28,laboral,viajes,n_etapas,10,3
+2024-11-28,laboral,viajes,n_etapas,11,1
+2024-11-28,laboral,viajes,n_etapas,12,2
+2024-11-28,laboral,viajes,n_etapas,2,923838
+2024-11-28,laboral,viajes,n_etapas,21,1
+2024-11-28,laboral,viajes,n_etapas,23,1
+2024-11-28,laboral,viajes,n_etapas,3,140152
+2024-11-28,laboral,viajes,n_etapas,38,1
+2024-11-28,laboral,viajes,n_etapas,4,4127
+2024-11-28,laboral,viajes,n_etapas,5,244
+2024-11-28,laboral,viajes,n_etapas,6,26
+2024-11-28,laboral,viajes,n_etapas,7,9
+2024-11-28,laboral,viajes,n_etapas,8,7
+2024-11-28,laboral,viajes,n_etapas,9,5
+2024-11-28,laboral,viajes,netapassinbajada,0,2551361
+2024-11-28,laboral,viajes,netapassinbajada,1,1024167
+2024-11-28,laboral,viajes,netapassinbajada,2,26408
+2024-11-28,laboral,viajes,netapassinbajada,3,534
+2024-11-28,laboral,viajes,netapassinbajada,4,50
+2024-11-28,laboral,viajes,ultimaetapaconbajada,0,991475
+2024-11-28,laboral,viajes,ultimaetapaconbajada,1,2611045
+2024-11-28,laboral,viajes,periodo_inicio_viaje,59,3396
+2024-11-28,laboral,viajes,periodo_inicio_viaje,60,8137
+2024-11-28,laboral,viajes,periodo_inicio_viaje,61,108120
+2024-11-28,laboral,viajes,periodo_inicio_viaje,62,474659
+2024-11-28,laboral,viajes,periodo_inicio_viaje,63,418202
+2024-11-28,laboral,viajes,periodo_inicio_viaje,64,525722
+2024-11-28,laboral,viajes,periodo_inicio_viaje,65,286531
+2024-11-28,laboral,viajes,periodo_inicio_viaje,66,464146
+2024-11-28,laboral,viajes,periodo_inicio_viaje,67,606041
+2024-11-28,laboral,viajes,periodo_inicio_viaje,68,470675
+2024-11-28,laboral,viajes,periodo_inicio_viaje,69,216225
+2024-11-28,laboral,viajes,periodo_inicio_viaje,70,20666
+2024-11-28,laboral,viajes,periodo_fin_viaje,-1,991525
+2024-11-28,laboral,viajes,periodo_fin_viaje,59,3110
+2024-11-28,laboral,viajes,periodo_fin_viaje,60,1684
+2024-11-28,laboral,viajes,periodo_fin_viaje,61,19698
+2024-11-28,laboral,viajes,periodo_fin_viaje,62,264275
+2024-11-28,laboral,viajes,periodo_fin_viaje,63,385059
+2024-11-28,laboral,viajes,periodo_fin_viaje,64,422348
+2024-11-28,laboral,viajes,periodo_fin_viaje,65,205922
+2024-11-28,laboral,viajes,periodo_fin_viaje,66,324434
+2024-11-28,laboral,viajes,periodo_fin_viaje,67,358433
+2024-11-28,laboral,viajes,periodo_fin_viaje,68,408314
+2024-11-28,laboral,viajes,periodo_fin_viaje,69,196107
+2024-11-28,laboral,viajes,periodo_fin_viaje,70,21611
+2024-11-28,laboral,viajes,tipo_corte_etapa_viaje,M15M,52315
+2024-11-28,laboral,viajes,tipo_corte_etapa_viaje,M3B,249830
+2024-11-28,laboral,viajes,tipo_corte_etapa_viaje,M40M,16108
+2024-11-28,laboral,viajes,tipo_corte_etapa_viaje,MS_B_B,16989
+2024-11-28,laboral,viajes,tipo_corte_etapa_viaje,MS_B_B_NB,7185
+2024-11-28,laboral,viajes,tipo_corte_etapa_viaje,MS_MT_MT,5685
+2024-11-28,laboral,viajes,tipo_corte_etapa_viaje,MS_M_B,54379
+2024-11-28,laboral,viajes,tipo_corte_etapa_viaje,MS_M_M,359921
+2024-11-28,laboral,viajes,tipo_corte_etapa_viaje,RD,57952
+2024-11-28,laboral,viajes,tipo_corte_etapa_viaje,SM2H,973762
+2024-11-28,laboral,viajes,tipo_corte_etapa_viaje,UE,1808394
+2024-11-28,laboral,etapas,tipo_dia,LABORAL,4828015
+2024-11-28,laboral,etapas,tiene_bajada,0,1081507
+2024-11-28,laboral,etapas,tiene_bajada,1,3746508
+2024-11-28,laboral,etapas,tipo_transporte,BUS,1903262
+2024-11-28,laboral,etapas,tipo_transporte,METRO,2363664
+2024-11-28,laboral,etapas,tipo_transporte,METROTREN,76122
+2024-11-28,laboral,etapas,tipo_transporte,ZP,484967
+2024-11-28,laboral,etapas,periodoSubida,01 - PRE NOCTURNO,3736
+2024-11-28,laboral,etapas,periodoSubida,02 - NOCTURNO,9337
+2024-11-28,laboral,etapas,periodoSubida,03 - TRANSICION NOCTURNO,147609
+2024-11-28,laboral,etapas,periodoSubida,04 - PUNTA MANANA,669183
+2024-11-28,laboral,etapas,periodoSubida,05 - TRANSICION PUNTA MANANA,593730
+2024-11-28,laboral,etapas,periodoSubida,06 - FUERA DE PUNTA MANANA,689912
+2024-11-28,laboral,etapas,periodoSubida,07 - PUNTA MEDIODIA,364884
+2024-11-28,laboral,etapas,periodoSubida,08 - FUERA DE PUNTA TARDE,596666
+2024-11-28,laboral,etapas,periodoSubida,09 - PUNTA TARDE1,777664
+2024-11-28,laboral,etapas,periodoSubida,10 - PUNTA TARDE2,650365
+2024-11-28,laboral,etapas,periodoSubida,11 - FUERA DE PUNTA NOCTURNO,298151
+2024-11-28,laboral,etapas,periodoSubida,12 - PRE NOCTURNO,26778
+2024-11-28,laboral,etapas,periodoBajada,01 - PRE NOCTURNO,3415
+2024-11-28,laboral,etapas,periodoBajada,02 - NOCTURNO,3271
+2024-11-28,laboral,etapas,periodoBajada,03 - TRANSICION NOCTURNO,60900
+2024-11-28,laboral,etapas,periodoBajada,04 - PUNTA MANANA,451762
+2024-11-28,laboral,etapas,periodoBajada,05 - TRANSICION PUNTA MANANA,544472
+2024-11-28,laboral,etapas,periodoBajada,06 - FUERA DE PUNTA MANANA,570805
+2024-11-28,laboral,etapas,periodoBajada,07 - PUNTA MEDIODIA,277828
+2024-11-28,laboral,etapas,periodoBajada,08 - FUERA DE PUNTA TARDE,446866
+2024-11-28,laboral,etapas,periodoBajada,09 - PUNTA TARDE1,524329
+2024-11-28,laboral,etapas,periodoBajada,10 - PUNTA TARDE2,568989
+2024-11-28,laboral,etapas,periodoBajada,11 - FUERA DE PUNTA NOCTURNO,267664
+2024-11-28,laboral,etapas,periodoBajada,12 - PRE NOCTURNO,26207
+2024-11-29,laboral,viajes,tipodia,0,3620619
+2024-11-29,laboral,viajes,n_etapas,1,2584765
+2024-11-29,laboral,viajes,n_etapas,10,3
+2024-11-29,laboral,viajes,n_etapas,13,2
+2024-11-29,laboral,viajes,n_etapas,14,2
+2024-11-29,laboral,viajes,n_etapas,2,898298
+2024-11-29,laboral,viajes,n_etapas,3,132903
+2024-11-29,laboral,viajes,n_etapas,4,4332
+2024-11-29,laboral,viajes,n_etapas,5,272
+2024-11-29,laboral,viajes,n_etapas,6,32
+2024-11-29,laboral,viajes,n_etapas,7,5
+2024-11-29,laboral,viajes,n_etapas,8,3
+2024-11-29,laboral,viajes,n_etapas,9,2
+2024-11-29,laboral,viajes,netapassinbajada,0,2488320
+2024-11-29,laboral,viajes,netapassinbajada,1,1102174
+2024-11-29,laboral,viajes,netapassinbajada,2,29464
+2024-11-29,laboral,viajes,netapassinbajada,3,610
+2024-11-29,laboral,viajes,netapassinbajada,4,51
+2024-11-29,laboral,viajes,ultimaetapaconbajada,0,1075792
+2024-11-29,laboral,viajes,ultimaetapaconbajada,1,2544827
+2024-11-29,laboral,viajes,periodo_inicio_viaje,59,3012
+2024-11-29,laboral,viajes,periodo_inicio_viaje,60,8287
+2024-11-29,laboral,viajes,periodo_inicio_viaje,61,104285
+2024-11-29,laboral,viajes,periodo_inicio_viaje,62,451489
+2024-11-29,laboral,viajes,periodo_inicio_viaje,63,397812
+2024-11-29,laboral,viajes,periodo_inicio_viaje,64,542588
+2024-11-29,laboral,viajes,periodo_inicio_viaje,65,319619
+2024-11-29,laboral,viajes,periodo_inicio_viaje,66,549345
+2024-11-29,laboral,viajes,periodo_inicio_viaje,67,579399
+2024-11-29,laboral,viajes,periodo_inicio_viaje,68,407807
+2024-11-29,laboral,viajes,periodo_inicio_viaje,69,246615
+2024-11-29,laboral,viajes,periodo_inicio_viaje,70,10361
+2024-11-29,laboral,viajes,periodo_fin_viaje,-1,1075863
+2024-11-29,laboral,viajes,periodo_fin_viaje,59,1035
+2024-11-29,laboral,viajes,periodo_fin_viaje,60,1898
+2024-11-29,laboral,viajes,periodo_fin_viaje,61,18588
+2024-11-29,laboral,viajes,periodo_fin_viaje,62,250558
+2024-11-29,laboral,viajes,periodo_fin_viaje,63,353137
+2024-11-29,laboral,viajes,periodo_fin_viaje,64,423234
+2024-11-29,laboral,viajes,periodo_fin_viaje,65,219293
+2024-11-29,laboral,viajes,periodo_fin_viaje,66,367764
+2024-11-29,laboral,viajes,periodo_fin_viaje,67,385948
+2024-11-29,laboral,viajes,periodo_fin_viaje,68,311119
+2024-11-29,laboral,viajes,periodo_fin_viaje,69,192768
+2024-11-29,laboral,viajes,periodo_fin_viaje,70,19414
+2024-11-29,laboral,viajes,tipo_corte_etapa_viaje,M15M,60517
+2024-11-29,laboral,viajes,tipo_corte_etapa_viaje,M3B,269570
+2024-11-29,laboral,viajes,tipo_corte_etapa_viaje,M40M,20681
+2024-11-29,laboral,viajes,tipo_corte_etapa_viaje,MS_B_B,18654
+2024-11-29,laboral,viajes,tipo_corte_etapa_viaje,MS_B_B_NB,8357
+2024-11-29,laboral,viajes,tipo_corte_etapa_viaje,MS_MT_MT,7116
+2024-11-29,laboral,viajes,tipo_corte_etapa_viaje,MS_M_B,54834
+2024-11-29,laboral,viajes,tipo_corte_etapa_viaje,MS_M_M,379587
+2024-11-29,laboral,viajes,tipo_corte_etapa_viaje,RD,61325
+2024-11-29,laboral,viajes,tipo_corte_etapa_viaje,SM2H,922283
+2024-11-29,laboral,viajes,tipo_corte_etapa_viaje,UE,1817695
+2024-11-29,laboral,etapas,tipo_dia,LABORAL,4807235
+2024-11-29,laboral,etapas,tiene_bajada,0,1165847
+2024-11-29,laboral,etapas,tiene_bajada,1,3641388
+2024-11-29,laboral,etapas,tipo_transporte,BUS,1941152
+2024-11-29,laboral,etapas,tipo_transporte,METRO,2327804
+2024-11-29,laboral,etapas,tipo_transporte,METROTREN,79053
+2024-11-29,laboral,etapas,tipo_transporte,ZP,459226
+2024-11-29,laboral,etapas,periodoSubida,01 - PRE NOCTURNO,3293
+2024-11-29,laboral,etapas,periodoSubida,02 - NOCTURNO,9517
+2024-11-29,laboral,etapas,periodoSubida,03 - TRANSICION NOCTURNO,141145
+2024-11-29,laboral,etapas,periodoSubida,04 - PUNTA MANANA,637321
+2024-11-29,laboral,etapas,periodoSubida,05 - TRANSICION PUNTA MANANA,562993
+2024-11-29,laboral,etapas,periodoSubida,06 - FUERA DE PUNTA MANANA,705850
+2024-11-29,laboral,etapas,periodoSubida,07 - PUNTA MEDIODIA,402436
+2024-11-29,laboral,etapas,periodoSubida,08 - FUERA DE PUNTA TARDE,699761
+2024-11-29,laboral,etapas,periodoSubida,09 - PUNTA TARDE1,753581
+2024-11-29,laboral,etapas,periodoSubida,10 - PUNTA TARDE2,544240
+2024-11-29,laboral,etapas,periodoSubida,11 - FUERA DE PUNTA NOCTURNO,330411
+2024-11-29,laboral,etapas,periodoSubida,12 - PRE NOCTURNO,16687
+2024-11-29,laboral,etapas,periodoBajada,01 - PRE NOCTURNO,1294
+2024-11-29,laboral,etapas,periodoBajada,02 - NOCTURNO,3480
+2024-11-29,laboral,etapas,periodoBajada,03 - TRANSICION NOCTURNO,57663
+2024-11-29,laboral,etapas,periodoBajada,04 - PUNTA MANANA,428872
+2024-11-29,laboral,etapas,periodoBajada,05 - TRANSICION PUNTA MANANA,502743
+2024-11-29,laboral,etapas,periodoBajada,06 - FUERA DE PUNTA MANANA,572247
+2024-11-29,laboral,etapas,periodoBajada,07 - PUNTA MEDIODIA,295960
+2024-11-29,laboral,etapas,periodoBajada,08 - FUERA DE PUNTA TARDE,508429
+2024-11-29,laboral,etapas,periodoBajada,09 - PUNTA TARDE1,549155
+2024-11-29,laboral,etapas,periodoBajada,10 - PUNTA TARDE2,431403
+2024-11-29,laboral,etapas,periodoBajada,11 - FUERA DE PUNTA NOCTURNO,266279
+2024-11-29,laboral,etapas,periodoBajada,12 - PRE NOCTURNO,23863
