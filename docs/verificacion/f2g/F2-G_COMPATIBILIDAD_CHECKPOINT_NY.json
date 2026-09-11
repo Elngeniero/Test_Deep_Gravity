@@ -1,0 +1,7 @@
+{
+  "status": "compatible",
+  "input_dimension": 39,
+  "hidden_dimension": 256,
+  "checkpoint_evaluated": false,
+  "note": "Structural loading only; F2-H has not been executed."
+}

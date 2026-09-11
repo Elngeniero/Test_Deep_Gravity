@@ -1,0 +1,4 @@
+representation,od_pairs,trip_count,expanded_mass,active_origins,active_destinations,candidate_units,train_origins,validation_origins,test_origins,cross_tile_destinations_verified
+zona777,427170,60513881,85777662.9385998,795,796,796,508,186,101,True
+h3_r7,37196,60513881,85777662.93860005,220,222,223,127,61,32,True
+h3_r8,617070,60513881,85777662.93859993,1194,1181,1210,704,301,189,True

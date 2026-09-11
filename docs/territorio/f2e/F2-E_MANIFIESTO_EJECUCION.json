@@ -1,0 +1,38 @@
+{
+  "stage": "F2-E",
+  "status": "completed",
+  "executed_at_utc": "2026-09-09T23:16:14+00:00",
+  "analysis_scope": "exact_primary_trips_inside_f2d_core34",
+  "input_contract": {
+    "f2d_area_manifest_sha256": "6c6ce5b89f746dbb6232defec7520cdae75daf22a45e63ff0acde713e481046e",
+    "canonical_cohort": "29 daily canonical.parquet partitions from F2-C",
+    "zona777_source": "DTPM ShapeZona777 (Zona777_ADATRAP.rar)",
+    "zona777_source_sha256": "172362925d16acf404e752f1b82fc8f4d3ebf2ecbd3bee6a6a861536a80a4da5"
+  },
+  "spatial_rules": {
+    "f2d_predicate": "both endpoints strictly contained in the approved 34-commune area in EPSG:32719",
+    "h3_assignment": "EPSG:32719 to WGS84 using always_xy; latlng_to_cell for each endpoint",
+    "h3_border_policy": "whole observed cell; no clipping or flow apportionment"
+  },
+  "exact_conservation": {
+    "retained_trip_count": 60513881,
+    "retained_expanded_mass": 85777662.9386
+  },
+  "pilot_recommendation": {
+    "selected_representations": ["zona777", "h3_r7", "h3_r8"],
+    "h3_r3_to_r6": "not selected because their active spatial support is too coarse"
+  },
+  "zona777_provenance_exception": {
+    "active_ids_without_polygon_in_download": 6,
+    "treatment": "flagged endpoint-support anchor for tile construction only; never reported as official geometry"
+  },
+  "deferred_materialization": {
+    "od_detail": "not persisted because no Parquet writer was available in the execution environment",
+    "f2g_requirement": "materialize aggregate cross-tile flows in the adapter while preserving the global approved-domain destination universe"
+  },
+  "outputs": {
+    "F2-E_METRICAS_REPRESENTACION.csv_sha256": "c3d93fab00d3abe11efcc902f22203eed799c8e0a0ca4cec918d80dbfcb26622",
+    "F2-E_UNIDADES_ZONA777.csv_sha256": "7eeabfe39d93ac02d363bfe862a3ba2f72d772de36e767958e516512d7ee48dc",
+    "F2-E_REPORTE_FACTIBILIDAD.md_sha256": "c322daF12bda1f3f3a580e1f7e44a6f748cf2a01485918ec1332d58a6bdbf096"
+  }
+}

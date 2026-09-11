@@ -1,0 +1,18 @@
+{
+  "created_utc": "2026-09-09T16:18:25.617302+00:00",
+  "canonical_root": "deepgravity\\data\\santiago\\interim\\f2c_canonical",
+  "canonical_partitions": 29,
+  "boundary_file": "deepgravity\\data\\santiago\\reference\\comunas_rm_dpa_2023.geojson",
+  "boundary_sha256": "55c627b69bc865aae8a6cf8b4e61869a41002a061f895811e1ac80d26823a5d5",
+  "crs_analysis": "EPSG:32719",
+  "cohort_class": "primary",
+  "inclusion_rule": "both endpoint coordinates must be contained in selected DPA communal polygons",
+  "free_memory_gib_before_run": 13.417987823486328,
+  "duckdb_version": "0.10.3",
+  "batch_size": 200000,
+  "candidate_ids": [
+    "nucleo_urbano_referencial_34",
+    "ampliada_contigua_actividad",
+    "region_metropolitana_completa_52"
+  ]
+}

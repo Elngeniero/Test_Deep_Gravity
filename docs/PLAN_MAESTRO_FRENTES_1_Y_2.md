@@ -1,7 +1,8 @@
 # Plan maestro de ejecución — Frentes 1 y 2
 
-> **Estado:** listo para implementación por etapas  
+> **Estado:** ejecución por etapas; F2-G completada, siguiente fase F2-H  
 > **Fecha de consolidación:** 8 de septiembre de 2026  
+> **Última actualización:** 10 de septiembre de 2026; G4 permanece abierta  
 > **Proyecto:** adaptación y evaluación de Deep Gravity para Santiago  
 > **Uso previsto:** fuente única para continuar el trabajo en este u otro chat
 
@@ -29,7 +30,7 @@ Los frentes pueden avanzar parcialmente en paralelo. Sin embargo, el Frente 1 no
 5. La hipótesis sobre H3 y la importancia de variables del destino es **abierta y falsable**. Que las variables de destino no aumenten su importancia también es un resultado válido.
 6. El trabajo de Vicente Mackenzie se utilizará solo como apoyo interno y antecedente orientador. Su CPC no es un control experimental equivalente ni una referencia formal obligatoria de la memoria.
 7. Ambas ramas deben utilizar las mismas observaciones elegibles, ventanas temporales, pesos, fuentes de atributos y reglas de partición siempre que sea posible.
-8. El área de estudio será una parte documentada del Gran Santiago y puede ser más acotada que la lista referencial actual. Se fijará después del EDA territorial.
+8. El área de estudio aprobada el 9 de septiembre de 2026 corresponde al núcleo referencial de 34 comunas de F2-D, con ambos extremos estrictamente dentro de los polígonos seleccionados. Retiene 60.513.881 viajes primarios; la geometría y regla están fijadas en ADR-005 y `docs/territorio/f2d/F2-D_AREA_APROBADA.json`.
 9. Las unidades H3 y los *tiles* no son lo mismo:
    - la celda o zona es la unidad origen-destino;
    - el *tile* es un bloque espacial mayor utilizado para particionar o evaluar.
@@ -635,7 +636,7 @@ El equipo puede preparar evidencia y alternativas, pero no debe congelar unilate
 4. **Bloque técnico:** F2-G y F2-H.
 5. **Datos enriquecidos:** F2-I.
 6. **Integración:** F2-J y decisión de piloto.
-7. **Sincronización:** F1-D/F1-E/F1-F con resultados verificados del piloto.
+7. **Sincronización:** cierre definitivo de F1-C y F1-D/F1-E/F1-F con resultados verificados del piloto.
 8. **Después de aprobación:** F2-K, XAI, capítulo 5 y conclusiones.
 
 ## 6. Instrucción para iniciar en un nuevo chat
@@ -657,3 +658,26 @@ No solicitar “implementar todo el plan” en una única ejecución. Cada fase 
 | 2026-09-08 | F1-B — Conciliación del alcance y decisiones | completado | docs/revisiones/F1-B_CONCILIACION_DECISIONES.md; alcance, arquitectura y ADR actualizados | Cerrar contratos de datos, área, peso, resolución, tiles, población y OSM en sus puertas correspondientes |
 | 2026-09-09 | F2-C — Contrato canónico de viaje | completado; G2 cerrado | docs/contratos/F2-C_CONTRATO_CANONICO_VIAJE.md, docs/auditoria/F2-C_REPORTE_CONTRATO_DTPM_NOV2024.md y 29 particiones Parquet ignoradas | F2-D decidirá el área territorial; F2-E/F caracterizarán representaciones y tiles |
 | 2026-09-09 | G2 — Contrato de datos | cerrado; cohorte primaria y peso aprobados | 60.682.293 viajes primarios; factor_expansion como masa principal y unexpanded_weight=1.0 para sensibilidad | Iniciar F2-D, F2-E y F2-F coordinadamente |
+| 2026-09-09 | F2-D — Delimitación territorial | evidencia generada; pendiente de decisión del investigador | docs/territorio/f2d/: DPA 2023, clasificación directa de extremos y alternativas comparables | Elegir núcleo urbano referencial de 34 comunas o Región Metropolitana completa; la regla propuesta exige ambos extremos dentro del área |
+| 2026-09-09 | F2-D — Aprobación y fijación territorial | completado; núcleo referencial de 34 comunas aprobado por el investigador | ADR-005, F2-D_AREA_APROBADA.geojson y F2-D_AREA_APROBADA.json; 60.513.881 viajes retenidos, 168.412 fuera del área | Continuar F2-E y F2-F, junto con F1-C preliminar; G3 permanece abierta |
+| 2026-09-09 | F2-E y F2-F — Factibilidad y particiones | completadas; G3 cerrada | Zona 777 y H3-r3–r8 medidos sobre la cohorte F2-D; H3-r7/r8 pasan al piloto y 10 tiles de 15 km comparten agenda reproducible | F2-G debe materializar los flujos cruzados en el adaptador y mantener destinos metropolitanos globales |
+| 2026-09-10 | G1 — Contrato científico | cerrado; formalización del contrato científico vigente | docs/revisiones/F1-B_CONCILIACION_DECISIONES.md y docs/revisiones/F1-C_ESPECIFICACION_PRELIMINAR_G3.md; objetivos, hipótesis, unidades y términos consolidados | Resolver y verificar las contradicciones pendientes del capítulo 4 en F1-C/F1-E/F1-F antes de cerrar G5; véase la nota de alcance siguiente |
+| 2026-09-10 | F2-G — Refactor mínimo y pruebas del modelo | completado; 37 pruebas aprobadas y 29 fechas materializadas | docs/verificacion/f2g/F2-G_REPORTE_IMPLEMENTACION.md, F2-G_VERIFICACION.json y F2-G_PRUEBAS.txt; CPC, caché, destinos globales, evaluación completa y ejecuciones trazables verificados; 60.513.881 viajes y 85.777.662,9386 de masa por rama | Continuar F2-H; población, OSM y geometría faltante zonal antes del entrenamiento científico en F2-I/F2-J; G4 sigue abierta |
+| 2026-09-10 | F2-G — Corrección de asignación H3-r7 | verificada; asignación directa conforme al contrato | F2-G_UNIDADES_H3_R7.csv y F2-G_PARTICIONES_UNIDADES.csv: 223 unidades, 220 orígenes activos y 37.196 pares OD; se conserva la agenda de 10 tiles de F2-F | Usar las tablas operativas de docs/verificacion/f2g/ en las siguientes fases; conservar F2-E/F como evidencia histórica y regenerar r3–r6 con el script corregido antes de usar sus estadísticas en la redacción final |
+
+**Alcance del cierre de G1 (10 de septiembre de 2026).** Se formaliza el cierre del contrato científico consolidado en F1-B y precisado en F1-C preliminar: comparación Zona 777–H3 desde una cohorte común, hipótesis abierta y falsable, distinción entre unidades OD y *tiles*, y diferenciación de población censal, generación observada, flujo expandido y atributos OSM. Estas definiciones gobiernan la ejecución posterior. Las contradicciones pendientes del capítulo 4 están identificadas en `docs/revisiones/MATRIZ_TRAZABILIDAD_CAP4.md` y deberán resolverse y verificarse en F1-C/F1-E/F1-F antes de cerrar G5. El cierre de G1 no implica el cierre del Frente 1 ni la sincronización integral del capítulo 4 y `docs/`, que corresponde a G5.
+
+## 8. Estado consolidado tras cerrar G3
+
+| Etapa | Fases | Estado | Cierre o trabajo restante |
+|---|---|---|---|
+| 1 | F2-A y F1-A | Completada | Preflight, inventario, protección de datos y matriz de trazabilidad; G0 cerrado |
+| 2 | F2-B y F1-B | Completada; G1 cerrada | Auditoría de 29 fechas, unión validada y alcance conciliado; cierre del contrato científico formalizado el 10 de septiembre de 2026, con el alcance y la evidencia registrados en la sección 7 |
+| 3 | F2-C | Completada | Contrato aprobado, 29 particiones canónicas y G2 cerrado |
+| 4 | F2-D; F1-C preliminar, F2-E y F2-F | Completada; G3 cerrada | Dominio F2-D aprobado, factibilidad exacta Zona 777/H3, H3-r7/r8 para piloto y 10 tiles determinísticos documentados en `docs/territorio/f2e`, `docs/territorio/f2f` y `docs/revisiones/F1-C_ESPECIFICACION_PRELIMINAR_G3.md` |
+| 5 | F2-G y F2-H | F2-G completada; F2-H pendiente | 37 pruebas, OD mensual reconciliada, destinos metropolitanos globales y ejecuciones versionadas; unidades y particiones operativas en `docs/verificacion/f2g/`. Falta reauditar Nueva York; G4 sigue abierta |
+| 6 | F2-I | Pendiente | Población y atributos OSM definidos |
+| 7 | F2-J | Pendiente | Piloto Santiago reproducible; G4 |
+| 8 | Cierre F1-C; F1-D, F1-E y F1-F | Pendiente | Capítulo 4 y documentación sincronizados y verificados; G5 |
+| 9 | F2-K | Pendiente tras aprobar el piloto | Experimentos mensuales finales reutilizando las particiones canónicas existentes |
+| 10 | F2-L, capítulo 5 y conclusiones | Pendiente | XAI final y redacción de resultados |

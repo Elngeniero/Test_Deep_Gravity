@@ -1,29 +1,9 @@
 import numpy as np
-import pandas as pd
 import torch
 from torch.autograd import Variable
-from math import sqrt, sin, cos, pi, asin
-
-#import deepgravity
-
-
-def earth_distance(lat_lng1, lat_lng2):
-    lat1, lng1 = [l*pi/180 for l in lat_lng1]
-    lat2, lng2 = [l*pi/180 for l in lat_lng2]
-    dlat, dlng = lat1-lat2, lng1-lng2
-    ds = 2 * asin(sqrt(sin(dlat/2.0) ** 2 + cos(lat1) * cos(lat2) * sin(dlng/2.0) ** 2))
-    return 6371.01 * ds  # spherical earth...
-
-
-def common_part_of_commuters(values1, values2, numerator_only=False):
-    if numerator_only:
-        tot = 1.0
-    else:
-        tot = (np.sum(values2) + np.sum(values2))
-    if tot > 0:
-        return 2.0 * np.sum(np.minimum(values1, values2)) / tot
-    else:
-        return 0.0
+from ..geometry import earth_distance
+from ..metrics import common_part_of_commuters
+from ..sampling import sample_destinations
 
 class GLM_MultinomialRegression(torch.nn.Module):
     def __init__(self, dim_w, device=torch.device("cpu")):
@@ -113,21 +93,8 @@ def get_flow(oa_origin, oa_destination, o2d2flow):
 
 
 def get_destinations(oa, size_train_dest, all_locs_in_train_region, o2d2flow, frac_true_dest=0.5):
-    try:
-        true_dests_all = list(o2d2flow[oa].keys())
-    except KeyError:
-        true_dests_all = []
-    size_true_dests = min(int(size_train_dest * frac_true_dest), len(true_dests_all))
-    size_fake_dests = size_train_dest - size_true_dests
-    # print(size_train_dest, size_true_dests, size_fake_dests, len(true_dests_all))
-
-    true_dests = np.random.choice(true_dests_all, size=size_true_dests, replace=False)
-    fake_dests_all = list(set(all_locs_in_train_region) - set(true_dests))
-    fake_dests = np.random.choice(fake_dests_all, size=size_fake_dests, replace=False)
-
-    dests = np.concatenate((true_dests, fake_dests))
-    np.random.shuffle(dests)
-    return dests
+    return sample_destinations(oa, size_train_dest, all_locs_in_train_region,
+                               o2d2flow, frac_true_dest)
 
 class NN_OriginalGravity(GLM_MultinomialRegression):
 

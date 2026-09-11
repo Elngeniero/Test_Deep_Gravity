@@ -1,0 +1,152 @@
+{
+  "status": "verified",
+  "dates": 29,
+  "branches": [
+    {
+      "representation": "zona777",
+      "od_pairs": 427170,
+      "trip_count": 60513881,
+      "expanded_mass": 85777662.9385998,
+      "active_origins": 795,
+      "active_destinations": 796,
+      "candidate_units": 796,
+      "train_origins": 508,
+      "validation_origins": 186,
+      "test_origins": 101,
+      "cross_tile_destinations_verified": true
+    },
+    {
+      "representation": "h3_r7",
+      "od_pairs": 37196,
+      "trip_count": 60513881,
+      "expanded_mass": 85777662.93860005,
+      "active_origins": 220,
+      "active_destinations": 222,
+      "candidate_units": 223,
+      "train_origins": 127,
+      "validation_origins": 61,
+      "test_origins": 32,
+      "cross_tile_destinations_verified": true
+    },
+    {
+      "representation": "h3_r8",
+      "od_pairs": 617070,
+      "trip_count": 60513881,
+      "expanded_mass": 85777662.93859993,
+      "active_origins": 1194,
+      "active_destinations": 1181,
+      "candidate_units": 1210,
+      "train_origins": 704,
+      "validation_origins": 301,
+      "test_origins": 189,
+      "cross_tile_destinations_verified": true
+    }
+  ],
+  "materialization": {
+    "stage": "F2-G",
+    "status": "materialized",
+    "signature": {
+      "version": 1,
+      "assignment": "direct_latlng_to_cell_per_resolution",
+      "partitions_sha256": "d65cc1932b666f41f1f7d8717a816a0b7991b83c8a5c965e3622f25c85e2f4e4",
+      "area_sha256": "1418860e4b258c8ae9ba90f8a3686481826f1c11407fa371826650c50af6721f",
+      "h3_version": "4.1.2",
+      "period": "all",
+      "day_types": []
+    },
+    "dates": [
+      "2024-11-01",
+      "2024-11-02",
+      "2024-11-03",
+      "2024-11-04",
+      "2024-11-05",
+      "2024-11-06",
+      "2024-11-07",
+      "2024-11-08",
+      "2024-11-09",
+      "2024-11-10",
+      "2024-11-11",
+      "2024-11-12",
+      "2024-11-13",
+      "2024-11-14",
+      "2024-11-15",
+      "2024-11-16",
+      "2024-11-17",
+      "2024-11-18",
+      "2024-11-19",
+      "2024-11-20",
+      "2024-11-21",
+      "2024-11-22",
+      "2024-11-23",
+      "2024-11-24",
+      "2024-11-25",
+      "2024-11-26",
+      "2024-11-27",
+      "2024-11-28",
+      "2024-11-29"
+    ],
+    "retained_trip_count": 60513881,
+    "retained_expanded_mass": 85777662.93859997,
+    "destination_scope": "global",
+    "f2e_comparison": [
+      {
+        "representation": "zona777",
+        "previous_units": 796,
+        "direct_units": 796,
+        "added_units": [],
+        "removed_units": [],
+        "units_with_changed_origin_count": 0,
+        "active_origins": 795,
+        "active_destinations": 796,
+        "od_pairs": 427170,
+        "retained_trips": 60513881,
+        "expanded_mass": 85777662.93859996
+      },
+      {
+        "representation": "h3_r7",
+        "previous_units": 224,
+        "direct_units": 223,
+        "added_units": [
+          "87b2c551bffffff"
+        ],
+        "removed_units": [
+          "87b2c5564ffffff",
+          "87b2c5721ffffff"
+        ],
+        "units_with_changed_origin_count": 215,
+        "active_origins": 220,
+        "active_destinations": 222,
+        "od_pairs": 37196,
+        "retained_trips": 60513881,
+        "expanded_mass": 85777662.9386
+      },
+      {
+        "representation": "h3_r8",
+        "previous_units": 1210,
+        "direct_units": 1210,
+        "added_units": [],
+        "removed_units": [],
+        "units_with_changed_origin_count": 0,
+        "active_origins": 1194,
+        "active_destinations": 1181,
+        "od_pairs": 617070,
+        "retained_trips": 60513881,
+        "expanded_mass": 85777662.9386
+      }
+    ],
+    "outputs": {
+      "zona777_od.parquet": "86c83c2ddd20963af4660adf75a70ce09194a379f90dccd77d25212ce98fa1d1",
+      "h3_r7_od.parquet": "e69a4dc2fac3a14e734ed8e38e20fe9b415ef21617f150c72773f3415c27bf01",
+      "h3_r8_od.parquet": "4045319f91d6daf64ba6e71d95c6a669839cc9ad8ddbd3ea3984971f84751403",
+      "zona777_units.csv": "12f816ff4b6831c7f48c60bcef1503d08bbb08f28b175d51cd47c2895791708e",
+      "h3_r7_units.csv": "fba0e03fac4f11f890cf297adcd58ae8aa6a1fc84489bb7460662fb733edba9e",
+      "h3_r8_units.csv": "71892e652390a588f1cff184ebf073b465b658e30ef69a7eee31cd05091f7e52",
+      "partitions.csv": "3aac14234fbe350ddf5a6636c49fc98a76674820c54473b8f5afd92149c8b097",
+      "cross_tile_summary.csv": "26deeb4e28fc997e60515eeea7734333f4c93c760ea0f20afb6c20baa99b3d42",
+      "daily_conservation.csv": "da0b147f6883197abbde44344f3258c0bff773b7ca73c1c3cc625ad4198e9700"
+    }
+  },
+  "approved_tile_schedule_sha256": "ef251c4ea48b4bbed3aeb5a38a16083ea5bb3df44786b17c0b40b4fde4e3388a",
+  "approved_area_manifest_sha256": "6c6ce5b89f746dbb6232defec7520cdae75daf22a45e63ff0acde713e481046e",
+  "tests_of_real_data": "loading, aggregation, geometry and partition checks; no Santiago model trained"
+}

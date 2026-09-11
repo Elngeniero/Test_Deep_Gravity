@@ -1,130 +1,93 @@
-import torch
-from typing import Any, Callable, Dict, IO, List, Optional, Tuple, Union
-import numpy as np
-from importlib.machinery import SourceFileLoader
+from __future__ import annotations
 
-path = './utils.py'
-utils = SourceFileLoader('utils', path).load_module()
+import numpy as np
+import torch
+
+from .geometry import earth_distance
+from .sampling import sample_destinations
+
 
 def my_collate(batch):
-    data = [item[0] for item in batch]
-    target = [item[1] for item in batch]
-    ids = [item[2] for item in batch]
-    #target = torch.LongTensor(target)
-    return [data, target], ids
+    """Keep variable candidate counts; each tensor represents a single origin."""
+    return tuple([item[index] for item in batch] for index in range(3))
 
 
 class FlowDataset(torch.utils.data.Dataset):
-    def __init__(self,
-                 list_IDs: List[str],
-                 tileid2oa2features2vals: Dict,
-                 o2d2flow: Dict,
-                 oa2features: Dict,
-                 oa2pop: Dict,
-                 oa2centroid: Dict,
-                 dim_dests: int,
-                 frac_true_dest: float, 
-                 model: str
-                ) -> None:
-        'Initialization'
-        self.list_IDs = list_IDs
+    def __init__(self, list_IDs, tileid2oa2features2vals, o2d2flow,
+                 oa2features, oa2pop, oa2centroid, dim_dests=512,
+                 frac_true_dest=0.0, model="DG", *, destination_scope="global",
+                 destination_ids=None, training=True, seed=1234):
+        self.list_IDs = list(list_IDs)
         self.tileid2oa2features2vals = tileid2oa2features2vals
         self.o2d2flow = o2d2flow
-        self.oa2features = oa2features
+        self.oa2features = {key: list(value) for key, value in oa2features.items()}
+        # Legacy compatibility only: observed generation is not a census feature.
         self.oa2pop = oa2pop
         self.oa2centroid = oa2centroid
+        self.source_outflow = {}
         self.dim_dests = dim_dests
         self.frac_true_dest = frac_true_dest
         self.model = model
-        self.oa2tile = {oa:tile for tile,oa2v in tileid2oa2features2vals.items() for oa in oa2v.keys()}
+        self.training = training
+        self.seed = seed
+        self.epoch = 0
+        self.destination_scope = destination_scope
+        self.oa2tile = {}
+        for tile, units in tileid2oa2features2vals.items():
+            for unit in units:
+                if unit in self.oa2tile:
+                    raise ValueError("Unit assigned to multiple tiles: " + unit)
+                self.oa2tile[unit] = tile
+        if destination_scope not in {"global", "origin_tile"}:
+            raise ValueError("Unknown destination scope")
+        self.destination_ids = sorted(oa2features if destination_ids is None else destination_ids)
+        if len(set(self.list_IDs)) != len(self.list_IDs) or not self.destination_ids:
+            raise ValueError("Duplicate origins or empty destinations")
+        required = set(self.list_IDs) | set(self.destination_ids)
+        if any(required - set(mapping) for mapping in
+               (self.oa2features, self.oa2centroid)) or set(self.list_IDs) - set(self.oa2tile):
+            raise ValueError("Units lack features, anchors or tile assignment")
+        if dim_dests < 1 or not 0 <= frac_true_dest <= 1:
+            raise ValueError("Invalid destination sampling parameters")
 
-    def __len__(self) -> int:
-        'Denotes the total number of samples'
+    def __len__(self):
         return len(self.list_IDs)
 
-    def get_features(self, oa_origin, oa_destination):
-        oa2features = self.oa2features
-        oa2centroid = self.oa2centroid
-        dist_od = utils.earth_distance(oa2centroid[oa_origin], oa2centroid[oa_destination])
+    def set_epoch(self, epoch):
+        self.epoch = int(epoch)
 
-        return oa2features[oa_origin] + oa2features[oa_destination] + [dist_od]
+    def get_features(self, origin, destination):
+        return (self.oa2features[origin] + self.oa2features[destination] +
+                [earth_distance(self.oa2centroid[origin], self.oa2centroid[destination])])
 
-    def get_flow(self, oa_origin, oa_destination):
-        o2d2flow = self.o2d2flow
-        try:
-            return o2d2flow[oa_origin][oa_destination]
-        except KeyError:
-            return 0
+    def get_flow(self, origin, destination):
+        return self.o2d2flow.get(origin, {}).get(destination, 0.0)
 
-    def get_destinations(self, oa, size_train_dest, all_locs_in_train_region):
-        o2d2flow = self.o2d2flow
-        frac_true_dest = self.frac_true_dest
-        try:
-            true_dests_all = list(o2d2flow[oa].keys())
-        except KeyError:
-            true_dests_all = []
-        size_true_dests = min(int(size_train_dest * frac_true_dest), len(true_dests_all))
-        size_fake_dests = size_train_dest - size_true_dests
+    def candidates(self, origin):
+        if self.destination_scope == "global":
+            return self.destination_ids
+        tile = self.oa2tile[origin]
+        return [unit for unit in self.destination_ids if self.oa2tile.get(unit) == tile]
 
-        true_dests = np.random.choice(true_dests_all, size=size_true_dests, replace=False)
-        fake_dests_all = list(set(all_locs_in_train_region) - set(true_dests))
-        fake_dests = np.random.choice(fake_dests_all, size=size_fake_dests, replace=False)
+    def get_destinations(self, origin, size_train_dest, all_locs_in_train_region, rng=None):
+        return sample_destinations(origin, size_train_dest, all_locs_in_train_region,
+                                   self.o2d2flow, self.frac_true_dest, rng)
 
-        dests = np.concatenate((true_dests, fake_dests))
-        np.random.shuffle(dests)
-        return dests
+    def destinations_for(self, index):
+        origin = self.list_IDs[index]
+        candidates = self.candidates(origin)
+        if not self.training:
+            return candidates
+        # Independent of worker count, PYTHONHASHSEED and iteration order.
+        rng = np.random.default_rng(np.random.SeedSequence([self.seed, self.epoch, index]))
+        return self.get_destinations(origin, self.dim_dests, candidates, rng)
 
-    def get_X_T(self, origin_locs, dest_locs):
+    def get_X_T(self, origins, destinations):
+        features = [[self.get_features(o, d) for d in ds] for o, ds in zip(origins, destinations)]
+        targets = [[self.get_flow(o, d) for d in ds] for o, ds in zip(origins, destinations)]
+        return torch.tensor(features, dtype=torch.float32), torch.tensor(targets, dtype=torch.float32)
 
-        X, T = [], []
-        for en, i in enumerate(origin_locs):
-            X += [[]]
-            T += [[]]
-            for j in dest_locs[en]:
-                X[-1] += [self.get_features(i, j)]
-                T[-1] += [self.get_flow(i, j)]
-
-        teX = torch.from_numpy(np.array(X)).float()
-        teT = torch.from_numpy(np.array(T)).float()
-        return teX, teT
-
-    def __getitem__(self, index: int) -> Tuple[Any, Any]:
-
-        tileid2oa2features2vals = self.tileid2oa2features2vals
-        dim_dests = self.dim_dests
-        oa2tile = self.oa2tile
-
-        # Select sample (tile)
-        sampled_origins = [self.list_IDs[index]]
-        tile_ID = oa2tile[sampled_origins[0]]
-
-        all_locs_in_train_region = list(tileid2oa2features2vals[tile_ID].keys())
-        size_train_dest = min(dim_dests, len(all_locs_in_train_region))
-        sampled_dests = [self.get_destinations(oa, size_train_dest, all_locs_in_train_region)
-                         for oa in sampled_origins]
-
-        sampled_trX, sampled_trT = self.get_X_T(sampled_origins, sampled_dests)
-
-
-        return sampled_trX, sampled_trT, sampled_origins
-
-    def __getitem_tile__(self, index: int) -> Tuple[Any, Any]:
-        'Generates one sample of data (one tile)'
-
-        tileid2oa2features2vals = self.tileid2oa2features2vals
-        dim_dests = self.dim_dests
-        tile_ID = self.list_IDs[index]
-        sampled_origins = list(tileid2oa2features2vals[tile_ID].keys())
-
-        # Select a subset of OD pairs
-        train_locs = sampled_origins
-        all_locs_in_train_region = train_locs
-        size_train_dest = min(dim_dests, len(all_locs_in_train_region))
-        sampled_dests = [self.get_destinations(oa, size_train_dest, all_locs_in_train_region)
-                         for oa in sampled_origins]
-
-        # get the features and flows
-        sampled_trX, sampled_trT = self.get_X_T(sampled_origins, sampled_dests)
-
-        return sampled_trX, sampled_trT
-
+    def __getitem__(self, index):
+        origin = self.list_IDs[index]
+        features, targets = self.get_X_T([origin], [self.destinations_for(index)])
+        return features, targets, [origin]

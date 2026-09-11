@@ -1,5 +1,13 @@
 # A Deep Gravity model for mobility flows generation
 
+## Adaptación local Santiago — F2-G
+
+La ejecución activa usa configuración JSON: `python run_deepgravity.py --config config/f2g_santiago_h3_r7.example.json`. La plantilla exige completar las características de F2-I antes de entrenar Santiago. Las instrucciones y la arquitectura del repositorio original se conservan más abajo como antecedente.
+
+El código local conserva cinco capas ocultas de 256 y diez de 128, sin BatchNorm y con dropout efectivo 0,0. El cargador de Santiago separa orígenes por partición y conserva destinos metropolitanos globales. Véanse el [contrato técnico F2-G](docs/contratos/F2-G_CONTRATO_CARGA_EJECUCION.md) y el [plan maestro](docs/PLAN_MAESTRO_FRENTES_1_Y_2.md).
+
+Pruebas: `python -m unittest discover -s tests -v`. Entorno verificado: `requirements-f2g.txt`.
+
 ## Table of contents
 1. [Citing](#citing)
 2. [Abstract](#abstract)

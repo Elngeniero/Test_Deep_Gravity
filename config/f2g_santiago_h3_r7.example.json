@@ -1,0 +1,33 @@
+{
+  "purpose": "scientific",
+  "mode": "train",
+  "output_root": "../runs/santiago",
+  "evaluation_split": "validation",
+  "device": "cpu",
+  "data": {
+    "adapter": "santiago",
+    "representation": "h3_r7",
+    "od_path": "../deepgravity/data/santiago/interim/f2g_spatial/h3_r7_od.parquet",
+    "units_path": "../docs/verificacion/f2g/F2-G_UNIDADES_H3_R7.csv",
+    "partitions_path": "../docs/verificacion/f2g/F2-G_PARTICIONES_UNIDADES.csv",
+    "destination_scope": "global",
+    "weight": "expanded_mass",
+    "features_path": "../deepgravity/data/santiago/processed/f2i/h3_r7_features.csv",
+    "feature_columns": []
+  },
+  "model": {
+    "dim_hidden": 256,
+    "dropout_p": 0
+  },
+  "training": {
+    "epochs": 15,
+    "lr": 0.000005,
+    "momentum": 0.9,
+    "batch_size": 1,
+    "evaluation_batch_size": 1,
+    "seed": 20260909,
+    "destinations_per_origin": 512,
+    "positive_destination_fraction": 0,
+    "cpu_threads": 2
+  }
+}

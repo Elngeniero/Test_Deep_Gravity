@@ -1,0 +1,9 @@
+{
+  "status": "completed",
+  "run_directory": "runs/f2g/20260910T214323_b6b837f305",
+  "architecture": "five hidden layers of 256, ten of 128, dropout 0.0",
+  "synthetic_origins": 6,
+  "epochs": 2,
+  "santiago_model_trained": false,
+  "new_york_model_evaluated": false
+}

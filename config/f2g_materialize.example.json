@@ -1,0 +1,11 @@
+{
+  "canonical_root": "../deepgravity/data/santiago/interim/f2c_canonical",
+  "output_root": "../deepgravity/data/santiago/interim/f2g_spatial",
+  "partitions": "../docs/territorio/f2f/F2-F_PARTICIONES_UNIDADES.csv",
+  "area": "../docs/territorio/f2d/F2-D_AREA_APROBADA.geojson",
+  "approval": "../docs/territorio/f2d/F2-D_AREA_APROBADA.json",
+  "period": "all",
+  "day_types": [],
+  "service_dates": [],
+  "units_root": "../docs/territorio/f2e"
+}

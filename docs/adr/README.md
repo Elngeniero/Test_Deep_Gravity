@@ -28,4 +28,4 @@ Directorio para registrar las decisiones de arquitectura del proyecto. Cada deci
 | [ADR-002](./ADR-002-grilla-cuadrada.md) | Tessellation Cuadrada como Unidad Espacial | ~~Aceptado~~ Reemplazado por ADR-004 | 2026-08-20 |
 | [ADR-003](./ADR-003-separacion-documentacion.md) | Separación de Documentación Técnica | Aceptado | 2026-08-20 |
 | [ADR-004](./ADR-004-grilla-hexagonal-h3-doble-modelo.md) | Comparación Zona 777-H3 | Aceptado; corrección factual 2026-09-08 | 2026-09-01 |
-| [ADR-005](./ADR-005-delimitacion-gran-santiago.md) | Delimitación del Área de Estudio — Gran Santiago Urbano | Propuesto; pendiente de G3 | 2026-09-01 |
+| [ADR-005](./ADR-005-delimitacion-gran-santiago.md) | Delimitación del Área de Estudio — Gran Santiago Urbano | Aceptado el 2026-09-09; G3 cerrada con F2-E/F | 2026-09-01 |

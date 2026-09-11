@@ -1,0 +1,5 @@
+# Additions required by the reproducible Santiago spatial stages (F2-D/F2-E).
+# The base environment already supplies pandas, GeoPandas, Shapely and pyproj.
+duckdb==0.10.3
+h3==4.1.2
+requests==2.32.3

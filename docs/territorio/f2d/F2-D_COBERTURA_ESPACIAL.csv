@@ -1,0 +1,2 @@
+primary_trip_count,origin_geometry_match_count,destination_geometry_match_count,both_geometry_match_count,origin_geometry_match_share,destination_geometry_match_share,both_geometry_match_share
+60682293,60682293,60682293,60682293,1.0,1.0,1.0

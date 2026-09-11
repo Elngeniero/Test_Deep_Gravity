@@ -1,0 +1,19 @@
+{
+  "dataset": "comunas_rm_dpa_2023",
+  "source_description": "Capa Comunas, Grupo de Trabajo de División Política Administrativa (2023), publicada por el Servicio de Evaluación Ambiental.",
+  "source_url": "https://ideserver.sma.gob.cl/arcgis/rest/services/IDE/Limites/MapServer/2/query?where=CUT_REG%3D%2713%27&outFields=CUT_REG%2CCUT_PROV%2CCUT_COM%2CREGION%2CPROVINCIA%2CCOMUNA%2CSUPERFICIE&returnGeometry=true&outSR=4326&f=json",
+  "retrieved_utc": "2026-09-09T15:42:43.303511+00:00",
+  "source_response_sha256": "7b19d39ced86747cdf3075384bd9d9f95055b175b26f0f16184c5bbd4ca06726",
+  "output_sha256": "55c627b69bc865aae8a6cf8b4e61869a41002a061f895811e1ac80d26823a5d5",
+  "crs": "EPSG:4326",
+  "feature_count": 52,
+  "fields": [
+    "CUT_REG",
+    "CUT_PROV",
+    "CUT_COM",
+    "REGION",
+    "PROVINCIA",
+    "COMUNA",
+    "SUPERFICIE"
+  ]
+}

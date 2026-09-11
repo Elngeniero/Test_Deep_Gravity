@@ -1,0 +1,4 @@
+representation,origin_partition,destination_partition,is_cross_tile,trip_count,expanded_mass
+zona777,not_materialized,not_materialized,policy_retained,,
+h3_r7,not_materialized,not_materialized,policy_retained,,
+h3_r8,not_materialized,not_materialized,policy_retained,,

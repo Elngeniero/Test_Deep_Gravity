@@ -1,0 +1,39 @@
+{
+  "python": "3.8.20",
+  "versions": {
+    "torch": "1.13.1+cpu",
+    "numpy": "1.24.3",
+    "pandas": "2.0.3",
+    "geopandas": "0.9.0",
+    "shapely": "2.0.1",
+    "pyproj": "3.5.0",
+    "duckdb": "0.10.3",
+    "h3": "4.1.2"
+  },
+  "code_sha256": {
+    "deepgravity/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "deepgravity/adapters.py": "7ecb92205cb2065f6342347e914c254810eb78337ff2e4ed1f18eb67c4ec1b0c",
+    "deepgravity/data_loader.py": "198a20b1231373304e6da78887ad7f35dcb57d6ac44b5003788618bd8c67dcc2",
+    "deepgravity/geometry.py": "8bbe91f5efaa35a6b48eefed3881e3919096c14c5e16044ebf193c92f802ea4d",
+    "deepgravity/main.py": "144e5290ebe1e12c4650d8d1c476b7e52b8cd8f1dcb89457ef2408104a0492ea",
+    "deepgravity/metrics.py": "e000df72a3b2498c2e18dbf50eebe9d0d5f49c2666c091b928ca0cd430d63850",
+    "deepgravity/preprocessing.py": "7234ac6e2d64cf582eab506e6101cdb8d9b9dbdfe74144b2439547cdc1c15301",
+    "deepgravity/runner.py": "d92ecaf7a3e2980e376377e947723877bccb51306add3702430229100b19357f",
+    "deepgravity/sampling.py": "d390805183618c7e3588d5d645398604139498e880569d8643ac59bb1ea4cccb",
+    "deepgravity/spatial.py": "43d447a9e8e5ce92bef0f0097904f5bbb2939b610b57b7fcbed88b39b36cf9a5",
+    "deepgravity/utils.py": "953f1814f0146b8580a1a71cfb67749c91da9f8bd72bebb846da0743d0f8ddfd",
+    "deepgravity/models/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "deepgravity/models/deepgravity.py": "c8e7ba16361e0085e763d0053bcde4b508a0193364d1c9af8c4123ef86d91a73",
+    "deepgravity/models/od_models.py": "ef59816313dfdd3f0ecacd545a5e37c51938a0714384acfb7ec24c904edc4846",
+    "tests/test_f2g.py": "35ddf1fca573ffb9c95b839c8336906b1e5f9f96e88d784dac76b165a10604ed",
+    "run_deepgravity.py": "e3caa318cc85e6873a39aed415e043dce407486745316da7f12794bb92535688",
+    "materialize_santiago.py": "96b8b548d128997a1789b87cc7446aab7a4fb7c3c0b8381736d7363b4dcfc380",
+    "verify_f2g_artifacts.py": "40afcdda3b24cad7233ad3b9d78aa3eadf2064e7d65dd2d47d735aa52785144e",
+    "tools/build_f2e_spatial_feasibility.py": "310c5c43c99093a06178afa16164a5d9623962b9f3af52fed57f306884499de6"
+  },
+  "tests": {
+    "passed": 37,
+    "log_sha256": "03d3fc47e2d2d853c5c892b79b94b199af1ddd6546bb0e5e8fa3852bad1acfd7"
+  },
+  "changes_committed": false
+}

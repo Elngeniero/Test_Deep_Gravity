@@ -1,0 +1,35 @@
+{
+  "purpose": "legacy_audit",
+  "mode": "train",
+  "output_root": "../runs/new_york",
+  "evaluation_split": "validation",
+  "device": "cpu",
+  "data": {
+    "adapter": "legacy",
+    "data_dir": "../deepgravity/data/new_york",
+    "centroid_order": "lon_lat",
+    "destination_scope": "origin_tile",
+    "mass_feature": "legacy_observed_outflow",
+    "columns": {
+      "oa_id_column": "GEOID",
+      "flow_origin_column": "geoid_o",
+      "flow_destination_column": "geoid_d",
+      "flow_flows_column": "pop_flows"
+    }
+  },
+  "model": {
+    "dim_hidden": 256,
+    "dropout_p": 0
+  },
+  "training": {
+    "epochs": 20,
+    "lr": 0.000005,
+    "momentum": 0.9,
+    "batch_size": 1,
+    "evaluation_batch_size": 1,
+    "seed": 1234,
+    "destinations_per_origin": 512,
+    "positive_destination_fraction": 0,
+    "cpu_threads": 2
+  }
+}

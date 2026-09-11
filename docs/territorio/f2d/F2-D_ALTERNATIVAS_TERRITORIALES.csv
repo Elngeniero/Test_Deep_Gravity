@@ -1,0 +1,4 @@
+candidate_id,description,commune_count,internal_trip_count,internal_trip_share,internal_expanded_mass,internal_mass_share,active_origin_zones,active_destination_zones,observed_zone_od_pairs,zone_od_density,intrazonal_trip_count,intrazonal_expanded_mass
+nucleo_urbano_referencial_34,34 comunas urbanas referenciales del Gran Santiago.,34,60513881,0.9972246928770473,85777662.9386,0.996859018363518,795,796,427170,0.6750260737650516,718189,1044311.458
+ampliada_contigua_actividad,"Núcleo más comunas vecinas con al menos 0,10 % de la masa de extremos.",34,60513881,0.9972246928770473,85777662.9386,0.996859018363518,795,796,427170,0.6750260737650516,718189,1044311.458
+region_metropolitana_completa_52,Las 52 comunas de la Región Metropolitana disponibles en DPA.,52,60682293,1.0,86047937.9315,1.0000000000000002,799,799,430655,0.6745838430704213,728643,1063093.2138999999

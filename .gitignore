@@ -1,6 +1,14 @@
 *.agents
 *.json
 
+# Public, non-sensitive provenance manifests versioned with the territorial workflow.
+!deepgravity/data/santiago/reference/*_metadata.json
+!docs/territorio/f2d/*.json
+!docs/territorio/f2e/*.json
+!docs/territorio/f2f/*.json
+!docs/verificacion/f2g/*.json
+!config/*.example.json
+
 # Local machine settings and credentials
 .env
 .env.*
@@ -17,6 +25,7 @@ deepgravity/data/santiago/cache/
 deepgravity/data/santiago/checkpoints/
 deepgravity/results/santiago/
 runs/
+tests/.artifacts/
 
 # Common runtime by-products
 __pycache__/

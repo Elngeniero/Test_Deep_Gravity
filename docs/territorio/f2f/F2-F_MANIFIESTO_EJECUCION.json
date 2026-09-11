@@ -1,0 +1,46 @@
+{
+  "stage": "F2-F",
+  "status": "completed",
+  "executed_at_utc": "2026-09-09T23:16:14.762916+00:00",
+  "tile_crs": "EPSG:32719",
+  "tile_size_m": 15000,
+  "tile_index_formula": "floor(x/15000), floor(y/15000)",
+  "seed": 20260909,
+  "target_shares": {
+    "train": 0.7,
+    "validation": 0.15,
+    "test": 0.15
+  },
+  "partition_role": "origin units only; all approved-domain destinations remain candidates",
+  "cross_tile_flows": "retained",
+  "representations": [
+    "zona777",
+    "h3_r7",
+    "h3_r8"
+  ],
+  "assertions": {
+    "each_active_origin_once": true,
+    "one_partition_per_tile": true,
+    "tile_larger_than_all_active_units": true,
+    "same_tile_schedule_across_representations": true
+  },
+  "legacy_audit": {
+    "data_loader": "deepgravity/data_loader.py",
+    "loader_destination_scope": "candidate destinations are currently the units in the origin tile",
+    "main": "deepgravity/main.py",
+    "split_artifacts": "train_tiles.csv / test_tiles.csv",
+    "required_f2g_change": "use tiles only for disjoint origin splits and retain the approved metropolitan destination universe, including cross-tile flows"
+  },
+  "inputs": {
+    "docs\\territorio\\f2e\\F2-E_UNIDADES_ZONA777.csv": "7eeabfe39d93ac02d363bfe862a3ba2f72d772de36e767958e516512d7ee48dc",
+    "docs\\territorio\\f2e\\F2-E_UNIDADES_H3_R7.csv": "04172a570f35d1639ce580a89faf802e09eeadc4b0225fa185fc939b8ff419dc",
+    "docs\\territorio\\f2e\\F2-E_UNIDADES_H3_R8.csv": "184170242b0c3bd8ec6e1b7a350edd68e4b1ebf9002d4f27b3123c7128923833"
+  },
+  "outputs": {
+    "F2-F_PARTICIONES_UNIDADES.csv": "d65cc1932b666f41f1f7d8717a816a0b7991b83c8a5c965e3622f25c85e2f4e4",
+    "F2-F_ASIGNACION_TILES.csv": "ef251c4ea48b4bbed3aeb5a38a16083ea5bb3df44786b17c0b40b4fde4e3388a",
+    "F2-F_ESTADISTICAS_PARTICION.csv": "40a9188976755735cde34cd81e4cdf38251547f68a48376fc41303fe4d41ff8d",
+    "F2-F_FLUJOS_CRUZADOS.csv": "774d62fc139947232adee7b149fdf3ae85d58735e90b0f8f13b04df486cc4552",
+    "F2-F_REPORTE_PARTICIONES.md": "1cc581cb2982006bff53d25be1da2941dbacf85c468a9a0a1734d8ab0aae48c2"
+  }
+}

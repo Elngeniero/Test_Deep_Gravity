@@ -1,20 +1,10 @@
 
-import json
-import pandas as pd
-# import geopandas as gpd
-import shapely
-import area
 import numpy as np
 import random
 import torch
-from zipfile import ZipFile
-from math import sqrt, sin, cos, pi, asin
-from ast import literal_eval
-
-from importlib.machinery import SourceFileLoader
-
-path = './models/od_models.py'
-od = SourceFileLoader('od', path).load_module()
+from . import od_models as od
+from ..geometry import earth_distance
+from ..sampling import sample_destinations
 
 
 def df_to_dict(df):
@@ -23,7 +13,7 @@ def df_to_dict(df):
     values = split['data']
     return {k: v for k, v in zip(keys, values)}
 
-def get_features_ffnn(oa_origin, oa_destination, oa2features, oa2centroid, df, distances, k):
+def get_features_ffnn(oa_origin, oa_destination, oa2features, oa2centroid, df, distances=None, k=None):
     # dist_od = distance(oa2centroid[oa_origin], oa2centroid[oa_destination]).km
 
     if df == 'deepgravity':
@@ -47,21 +37,8 @@ def get_flow(oa_origin, oa_destination, o2d2flow):
 
 
 def get_destinations(oa, size_train_dest, all_locs_in_train_region, o2d2flow, frac_true_dest=0.5):
-    try:
-        true_dests_all = list(o2d2flow[oa].keys())
-    except KeyError:
-        true_dests_all = []
-    size_true_dests = min(int(size_train_dest * frac_true_dest), len(true_dests_all))
-    size_fake_dests = size_train_dest - size_true_dests
-    # print(size_train_dest, size_true_dests, size_fake_dests, len(true_dests_all))
-
-    true_dests = np.random.choice(true_dests_all, size=size_true_dests, replace=False)
-    fake_dests_all = list(set(all_locs_in_train_region) - set(true_dests))
-    fake_dests = np.random.choice(fake_dests_all, size=size_fake_dests, replace=False)
-
-    dests = np.concatenate((true_dests, fake_dests))
-    np.random.shuffle(dests)
-    return dests
+    return sample_destinations(oa, size_train_dest, all_locs_in_train_region,
+                               o2d2flow, frac_true_dest)
 
 
 def split_train_test_sets(oas, fraction_train):
@@ -78,7 +55,7 @@ def split_train_test_sets(oas, fraction_train):
 
 class NN_MultinomialRegression(od.NN_OriginalGravity):
 
-    def __init__(self, dim_input, dim_hidden, df, dropout_p=0.35,  device=torch.device("cpu")):
+    def __init__(self, dim_input, dim_hidden, df, dropout_p=0.0, device=torch.device("cpu")):
 
         super(od.NN_OriginalGravity, self).__init__(dim_input, device=device)
 

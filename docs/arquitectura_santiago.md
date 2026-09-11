@@ -1,6 +1,6 @@
 # Arquitectura propuesta para Santiago
 
-**Estado:** especificación científica revisada en F1-B.
+**Estado:** especificación científica revisada en F1-B; implementación técnica actualizada al cierre de F2-G, 10 de septiembre de 2026.
 **Alcance:** decisiones vigentes y procedimientos pendientes; no reporta resultados del piloto.
 
 ## 1. Propósito
@@ -47,7 +47,7 @@ baselines, entrenamiento y evaluación
 
 La rama zonal usará los campos auditados de los viajes canónicos y geometría oficial con CRS e identificadores verificados. No heredará automáticamente 743 zonas de un trabajo externo.
 
-La rama H3 transformará coordenadas válidas desde EPSG:32719 a WGS84 y asignará ambos extremos después de cerrar la unión. Se evaluarán H3-r3 a H3-r8 en factibilidad; r6 a r8 son candidatas iniciales, no resoluciones seleccionadas.
+La rama H3 transforma coordenadas válidas desde EPSG:32719 a WGS84 y asigna ambos extremos directamente en cada resolución. H3-r7 y H3-r8 pasan al piloto. F2-G corrigió el uso de padres de r8 en la implementación previa de r7: la tabla operativa directa tiene 223 unidades observadas, 220 orígenes activos y 37.196 pares OD. Las unidades y particiones actualizadas se guardan en `docs/verificacion/f2g/`.
 
 ## 4. Precisiones sobre H3
 
@@ -57,7 +57,7 @@ H3 no elimina el MAUP. La comparación Zona 777-H3 trata la unidad espacial como
 
 ## 5. Área, unidades y tiles
 
-El área de estudio no está congelada. F2-D comparará alternativas territoriales con densidad, viajes retenidos, cobertura y esparsidad; después se versionarán el polígono, CRS, comunas y regla de frontera.
+El área de estudio aprobada el 9 de septiembre de 2026 es el núcleo referencial de 34 comunas de F2-D. La regla exige ambos extremos UTM estrictamente contenidos en las geometrías comunales seleccionadas, proyectadas a EPSG:32719. Retiene 60.513.881 viajes (99,72 % de la cohorte primaria) y 99,69 % de la masa expandida. La geometría y los hashes se fijan en `docs/territorio/f2d/F2-D_AREA_APROBADA.geojson` y su manifiesto JSON. F2-E resolverá el tratamiento de celdas H3 que cruzan los bordes manteniendo este dominio de viajes.
 
 Una celda o zona es una unidad origen-destino. Un tile es un bloque espacial mayor usado para particionar y evaluar. El diseño de tiles, los destinos cruzados y el universo de candidatos se resolverán en F2-F/F2-G; no se asume un único tile metropolitano.
 
@@ -65,7 +65,7 @@ Una celda o zona es una unidad origen-destino. Un tile es un bloque espacial may
 
 La fuente de población, la instantánea OSM, la ontología de categorías, la unidad de agregación y la normalización siguen pendientes de F2-I. La propuesta de 12 macro-categorías es un insumo de evaluación y no un conjunto ya adoptado. La dimensión del vector de entrada se definirá después de ese contrato.
 
-El código base requiere refactorización y pruebas antes de Santiago. Persisten, entre otros, el CPC con denominador incorrecto, la regeneración defectuosa de caché, la evaluación que se corta tras un lote y una semántica de destinos limitada al tile de origen. Las correcciones corresponden a F2-G.
+F2-G corrigió el denominador de CPC, la serialización y regeneración de caché, la evaluación de todos los lotes y el soporte metropolitano de destinos. El refactor conserva cinco capas ocultas de 256 y diez de 128, sin BatchNorm y con dropout efectivo 0,0. Las 37 pruebas, la conservación mensual y el ensayo sintético están documentados en `docs/verificacion/f2g/F2-G_REPORTE_IMPLEMENTACION.md`; F2-H y el piloto de Santiago siguen pendientes.
 
 ## 7. Hipótesis y evidencia externa
 
@@ -77,8 +77,9 @@ La hipótesis empírica es bilateral: se medirá si la representación H3 modifi
 
 | Decisión | Puerta prevista |
 |---|---|
-| Clave de unión, extremos, descartes, peso y cohorte | G2 |
-| Área de estudio, resoluciones H3 y tiles | G3 |
-| Correcciones del código, soporte de destinos y CPC | G4 |
+| Clave de unión, extremos, descartes, peso y cohorte | G2 cerrado |
+| Área de estudio | F2-D completada y aprobada; ADR-005 |
+| Resoluciones H3, bordes de celdas y tiles | G3 cerrada: Zona 777, H3-r7/r8 y 10 tiles determinísticos documentados en F2-E/F |
+| Correcciones del código, soporte de destinos y CPC | F2-G completada y verificada; G4 sigue abierta hasta el piloto |
 | Población, OSM y dimensión final de atributos | F2-I antes del piloto |
 | XAI y redacción de resultados | después de G4 |
