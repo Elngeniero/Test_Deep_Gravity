@@ -1,0 +1,8 @@
+# Runtime used only by tools/build_f2i_features.py.  Install into a local,
+# ignored target directory; the project runtime intentionally stays unchanged.
+Shapely==2.1.2
+pyproj==3.7.2
+pyshp==2.3.1
+h3==4.3.1
+osmium==4.2.0
+requests==2.32.5

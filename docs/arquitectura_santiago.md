@@ -1,6 +1,6 @@
 # Arquitectura propuesta para Santiago
 
-**Estado:** especificación científica revisada en F1-B; implementación técnica actualizada al cierre de F2-G, 10 de septiembre de 2026.
+**Estado:** especificación científica revisada en F1-B; F2-G/F2-H verificadas y contrato F2-I aprobado el 14 de septiembre de 2026. F2-J aún no iniciada.
 **Alcance:** decisiones vigentes y procedimientos pendientes; no reporta resultados del piloto.
 
 ## 1. Propósito
@@ -47,7 +47,7 @@ baselines, entrenamiento y evaluación
 
 La rama zonal usará los campos auditados de los viajes canónicos y geometría oficial con CRS e identificadores verificados. No heredará automáticamente 743 zonas de un trabajo externo.
 
-La rama H3 transforma coordenadas válidas desde EPSG:32719 a WGS84 y asigna ambos extremos directamente en cada resolución. H3-r7 y H3-r8 pasan al piloto. F2-G corrigió el uso de padres de r8 en la implementación previa de r7: la tabla operativa directa tiene 223 unidades observadas, 220 orígenes activos y 37.196 pares OD. Las unidades y particiones actualizadas se guardan en `docs/verificacion/f2g/`.
+La rama H3 transforma coordenadas válidas desde EPSG:32719 a WGS84 y asigna ambos extremos directamente en cada resolución. H3-r7 y H3-r8 pasan al piloto. F2-G corrigió el uso de padres de r8 en la implementación previa de r7: su tabla histórica conserva 223 unidades, 220 orígenes activos y 37.196 pares OD. Tras la exclusión común aprobada en F2-I, r7 conserva 223 unidades, 218 orígenes activos y 37.089 pares OD. Las tablas para continuar se identifican por hash en `docs/territorio/f2i/F2-I_CONTRATO_APROBADO.json`; `docs/verificacion/f2g/` conserva la base histórica.
 
 ## 4. Precisiones sobre H3
 
@@ -57,15 +57,15 @@ H3 no elimina el MAUP. La comparación Zona 777-H3 trata la unidad espacial como
 
 ## 5. Área, unidades y tiles
 
-El área de estudio aprobada el 9 de septiembre de 2026 es el núcleo referencial de 34 comunas de F2-D. La regla exige ambos extremos UTM estrictamente contenidos en las geometrías comunales seleccionadas, proyectadas a EPSG:32719. Retiene 60.513.881 viajes (99,72 % de la cohorte primaria) y 99,69 % de la masa expandida. La geometría y los hashes se fijan en `docs/territorio/f2d/F2-D_AREA_APROBADA.geojson` y su manifiesto JSON. F2-E resolverá el tratamiento de celdas H3 que cruzan los bordes manteniendo este dominio de viajes.
+El área de estudio aprobada el 9 de septiembre de 2026 es el núcleo referencial de 34 comunas de F2-D. La regla exige ambos extremos UTM estrictamente contenidos en las geometrías comunales seleccionadas, proyectadas a EPSG:32719. El filtro territorial retiene 60.513.881 viajes (99,72 % de la cohorte primaria) y 99,69 % de la masa expandida. La geometría y los hashes se fijan en `docs/territorio/f2d/F2-D_AREA_APROBADA.geojson` y su manifiesto JSON. F2-I añade la exclusión común aprobada de 1.904 viajes con algún extremo en las zonas sin polígono oficial 848, 849 o 852: quedan 60.511.977 viajes y masa 85.774.522,4070 en Zona777, H3-r7 y H3-r8. Se conservan las huellas completas de las celdas para atributos y el dominio territorial estricto para los viajes.
 
-Una celda o zona es una unidad origen-destino. Un tile es un bloque espacial mayor usado para particionar y evaluar. El diseño de tiles, los destinos cruzados y el universo de candidatos se resolverán en F2-F/F2-G; no se asume un único tile metropolitano.
+Una celda o zona es una unidad origen-destino. Un tile es un bloque espacial mayor usado para particionar y evaluar. F2-F/F2-G fijaron 10 tiles y soporte metropolitano global de destinos. F2-I mantiene las asignaciones de tiles y particiones; actualiza los totales por unidad tras la exclusión común.
 
 ## 6. Atributos y modelo
 
-La fuente de población, la instantánea OSM, la ontología de categorías, la unidad de agregación y la normalización siguen pendientes de F2-I. La propuesta de 12 macro-categorías es un insumo de evaluación y no un conjunto ya adoptado. La dimensión del vector de entrada se definirá después de ese contrato.
+F2-I adoptó Censo 2024 de manzanas y entidades de la RM, asignado por interpolación areal, y OSM Chile del 1 de enero de 2024. El diccionario principal `paper19` contiene 19 variables por ubicación: población, cinco coberturas de suelo, tres densidades viales y cinco familias de servicios, cada una con densidad de puntos y cobertura de áreas. El par OD tiene **39 entradas**. Se unen polígonos y vías dentro de cada categoría antes de medir área o longitud, y se cuentan puntos con pertenencia estricta. Densidades y tasas usan `log1p`; todas las variables se estandarizan con parámetros ajustados únicamente sobre orígenes activos de entrenamiento. La alternativa `macro12_geometry20` tiene 20 variables y 41 entradas; queda disponible para diagnóstico. Véanse [ADR-006](adr/ADR-006-propuesta-cierre-f2i.md), [diccionario](territorio/f2i/F2-I_DICCIONARIO_PROPUESTA.json) y [contrato aprobado](territorio/f2i/F2-I_CONTRATO_APROBADO.json).
 
-F2-G corrigió el denominador de CPC, la serialización y regeneración de caché, la evaluación de todos los lotes y el soporte metropolitano de destinos. El refactor conserva cinco capas ocultas de 256 y diez de 128, sin BatchNorm y con dropout efectivo 0,0. Las 37 pruebas, la conservación mensual y el ensayo sintético están documentados en `docs/verificacion/f2g/F2-G_REPORTE_IMPLEMENTACION.md`; F2-H y el piloto de Santiago siguen pendientes.
+F2-G corrigió el denominador de CPC, la serialización y regeneración de caché, la evaluación de todos los lotes y el soporte metropolitano de destinos. El refactor conserva cinco capas ocultas de 256 y diez de 128, sin BatchNorm y con dropout efectivo 0,0. Las 37 pruebas, la conservación mensual y el ensayo sintético están documentados en `docs/verificacion/f2g/F2-G_REPORTE_IMPLEMENTACION.md`. F2-H completó una corrida de Nueva York de 20 épocas con CPC global 0,506684 y comprobación independiente; su reporte distingue la validez técnica de la equivalencia científica no acreditada con el artículo. La pérdida efectiva sigue ponderada por conteos y debe declararse en el protocolo del piloto. El piloto Santiago continúa pendiente y G4 permanece abierta.
 
 ## 7. Hipótesis y evidencia externa
 
@@ -81,5 +81,5 @@ La hipótesis empírica es bilateral: se medirá si la representación H3 modifi
 | Área de estudio | F2-D completada y aprobada; ADR-005 |
 | Resoluciones H3, bordes de celdas y tiles | G3 cerrada: Zona 777, H3-r7/r8 y 10 tiles determinísticos documentados en F2-E/F |
 | Correcciones del código, soporte de destinos y CPC | F2-G completada y verificada; G4 sigue abierta hasta el piloto |
-| Población, OSM y dimensión final de atributos | F2-I antes del piloto |
+| Población, OSM y dimensión final de atributos | F2-I cerrada y aprobada: Censo 2024, paper19 con 39 entradas y cohorte común de 60.511.977 viajes; ADR-006 |
 | XAI y redacción de resultados | después de G4 |

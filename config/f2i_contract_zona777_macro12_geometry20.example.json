@@ -1,0 +1,42 @@
+{
+  "mode": "f2i_contract_check",
+  "purpose": "scientific",
+  "status": "proposal_not_adopted",
+  "instruction": "This is a verified data-contract proposal. Adopt population, ontology and common cohort before creating any F2-J training config.",
+  "data": {
+    "adapter": "santiago",
+    "representation": "zona777",
+    "od_path": "../deepgravity/data/santiago/processed/f2i/proposal_common_exclusion/zona777/od.parquet",
+    "units_path": "../deepgravity/data/santiago/processed/f2i/proposal_common_exclusion/zona777/units.csv",
+    "partitions_path": "../deepgravity/data/santiago/processed/f2i/proposal_common_exclusion/zona777/partitions.csv",
+    "features_path": "../deepgravity/data/santiago/processed/f2i/proposal_common_exclusion/zona777/macro12_geometry20_model.csv",
+    "feature_columns": [
+      "population_census_2024_per_km2",
+      "residential_bldg_share",
+      "commercial_bldg_share",
+      "industrial_bldg_share",
+      "leisure_poi_per_km2",
+      "leisure_share",
+      "transport_poi_per_km2",
+      "transport_area_share",
+      "food_poi_per_km2",
+      "food_area_share",
+      "health_poi_per_km2",
+      "health_area_share",
+      "education_poi_per_km2",
+      "education_area_share",
+      "retail_poi_per_km2",
+      "retail_area_share",
+      "main_roads_km_per_km2",
+      "secondary_roads_km_per_km2",
+      "other_poi_per_km2",
+      "other_share"
+    ],
+    "destination_scope": "global",
+    "weight": "expanded_mass"
+  },
+  "preprocessing_path": "../deepgravity/data/santiago/processed/f2i/proposal_common_exclusion/zona777/macro12_geometry20_preprocessing.json",
+  "scenario_path": "../deepgravity/data/santiago/processed/f2i/proposal_common_exclusion/scenario.json",
+  "location_feature_count": 20,
+  "pair_input_count": 41
+}

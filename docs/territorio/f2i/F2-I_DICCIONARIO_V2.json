@@ -1,0 +1,534 @@
+{
+  "schema": "f2i_geometry_v2",
+  "variables": [
+    {
+      "name": "population_census_2024_per_km2",
+      "source": "INE Censo 2024",
+      "unit": "persons/km2",
+      "geometry": "census polygons",
+      "aggregation": "areal allocation of population; divide by metric unit area",
+      "null_policy": "missing official unit geometry -> null and blocked; invalid census value -> error; observed absence -> zero",
+      "normalization": "log1p then train-only z-score",
+      "filter_reference": "F2-I_DICCIONARIO_V2.json:taxonomy and tools/f2i_finalize.py:classify",
+      "candidates": [
+        "paper19",
+        "macro12_geometry20"
+      ]
+    },
+    {
+      "name": "landuse_residential_share",
+      "source": "OSM Chile 2024-01-01",
+      "unit": "km2/km2",
+      "geometry": "polygons",
+      "aggregation": "area of union of clipped polygons / metric unit area",
+      "null_policy": "missing official unit geometry -> null and blocked; invalid census value -> error; observed absence -> zero",
+      "normalization": "identity then train-only z-score",
+      "filter_reference": "F2-I_DICCIONARIO_V2.json:taxonomy and tools/f2i_finalize.py:classify",
+      "candidates": [
+        "paper19"
+      ]
+    },
+    {
+      "name": "landuse_commercial_share",
+      "source": "OSM Chile 2024-01-01",
+      "unit": "km2/km2",
+      "geometry": "polygons",
+      "aggregation": "area of union of clipped polygons / metric unit area",
+      "null_policy": "missing official unit geometry -> null and blocked; invalid census value -> error; observed absence -> zero",
+      "normalization": "identity then train-only z-score",
+      "filter_reference": "F2-I_DICCIONARIO_V2.json:taxonomy and tools/f2i_finalize.py:classify",
+      "candidates": [
+        "paper19"
+      ]
+    },
+    {
+      "name": "landuse_industrial_share",
+      "source": "OSM Chile 2024-01-01",
+      "unit": "km2/km2",
+      "geometry": "polygons",
+      "aggregation": "area of union of clipped polygons / metric unit area",
+      "null_policy": "missing official unit geometry -> null and blocked; invalid census value -> error; observed absence -> zero",
+      "normalization": "identity then train-only z-score",
+      "filter_reference": "F2-I_DICCIONARIO_V2.json:taxonomy and tools/f2i_finalize.py:classify",
+      "candidates": [
+        "paper19"
+      ]
+    },
+    {
+      "name": "landuse_retail_share",
+      "source": "OSM Chile 2024-01-01",
+      "unit": "km2/km2",
+      "geometry": "polygons",
+      "aggregation": "area of union of clipped polygons / metric unit area",
+      "null_policy": "missing official unit geometry -> null and blocked; invalid census value -> error; observed absence -> zero",
+      "normalization": "identity then train-only z-score",
+      "filter_reference": "F2-I_DICCIONARIO_V2.json:taxonomy and tools/f2i_finalize.py:classify",
+      "candidates": [
+        "paper19"
+      ]
+    },
+    {
+      "name": "landuse_natural_share",
+      "source": "OSM Chile 2024-01-01",
+      "unit": "km2/km2",
+      "geometry": "polygons",
+      "aggregation": "area of union of clipped polygons / metric unit area",
+      "null_policy": "missing official unit geometry -> null and blocked; invalid census value -> error; observed absence -> zero",
+      "normalization": "identity then train-only z-score",
+      "filter_reference": "F2-I_DICCIONARIO_V2.json:taxonomy and tools/f2i_finalize.py:classify",
+      "candidates": [
+        "paper19"
+      ]
+    },
+    {
+      "name": "road_residential_km_per_km2",
+      "source": "OSM Chile 2024-01-01",
+      "unit": "km/km2",
+      "geometry": "lines",
+      "aggregation": "length of union of clipped lines; shared boundary assigned to smallest unit_id / metric unit area",
+      "null_policy": "missing official unit geometry -> null and blocked; invalid census value -> error; observed absence -> zero",
+      "normalization": "log1p then train-only z-score",
+      "filter_reference": "F2-I_DICCIONARIO_V2.json:taxonomy and tools/f2i_finalize.py:classify",
+      "candidates": [
+        "paper19"
+      ]
+    },
+    {
+      "name": "road_main_km_per_km2",
+      "source": "OSM Chile 2024-01-01",
+      "unit": "km/km2",
+      "geometry": "lines",
+      "aggregation": "length of union of clipped lines; shared boundary assigned to smallest unit_id / metric unit area",
+      "null_policy": "missing official unit geometry -> null and blocked; invalid census value -> error; observed absence -> zero",
+      "normalization": "log1p then train-only z-score",
+      "filter_reference": "F2-I_DICCIONARIO_V2.json:taxonomy and tools/f2i_finalize.py:classify",
+      "candidates": [
+        "paper19"
+      ]
+    },
+    {
+      "name": "road_other_km_per_km2",
+      "source": "OSM Chile 2024-01-01",
+      "unit": "km/km2",
+      "geometry": "lines",
+      "aggregation": "length of union of clipped lines; shared boundary assigned to smallest unit_id / metric unit area",
+      "null_policy": "missing official unit geometry -> null and blocked; invalid census value -> error; observed absence -> zero",
+      "normalization": "log1p then train-only z-score",
+      "filter_reference": "F2-I_DICCIONARIO_V2.json:taxonomy and tools/f2i_finalize.py:classify",
+      "candidates": [
+        "paper19"
+      ]
+    },
+    {
+      "name": "transport_poi_per_km2",
+      "source": "OSM Chile 2024-01-01",
+      "unit": "objects/km2",
+      "geometry": "points",
+      "aggregation": "strictly interior nodes; same-name/category node-area and coincident-node dedup / metric unit area",
+      "null_policy": "missing official unit geometry -> null and blocked; invalid census value -> error; observed absence -> zero",
+      "normalization": "log1p then train-only z-score",
+      "filter_reference": "F2-I_DICCIONARIO_V2.json:taxonomy and tools/f2i_finalize.py:classify",
+      "candidates": [
+        "paper19",
+        "macro12_geometry20"
+      ]
+    },
+    {
+      "name": "transport_area_share",
+      "source": "OSM Chile 2024-01-01",
+      "unit": "km2/km2",
+      "geometry": "polygons",
+      "aggregation": "area of union of clipped polygons / metric unit area",
+      "null_policy": "missing official unit geometry -> null and blocked; invalid census value -> error; observed absence -> zero",
+      "normalization": "identity then train-only z-score",
+      "filter_reference": "F2-I_DICCIONARIO_V2.json:taxonomy and tools/f2i_finalize.py:classify",
+      "candidates": [
+        "paper19",
+        "macro12_geometry20"
+      ]
+    },
+    {
+      "name": "food_poi_per_km2",
+      "source": "OSM Chile 2024-01-01",
+      "unit": "objects/km2",
+      "geometry": "points",
+      "aggregation": "strictly interior nodes; same-name/category node-area and coincident-node dedup / metric unit area",
+      "null_policy": "missing official unit geometry -> null and blocked; invalid census value -> error; observed absence -> zero",
+      "normalization": "log1p then train-only z-score",
+      "filter_reference": "F2-I_DICCIONARIO_V2.json:taxonomy and tools/f2i_finalize.py:classify",
+      "candidates": [
+        "paper19",
+        "macro12_geometry20"
+      ]
+    },
+    {
+      "name": "food_area_share",
+      "source": "OSM Chile 2024-01-01",
+      "unit": "km2/km2",
+      "geometry": "polygons",
+      "aggregation": "area of union of clipped polygons / metric unit area",
+      "null_policy": "missing official unit geometry -> null and blocked; invalid census value -> error; observed absence -> zero",
+      "normalization": "identity then train-only z-score",
+      "filter_reference": "F2-I_DICCIONARIO_V2.json:taxonomy and tools/f2i_finalize.py:classify",
+      "candidates": [
+        "paper19",
+        "macro12_geometry20"
+      ]
+    },
+    {
+      "name": "health_poi_per_km2",
+      "source": "OSM Chile 2024-01-01",
+      "unit": "objects/km2",
+      "geometry": "points",
+      "aggregation": "strictly interior nodes; same-name/category node-area and coincident-node dedup / metric unit area",
+      "null_policy": "missing official unit geometry -> null and blocked; invalid census value -> error; observed absence -> zero",
+      "normalization": "log1p then train-only z-score",
+      "filter_reference": "F2-I_DICCIONARIO_V2.json:taxonomy and tools/f2i_finalize.py:classify",
+      "candidates": [
+        "paper19",
+        "macro12_geometry20"
+      ]
+    },
+    {
+      "name": "health_area_share",
+      "source": "OSM Chile 2024-01-01",
+      "unit": "km2/km2",
+      "geometry": "polygons",
+      "aggregation": "area of union of clipped polygons / metric unit area",
+      "null_policy": "missing official unit geometry -> null and blocked; invalid census value -> error; observed absence -> zero",
+      "normalization": "identity then train-only z-score",
+      "filter_reference": "F2-I_DICCIONARIO_V2.json:taxonomy and tools/f2i_finalize.py:classify",
+      "candidates": [
+        "paper19",
+        "macro12_geometry20"
+      ]
+    },
+    {
+      "name": "education_poi_per_km2",
+      "source": "OSM Chile 2024-01-01",
+      "unit": "objects/km2",
+      "geometry": "points",
+      "aggregation": "strictly interior nodes; same-name/category node-area and coincident-node dedup / metric unit area",
+      "null_policy": "missing official unit geometry -> null and blocked; invalid census value -> error; observed absence -> zero",
+      "normalization": "log1p then train-only z-score",
+      "filter_reference": "F2-I_DICCIONARIO_V2.json:taxonomy and tools/f2i_finalize.py:classify",
+      "candidates": [
+        "paper19",
+        "macro12_geometry20"
+      ]
+    },
+    {
+      "name": "education_area_share",
+      "source": "OSM Chile 2024-01-01",
+      "unit": "km2/km2",
+      "geometry": "polygons",
+      "aggregation": "area of union of clipped polygons / metric unit area",
+      "null_policy": "missing official unit geometry -> null and blocked; invalid census value -> error; observed absence -> zero",
+      "normalization": "identity then train-only z-score",
+      "filter_reference": "F2-I_DICCIONARIO_V2.json:taxonomy and tools/f2i_finalize.py:classify",
+      "candidates": [
+        "paper19",
+        "macro12_geometry20"
+      ]
+    },
+    {
+      "name": "retail_poi_per_km2",
+      "source": "OSM Chile 2024-01-01",
+      "unit": "objects/km2",
+      "geometry": "points",
+      "aggregation": "strictly interior nodes; same-name/category node-area and coincident-node dedup / metric unit area",
+      "null_policy": "missing official unit geometry -> null and blocked; invalid census value -> error; observed absence -> zero",
+      "normalization": "log1p then train-only z-score",
+      "filter_reference": "F2-I_DICCIONARIO_V2.json:taxonomy and tools/f2i_finalize.py:classify",
+      "candidates": [
+        "paper19",
+        "macro12_geometry20"
+      ]
+    },
+    {
+      "name": "retail_area_share",
+      "source": "OSM Chile 2024-01-01",
+      "unit": "km2/km2",
+      "geometry": "polygons",
+      "aggregation": "area of union of clipped polygons / metric unit area",
+      "null_policy": "missing official unit geometry -> null and blocked; invalid census value -> error; observed absence -> zero",
+      "normalization": "identity then train-only z-score",
+      "filter_reference": "F2-I_DICCIONARIO_V2.json:taxonomy and tools/f2i_finalize.py:classify",
+      "candidates": [
+        "paper19",
+        "macro12_geometry20"
+      ]
+    },
+    {
+      "name": "residential_bldg_share",
+      "source": "OSM Chile 2024-01-01",
+      "unit": "km2/km2",
+      "geometry": "polygons",
+      "aggregation": "area of union of clipped polygons / metric unit area",
+      "null_policy": "missing official unit geometry -> null and blocked; invalid census value -> error; observed absence -> zero",
+      "normalization": "identity then train-only z-score",
+      "filter_reference": "F2-I_DICCIONARIO_V2.json:taxonomy and tools/f2i_finalize.py:classify",
+      "candidates": [
+        "macro12_geometry20"
+      ]
+    },
+    {
+      "name": "commercial_bldg_share",
+      "source": "OSM Chile 2024-01-01",
+      "unit": "km2/km2",
+      "geometry": "polygons",
+      "aggregation": "area of union of clipped polygons / metric unit area",
+      "null_policy": "missing official unit geometry -> null and blocked; invalid census value -> error; observed absence -> zero",
+      "normalization": "identity then train-only z-score",
+      "filter_reference": "F2-I_DICCIONARIO_V2.json:taxonomy and tools/f2i_finalize.py:classify",
+      "candidates": [
+        "macro12_geometry20"
+      ]
+    },
+    {
+      "name": "industrial_bldg_share",
+      "source": "OSM Chile 2024-01-01",
+      "unit": "km2/km2",
+      "geometry": "polygons",
+      "aggregation": "area of union of clipped polygons / metric unit area",
+      "null_policy": "missing official unit geometry -> null and blocked; invalid census value -> error; observed absence -> zero",
+      "normalization": "identity then train-only z-score",
+      "filter_reference": "F2-I_DICCIONARIO_V2.json:taxonomy and tools/f2i_finalize.py:classify",
+      "candidates": [
+        "macro12_geometry20"
+      ]
+    },
+    {
+      "name": "leisure_poi_per_km2",
+      "source": "OSM Chile 2024-01-01",
+      "unit": "objects/km2",
+      "geometry": "points",
+      "aggregation": "strictly interior nodes; same-name/category node-area and coincident-node dedup / metric unit area",
+      "null_policy": "missing official unit geometry -> null and blocked; invalid census value -> error; observed absence -> zero",
+      "normalization": "log1p then train-only z-score",
+      "filter_reference": "F2-I_DICCIONARIO_V2.json:taxonomy and tools/f2i_finalize.py:classify",
+      "candidates": [
+        "macro12_geometry20"
+      ]
+    },
+    {
+      "name": "leisure_share",
+      "source": "OSM Chile 2024-01-01",
+      "unit": "km2/km2",
+      "geometry": "polygons",
+      "aggregation": "area of union of clipped polygons / metric unit area",
+      "null_policy": "missing official unit geometry -> null and blocked; invalid census value -> error; observed absence -> zero",
+      "normalization": "identity then train-only z-score",
+      "filter_reference": "F2-I_DICCIONARIO_V2.json:taxonomy and tools/f2i_finalize.py:classify",
+      "candidates": [
+        "macro12_geometry20"
+      ]
+    },
+    {
+      "name": "main_roads_km_per_km2",
+      "source": "OSM Chile 2024-01-01",
+      "unit": "km/km2",
+      "geometry": "lines",
+      "aggregation": "length of union of clipped lines; shared boundary assigned to smallest unit_id / metric unit area",
+      "null_policy": "missing official unit geometry -> null and blocked; invalid census value -> error; observed absence -> zero",
+      "normalization": "log1p then train-only z-score",
+      "filter_reference": "F2-I_DICCIONARIO_V2.json:taxonomy and tools/f2i_finalize.py:classify",
+      "candidates": [
+        "macro12_geometry20"
+      ]
+    },
+    {
+      "name": "secondary_roads_km_per_km2",
+      "source": "OSM Chile 2024-01-01",
+      "unit": "km/km2",
+      "geometry": "lines",
+      "aggregation": "length of union of clipped lines; shared boundary assigned to smallest unit_id / metric unit area",
+      "null_policy": "missing official unit geometry -> null and blocked; invalid census value -> error; observed absence -> zero",
+      "normalization": "log1p then train-only z-score",
+      "filter_reference": "F2-I_DICCIONARIO_V2.json:taxonomy and tools/f2i_finalize.py:classify",
+      "candidates": [
+        "macro12_geometry20"
+      ]
+    },
+    {
+      "name": "other_poi_per_km2",
+      "source": "OSM Chile 2024-01-01",
+      "unit": "objects/km2",
+      "geometry": "points",
+      "aggregation": "strictly interior nodes; same-name/category node-area and coincident-node dedup / metric unit area",
+      "null_policy": "missing official unit geometry -> null and blocked; invalid census value -> error; observed absence -> zero",
+      "normalization": "log1p then train-only z-score",
+      "filter_reference": "F2-I_DICCIONARIO_V2.json:taxonomy and tools/f2i_finalize.py:classify",
+      "candidates": [
+        "macro12_geometry20"
+      ]
+    },
+    {
+      "name": "other_share",
+      "source": "OSM Chile 2024-01-01",
+      "unit": "km2/km2",
+      "geometry": "polygons",
+      "aggregation": "area of union of clipped polygons / metric unit area",
+      "null_policy": "missing official unit geometry -> null and blocked; invalid census value -> error; observed absence -> zero",
+      "normalization": "identity then train-only z-score",
+      "filter_reference": "F2-I_DICCIONARIO_V2.json:taxonomy and tools/f2i_finalize.py:classify",
+      "candidates": [
+        "macro12_geometry20"
+      ]
+    }
+  ],
+  "taxonomy": {
+    "facility_priority": [
+      "health",
+      "education",
+      "food",
+      "retail",
+      "transport"
+    ],
+    "facility_tags_function": "build_f2i_features.classify_facility, extended by f2i_finalize.classify building types",
+    "landuse_exact": [
+      "residential",
+      "commercial",
+      "industrial",
+      "retail"
+    ],
+    "natural_landuse": [
+      "farmland",
+      "farmyard",
+      "forest",
+      "grass",
+      "meadow",
+      "orchard",
+      "recreation_ground",
+      "village_green"
+    ],
+    "natural_values": [
+      "wood",
+      "scrub",
+      "grassland",
+      "heath",
+      "wetland",
+      "water"
+    ],
+    "roads_residential": [
+      "living_street",
+      "residential"
+    ],
+    "roads_main": [
+      "motorway",
+      "motorway_link",
+      "primary",
+      "primary_link",
+      "secondary",
+      "secondary_link",
+      "tertiary",
+      "tertiary_link",
+      "trunk",
+      "trunk_link"
+    ],
+    "roads_other": [
+      "bridleway",
+      "busway",
+      "cycleway",
+      "footway",
+      "path",
+      "pedestrian",
+      "road",
+      "service",
+      "steps",
+      "track",
+      "unclassified"
+    ],
+    "macro_secondary_roads": [
+      "secondary",
+      "secondary_link",
+      "tertiary",
+      "tertiary_link"
+    ],
+    "other_closed_values": {
+      "amenity": [
+        "community_centre",
+        "social_facility",
+        "police",
+        "fire_station",
+        "post_office",
+        "townhall",
+        "courthouse",
+        "place_of_worship",
+        "toilets",
+        "drinking_water",
+        "recycling",
+        "waste_basket",
+        "bench",
+        "shelter"
+      ],
+      "office": [
+        "government",
+        "ngo",
+        "company",
+        "insurance",
+        "lawyer"
+      ],
+      "tourism": [
+        "museum",
+        "hotel",
+        "hostel",
+        "guest_house",
+        "information",
+        "attraction"
+      ],
+      "leisure": [
+        "dog_park",
+        "marina"
+      ]
+    },
+    "absent_or_inactive_values": [
+      "",
+      "abandoned",
+      "construction",
+      "disused",
+      "no",
+      "none",
+      "proposed",
+      "vacant"
+    ],
+    "building_residential": [
+      "residential",
+      "apartments",
+      "house",
+      "detached",
+      "terrace",
+      "semidetached_house",
+      "bungalow"
+    ],
+    "building_commercial": [
+      "commercial",
+      "office",
+      "retail"
+    ],
+    "building_industrial": [
+      "industrial",
+      "warehouse"
+    ],
+    "leisure": [
+      "park",
+      "sports_centre",
+      "pitch",
+      "garden",
+      "playground",
+      "stadium",
+      "fitness_centre"
+    ]
+  },
+  "layer_policy": "Union within each semantic category. Different categories/layers may overlap; their shares must not be summed as an exhaustive land partition.",
+  "geometry_policy": "EPSG:32719 metric area and length; H3 cells complete; polygon holes retained; invalid polygons repaired and counted; no generated geometry for absent zone IDs.",
+  "limitations": [
+    "OSM absence is mapping absence, not proof of real absence.",
+    "OSM snapshot is about ten months before November 2024 trips.",
+    "Census areal interpolation assumes uniform population within each source polygon.",
+    "Named POI deduplication cannot resolve all unnamed or differently named real-world duplicates.",
+    "Facility area may denote a campus/site rather than building floor space.",
+    "macro12 geometry-safe expansion has 20 location variables (41 pair inputs), not the historical 27-input claim.",
+    "paper19 is a Santiago adaptation, not proof of faithful article reproduction."
+  ]
+}

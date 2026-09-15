@@ -1,0 +1,32 @@
+{
+  "stage": "F2-I",
+  "analysis_crs": "EPSG:32719",
+  "population": {
+    "source_name": "INE, Censo de Poblacion y Vivienda 2024, Manzanas y Entidades",
+    "year": 2024,
+    "license": "CC BY-SA 4.0",
+    "endpoint": "https://services5.arcgis.com/hUyD8u3TeZLKPe4T/arcgis/rest/services/Censo2024_v2/FeatureServer/5/query",
+    "where": "COD_REGION=13",
+    "fields": ["CUT", "MANZENT", "n_per"],
+    "raw_path": "../deepgravity/data/santiago/raw/f2i/censo2024_rm_manzana_entidad.geojson",
+    "manifest_path": "../deepgravity/data/santiago/raw/f2i/censo2024_rm_manzana_entidad.manifest.json"
+  },
+  "osm": {
+    "source_name": "Geofabrik historical OpenStreetMap extract for Chile",
+    "snapshot": "2024-01-01T21:21:15Z",
+    "license": "ODbL-1.0",
+    "url": "https://download.geofabrik.de/south-america/chile-240101.osm.pbf",
+    "raw_path": "../deepgravity/data/santiago/raw/f2i/chile-240101.osm.pbf"
+  },
+  "units": {
+    "zona777": "../docs/verificacion/f2g/F2-G_UNIDADES_ZONA777.csv",
+    "h3_r7": "../docs/verificacion/f2g/F2-G_UNIDADES_H3_R7.csv",
+    "h3_r8": "../docs/verificacion/f2g/F2-G_UNIDADES_H3_R8.csv"
+  },
+  "geometries": {
+    "zona777": "../deepgravity/data/santiago/reference/zona777_dtpm/Zonas777-04-04-2014/Shape/Zonas777_V07_04_2014.shp"
+  },
+  "output_root": "../deepgravity/data/santiago/processed/f2i",
+  "report_path": "../docs/territorio/f2i/F2-I_REPORTE_COBERTURA.md",
+  "zone_geometry_policy": "strict"
+}

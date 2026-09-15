@@ -1,0 +1,9 @@
+# Observed F2-H environment; Python 3.8.20, CPU.
+torch==1.13.1+cpu
+numpy==1.24.3
+pandas==2.0.3
+geopandas==0.9.0
+shapely==2.0.1
+pyproj==3.5.0
+fiona==1.9.4
+# CPU torch wheels: https://download.pytorch.org/whl/cpu

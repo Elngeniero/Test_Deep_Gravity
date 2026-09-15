@@ -1,0 +1,41 @@
+{
+  "mode": "f2i_contract_check",
+  "purpose": "scientific",
+  "status": "proposal_not_adopted",
+  "instruction": "This is a verified data-contract proposal. Adopt population, ontology and common cohort before creating any F2-J training config.",
+  "data": {
+    "adapter": "santiago",
+    "representation": "h3_r7",
+    "od_path": "../deepgravity/data/santiago/processed/f2i/proposal_common_exclusion/h3_r7/od.parquet",
+    "units_path": "../deepgravity/data/santiago/processed/f2i/proposal_common_exclusion/h3_r7/units.csv",
+    "partitions_path": "../deepgravity/data/santiago/processed/f2i/proposal_common_exclusion/h3_r7/partitions.csv",
+    "features_path": "../deepgravity/data/santiago/processed/f2i/proposal_common_exclusion/h3_r7/paper19_model.csv",
+    "feature_columns": [
+      "population_census_2024_per_km2",
+      "landuse_residential_share",
+      "landuse_commercial_share",
+      "landuse_industrial_share",
+      "landuse_retail_share",
+      "landuse_natural_share",
+      "road_residential_km_per_km2",
+      "road_main_km_per_km2",
+      "road_other_km_per_km2",
+      "transport_poi_per_km2",
+      "transport_area_share",
+      "food_poi_per_km2",
+      "food_area_share",
+      "health_poi_per_km2",
+      "health_area_share",
+      "education_poi_per_km2",
+      "education_area_share",
+      "retail_poi_per_km2",
+      "retail_area_share"
+    ],
+    "destination_scope": "global",
+    "weight": "expanded_mass"
+  },
+  "preprocessing_path": "../deepgravity/data/santiago/processed/f2i/proposal_common_exclusion/h3_r7/paper19_preprocessing.json",
+  "scenario_path": "../deepgravity/data/santiago/processed/f2i/proposal_common_exclusion/scenario.json",
+  "location_feature_count": 19,
+  "pair_input_count": 39
+}

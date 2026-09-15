@@ -1,0 +1,1111 @@
+{
+  "status": "verified_proposal_not_adopted",
+  "created_at": "2026-09-13T23:01:51Z",
+  "recommendation": {
+    "population": "INE Censo 2024, manzana/entidad, areal interpolation",
+    "main_candidate": "paper19",
+    "diagnostic_candidate": "macro12_geometry20",
+    "common_exclusion_trip_count": 1904
+  },
+  "adoption": null,
+  "training_started": false,
+  "contracts": {
+    "zona777/paper19": {
+      "config": "config\\f2i_contract_zona777_paper19.example.json",
+      "config_sha256": "409df7e782e9c298f1b8a171f7f7a49e28b7c5980b4523883b83aceebbf79743",
+      "source_features_sha256": "b2e9a8c51ead2670c46bcc2526d57da90a7ca7a8b39cd80aa4aaa139f4ef086e",
+      "units": 793,
+      "fit_train_origins": 507,
+      "pair_input_count": 39,
+      "constant_train_columns": [],
+      "coverage": {
+        "expected_units": 793,
+        "finite_units": 793,
+        "incomplete_units": [],
+        "range_checks_passed": true,
+        "statistics": {
+          "population_census_2024_per_km2": {
+            "nonzero_units": 793,
+            "zero_fraction": 0.0,
+            "minimum": 3.10971490954,
+            "maximum": 81422.4333808,
+            "p50": 10608.2511504,
+            "p95": 21739.309887659994
+          },
+          "landuse_residential_share": {
+            "nonzero_units": 778,
+            "zero_fraction": 0.018915510718789406,
+            "minimum": 0.0,
+            "maximum": 1.0,
+            "p50": 0.872044262712,
+            "p95": 1.0
+          },
+          "landuse_commercial_share": {
+            "nonzero_units": 165,
+            "zero_fraction": 0.7919293820933165,
+            "minimum": 0.0,
+            "maximum": 0.990992933653,
+            "p50": 0.0,
+            "p95": 0.05471571055911986
+          },
+          "landuse_industrial_share": {
+            "nonzero_units": 247,
+            "zero_fraction": 0.6885245901639344,
+            "minimum": 0.0,
+            "maximum": 0.843651184574,
+            "p50": 0.0,
+            "p95": 0.2542650661881999
+          },
+          "landuse_retail_share": {
+            "nonzero_units": 190,
+            "zero_fraction": 0.7604035308953342,
+            "minimum": 0.0,
+            "maximum": 0.523558496397,
+            "p50": 0.0,
+            "p95": 0.05407420891236
+          },
+          "landuse_natural_share": {
+            "nonzero_units": 735,
+            "zero_fraction": 0.07313997477931904,
+            "minimum": 0.0,
+            "maximum": 0.896987146433,
+            "p50": 0.0196832766143,
+            "p95": 0.29526135014839994
+          },
+          "road_residential_km_per_km2": {
+            "nonzero_units": 789,
+            "zero_fraction": 0.005044136191677175,
+            "minimum": 0.0,
+            "maximum": 38.493644642,
+            "p50": 14.2836501546,
+            "p95": 26.4323355286
+          },
+          "road_main_km_per_km2": {
+            "nonzero_units": 793,
+            "zero_fraction": 0.0,
+            "minimum": 0.0323141592242,
+            "maximum": 20.2841876304,
+            "p50": 6.00311687984,
+            "p95": 12.80910284552
+          },
+          "road_other_km_per_km2": {
+            "nonzero_units": 784,
+            "zero_fraction": 0.011349306431273645,
+            "minimum": 0.0,
+            "maximum": 39.2475415753,
+            "p50": 4.8023587077,
+            "p95": 21.1868878425
+          },
+          "transport_poi_per_km2": {
+            "nonzero_units": 791,
+            "zero_fraction": 0.0025220680958385876,
+            "minimum": 0.0,
+            "maximum": 100.273537491,
+            "p50": 20.6708708596,
+            "p95": 42.793931118859994
+          },
+          "transport_area_share": {
+            "nonzero_units": 68,
+            "zero_fraction": 0.914249684741488,
+            "minimum": 0.0,
+            "maximum": 0.659264047105,
+            "p50": 0.0,
+            "p95": 0.0009262339486765987
+          },
+          "food_poi_per_km2": {
+            "nonzero_units": 516,
+            "zero_fraction": 0.3493064312736444,
+            "minimum": 0.0,
+            "maximum": 315.657041485,
+            "p50": 1.77476725115,
+            "p95": 38.263815374939966
+          },
+          "food_area_share": {
+            "nonzero_units": 380,
+            "zero_fraction": 0.5208070617906684,
+            "minimum": 0.0,
+            "maximum": 0.00897629850267,
+            "p50": 0.0,
+            "p95": 0.0018812633943839998
+          },
+          "health_poi_per_km2": {
+            "nonzero_units": 454,
+            "zero_fraction": 0.4274905422446406,
+            "minimum": 0.0,
+            "maximum": 110.137590904,
+            "p50": 1.04875538976,
+            "p95": 11.847755201879997
+          },
+          "health_area_share": {
+            "nonzero_units": 413,
+            "zero_fraction": 0.4791929382093317,
+            "minimum": 0.0,
+            "maximum": 0.321125449869,
+            "p50": 7.91586509654e-05,
+            "p95": 0.023185596398799982
+          },
+          "education_poi_per_km2": {
+            "nonzero_units": 666,
+            "zero_fraction": 0.1601513240857503,
+            "minimum": 0.0,
+            "maximum": 37.1472336371,
+            "p50": 3.7444447737,
+            "p95": 15.292982519999995
+          },
+          "education_area_share": {
+            "nonzero_units": 699,
+            "zero_fraction": 0.11853720050441362,
+            "minimum": 0.0,
+            "maximum": 0.870180057614,
+            "p50": 0.0151134697584,
+            "p95": 0.07819233872507998
+          },
+          "retail_poi_per_km2": {
+            "nonzero_units": 677,
+            "zero_fraction": 0.14627994955863807,
+            "minimum": 0.0,
+            "maximum": 695.605837289,
+            "p50": 7.90617112262,
+            "p95": 72.01814398959992
+          },
+          "retail_area_share": {
+            "nonzero_units": 646,
+            "zero_fraction": 0.1853720050441362,
+            "minimum": 0.0,
+            "maximum": 0.518831272435,
+            "p50": 0.00182169755464,
+            "p95": 0.03333622896927999
+          }
+        },
+        "high_correlations_train": []
+      }
+    },
+    "zona777/macro12_geometry20": {
+      "config": "config\\f2i_contract_zona777_macro12_geometry20.example.json",
+      "config_sha256": "04540816835008fb3d632f8183bd531ccb14ad177d7b627370dd84f001e47801",
+      "source_features_sha256": "30cad88ed8f36bc1fb717379f3b0fc6a972794d9e0789f56535300ce5f1d5c22",
+      "units": 793,
+      "fit_train_origins": 507,
+      "pair_input_count": 41,
+      "constant_train_columns": [],
+      "coverage": {
+        "expected_units": 793,
+        "finite_units": 793,
+        "incomplete_units": [],
+        "range_checks_passed": true,
+        "statistics": {
+          "population_census_2024_per_km2": {
+            "nonzero_units": 793,
+            "zero_fraction": 0.0,
+            "minimum": 3.10971490954,
+            "maximum": 81422.4333808,
+            "p50": 10608.2511504,
+            "p95": 21739.309887659994
+          },
+          "residential_bldg_share": {
+            "nonzero_units": 648,
+            "zero_fraction": 0.1828499369482976,
+            "minimum": 0.0,
+            "maximum": 0.263301698912,
+            "p50": 0.00364607856391,
+            "p95": 0.10799111933979999
+          },
+          "commercial_bldg_share": {
+            "nonzero_units": 376,
+            "zero_fraction": 0.5258511979823455,
+            "minimum": 0.0,
+            "maximum": 0.140144833094,
+            "p50": 0.0,
+            "p95": 0.013870211272979998
+          },
+          "industrial_bldg_share": {
+            "nonzero_units": 174,
+            "zero_fraction": 0.7805800756620429,
+            "minimum": 0.0,
+            "maximum": 0.165369350212,
+            "p50": 0.0,
+            "p95": 0.017750178127959995
+          },
+          "leisure_poi_per_km2": {
+            "nonzero_units": 364,
+            "zero_fraction": 0.5409836065573771,
+            "minimum": 0.0,
+            "maximum": 19.5688980409,
+            "p50": 0.0,
+            "p95": 7.258009313773999
+          },
+          "leisure_share": {
+            "nonzero_units": 783,
+            "zero_fraction": 0.012610340479192938,
+            "minimum": 0.0,
+            "maximum": 0.63640738549,
+            "p50": 0.028580353662,
+            "p95": 0.17596942040819996
+          },
+          "transport_poi_per_km2": {
+            "nonzero_units": 791,
+            "zero_fraction": 0.0025220680958385876,
+            "minimum": 0.0,
+            "maximum": 100.273537491,
+            "p50": 20.6708708596,
+            "p95": 42.793931118859994
+          },
+          "transport_area_share": {
+            "nonzero_units": 68,
+            "zero_fraction": 0.914249684741488,
+            "minimum": 0.0,
+            "maximum": 0.659264047105,
+            "p50": 0.0,
+            "p95": 0.0009262339486765987
+          },
+          "food_poi_per_km2": {
+            "nonzero_units": 516,
+            "zero_fraction": 0.3493064312736444,
+            "minimum": 0.0,
+            "maximum": 315.657041485,
+            "p50": 1.77476725115,
+            "p95": 38.263815374939966
+          },
+          "food_area_share": {
+            "nonzero_units": 380,
+            "zero_fraction": 0.5208070617906684,
+            "minimum": 0.0,
+            "maximum": 0.00897629850267,
+            "p50": 0.0,
+            "p95": 0.0018812633943839998
+          },
+          "health_poi_per_km2": {
+            "nonzero_units": 454,
+            "zero_fraction": 0.4274905422446406,
+            "minimum": 0.0,
+            "maximum": 110.137590904,
+            "p50": 1.04875538976,
+            "p95": 11.847755201879997
+          },
+          "health_area_share": {
+            "nonzero_units": 413,
+            "zero_fraction": 0.4791929382093317,
+            "minimum": 0.0,
+            "maximum": 0.321125449869,
+            "p50": 7.91586509654e-05,
+            "p95": 0.023185596398799982
+          },
+          "education_poi_per_km2": {
+            "nonzero_units": 666,
+            "zero_fraction": 0.1601513240857503,
+            "minimum": 0.0,
+            "maximum": 37.1472336371,
+            "p50": 3.7444447737,
+            "p95": 15.292982519999995
+          },
+          "education_area_share": {
+            "nonzero_units": 699,
+            "zero_fraction": 0.11853720050441362,
+            "minimum": 0.0,
+            "maximum": 0.870180057614,
+            "p50": 0.0151134697584,
+            "p95": 0.07819233872507998
+          },
+          "retail_poi_per_km2": {
+            "nonzero_units": 677,
+            "zero_fraction": 0.14627994955863807,
+            "minimum": 0.0,
+            "maximum": 695.605837289,
+            "p50": 7.90617112262,
+            "p95": 72.01814398959992
+          },
+          "retail_area_share": {
+            "nonzero_units": 646,
+            "zero_fraction": 0.1853720050441362,
+            "minimum": 0.0,
+            "maximum": 0.518831272435,
+            "p50": 0.00182169755464,
+            "p95": 0.03333622896927999
+          },
+          "main_roads_km_per_km2": {
+            "nonzero_units": 654,
+            "zero_fraction": 0.17528373266078184,
+            "minimum": 0.0,
+            "maximum": 14.6771792347,
+            "p50": 1.63015804387,
+            "p95": 7.045176584798
+          },
+          "secondary_roads_km_per_km2": {
+            "nonzero_units": 784,
+            "zero_fraction": 0.011349306431273645,
+            "minimum": 0.0,
+            "maximum": 13.674564109,
+            "p50": 3.96921389584,
+            "p95": 8.430413165323998
+          },
+          "other_poi_per_km2": {
+            "nonzero_units": 472,
+            "zero_fraction": 0.4047919293820933,
+            "minimum": 0.0,
+            "maximum": 422.998407295,
+            "p50": 1.33803345019,
+            "p95": 44.95310048628
+          },
+          "other_share": {
+            "nonzero_units": 574,
+            "zero_fraction": 0.27616645649432536,
+            "minimum": 0.0,
+            "maximum": 0.160896965749,
+            "p50": 0.00101354658837,
+            "p95": 0.021433582866639996
+          }
+        },
+        "high_correlations_train": []
+      }
+    },
+    "h3_r7/paper19": {
+      "config": "config\\f2i_contract_h3_r7_paper19.example.json",
+      "config_sha256": "5fe35c8f83fea797a1c8d238c98bb0b8078af2f91462ef16cc127d30b8ed4a89",
+      "source_features_sha256": "6397674a1694545aa901449b5b8c5e8041d0add2dee41284381c2f5403ac371f",
+      "units": 223,
+      "fit_train_origins": 126,
+      "pair_input_count": 39,
+      "constant_train_columns": [],
+      "coverage": {
+        "expected_units": 223,
+        "finite_units": 223,
+        "incomplete_units": [],
+        "range_checks_passed": true,
+        "statistics": {
+          "population_census_2024_per_km2": {
+            "nonzero_units": 223,
+            "zero_fraction": 0.0,
+            "minimum": 2.25574990608,
+            "maximum": 30002.0230286,
+            "p50": 5358.90255185,
+            "p95": 14736.656909749996
+          },
+          "landuse_residential_share": {
+            "nonzero_units": 208,
+            "zero_fraction": 0.06726457399103139,
+            "minimum": 0.0,
+            "maximum": 0.999928641029,
+            "p50": 0.528616647447,
+            "p95": 0.9512446398696999
+          },
+          "landuse_commercial_share": {
+            "nonzero_units": 89,
+            "zero_fraction": 0.600896860986547,
+            "minimum": 0.0,
+            "maximum": 0.350815751628,
+            "p50": 0.0,
+            "p95": 0.038139412804989926
+          },
+          "landuse_industrial_share": {
+            "nonzero_units": 164,
+            "zero_fraction": 0.2645739910313901,
+            "minimum": 0.0,
+            "maximum": 0.871825692384,
+            "p50": 0.00683024834612,
+            "p95": 0.4732038755117985
+          },
+          "landuse_retail_share": {
+            "nonzero_units": 100,
+            "zero_fraction": 0.5515695067264574,
+            "minimum": 0.0,
+            "maximum": 0.13844846413,
+            "p50": 0.0,
+            "p95": 0.03247828239610996
+          },
+          "landuse_natural_share": {
+            "nonzero_units": 223,
+            "zero_fraction": 0.0,
+            "minimum": 0.00195557874355,
+            "maximum": 0.980449580366,
+            "p50": 0.0761318559068,
+            "p95": 0.6537044295378993
+          },
+          "road_residential_km_per_km2": {
+            "nonzero_units": 219,
+            "zero_fraction": 0.017937219730941704,
+            "minimum": 0.0,
+            "maximum": 22.9417881996,
+            "p50": 8.655906193,
+            "p95": 19.56936597852999
+          },
+          "road_main_km_per_km2": {
+            "nonzero_units": 220,
+            "zero_fraction": 0.013452914798206279,
+            "minimum": 0.0,
+            "maximum": 13.582100893,
+            "p50": 4.35244401712,
+            "p95": 9.183133079642996
+          },
+          "road_other_km_per_km2": {
+            "nonzero_units": 223,
+            "zero_fraction": 0.0,
+            "minimum": 0.00710750815962,
+            "maximum": 26.6000723084,
+            "p50": 5.33094742988,
+            "p95": 15.087114378169998
+          },
+          "transport_poi_per_km2": {
+            "nonzero_units": 210,
+            "zero_fraction": 0.05829596412556054,
+            "minimum": 0.0,
+            "maximum": 52.6568535649,
+            "p50": 10.5629996733,
+            "p95": 28.31369508568
+          },
+          "transport_area_share": {
+            "nonzero_units": 47,
+            "zero_fraction": 0.7892376681614349,
+            "minimum": 0.0,
+            "maximum": 0.554040804006,
+            "p50": 0.0,
+            "p95": 0.011123614429699924
+          },
+          "food_poi_per_km2": {
+            "nonzero_units": 163,
+            "zero_fraction": 0.26905829596412556,
+            "minimum": 0.0,
+            "maximum": 97.919340459,
+            "p50": 1.11638832508,
+            "p95": 14.07520423250999
+          },
+          "food_area_share": {
+            "nonzero_units": 131,
+            "zero_fraction": 0.4125560538116592,
+            "minimum": 0.0,
+            "maximum": 0.00412812532337,
+            "p50": 2.83247084691e-05,
+            "p95": 0.0011549898133519992
+          },
+          "health_poi_per_km2": {
+            "nonzero_units": 147,
+            "zero_fraction": 0.34080717488789236,
+            "minimum": 0.0,
+            "maximum": 31.3700404216,
+            "p50": 0.670872607068,
+            "p95": 5.828425683723
+          },
+          "health_area_share": {
+            "nonzero_units": 143,
+            "zero_fraction": 0.35874439461883406,
+            "minimum": 0.0,
+            "maximum": 0.0563944884587,
+            "p50": 0.000578742943032,
+            "p95": 0.018345531541519963
+          },
+          "education_poi_per_km2": {
+            "nonzero_units": 174,
+            "zero_fraction": 0.21973094170403587,
+            "minimum": 0.0,
+            "maximum": 19.0460959703,
+            "p50": 1.78942423347,
+            "p95": 8.761727330421001
+          },
+          "education_area_share": {
+            "nonzero_units": 186,
+            "zero_fraction": 0.16591928251121077,
+            "minimum": 0.0,
+            "maximum": 0.145592660941,
+            "p50": 0.0129974123637,
+            "p95": 0.04920332053198999
+          },
+          "retail_poi_per_km2": {
+            "nonzero_units": 176,
+            "zero_fraction": 0.21076233183856502,
+            "minimum": 0.0,
+            "maximum": 184.85916677,
+            "p50": 3.80708500473,
+            "p95": 31.482108659539993
+          },
+          "retail_area_share": {
+            "nonzero_units": 168,
+            "zero_fraction": 0.24663677130044842,
+            "minimum": 0.0,
+            "maximum": 0.0733226384729,
+            "p50": 0.00250845473146,
+            "p95": 0.02037752720115
+          }
+        },
+        "high_correlations_train": [
+          {
+            "left": "food_poi_per_km2",
+            "right": "retail_poi_per_km2",
+            "pearson_train": 0.9640475633617642
+          }
+        ]
+      }
+    },
+    "h3_r7/macro12_geometry20": {
+      "config": "config\\f2i_contract_h3_r7_macro12_geometry20.example.json",
+      "config_sha256": "b3dd7b3fea615b1c948eb64927e5c6a879a82eef3febdd0951645e372888bef6",
+      "source_features_sha256": "e6209b28e6f287922e2e9af085c42c5c4d5da710a62b8f6cf3968f6a2042863c",
+      "units": 223,
+      "fit_train_origins": 126,
+      "pair_input_count": 41,
+      "constant_train_columns": [],
+      "coverage": {
+        "expected_units": 223,
+        "finite_units": 223,
+        "incomplete_units": [],
+        "range_checks_passed": true,
+        "statistics": {
+          "population_census_2024_per_km2": {
+            "nonzero_units": 223,
+            "zero_fraction": 0.0,
+            "minimum": 2.25574990608,
+            "maximum": 30002.0230286,
+            "p50": 5358.90255185,
+            "p95": 14736.656909749996
+          },
+          "residential_bldg_share": {
+            "nonzero_units": 198,
+            "zero_fraction": 0.11210762331838565,
+            "minimum": 0.0,
+            "maximum": 0.190348253986,
+            "p50": 0.00424277396422,
+            "p95": 0.059458719900389964
+          },
+          "commercial_bldg_share": {
+            "nonzero_units": 127,
+            "zero_fraction": 0.4304932735426009,
+            "minimum": 0.0,
+            "maximum": 0.035940782926,
+            "p50": 0.000181351970482,
+            "p95": 0.0073284327664849885
+          },
+          "industrial_bldg_share": {
+            "nonzero_units": 123,
+            "zero_fraction": 0.4484304932735426,
+            "minimum": 0.0,
+            "maximum": 0.0785229015774,
+            "p50": 0.000115532094672,
+            "p95": 0.031664272840229976
+          },
+          "leisure_poi_per_km2": {
+            "nonzero_units": 158,
+            "zero_fraction": 0.2914798206278027,
+            "minimum": 0.0,
+            "maximum": 13.9077532687,
+            "p50": 0.672647992662,
+            "p95": 3.815672887745
+          },
+          "leisure_share": {
+            "nonzero_units": 209,
+            "zero_fraction": 0.06278026905829596,
+            "minimum": 0.0,
+            "maximum": 0.519304420369,
+            "p50": 0.0293910070631,
+            "p95": 0.1533013429618998
+          },
+          "transport_poi_per_km2": {
+            "nonzero_units": 210,
+            "zero_fraction": 0.05829596412556054,
+            "minimum": 0.0,
+            "maximum": 52.6568535649,
+            "p50": 10.5629996733,
+            "p95": 28.31369508568
+          },
+          "transport_area_share": {
+            "nonzero_units": 47,
+            "zero_fraction": 0.7892376681614349,
+            "minimum": 0.0,
+            "maximum": 0.554040804006,
+            "p50": 0.0,
+            "p95": 0.011123614429699924
+          },
+          "food_poi_per_km2": {
+            "nonzero_units": 163,
+            "zero_fraction": 0.26905829596412556,
+            "minimum": 0.0,
+            "maximum": 97.919340459,
+            "p50": 1.11638832508,
+            "p95": 14.07520423250999
+          },
+          "food_area_share": {
+            "nonzero_units": 131,
+            "zero_fraction": 0.4125560538116592,
+            "minimum": 0.0,
+            "maximum": 0.00412812532337,
+            "p50": 2.83247084691e-05,
+            "p95": 0.0011549898133519992
+          },
+          "health_poi_per_km2": {
+            "nonzero_units": 147,
+            "zero_fraction": 0.34080717488789236,
+            "minimum": 0.0,
+            "maximum": 31.3700404216,
+            "p50": 0.670872607068,
+            "p95": 5.828425683723
+          },
+          "health_area_share": {
+            "nonzero_units": 143,
+            "zero_fraction": 0.35874439461883406,
+            "minimum": 0.0,
+            "maximum": 0.0563944884587,
+            "p50": 0.000578742943032,
+            "p95": 0.018345531541519963
+          },
+          "education_poi_per_km2": {
+            "nonzero_units": 174,
+            "zero_fraction": 0.21973094170403587,
+            "minimum": 0.0,
+            "maximum": 19.0460959703,
+            "p50": 1.78942423347,
+            "p95": 8.761727330421001
+          },
+          "education_area_share": {
+            "nonzero_units": 186,
+            "zero_fraction": 0.16591928251121077,
+            "minimum": 0.0,
+            "maximum": 0.145592660941,
+            "p50": 0.0129974123637,
+            "p95": 0.04920332053198999
+          },
+          "retail_poi_per_km2": {
+            "nonzero_units": 176,
+            "zero_fraction": 0.21076233183856502,
+            "minimum": 0.0,
+            "maximum": 184.85916677,
+            "p50": 3.80708500473,
+            "p95": 31.482108659539993
+          },
+          "retail_area_share": {
+            "nonzero_units": 168,
+            "zero_fraction": 0.24663677130044842,
+            "minimum": 0.0,
+            "maximum": 0.0733226384729,
+            "p50": 0.00250845473146,
+            "p95": 0.02037752720115
+          },
+          "main_roads_km_per_km2": {
+            "nonzero_units": 174,
+            "zero_fraction": 0.21973094170403587,
+            "minimum": 0.0,
+            "maximum": 7.8809573069,
+            "p50": 1.32666170658,
+            "p95": 4.883794976382998
+          },
+          "secondary_roads_km_per_km2": {
+            "nonzero_units": 216,
+            "zero_fraction": 0.03139013452914798,
+            "minimum": 0.0,
+            "maximum": 6.79766071906,
+            "p50": 2.69945484144,
+            "p95": 5.907564125288999
+          },
+          "other_poi_per_km2": {
+            "nonzero_units": 177,
+            "zero_fraction": 0.2062780269058296,
+            "minimum": 0.0,
+            "maximum": 141.837397049,
+            "p50": 1.34310888706,
+            "p95": 17.425654617329986
+          },
+          "other_share": {
+            "nonzero_units": 171,
+            "zero_fraction": 0.23318385650224216,
+            "minimum": 0.0,
+            "maximum": 0.0526062030954,
+            "p50": 0.00143553093822,
+            "p95": 0.015233396379679983
+          }
+        },
+        "high_correlations_train": [
+          {
+            "left": "food_poi_per_km2",
+            "right": "retail_poi_per_km2",
+            "pearson_train": 0.9640475633617642
+          }
+        ]
+      }
+    },
+    "h3_r8/paper19": {
+      "config": "config\\f2i_contract_h3_r8_paper19.example.json",
+      "config_sha256": "6eff2aeb765507adf4bcf08d7a4bea6032f06d8d1995e69a52ddb5a466fc4a66",
+      "source_features_sha256": "704191d050a19b1edda45b5132c350f6befc5524b9720e51eab887588f89ca2a",
+      "units": 1210,
+      "fit_train_origins": 701,
+      "pair_input_count": 39,
+      "constant_train_columns": [],
+      "coverage": {
+        "expected_units": 1210,
+        "finite_units": 1210,
+        "incomplete_units": [],
+        "range_checks_passed": true,
+        "statistics": {
+          "population_census_2024_per_km2": {
+            "nonzero_units": 1209,
+            "zero_fraction": 0.0008264462809917355,
+            "minimum": 0.0,
+            "maximum": 63682.6323196,
+            "p50": 7497.267307645,
+            "p95": 18677.105255094997
+          },
+          "landuse_residential_share": {
+            "nonzero_units": 1077,
+            "zero_fraction": 0.10991735537190082,
+            "minimum": 0.0,
+            "maximum": 1.0,
+            "p50": 0.721303858223,
+            "p95": 1.0
+          },
+          "landuse_commercial_share": {
+            "nonzero_units": 178,
+            "zero_fraction": 0.8528925619834711,
+            "minimum": 0.0,
+            "maximum": 0.900161158531,
+            "p50": 0.0,
+            "p95": 0.04903962844504983
+          },
+          "landuse_industrial_share": {
+            "nonzero_units": 452,
+            "zero_fraction": 0.6264462809917355,
+            "minimum": 0.0,
+            "maximum": 1.0,
+            "p50": 0.0,
+            "p95": 0.6117789621805984
+          },
+          "landuse_retail_share": {
+            "nonzero_units": 219,
+            "zero_fraction": 0.8190082644628099,
+            "minimum": 0.0,
+            "maximum": 0.399656476872,
+            "p50": 0.0,
+            "p95": 0.04325100752262
+          },
+          "landuse_natural_share": {
+            "nonzero_units": 1147,
+            "zero_fraction": 0.05206611570247934,
+            "minimum": 0.0,
+            "maximum": 1.0,
+            "p50": 0.0266734526945,
+            "p95": 0.5123994382619999
+          },
+          "road_residential_km_per_km2": {
+            "nonzero_units": 1123,
+            "zero_fraction": 0.07190082644628099,
+            "minimum": 0.0,
+            "maximum": 37.7916399525,
+            "p50": 10.87448144225,
+            "p95": 23.731545287345
+          },
+          "road_main_km_per_km2": {
+            "nonzero_units": 1163,
+            "zero_fraction": 0.03884297520661157,
+            "minimum": 0.0,
+            "maximum": 24.0104506388,
+            "p50": 5.25395718017,
+            "p95": 11.95016060102
+          },
+          "road_other_km_per_km2": {
+            "nonzero_units": 1208,
+            "zero_fraction": 0.001652892561983471,
+            "minimum": 0.0,
+            "maximum": 35.8808842038,
+            "p50": 5.32092784972,
+            "p95": 19.789403138885
+          },
+          "transport_poi_per_km2": {
+            "nonzero_units": 1083,
+            "zero_fraction": 0.10495867768595041,
+            "minimum": 0.0,
+            "maximum": 75.2968152083,
+            "p50": 14.1252004471,
+            "p95": 36.950790153714934
+          },
+          "transport_area_share": {
+            "nonzero_units": 82,
+            "zero_fraction": 0.9322314049586777,
+            "minimum": 0.0,
+            "maximum": 0.966200041874,
+            "p50": 0.0,
+            "p95": 0.0008827605700314986
+          },
+          "food_poi_per_km2": {
+            "nonzero_units": 552,
+            "zero_fraction": 0.543801652892562,
+            "minimum": 0.0,
+            "maximum": 236.861627911,
+            "p50": 0.0,
+            "p95": 20.444365882094996
+          },
+          "food_area_share": {
+            "nonzero_units": 395,
+            "zero_fraction": 0.6735537190082644,
+            "minimum": 0.0,
+            "maximum": 0.00784653741524,
+            "p50": 0.0,
+            "p95": 0.001867729352753998
+          },
+          "health_poi_per_km2": {
+            "nonzero_units": 467,
+            "zero_fraction": 0.6140495867768595,
+            "minimum": 0.0,
+            "maximum": 65.8896702795,
+            "p50": 0.0,
+            "p95": 9.4106638721745
+          },
+          "health_area_share": {
+            "nonzero_units": 441,
+            "zero_fraction": 0.6355371900826446,
+            "minimum": 0.0,
+            "maximum": 0.338385255521,
+            "p50": 0.0,
+            "p95": 0.012410623208695
+          },
+          "education_poi_per_km2": {
+            "nonzero_units": 751,
+            "zero_fraction": 0.3793388429752066,
+            "minimum": 0.0,
+            "maximum": 36.0728321348,
+            "p50": 1.573476647985,
+            "p95": 12.551834813575
+          },
+          "education_area_share": {
+            "nonzero_units": 816,
+            "zero_fraction": 0.3256198347107438,
+            "minimum": 0.0,
+            "maximum": 0.643972016554,
+            "p50": 0.007762259952485,
+            "p95": 0.08702057566417
+          },
+          "retail_poi_per_km2": {
+            "nonzero_units": 747,
+            "zero_fraction": 0.38264462809917354,
+            "minimum": 0.0,
+            "maximum": 357.686781517,
+            "p50": 3.13699320094,
+            "p95": 50.17360933971
+          },
+          "retail_area_share": {
+            "nonzero_units": 746,
+            "zero_fraction": 0.3834710743801653,
+            "minimum": 0.0,
+            "maximum": 0.235070314498,
+            "p50": 0.0006349854855520001,
+            "p95": 0.034117211179705
+          }
+        },
+        "high_correlations_train": []
+      }
+    },
+    "h3_r8/macro12_geometry20": {
+      "config": "config\\f2i_contract_h3_r8_macro12_geometry20.example.json",
+      "config_sha256": "44c0ed971d991333501e096cd04a02d91b76dacc67a5e057b512edad8be9ecc0",
+      "source_features_sha256": "76c45fc5be7c789c00d8b819b9d08ce5ddbea4e0f350ae8f4c08197ba7684ce5",
+      "units": 1210,
+      "fit_train_origins": 701,
+      "pair_input_count": 41,
+      "constant_train_columns": [],
+      "coverage": {
+        "expected_units": 1210,
+        "finite_units": 1210,
+        "incomplete_units": [],
+        "range_checks_passed": true,
+        "statistics": {
+          "population_census_2024_per_km2": {
+            "nonzero_units": 1209,
+            "zero_fraction": 0.0008264462809917355,
+            "minimum": 0.0,
+            "maximum": 63682.6323196,
+            "p50": 7497.267307645,
+            "p95": 18677.105255094997
+          },
+          "residential_bldg_share": {
+            "nonzero_units": 872,
+            "zero_fraction": 0.2793388429752066,
+            "minimum": 0.0,
+            "maximum": 0.30476492771,
+            "p50": 0.002285693510335,
+            "p95": 0.09561710230954494
+          },
+          "commercial_bldg_share": {
+            "nonzero_units": 421,
+            "zero_fraction": 0.6520661157024793,
+            "minimum": 0.0,
+            "maximum": 0.108374756014,
+            "p50": 0.0,
+            "p95": 0.010246971756949988
+          },
+          "industrial_bldg_share": {
+            "nonzero_units": 260,
+            "zero_fraction": 0.7851239669421488,
+            "minimum": 0.0,
+            "maximum": 0.292920270616,
+            "p50": 0.0,
+            "p95": 0.03254164728191997
+          },
+          "leisure_poi_per_km2": {
+            "nonzero_units": 461,
+            "zero_fraction": 0.6190082644628099,
+            "minimum": 0.0,
+            "maximum": 31.4069536523,
+            "p50": 0.0,
+            "p95": 6.275818976627
+          },
+          "leisure_share": {
+            "nonzero_units": 1067,
+            "zero_fraction": 0.11818181818181818,
+            "minimum": 0.0,
+            "maximum": 1.0,
+            "p50": 0.0239355327204,
+            "p95": 0.1955922811379999
+          },
+          "transport_poi_per_km2": {
+            "nonzero_units": 1083,
+            "zero_fraction": 0.10495867768595041,
+            "minimum": 0.0,
+            "maximum": 75.2968152083,
+            "p50": 14.1252004471,
+            "p95": 36.950790153714934
+          },
+          "transport_area_share": {
+            "nonzero_units": 82,
+            "zero_fraction": 0.9322314049586777,
+            "minimum": 0.0,
+            "maximum": 0.966200041874,
+            "p50": 0.0,
+            "p95": 0.0008827605700314986
+          },
+          "food_poi_per_km2": {
+            "nonzero_units": 552,
+            "zero_fraction": 0.543801652892562,
+            "minimum": 0.0,
+            "maximum": 236.861627911,
+            "p50": 0.0,
+            "p95": 20.444365882094996
+          },
+          "food_area_share": {
+            "nonzero_units": 395,
+            "zero_fraction": 0.6735537190082644,
+            "minimum": 0.0,
+            "maximum": 0.00784653741524,
+            "p50": 0.0,
+            "p95": 0.001867729352753998
+          },
+          "health_poi_per_km2": {
+            "nonzero_units": 467,
+            "zero_fraction": 0.6140495867768595,
+            "minimum": 0.0,
+            "maximum": 65.8896702795,
+            "p50": 0.0,
+            "p95": 9.4106638721745
+          },
+          "health_area_share": {
+            "nonzero_units": 441,
+            "zero_fraction": 0.6355371900826446,
+            "minimum": 0.0,
+            "maximum": 0.338385255521,
+            "p50": 0.0,
+            "p95": 0.012410623208695
+          },
+          "education_poi_per_km2": {
+            "nonzero_units": 751,
+            "zero_fraction": 0.3793388429752066,
+            "minimum": 0.0,
+            "maximum": 36.0728321348,
+            "p50": 1.573476647985,
+            "p95": 12.551834813575
+          },
+          "education_area_share": {
+            "nonzero_units": 816,
+            "zero_fraction": 0.3256198347107438,
+            "minimum": 0.0,
+            "maximum": 0.643972016554,
+            "p50": 0.007762259952485,
+            "p95": 0.08702057566417
+          },
+          "retail_poi_per_km2": {
+            "nonzero_units": 747,
+            "zero_fraction": 0.38264462809917354,
+            "minimum": 0.0,
+            "maximum": 357.686781517,
+            "p50": 3.13699320094,
+            "p95": 50.17360933971
+          },
+          "retail_area_share": {
+            "nonzero_units": 746,
+            "zero_fraction": 0.3834710743801653,
+            "minimum": 0.0,
+            "maximum": 0.235070314498,
+            "p50": 0.0006349854855520001,
+            "p95": 0.034117211179705
+          },
+          "main_roads_km_per_km2": {
+            "nonzero_units": 724,
+            "zero_fraction": 0.40165289256198344,
+            "minimum": 0.0,
+            "maximum": 18.6594540437,
+            "p50": 1.387990489995,
+            "p95": 6.997174388314994
+          },
+          "secondary_roads_km_per_km2": {
+            "nonzero_units": 1114,
+            "zero_fraction": 0.07933884297520662,
+            "minimum": 0.0,
+            "maximum": 10.7530510145,
+            "p50": 3.2439996190300002,
+            "p95": 7.363734849399499
+          },
+          "other_poi_per_km2": {
+            "nonzero_units": 552,
+            "zero_fraction": 0.543801652892562,
+            "minimum": 0.0,
+            "maximum": 310.621004349,
+            "p50": 0.0,
+            "p95": 28.314333510389996
+          },
+          "other_share": {
+            "nonzero_units": 658,
+            "zero_fraction": 0.456198347107438,
+            "minimum": 0.0,
+            "maximum": 0.263350014184,
+            "p50": 0.000223670316346,
+            "p95": 0.01860607792199
+          }
+        },
+        "high_correlations_train": []
+      }
+    }
+  },
+  "scenario_sha256": "71aaff331f787dfa28439b7bb4ba957256e342f4cc4e64ce7aeb5e37312d11bd",
+  "feature_build_sha256": "3352a2990d5680e1fa4255a7f96ef5a37660fef07fa6d7bba751727970e517c4",
+  "code_sha256": {
+    "prepare_f2i_feature_contracts.py": "ba07abbee763c2a2f5d2232c77b44ac4084161d04acc60063962700a2a181df1",
+    "f2i_finalize.py": "f95faa09eae90c4e0f1b6cff823146330cc5f3c373770db122e770e513e06182",
+    "build_f2i_features.py": "52b8e1d951369ed824a607259f4abfce4d435d43af6724fcaed97137d4fe336b"
+  },
+  "outputs_sha256": {
+    "feature_dictionary.json": "68d4225f16a3aff8800fbd9f3def6cb460a08c57c8f3bdcd0f451da88ea78d1f",
+    "scenario.json": "71aaff331f787dfa28439b7bb4ba957256e342f4cc4e64ce7aeb5e37312d11bd",
+    "h3_r7\\macro12_geometry20_features.csv": "e6209b28e6f287922e2e9af085c42c5c4d5da710a62b8f6cf3968f6a2042863c",
+    "h3_r7\\macro12_geometry20_model.csv": "b6499cc9d0f941be1d45f260fe347683421d30359225dc2ecacda294c21b7781",
+    "h3_r7\\macro12_geometry20_preprocessing.json": "6117bd55e2cdbf8ce157b25d53125606bb8c39b0d6f1fbf13e40ca695fdbae71",
+    "h3_r7\\od.parquet": "545074f851b193a94b15c0103ad92f377d1c678948e13a071edc8e576433703f",
+    "h3_r7\\paper19_features.csv": "6397674a1694545aa901449b5b8c5e8041d0add2dee41284381c2f5403ac371f",
+    "h3_r7\\paper19_model.csv": "c423a1114b71f5419b21800c5881f7ca3c7323e5a4d19e268abdc45cea7c9b2a",
+    "h3_r7\\paper19_preprocessing.json": "1ab55ae98d11f40deb0bdedc8f088dc63ee28554ae0af7b1d72c6f74889efcab",
+    "h3_r7\\partitions.csv": "8c7b6aea2051f23e5ea9643687191a517ea6ad0da3d08461e58d5389f3b58274",
+    "h3_r7\\removed_od.csv": "855fa23976966c9bf9030bc96e07f703f277684a3a1ff3259e653a00ad3d8a61",
+    "h3_r7\\units.csv": "6317056f42918fb22d80014de58702c8d567e2cc6f6b9d346ae258dbce18e5e4",
+    "h3_r8\\macro12_geometry20_features.csv": "76c45fc5be7c789c00d8b819b9d08ce5ddbea4e0f350ae8f4c08197ba7684ce5",
+    "h3_r8\\macro12_geometry20_model.csv": "013b87787a119856313a6d4d289e51ea71512834febd82a7d2fc0d02574ac34a",
+    "h3_r8\\macro12_geometry20_preprocessing.json": "ab66e9e61398a979d33857388d4df0b72ffe88b848d1026eda5b500bfb92f00c",
+    "h3_r8\\od.parquet": "9b1abbd0eb63a9e74141a96b9962d9ab21fa539f3da9a61fc55f8a50eee1b221",
+    "h3_r8\\paper19_features.csv": "704191d050a19b1edda45b5132c350f6befc5524b9720e51eab887588f89ca2a",
+    "h3_r8\\paper19_model.csv": "d2b344bb8d4bb47b4284a40f93753d725ea5c941d5907fc20368fa51adfa14c5",
+    "h3_r8\\paper19_preprocessing.json": "6b1b98260b6794ebf28678f604714c9234d9555de86818e4cf347304b2c83016",
+    "h3_r8\\partitions.csv": "e581cdafa79a8f0b4cb58468132197f63a7dbc76c9b6119f35bf868f99e39cc9",
+    "h3_r8\\removed_od.csv": "8849b562297c6217a8ebd8a015a94bac6759dbc6bb98cbc7fcdee0d2fabfe1fc",
+    "h3_r8\\units.csv": "cbf098fb3c1b742805548c7270bb95328745d887b0a0d4f2025d4cb575846e9f",
+    "zona777\\macro12_geometry20_features.csv": "528f36dd42b293d9af755e8a2ca3bff2d1ba6696bafcac3282f7967b498cbecd",
+    "zona777\\macro12_geometry20_model.csv": "6841cb23fc69599d8f3115f53440eec255e8a8ec88f6ff5873404398e328e0ba",
+    "zona777\\macro12_geometry20_preprocessing.json": "07d9ac30d25fe0e86b940916f1358474507b4c6ee0d1b72b9a8d6ad55d8537bc",
+    "zona777\\od.parquet": "4a1d5dd5ef61b3d7518e45d5a22451d794de409a79959964bcfba376f87341dd",
+    "zona777\\paper19_features.csv": "64eb71ab82e298ac6b7f787f902fbee91191741cd4afaf367a11238c5eb2e397",
+    "zona777\\paper19_model.csv": "c346f18583e0bbe7585e10cf5647a31633ef086d4c5ea0fd658b2968d187deeb",
+    "zona777\\paper19_preprocessing.json": "20d8862f4aac9a1dbb8faa53ed2af222ad6bf995b7e2a54619e949dc7894bab5",
+    "zona777\\partitions.csv": "c3f3c0c56cf8c829a3258c6ec3fd7135e2c6e43b365a3e9619ba72bdb4af1042",
+    "zona777\\removed_od.csv": "4e381f89d7639bab153314aa2626d75d43356c983468fa910c543653359629da",
+    "zona777\\units.csv": "bdf8acf16ded0cf3da8e592159d8b13c23996e4826aa49d72b01bf2abfde0561"
+  }
+}

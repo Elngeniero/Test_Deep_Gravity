@@ -1,0 +1,78 @@
+{
+  "title": "A Deep Gravity model for mobility flows generation",
+  "authors": "Simini, Barlacchi, Luca and Pappalardo",
+  "year": 2021,
+  "doi": "10.1038/s41467-021-26752-4",
+  "url": "https://www.nature.com/articles/s41467-021-26752-4",
+  "local_pdf_sha256": "ccb6eaba94606d1af9cc1a615178a983557ceecb81424cbe41ee9bb29fe8e006",
+  "inspected_pages": [
+    3,
+    4,
+    5,
+    6,
+    8,
+    10,
+    11,
+    12,
+    13
+  ],
+  "table": "Table 1, page 6, New York State, global CPC column",
+  "global_cpc": {
+    "G": 0.06,
+    "NG": 0.68,
+    "MFG": 0.28,
+    "DG": 0.7
+  },
+  "dg_decile_mean_cpc": [
+    0.29,
+    0.35,
+    0.43,
+    0.46,
+    0.42,
+    0.49,
+    0.45,
+    0.51,
+    0.52,
+    0.49
+  ],
+  "protocol": {
+    "epochs": 20,
+    "optimizer": "RMSprop",
+    "learning_rate": 5e-06,
+    "momentum": 0.9,
+    "batch_size_origins": 64,
+    "max_sampled_destinations": 512,
+    "independent_runs": 5,
+    "tile_split": "50/50, random and stratified by population decile",
+    "location_mass_NY": "sum of outgoing flows, Methods page 11",
+    "feature_normalization_text": "divide location features by area, page 4",
+    "loss_equation_4": "sum of cross-entropies with y_ij/O_i",
+    "hidden_widths_text": [
+      256,
+      256,
+      256,
+      256,
+      256,
+      256,
+      128,
+      128,
+      128,
+      128,
+      128,
+      128,
+      128,
+      128,
+      128
+    ],
+    "ny_locations": 5367,
+    "ny_reported_flow_mass": 41070279
+  },
+  "archived_code_reference": {
+    "doi": "10.5281/zenodo.5573573",
+    "url": "https://zenodo.org/records/5573573",
+    "record_version": "1.1.0",
+    "linked_release": "v.1.0.0",
+    "archive_audited": false
+  },
+  "comparison_rule": "Global CPC is not a mean across tiles; no acceptance threshold inferred from decile means."
+}

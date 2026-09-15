@@ -1,0 +1,64 @@
+{
+  "status": "proposal_not_adopted",
+  "approval": null,
+  "excluded_zones": [
+    "848",
+    "849",
+    "852"
+  ],
+  "excluded_trip_count": 1904,
+  "excluded_expanded_mass": 3140.531599999988,
+  "rule": "Same source trips removed from all three representations, before OD aggregation; no feature imputation or substitute polygons.",
+  "area_and_tile_rules_unchanged": true,
+  "branches": {
+    "zona777": {
+      "units": 793,
+      "od_pairs": 426948,
+      "trip_count": 60511977,
+      "expanded_mass": 85774522.40700005,
+      "active_origins": 793,
+      "train_origins": 507
+    },
+    "h3_r7": {
+      "units": 223,
+      "od_pairs": 37089,
+      "trip_count": 60511977,
+      "expanded_mass": 85774522.40699999,
+      "active_origins": 218,
+      "train_origins": 126
+    },
+    "h3_r8": {
+      "units": 1210,
+      "od_pairs": 616749,
+      "trip_count": 60511977,
+      "expanded_mass": 85774522.40700004,
+      "active_origins": 1189,
+      "train_origins": 701
+    }
+  },
+  "source_hashes": {
+    "docs\\verificacion\\f2g\\F2-G_PARTICIONES_UNIDADES.csv": "3aac14234fbe350ddf5a6636c49fc98a76674820c54473b8f5afd92149c8b097",
+    "deepgravity\\data\\santiago\\interim\\f2g_spatial\\zona777_od.parquet": "86c83c2ddd20963af4660adf75a70ce09194a379f90dccd77d25212ce98fa1d1",
+    "docs\\verificacion\\f2g\\F2-G_UNIDADES_ZONA777.csv": "12f816ff4b6831c7f48c60bcef1503d08bbb08f28b175d51cd47c2895791708e",
+    "deepgravity\\data\\santiago\\interim\\f2g_spatial\\h3_r7_od.parquet": "e69a4dc2fac3a14e734ed8e38e20fe9b415ef21617f150c72773f3415c27bf01",
+    "docs\\verificacion\\f2g\\F2-G_UNIDADES_H3_R7.csv": "fba0e03fac4f11f890cf297adcd58ae8aa6a1fc84489bb7460662fb733edba9e",
+    "deepgravity\\data\\santiago\\interim\\f2g_spatial\\h3_r8_od.parquet": "4045319f91d6daf64ba6e71d95c6a669839cc9ad8ddbd3ea3984971f84751403",
+    "docs\\verificacion\\f2g\\F2-G_UNIDADES_H3_R8.csv": "71892e652390a588f1cff184ebf073b465b658e30ef69a7eee31cd05091f7e52"
+  },
+  "code_sha256": "cbd64cb037c2fd9e27f6aca938e3a5ff8fb05bb702b1bd1dab39f4750c9fd9cd",
+  "original_inputs_unchanged": true,
+  "outputs_sha256": {
+    "h3_r7\\od.parquet": "545074f851b193a94b15c0103ad92f377d1c678948e13a071edc8e576433703f",
+    "h3_r7\\partitions.csv": "8c7b6aea2051f23e5ea9643687191a517ea6ad0da3d08461e58d5389f3b58274",
+    "h3_r7\\removed_od.csv": "855fa23976966c9bf9030bc96e07f703f277684a3a1ff3259e653a00ad3d8a61",
+    "h3_r7\\units.csv": "6317056f42918fb22d80014de58702c8d567e2cc6f6b9d346ae258dbce18e5e4",
+    "h3_r8\\od.parquet": "9b1abbd0eb63a9e74141a96b9962d9ab21fa539f3da9a61fc55f8a50eee1b221",
+    "h3_r8\\partitions.csv": "e581cdafa79a8f0b4cb58468132197f63a7dbc76c9b6119f35bf868f99e39cc9",
+    "h3_r8\\removed_od.csv": "8849b562297c6217a8ebd8a015a94bac6759dbc6bb98cbc7fcdee0d2fabfe1fc",
+    "h3_r8\\units.csv": "cbf098fb3c1b742805548c7270bb95328745d887b0a0d4f2025d4cb575846e9f",
+    "zona777\\od.parquet": "4a1d5dd5ef61b3d7518e45d5a22451d794de409a79959964bcfba376f87341dd",
+    "zona777\\partitions.csv": "c3f3c0c56cf8c829a3258c6ec3fd7135e2c6e43b365a3e9619ba72bdb4af1042",
+    "zona777\\removed_od.csv": "4e381f89d7639bab153314aa2626d75d43356c983468fa910c543653359629da",
+    "zona777\\units.csv": "bdf8acf16ded0cf3da8e592159d8b13c23996e4826aa49d72b01bf2abfde0561"
+  }
+}

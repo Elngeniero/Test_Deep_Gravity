@@ -1,0 +1,230 @@
+{
+  "schema": "f2i_approved_contract_v1",
+  "status": "approved",
+  "stage": "F2-I",
+  "stage_number": 6,
+  "stage_status": "closed",
+  "recorded_at_utc": "2026-09-14T03:37:26.456465+00:00",
+  "approval": {
+    "date_local": "2026-09-14",
+    "timezone": "America/Santiago",
+    "actor": "researcher",
+    "channel": "user message in project conversation",
+    "message": "si apruebo",
+    "approved_scope": "Censo 2024, corrected paper19 (39 pair inputs), and common exclusion of 1904 trips"
+  },
+  "population": {
+    "source": "INE Censo 2024, manzanas y entidades RM",
+    "field": "n_per",
+    "assignment": "areal interpolation in EPSG:32719; divide by metric unit area",
+    "license": "CC BY-SA 4.0"
+  },
+  "osm": {
+    "source": "Geofabrik Chile historical extract",
+    "snapshot": "2024-01-01T21:21:15Z",
+    "license": "ODbL-1.0"
+  },
+  "selected_candidate": "paper19",
+  "location_feature_count": 19,
+  "pair_input_count": 39,
+  "diagnostic_alternative": {
+    "candidate": "macro12_geometry20",
+    "role": "retained for diagnosis; not the main contract"
+  },
+  "cohort": {
+    "excluded_zones": [
+      "848",
+      "849",
+      "852"
+    ],
+    "rule": "Same source trips removed from all three representations, before OD aggregation; no feature imputation or substitute polygons.",
+    "excluded_trip_count": 1904,
+    "excluded_expanded_mass": 3140.5316,
+    "retained_trip_count": 60511977,
+    "retained_expanded_mass": 85774522.407,
+    "area_and_tile_rules_unchanged": true
+  },
+  "normalization": "log1p on densities/rates; identity on shares; z-score fitted only on active train origins per branch",
+  "artifact_root": "deepgravity/data/santiago/processed/f2i/proposal_common_exclusion",
+  "history_policy": "Proposal files and proposal_not_adopted labels describe the pre-approval snapshot. This record adopts their exact hashes without rewriting them.",
+  "f2g_original_inputs_unchanged": true,
+  "f2j_started": false,
+  "next_stage": "F2-J: small sample, working day and time periods before the stable pilot",
+  "gates": {
+    "G4": "open_until_verified_santiago_pilot",
+    "G5": "open"
+  },
+  "branches": {
+    "zona777": {
+      "units": 793,
+      "od_pairs": 426948,
+      "trip_count": 60511977,
+      "expanded_mass": 85774522.40700005,
+      "active_origins": 793,
+      "train_origins": 507,
+      "config": "config/f2i_approved_zona777_paper19.example.json",
+      "feature_columns": [
+        "population_census_2024_per_km2",
+        "landuse_residential_share",
+        "landuse_commercial_share",
+        "landuse_industrial_share",
+        "landuse_retail_share",
+        "landuse_natural_share",
+        "road_residential_km_per_km2",
+        "road_main_km_per_km2",
+        "road_other_km_per_km2",
+        "transport_poi_per_km2",
+        "transport_area_share",
+        "food_poi_per_km2",
+        "food_area_share",
+        "health_poi_per_km2",
+        "health_area_share",
+        "education_poi_per_km2",
+        "education_area_share",
+        "retail_poi_per_km2",
+        "retail_area_share"
+      ],
+      "partitions": {
+        "train": 507,
+        "validation": 185,
+        "test": 101
+      },
+      "approved_adapter_load_passed": true,
+      "source_proposal_config_sha256": "409df7e782e9c298f1b8a171f7f7a49e28b7c5980b4523883b83aceebbf79743",
+      "config_sha256": "8597b5788ed218bb98cb3e85c5ba78f607b54a6f55e01840bd8334466613a645"
+    },
+    "h3_r7": {
+      "units": 223,
+      "od_pairs": 37089,
+      "trip_count": 60511977,
+      "expanded_mass": 85774522.40699999,
+      "active_origins": 218,
+      "train_origins": 126,
+      "config": "config/f2i_approved_h3_r7_paper19.example.json",
+      "feature_columns": [
+        "population_census_2024_per_km2",
+        "landuse_residential_share",
+        "landuse_commercial_share",
+        "landuse_industrial_share",
+        "landuse_retail_share",
+        "landuse_natural_share",
+        "road_residential_km_per_km2",
+        "road_main_km_per_km2",
+        "road_other_km_per_km2",
+        "transport_poi_per_km2",
+        "transport_area_share",
+        "food_poi_per_km2",
+        "food_area_share",
+        "health_poi_per_km2",
+        "health_area_share",
+        "education_poi_per_km2",
+        "education_area_share",
+        "retail_poi_per_km2",
+        "retail_area_share"
+      ],
+      "partitions": {
+        "train": 126,
+        "validation": 60,
+        "test": 32
+      },
+      "approved_adapter_load_passed": true,
+      "source_proposal_config_sha256": "5fe35c8f83fea797a1c8d238c98bb0b8078af2f91462ef16cc127d30b8ed4a89",
+      "config_sha256": "ae0e390fb08c544f82b7e4e9fc1051cb6a4c72d878a403da1c104f4bbe2abf74"
+    },
+    "h3_r8": {
+      "units": 1210,
+      "od_pairs": 616749,
+      "trip_count": 60511977,
+      "expanded_mass": 85774522.40700004,
+      "active_origins": 1189,
+      "train_origins": 701,
+      "config": "config/f2i_approved_h3_r8_paper19.example.json",
+      "feature_columns": [
+        "population_census_2024_per_km2",
+        "landuse_residential_share",
+        "landuse_commercial_share",
+        "landuse_industrial_share",
+        "landuse_retail_share",
+        "landuse_natural_share",
+        "road_residential_km_per_km2",
+        "road_main_km_per_km2",
+        "road_other_km_per_km2",
+        "transport_poi_per_km2",
+        "transport_area_share",
+        "food_poi_per_km2",
+        "food_area_share",
+        "health_poi_per_km2",
+        "health_area_share",
+        "education_poi_per_km2",
+        "education_area_share",
+        "retail_poi_per_km2",
+        "retail_area_share"
+      ],
+      "partitions": {
+        "train": 701,
+        "validation": 299,
+        "test": 189
+      },
+      "approved_adapter_load_passed": true,
+      "source_proposal_config_sha256": "6eff2aeb765507adf4bcf08d7a4bea6032f06d8d1995e69a52ddb5a466fc4a66",
+      "config_sha256": "7c828486304d055eec59999e4e3f041e8e8160264430cbd9d3c290f8c41df736"
+    }
+  },
+  "frozen_artifacts_sha256": {
+    "deepgravity/data/santiago/processed/f2i/proposal_common_exclusion/feature_dictionary.json": "68d4225f16a3aff8800fbd9f3def6cb460a08c57c8f3bdcd0f451da88ea78d1f",
+    "deepgravity/data/santiago/processed/f2i/proposal_common_exclusion/scenario.json": "71aaff331f787dfa28439b7bb4ba957256e342f4cc4e64ce7aeb5e37312d11bd",
+    "deepgravity/data/santiago/processed/f2i/proposal_common_exclusion/h3_r7/macro12_geometry20_features.csv": "e6209b28e6f287922e2e9af085c42c5c4d5da710a62b8f6cf3968f6a2042863c",
+    "deepgravity/data/santiago/processed/f2i/proposal_common_exclusion/h3_r7/macro12_geometry20_model.csv": "b6499cc9d0f941be1d45f260fe347683421d30359225dc2ecacda294c21b7781",
+    "deepgravity/data/santiago/processed/f2i/proposal_common_exclusion/h3_r7/macro12_geometry20_preprocessing.json": "6117bd55e2cdbf8ce157b25d53125606bb8c39b0d6f1fbf13e40ca695fdbae71",
+    "deepgravity/data/santiago/processed/f2i/proposal_common_exclusion/h3_r7/od.parquet": "545074f851b193a94b15c0103ad92f377d1c678948e13a071edc8e576433703f",
+    "deepgravity/data/santiago/processed/f2i/proposal_common_exclusion/h3_r7/paper19_features.csv": "6397674a1694545aa901449b5b8c5e8041d0add2dee41284381c2f5403ac371f",
+    "deepgravity/data/santiago/processed/f2i/proposal_common_exclusion/h3_r7/paper19_model.csv": "c423a1114b71f5419b21800c5881f7ca3c7323e5a4d19e268abdc45cea7c9b2a",
+    "deepgravity/data/santiago/processed/f2i/proposal_common_exclusion/h3_r7/paper19_preprocessing.json": "1ab55ae98d11f40deb0bdedc8f088dc63ee28554ae0af7b1d72c6f74889efcab",
+    "deepgravity/data/santiago/processed/f2i/proposal_common_exclusion/h3_r7/partitions.csv": "8c7b6aea2051f23e5ea9643687191a517ea6ad0da3d08461e58d5389f3b58274",
+    "deepgravity/data/santiago/processed/f2i/proposal_common_exclusion/h3_r7/removed_od.csv": "855fa23976966c9bf9030bc96e07f703f277684a3a1ff3259e653a00ad3d8a61",
+    "deepgravity/data/santiago/processed/f2i/proposal_common_exclusion/h3_r7/units.csv": "6317056f42918fb22d80014de58702c8d567e2cc6f6b9d346ae258dbce18e5e4",
+    "deepgravity/data/santiago/processed/f2i/proposal_common_exclusion/h3_r8/macro12_geometry20_features.csv": "76c45fc5be7c789c00d8b819b9d08ce5ddbea4e0f350ae8f4c08197ba7684ce5",
+    "deepgravity/data/santiago/processed/f2i/proposal_common_exclusion/h3_r8/macro12_geometry20_model.csv": "013b87787a119856313a6d4d289e51ea71512834febd82a7d2fc0d02574ac34a",
+    "deepgravity/data/santiago/processed/f2i/proposal_common_exclusion/h3_r8/macro12_geometry20_preprocessing.json": "ab66e9e61398a979d33857388d4df0b72ffe88b848d1026eda5b500bfb92f00c",
+    "deepgravity/data/santiago/processed/f2i/proposal_common_exclusion/h3_r8/od.parquet": "9b1abbd0eb63a9e74141a96b9962d9ab21fa539f3da9a61fc55f8a50eee1b221",
+    "deepgravity/data/santiago/processed/f2i/proposal_common_exclusion/h3_r8/paper19_features.csv": "704191d050a19b1edda45b5132c350f6befc5524b9720e51eab887588f89ca2a",
+    "deepgravity/data/santiago/processed/f2i/proposal_common_exclusion/h3_r8/paper19_model.csv": "d2b344bb8d4bb47b4284a40f93753d725ea5c941d5907fc20368fa51adfa14c5",
+    "deepgravity/data/santiago/processed/f2i/proposal_common_exclusion/h3_r8/paper19_preprocessing.json": "6b1b98260b6794ebf28678f604714c9234d9555de86818e4cf347304b2c83016",
+    "deepgravity/data/santiago/processed/f2i/proposal_common_exclusion/h3_r8/partitions.csv": "e581cdafa79a8f0b4cb58468132197f63a7dbc76c9b6119f35bf868f99e39cc9",
+    "deepgravity/data/santiago/processed/f2i/proposal_common_exclusion/h3_r8/removed_od.csv": "8849b562297c6217a8ebd8a015a94bac6759dbc6bb98cbc7fcdee0d2fabfe1fc",
+    "deepgravity/data/santiago/processed/f2i/proposal_common_exclusion/h3_r8/units.csv": "cbf098fb3c1b742805548c7270bb95328745d887b0a0d4f2025d4cb575846e9f",
+    "deepgravity/data/santiago/processed/f2i/proposal_common_exclusion/zona777/macro12_geometry20_features.csv": "528f36dd42b293d9af755e8a2ca3bff2d1ba6696bafcac3282f7967b498cbecd",
+    "deepgravity/data/santiago/processed/f2i/proposal_common_exclusion/zona777/macro12_geometry20_model.csv": "6841cb23fc69599d8f3115f53440eec255e8a8ec88f6ff5873404398e328e0ba",
+    "deepgravity/data/santiago/processed/f2i/proposal_common_exclusion/zona777/macro12_geometry20_preprocessing.json": "07d9ac30d25fe0e86b940916f1358474507b4c6ee0d1b72b9a8d6ad55d8537bc",
+    "deepgravity/data/santiago/processed/f2i/proposal_common_exclusion/zona777/od.parquet": "4a1d5dd5ef61b3d7518e45d5a22451d794de409a79959964bcfba376f87341dd",
+    "deepgravity/data/santiago/processed/f2i/proposal_common_exclusion/zona777/paper19_features.csv": "64eb71ab82e298ac6b7f787f902fbee91191741cd4afaf367a11238c5eb2e397",
+    "deepgravity/data/santiago/processed/f2i/proposal_common_exclusion/zona777/paper19_model.csv": "c346f18583e0bbe7585e10cf5647a31633ef086d4c5ea0fd658b2968d187deeb",
+    "deepgravity/data/santiago/processed/f2i/proposal_common_exclusion/zona777/paper19_preprocessing.json": "20d8862f4aac9a1dbb8faa53ed2af222ad6bf995b7e2a54619e949dc7894bab5",
+    "deepgravity/data/santiago/processed/f2i/proposal_common_exclusion/zona777/partitions.csv": "c3f3c0c56cf8c829a3258c6ec3fd7135e2c6e43b365a3e9619ba72bdb4af1042",
+    "deepgravity/data/santiago/processed/f2i/proposal_common_exclusion/zona777/removed_od.csv": "4e381f89d7639bab153314aa2626d75d43356c983468fa910c543653359629da",
+    "deepgravity/data/santiago/processed/f2i/proposal_common_exclusion/zona777/units.csv": "bdf8acf16ded0cf3da8e592159d8b13c23996e4826aa49d72b01bf2abfde0561"
+  },
+  "original_f2g_inputs_sha256": {
+    "docs\\verificacion\\f2g\\F2-G_PARTICIONES_UNIDADES.csv": "3aac14234fbe350ddf5a6636c49fc98a76674820c54473b8f5afd92149c8b097",
+    "deepgravity\\data\\santiago\\interim\\f2g_spatial\\zona777_od.parquet": "86c83c2ddd20963af4660adf75a70ce09194a379f90dccd77d25212ce98fa1d1",
+    "docs\\verificacion\\f2g\\F2-G_UNIDADES_ZONA777.csv": "12f816ff4b6831c7f48c60bcef1503d08bbb08f28b175d51cd47c2895791708e",
+    "deepgravity\\data\\santiago\\interim\\f2g_spatial\\h3_r7_od.parquet": "e69a4dc2fac3a14e734ed8e38e20fe9b415ef21617f150c72773f3415c27bf01",
+    "docs\\verificacion\\f2g\\F2-G_UNIDADES_H3_R7.csv": "fba0e03fac4f11f890cf297adcd58ae8aa6a1fc84489bb7460662fb733edba9e",
+    "deepgravity\\data\\santiago\\interim\\f2g_spatial\\h3_r8_od.parquet": "4045319f91d6daf64ba6e71d95c6a669839cc9ad8ddbd3ea3984971f84751403",
+    "docs\\verificacion\\f2g\\F2-G_UNIDADES_H3_R8.csv": "71892e652390a588f1cff184ebf073b465b658e30ef69a7eee31cd05091f7e52"
+  },
+  "code_sha256": "aa84d357c6e2930f320c245fd37096cb89d60ee50f8bbf7e461f767dba846a20",
+  "evidence_sha256": {
+    "docs/territorio/f2i/F2-I_INTEGRACION_VERIFICADA.json": "9721aacf326734c4c605295793179c676adc13f42190a80d91a48b0abdb2b2c8",
+    "deepgravity/data/santiago/processed/f2i/proposal_common_exclusion/feature_contracts.json": "724dffa60979c05ce6fc6a0bcf448fb068ae5cdc391b1a850c17c3165896e514",
+    "docs/territorio/f2i/F2-I_VERIFICACION_V2.json": "3352a2990d5680e1fa4255a7f96ef5a37660fef07fa6d7bba751727970e517c4",
+    "docs/territorio/f2i/F2-I_DICCIONARIO_PROPUESTA.json": "68d4225f16a3aff8800fbd9f3def6cb460a08c57c8f3bdcd0f451da88ea78d1f"
+  },
+  "acceptance_checks": {
+    "proposal_hashes_match_prior_integration": true,
+    "approved_adapter_loads": 3,
+    "source_f2g_hashes_unchanged": true,
+    "monthly_mass_reconciled_all_branches": true,
+    "training_executed_by_adoption": false
+  }
+}

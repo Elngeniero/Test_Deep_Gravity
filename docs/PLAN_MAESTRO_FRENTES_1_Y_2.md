@@ -1,8 +1,8 @@
 # Plan maestro de ejecución — Frentes 1 y 2
 
-> **Estado:** ejecución por etapas; F2-G completada, siguiente fase F2-H  
+> **Estado:** F2-I cerrada y aprobada; siguiente fase F2-J, aún no iniciada  
 > **Fecha de consolidación:** 8 de septiembre de 2026  
-> **Última actualización:** 10 de septiembre de 2026; G4 permanece abierta  
+> **Última actualización:** 14 de septiembre de 2026; G4 permanece abierta  
 > **Proyecto:** adaptación y evaluación de Deep Gravity para Santiago  
 > **Uso previsto:** fuente única para continuar el trabajo en este u otro chat
 
@@ -151,7 +151,6 @@ Archivos principales:
 - `docs/adr/ADR-005-delimitacion-gran-santiago.md`
 - índices `docs/**/README.md`
 - `../../Analisis Proyecto Deep Gravity.md`
-- `../../resumen_estado_proyecto.md`
 
 El capítulo 5, las conclusiones y el análisis XAI final quedan fuera de esta ejecución.
 
@@ -512,6 +511,8 @@ Acciones:
 
 **Criterio de término:** otro entorno puede reconstruir qué se ejecutó y por qué el resultado se considera o no una reproducción válida.
 
+**Cierre F2-H — 12 de septiembre de 2026:** auditoría completada. Nueva corrida trazable de 20 épocas, 50.620 actualizaciones y CPC global 0,506684; evaluación de 2.836 orígenes sobre 939.888 pares, conservación de masa y replay independiente verificados. Se corrigieron el soporte del CPC histórico, los conteos de particiones y la comparación con la tabla 1 del artículo (CPC global NY = 0,70). Las medias sobre 193 tiles asignados, 188 con unidades y 163 con CPC positivo se reportan por separado. La ejecución técnica queda validada, pero no se acredita reproducción científica integral: difieren el lote, la pérdida y otros elementos del protocolo o de la procedencia de atributos. Evidencia en `docs/experimentos/REPORTE_REPRODUCCION_NEWYORK.md` y `docs/experimentos/f2h/verification.json`. Continuar F2-I; G4 sigue abierta hasta el piloto de F2-J.
+
 ### F2-I — Población y características OSM
 
 Esta fase comienza después de congelar cohorte, área y unidades candidatas.
@@ -530,6 +531,8 @@ Esta fase comienza después de congelar cohorte, área y unidades candidatas.
 9. ajustar el tamaño del vector de entrada a las variables efectivamente adoptadas.
 
 **Salidas:** `features` por rama, diccionario de características y pruebas de cobertura.
+
+**Cierre aprobado — 14 de septiembre de 2026:** el investigador aprobó Censo 2024, `paper19` corregido como diccionario principal (19 variables por ubicación, 39 entradas por par) y la exclusión común de los 1.904 viajes con algún extremo en 848, 849 o 852, que carecen de polígono oficial. Las tres ramas conservan 60.511.977 viajes y masa 85.774.522,4070, con 793 zonas, 223 celdas r7 y 1.210 celdas r8. Áreas, puntos y vías usan magnitudes geométricas coherentes; la normalización se ajusta exclusivamente con orígenes activos de entrenamiento. Los seis candidatos pasaron la integración, y los tres contratos principales aprobados se cargaron nuevamente con masa y hashes verificados. Pasaron 11 pruebas F2-I y 37 F2-G antes de la adopción. `macro12_geometry20` queda disponible para diagnóstico; no reemplaza el contrato principal. Los datos F2-C/F2-G originales se conservan como historial. La decisión y los archivos exactos quedan fijados en [ADR-006 aceptado](adr/ADR-006-propuesta-cierre-f2i.md), [contrato aprobado](territorio/f2i/F2-I_CONTRATO_APROBADO.json) y [reporte F2-I](territorio/f2i/F2-I_CIERRE_TECNICO_Y_DECISION.md). **La etapa 6 queda cerrada.** F2-J no se ha iniciado; comenzará por una muestra pequeña, un día laboral y periodos horarios antes del piloto estable. G4 permanece abierta. F2-H no se reabre para perseguir una reproducción integral de Nueva York.
 
 ### F2-J — Piloto de Santiago
 
@@ -664,10 +667,13 @@ No solicitar “implementar todo el plan” en una única ejecución. Cada fase 
 | 2026-09-10 | G1 — Contrato científico | cerrado; formalización del contrato científico vigente | docs/revisiones/F1-B_CONCILIACION_DECISIONES.md y docs/revisiones/F1-C_ESPECIFICACION_PRELIMINAR_G3.md; objetivos, hipótesis, unidades y términos consolidados | Resolver y verificar las contradicciones pendientes del capítulo 4 en F1-C/F1-E/F1-F antes de cerrar G5; véase la nota de alcance siguiente |
 | 2026-09-10 | F2-G — Refactor mínimo y pruebas del modelo | completado; 37 pruebas aprobadas y 29 fechas materializadas | docs/verificacion/f2g/F2-G_REPORTE_IMPLEMENTACION.md, F2-G_VERIFICACION.json y F2-G_PRUEBAS.txt; CPC, caché, destinos globales, evaluación completa y ejecuciones trazables verificados; 60.513.881 viajes y 85.777.662,9386 de masa por rama | Continuar F2-H; población, OSM y geometría faltante zonal antes del entrenamiento científico en F2-I/F2-J; G4 sigue abierta |
 | 2026-09-10 | F2-G — Corrección de asignación H3-r7 | verificada; asignación directa conforme al contrato | F2-G_UNIDADES_H3_R7.csv y F2-G_PARTICIONES_UNIDADES.csv: 223 unidades, 220 orígenes activos y 37.196 pares OD; se conserva la agenda de 10 tiles de F2-F | Usar las tablas operativas de docs/verificacion/f2g/ en las siguientes fases; conservar F2-E/F como evidencia histórica y regenerar r3–r6 con el script corregido antes de usar sus estadísticas en la redacción final |
+| 2026-09-12 | F2-H — Auditoría de Nueva York | completada; ejecución técnica verificada, equivalencia científica integral no acreditada | docs/experimentos/REPORTE_REPRODUCCION_NEWYORK.md y f2h/verification.json: 20 épocas, CPC global 0,506684, replay independiente, hashes y 37 pruebas aprobadas; reporte histórico archivado | Continuar F2-I con fuentes y transformaciones explícitas; declarar pérdida efectiva y resolver geometría pendiente antes del piloto F2-J; G4 sigue abierta |
+| 2026-09-14 | F2-I — Atributos corregidos e integración | ejecución técnica completa; adopción metodológica pendiente | docs/territorio/f2i/F2-I_CIERRE_TECNICO_Y_DECISION.md y F2-I_INTEGRACION_VERIFICADA.json; seis contratos, 11 pruebas F2-I y 37 F2-G aprobadas; ADR-006 propuesto | Adoptar población, ontología y alternativa común de exclusión de 1.904 viajes antes de cerrar la etapa 6; F2-J no iniciado y G4 abierta |
+| 2026-09-14 | F2-I — Aprobación y cierre de la etapa 6 | completada y aprobada por el investigador | ADR-006 aceptado, F2-I_CONTRATO_APROBADO.json y tres configuraciones f2i_approved_*_paper19.example.json: Censo 2024, 39 entradas, 60.511.977 viajes comunes y hashes comprobados | Continuar F2-J desde una muestra pequeña; no iniciar directamente experimentos mensuales finales; G4 permanece abierta |
 
 **Alcance del cierre de G1 (10 de septiembre de 2026).** Se formaliza el cierre del contrato científico consolidado en F1-B y precisado en F1-C preliminar: comparación Zona 777–H3 desde una cohorte común, hipótesis abierta y falsable, distinción entre unidades OD y *tiles*, y diferenciación de población censal, generación observada, flujo expandido y atributos OSM. Estas definiciones gobiernan la ejecución posterior. Las contradicciones pendientes del capítulo 4 están identificadas en `docs/revisiones/MATRIZ_TRAZABILIDAD_CAP4.md` y deberán resolverse y verificarse en F1-C/F1-E/F1-F antes de cerrar G5. El cierre de G1 no implica el cierre del Frente 1 ni la sincronización integral del capítulo 4 y `docs/`, que corresponde a G5.
 
-## 8. Estado consolidado tras cerrar G3
+## 8. Estado consolidado — actualización F2-I
 
 | Etapa | Fases | Estado | Cierre o trabajo restante |
 |---|---|---|---|
@@ -675,9 +681,9 @@ No solicitar “implementar todo el plan” en una única ejecución. Cada fase 
 | 2 | F2-B y F1-B | Completada; G1 cerrada | Auditoría de 29 fechas, unión validada y alcance conciliado; cierre del contrato científico formalizado el 10 de septiembre de 2026, con el alcance y la evidencia registrados en la sección 7 |
 | 3 | F2-C | Completada | Contrato aprobado, 29 particiones canónicas y G2 cerrado |
 | 4 | F2-D; F1-C preliminar, F2-E y F2-F | Completada; G3 cerrada | Dominio F2-D aprobado, factibilidad exacta Zona 777/H3, H3-r7/r8 para piloto y 10 tiles determinísticos documentados en `docs/territorio/f2e`, `docs/territorio/f2f` y `docs/revisiones/F1-C_ESPECIFICACION_PRELIMINAR_G3.md` |
-| 5 | F2-G y F2-H | F2-G completada; F2-H pendiente | 37 pruebas, OD mensual reconciliada, destinos metropolitanos globales y ejecuciones versionadas; unidades y particiones operativas en `docs/verificacion/f2g/`. Falta reauditar Nueva York; G4 sigue abierta |
-| 6 | F2-I | Pendiente | Población y atributos OSM definidos |
-| 7 | F2-J | Pendiente | Piloto Santiago reproducible; G4 |
+| 5 | F2-G y F2-H | Completadas | 37 pruebas, OD mensual reconciliada y Nueva York auditado con 20 épocas y CPC global 0,506684. Dictamen técnico y límites de reproducción científica documentados en `docs/experimentos/`; G4 sigue abierta hasta el piloto Santiago |
+| 6 | F2-I | Completada y aprobada | Censo 2024, paper19 corregido (39 entradas), cohorte común de 60.511.977 viajes y contratos fijados en ADR-006 y F2-I_CONTRATO_APROBADO.json |
+| 7 | F2-J | Habilitada; aún no iniciada | Comenzar por muestra pequeña, día laboral y periodos horarios; piloto Santiago reproducible para cerrar G4 |
 | 8 | Cierre F1-C; F1-D, F1-E y F1-F | Pendiente | Capítulo 4 y documentación sincronizados y verificados; G5 |
 | 9 | F2-K | Pendiente tras aprobar el piloto | Experimentos mensuales finales reutilizando las particiones canónicas existentes |
 | 10 | F2-L, capítulo 5 y conclusiones | Pendiente | XAI final y redacción de resultados |

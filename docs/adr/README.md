@@ -29,3 +29,4 @@ Directorio para registrar las decisiones de arquitectura del proyecto. Cada deci
 | [ADR-003](./ADR-003-separacion-documentacion.md) | Separación de Documentación Técnica | Aceptado | 2026-08-20 |
 | [ADR-004](./ADR-004-grilla-hexagonal-h3-doble-modelo.md) | Comparación Zona 777-H3 | Aceptado; corrección factual 2026-09-08 | 2026-09-01 |
 | [ADR-005](./ADR-005-delimitacion-gran-santiago.md) | Delimitación del Área de Estudio — Gran Santiago Urbano | Aceptado el 2026-09-09; G3 cerrada con F2-E/F | 2026-09-01 |
+| [ADR-006](./ADR-006-propuesta-cierre-f2i.md) | Contrato de atributos y cohorte común para F2-I | Aceptado; F2-I cerrada | 2026-09-14 |

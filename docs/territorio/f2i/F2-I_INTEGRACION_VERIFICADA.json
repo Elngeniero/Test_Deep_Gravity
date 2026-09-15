@@ -1,0 +1,174 @@
+{
+  "status": "passed_pending_adoption",
+  "created_at": "2026-09-13T23:03:25.951627+00:00",
+  "python": "3.8.20",
+  "torch": "1.13.1+cpu",
+  "checksummed_artifacts": 69,
+  "training_started": false,
+  "optimizer_steps": 0,
+  "test_origin_evaluation": false,
+  "performance_metrics_produced": false,
+  "source_cohort_unchanged": true,
+  "contracts": {
+    "zona777/paper19": {
+      "loaded_units": 793,
+      "partitions": {
+        "train": 507,
+        "validation": 185,
+        "test": 101
+      },
+      "input_shape": [
+        1,
+        793,
+        39
+      ],
+      "score_shape": [
+        1,
+        793,
+        1
+      ],
+      "full_destination_support": true,
+      "preprocessing_train_only_verified": true,
+      "maximum_preprocessing_error": 4.993694346921984e-11,
+      "forward_pass_only": true
+    },
+    "zona777/macro12_geometry20": {
+      "loaded_units": 793,
+      "partitions": {
+        "train": 507,
+        "validation": 185,
+        "test": 101
+      },
+      "input_shape": [
+        1,
+        793,
+        41
+      ],
+      "score_shape": [
+        1,
+        793,
+        1
+      ],
+      "full_destination_support": true,
+      "preprocessing_train_only_verified": true,
+      "maximum_preprocessing_error": 4.993694346921984e-11,
+      "forward_pass_only": true
+    },
+    "h3_r7/paper19": {
+      "loaded_units": 223,
+      "partitions": {
+        "train": 126,
+        "validation": 60,
+        "test": 32
+      },
+      "input_shape": [
+        1,
+        223,
+        39
+      ],
+      "score_shape": [
+        1,
+        223,
+        1
+      ],
+      "full_destination_support": true,
+      "preprocessing_train_only_verified": true,
+      "maximum_preprocessing_error": 3.879563337250147e-11,
+      "forward_pass_only": true
+    },
+    "h3_r7/macro12_geometry20": {
+      "loaded_units": 223,
+      "partitions": {
+        "train": 126,
+        "validation": 60,
+        "test": 32
+      },
+      "input_shape": [
+        1,
+        223,
+        41
+      ],
+      "score_shape": [
+        1,
+        223,
+        1
+      ],
+      "full_destination_support": true,
+      "preprocessing_train_only_verified": true,
+      "maximum_preprocessing_error": 4.7622350507481315e-11,
+      "forward_pass_only": true
+    },
+    "h3_r8/paper19": {
+      "loaded_units": 1210,
+      "partitions": {
+        "train": 701,
+        "validation": 299,
+        "test": 189
+      },
+      "input_shape": [
+        1,
+        1210,
+        39
+      ],
+      "score_shape": [
+        1,
+        1210,
+        1
+      ],
+      "full_destination_support": true,
+      "preprocessing_train_only_verified": true,
+      "maximum_preprocessing_error": 4.801137265530997e-11,
+      "forward_pass_only": true
+    },
+    "h3_r8/macro12_geometry20": {
+      "loaded_units": 1210,
+      "partitions": {
+        "train": 701,
+        "validation": 299,
+        "test": 189
+      },
+      "input_shape": [
+        1,
+        1210,
+        41
+      ],
+      "score_shape": [
+        1,
+        1210,
+        1
+      ],
+      "full_destination_support": true,
+      "preprocessing_train_only_verified": true,
+      "maximum_preprocessing_error": 4.8125059493031586e-11,
+      "forward_pass_only": true
+    }
+  },
+  "branches": {
+    "zona777": {
+      "units": 793,
+      "trip_count": 60511977,
+      "expanded_mass": 85774522.40700005,
+      "od_pairs": 426948,
+      "unit_and_partition_totals_reconciled": true
+    },
+    "h3_r7": {
+      "units": 223,
+      "trip_count": 60511977,
+      "expanded_mass": 85774522.40699999,
+      "od_pairs": 37089,
+      "unit_and_partition_totals_reconciled": true
+    },
+    "h3_r8": {
+      "units": 1210,
+      "trip_count": 60511977,
+      "expanded_mass": 85774522.40700004,
+      "od_pairs": 616749,
+      "unit_and_partition_totals_reconciled": true
+    }
+  },
+  "code_sha256": "e3882c4e18c731765c1fc7b4e44e223a64450487eb2613a9b9f7abf45214a1e4",
+  "scenario_sha256": "71aaff331f787dfa28439b7bb4ba957256e342f4cc4e64ce7aeb5e37312d11bd",
+  "feature_contracts_sha256": "724dffa60979c05ce6fc6a0bcf448fb068ae5cdc391b1a850c17c3165896e514",
+  "original_missing_geometry_guard": "External features contain missing/nonfinite values",
+  "all_checks_passed": true
+}

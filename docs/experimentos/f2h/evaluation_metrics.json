@@ -1,0 +1,16 @@
+{
+  "cpc_global": 0.5066841740866592,
+  "cpc_mean_origin": 0.42377670335951373,
+  "cpc_mean_all_tiles": 0.7938312788298998,
+  "cpc_mean_nonzero_tiles": 0.9155845424541175,
+  "zero_cpc_tiles": 25,
+  "tiles": 188,
+  "origins": 2836,
+  "observed_mass": 12421750.0,
+  "predicted_mass": 12421750.0,
+  "full_domain_observed_mass": 18176489.0,
+  "loss_per_origin": 12987.554791044797,
+  "empty_cpc_convention": 0.0,
+  "destination_scope": "origin_tile",
+  "sampled_evaluation": false
+}

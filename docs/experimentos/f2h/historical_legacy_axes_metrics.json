@@ -1,0 +1,21 @@
+{
+  "cpc_global": 0.4884217114722892,
+  "cpc_mean_assigned_tiles": 0.7695634918515368,
+  "cpc_mean_nonempty_tiles": 0.7900306059965245,
+  "cpc_mean_positive_tiles": 0.9112009443395498,
+  "cpc_mean_origin": 0.40708743229660405,
+  "assigned_tiles": 193,
+  "nonempty_tiles": 188,
+  "positive_cpc_tiles": 163,
+  "zero_mass_nonempty_tiles": 25,
+  "zero_mass_tiles_with_external_outflow": 0,
+  "origins": 2836,
+  "evaluated_pairs": 939888,
+  "within_tile_mass": 12421750.0,
+  "predicted_mass": 12421750.0,
+  "full_origin_outflow": 18176489.0,
+  "within_tile_fraction_of_full_outflow": 0.6833965569478242,
+  "excluded_outflow": 5754739.0,
+  "max_origin_mass_error": 5.4569682106375694e-12,
+  "empty_cpc_convention": 0.0
+}

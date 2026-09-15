@@ -1,0 +1,17 @@
+{
+  "source": "https://github.com/felipinbombin/eod2012",
+  "checked_at": "2026-09-13T22:51:24Z",
+  "decision": "rejected: numeric IDs denote different polygons from active DTPM zone system",
+  "common_ids": 802,
+  "same_id_iou_max": 0.0,
+  "distance_from_active_anchor_m": {
+    "848": 25264.61350773142,
+    "849": 2646.4325632165815,
+    "852": 14047.40552190834
+  },
+  "source_hashes": {
+    "zonificacion_eod2012_candidate.dbf": "6d5f4d771ff6cc99b4c254556d3252f6801f9595f291f6ebbf70613212ad89b4",
+    "zonificacion_eod2012_candidate.shp": "763692263b6e8db410766fa609d77ee4814f079843b3d527a73859c55eb802fe",
+    "zonificacion_eod2012_candidate.shx": "63c838ca81dc9ab2d57648f22a60b73139ee21f57a061cd7867e9068c2c5ff25"
+  }
+}

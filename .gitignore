@@ -6,7 +6,9 @@
 !docs/territorio/f2d/*.json
 !docs/territorio/f2e/*.json
 !docs/territorio/f2f/*.json
+!docs/territorio/f2i/*.json
 !docs/verificacion/f2g/*.json
+!docs/experimentos/f2h/*.json
 !config/*.example.json
 
 # Local machine settings and credentials
@@ -26,6 +28,7 @@ deepgravity/data/santiago/checkpoints/
 deepgravity/results/santiago/
 runs/
 tests/.artifacts/
+.f2i_deps/
 
 # Common runtime by-products
 __pycache__/

@@ -1,0 +1,68 @@
+test_absolute_launcher_and_relative_config_paths_from_other_directory (test_f2g.AdapterIntegrationTests) ... Warning 3: Cannot find header.dxf (GDAL_DATA is not defined)
+C:\Users\pablo\anaconda3\envs\deepgravity\lib\site-packages\geopandas\_compat.py:17: DeprecationWarning: distutils Version classes are deprecated. Use packaging.version instead.
+  PANDAS_GE_025 = str(pd.__version__) >= LooseVersion("0.25.0")
+C:\Users\pablo\anaconda3\envs\deepgravity\lib\site-packages\setuptools\_distutils\version.py:337: DeprecationWarning: distutils Version classes are deprecated. Use packaging.version instead.
+  other = LooseVersion(other)
+C:\Users\pablo\anaconda3\envs\deepgravity\lib\site-packages\geopandas\_compat.py:18: DeprecationWarning: distutils Version classes are deprecated. Use packaging.version instead.
+  PANDAS_GE_10 = str(pd.__version__) >= LooseVersion("1.0.0")
+C:\Users\pablo\anaconda3\envs\deepgravity\lib\site-packages\geopandas\_compat.py:19: DeprecationWarning: distutils Version classes are deprecated. Use packaging.version instead.
+  PANDAS_GE_11 = str(pd.__version__) >= LooseVersion("1.1.0")
+C:\Users\pablo\anaconda3\envs\deepgravity\lib\site-packages\geopandas\_compat.py:20: DeprecationWarning: distutils Version classes are deprecated. Use packaging.version instead.
+  PANDAS_GE_115 = str(pd.__version__) >= LooseVersion("1.1.5")
+C:\Users\pablo\anaconda3\envs\deepgravity\lib\site-packages\geopandas\_compat.py:21: DeprecationWarning: distutils Version classes are deprecated. Use packaging.version instead.
+  PANDAS_GE_12 = str(pd.__version__) >= LooseVersion("1.2.0")
+C:\Users\pablo\anaconda3\envs\deepgravity\lib\site-packages\geopandas\_compat.py:29: DeprecationWarning: distutils Version classes are deprecated. Use packaging.version instead.
+  SHAPELY_GE_17 = str(shapely.__version__) >= LooseVersion("1.7.0")
+C:\Users\pablo\anaconda3\envs\deepgravity\lib\site-packages\geopandas\_compat.py:30: DeprecationWarning: distutils Version classes are deprecated. Use packaging.version instead.
+  SHAPELY_GE_18 = str(shapely.__version__) >= LooseVersion("1.8")
+C:\Users\pablo\anaconda3\envs\deepgravity\lib\site-packages\geopandas\_compat.py:31: DeprecationWarning: distutils Version classes are deprecated. Use packaging.version instead.
+  SHAPELY_GE_20 = str(shapely.__version__) >= LooseVersion("2.0")
+C:\Users\pablo\anaconda3\envs\deepgravity\lib\site-packages\geopandas\_compat.py:212: DeprecationWarning: distutils Version classes are deprecated. Use packaging.version instead.
+  PYPROJ_LT_3 = LooseVersion(pyproj.__version__) < LooseVersion("3")
+Cannot find header.dxf (GDAL_DATA is not defined)
+ok
+test_zona_and_h3_share_contract_and_keep_cross_partition_flows (test_f2g.AdapterIntegrationTests) ... ok
+test_cache_detects_corruption_and_changed_raw_input (test_f2g.CacheTests) ... ok
+test_legacy_mass_predictor_requires_audit_purpose (test_f2g.CacheTests) ... ok
+test_missing_features_are_optional_but_malformed_features_fail (test_f2g.CacheTests) ... ok
+test_parser_options_invalidate_cache (test_f2g.CacheTests) ... ok
+test_projected_centroid_order_and_area (test_f2g.CacheTests) ... ok
+test_raw_negative_and_missing_flows_are_not_hidden_by_grouping (test_f2g.CacheTests) ... ok
+test_regeneration_serialization_and_fractional_flow (test_f2g.CacheTests) ... ok
+test_geodesic_distance_and_coordinate_contract (test_f2g.MetricsTests) ... ok
+test_invalid_support_and_weights (test_f2g.MetricsTests) ... ok
+test_known_cpc_cases (test_f2g.MetricsTests) ... ok
+test_numerator_is_twice_overlap (test_f2g.MetricsTests) ... ok
+test_architecture_and_dropout_modes (test_f2g.ModelAndEvaluationTests) ... ok
+test_empty_target_loss_has_finite_gradients (test_f2g.ModelAndEvaluationTests) ... ok
+test_evaluation_rejects_sampling (test_f2g.ModelAndEvaluationTests) ... ok
+test_full_evaluation_batch_invariance_and_mass (test_f2g.ModelAndEvaluationTests) ... ok
+test_probability_normalization_conserves_each_origin (test_f2g.ModelAndEvaluationTests) ... ok
+test_duplicate_or_missing_partition_unit_rejected (test_f2g.PartitionTests) ... ok
+test_overlap_rejected (test_f2g.PartitionTests) ... ok
+test_partition_ids_keep_leading_zeroes (test_f2g.PartitionTests) ... ok
+test_tile_split_rejected (test_f2g.PartitionTests) ... ok
+{"run": "20260912T141640_e9eae89efe", "epoch": 1, "train": {"loss_per_origin": 1.3862943649291992, "origins": 2}, "validation": {"cpc_global": 0.16666666501098207, "cpc_mean_origin": 0.08333333250549103, "cpc_mean_all_tiles": 0.16666666501098207, "cpc_mean_nonzero_tiles": 0.16666666501098207, "zero_cpc_tiles": 0, "tiles": 1, "origins": 2, "observed_mass": 6.0, "predicted_mass": 6.0, "full_domain_observed_mass": 6.0, "loss_per_origin": 5.375278437486488, "empty_cpc_convention": 0.0, "destination_scope": "global", "sampled_evaluation": false}}
+{"run": "20260912T141640_e9eae89efe", "epoch": 2, "train": {"loss_per_origin": 3.812309503555298, "origins": 2}, "validation": {"cpc_global": 0.16666666749450895, "cpc_mean_origin": 0.08333333374725448, "cpc_mean_all_tiles": 0.16666666749450895, "cpc_mean_nonzero_tiles": 0.16666666749450895, "zero_cpc_tiles": 0, "tiles": 1, "origins": 2, "observed_mass": 6.0, "predicted_mass": 5.999999999999999, "full_domain_observed_mass": 6.0, "loss_per_origin": 5.375278392783004, "empty_cpc_convention": 0.0, "destination_scope": "global", "sampled_evaluation": false}}
+{"run": "20260912T141640_2863bc0d81", "epoch": 1, "train": {"loss_per_origin": 1.3862943649291992, "origins": 2}, "validation": {"cpc_global": 0.16666666501098207, "cpc_mean_origin": 0.08333333250549103, "cpc_mean_all_tiles": 0.16666666501098207, "cpc_mean_nonzero_tiles": 0.16666666501098207, "zero_cpc_tiles": 0, "tiles": 1, "origins": 2, "observed_mass": 6.0, "predicted_mass": 6.0, "full_domain_observed_mass": 6.0, "loss_per_origin": 5.375278437486488, "empty_cpc_convention": 0.0, "destination_scope": "global", "sampled_evaluation": false}}
+{"run": "20260912T141640_2863bc0d81", "epoch": 2, "train": {"loss_per_origin": 3.812309503555298, "origins": 2}, "validation": {"cpc_global": 0.16666666749450895, "cpc_mean_origin": 0.08333333374725448, "cpc_mean_all_tiles": 0.16666666749450895, "cpc_mean_nonzero_tiles": 0.16666666749450895, "zero_cpc_tiles": 0, "tiles": 1, "origins": 2, "observed_mass": 6.0, "predicted_mass": 5.999999999999999, "full_domain_observed_mass": 6.0, "loss_per_origin": 5.375278392783004, "empty_cpc_convention": 0.0, "destination_scope": "global", "sampled_evaluation": false}}
+test_complete_repeatable_run_checkpoint_and_test_separation (test_f2g.RunTests) ... ok
+test_import_from_other_working_directory_has_no_training_side_effect (test_f2g.RunTests) ... ok
+test_no_run_overwrite_or_path_traversal (test_f2g.RunTests) ... ok
+test_test_is_reserved_during_training (test_f2g.RunTests) ... ok
+test_all_positive_or_all_zero_candidates (test_f2g.SamplingTests) ... ok
+test_collate_handles_variable_candidate_counts (test_f2g.SamplingTests) ... ok
+test_cross_tile_destinations_are_retained (test_f2g.SamplingTests) ... ok
+test_legacy_scope_is_explicit (test_f2g.SamplingTests) ... ok
+test_numpy_features_are_concatenated (test_f2g.SamplingTests) ... ok
+test_positive_quota_is_in_scope_and_without_replacement (test_f2g.SamplingTests) ... ok
+test_seed_epoch_and_hash_order (test_f2g.SamplingTests) ... ok
+test_corrected_cells_cannot_change_frozen_tile_agenda (test_f2g.SpatialTests) ... ok
+test_direct_r7_is_not_replaced_with_r8_parent (test_f2g.SpatialTests) ... ok
+test_parquet_writer_is_reversible_and_refuses_overwrite (test_f2g.SpatialTests) ... ok
+test_prepared_membership_keeps_strict_municipal_boundaries (test_f2g.SpatialTests) ... ok
+
+----------------------------------------------------------------------
+Ran 37 tests in 10.603s
+
+OK
